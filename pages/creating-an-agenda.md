@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Creating an agenda
-nav_order: 4
+nav_order: 2
 permalink: /creating-an-agenda.html
-parent: Desired outcomes
+has_children: yes
 ---
 
 # Creating an agenda
@@ -15,5 +15,3 @@ Inceptions have a duration of one to several weeks to complete, depending on var
 - The number and professional quality of the personas that will be interacting with the system.
 
 The agenda need have only enough details to show the participants what's ahead. More often than not, the agenda and topics change based on team dynamics, so it's better to stay at a high level.
-
-Please refer to [example configurations](/configurations), and [an example of an agenda.](example-agenda) 

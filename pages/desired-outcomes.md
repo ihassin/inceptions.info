@@ -10,51 +10,48 @@ has_children: yes
 
 ## Setting up
 
-| [Agenda & Logistics](/creating-an-agenda.html) | [Stakeholder Mapping](/stakeholder-mapping.html) | [Sponsor Homework](/sponsor-homework) | [Hopes & Fears](/hopes-and-fears)
+[Stakeholder Mapping](/stakeholder-mapping.html) | [Agenda & Logistics](/creating-an-agenda.html) | [Sponsor Homework](/sponsor-homework.html) | [Hopes & Fears](/hopes-and-fears.html)
 
 ## Understanding product context
 
-| [Business context](/business-context) | [Logical Context](/logical-context) | [Objectives Definition](/objectives-definition)     
-| [OKRs](/okrs) | [Success Criteria KPIs](/kpis) | [Competitive Analysis](/competitive-analysis)
+[Objectives Definition](/objectives-definition.html) | [Competitive Analysis](/competitive-analysis.html) | [Business context](/business-context.html)     
+[Logical Context](/logical-context.html) | [OKRs](/okrs.html) | [KPIs](/kpis.html) | [Challenge Map](/challenge-map.html)
 
 ## Learning about the organization
  
-| [Organizational Context](/organizational-context) | [VSM](/vsm) | [Team Assessment](/team-assessment) | [Technology Review](/technology-review) 
+| [Organizational Context](/organizational-context.html) | [VSM](/vsm.html) | [Team Assessment](/team-assessment.html) | [Technology Review](/technology-review.html) 
 
 ## Defining the solution
 
-| [Elevator Pitch](/elevator-pitch) | [Product-in-a-box](/product-in-a-box) | [Future VSM](/future-vsm) 
-| [Personas](/personas) | [Empathy Maps](/empathy-maps) | [Roles & Goals](/roles-and-goals) | [Goals & Epics](/goals-and-epics)
-| [Epics and Features Mapping](/epics-and-features-mapping) | [User Journeys](/user-journeys) | [Impact Mapping](/impact-mapping) 
-| [Features](/features) | [Story Mapping](/story-mapping) | [Information Architecture](/information-architecture) | [Lo-Fi UX](/lo-fi-ux)
-| [Stakeholder Agreement](/stakeholder-agreement)
+| [Elevator Pitch](/elevator-pitch.html) | [Product-in-a-box](/product-in-a-box.html) | [Personas](/personas.html)  
+| [Goals & Epics](/goals-and-epics.html) | [Epics and Features](/epics-and-features.html) | [User Journeys](/user-journeys.html)
+| [Impact Mapping](/impact-mapping.html) | [Features](/features.html) | [Story Mapping](/story-mapping.html)
+| [Lo-Fi UX](/lo-fi-ux.html) | [Stakeholder Agreement](/stakeholder-agreement.html)
 
 ## Risk analysis
 
-| [Drivers & Constraints](/drivers-and-constraints) | [Futurespective](/Futurespective) | [Risk Mapping](/risk-mapping)
-| [Tech Risk](/tech-risk) | [Cost Of Delay](/cost-of-delay) | [Scope Risk](/scope-risk)
+| [Drivers & Constraints](/drivers-and-constraints.html) | [Futurespective](/futurespective.html) | [Risk Mapping](/risk-mapping.html)
+| [Cost Of Delay](/cost-of-delay.html) | [Scope Risk](/scope-risk.html)
  
 ## Engineering concerns
 
-| [Current Tech Challenges](/current-tech-challenges) | [Application Architecture](/application-architecture) | [Data Platform Architecture](/data-platform-architecture)
-| [Build vs. Buy](/build-vs-buy) | [Test Strategy](/test-strategy) | [Test-Data Strategy](/test-data-strategy) | [Technology selection](/technology-selection) | [Sequence Diagrams](/sequence-diagrams)
-| [CI & Deployment](/ci-and-deployment)| [Devops](/devops) [Tech Debt Reduction](/tech-debt)
+| [Current Tech Challenges](/current-tech-challenges.html) | [Application Architecture](/application-architecture.html) | [Data Platform Architecture](/data-platform-architecture.html)
+| [Architectural Diagrams](/architectural-diagrams.html) | [Build vs. Buy](/build-vs-buy.html) | [Test Strategy](/test-strategy.html) | [Test-Data Strategy](/test-data-strategy.html)
+| [Technology selection](/technology-selection) | [Sequence Diagrams](/sequence-diagrams.html)
+| [CI & Deployment](/ci-and-deployment.html)| [Tech Debt Reduction](/tech-debt.html)
 
 ## Product planning
 
-| [Priority Sliders](/priority-sliders) | [Product feedback approach](/product-feedback-approach) | [Development approach](/development-approach) | [Feature Prioritization](/feature-prioritization)
-| [Debt At Risk](/debt-at-risk) | [MVP Plan](/mvp) | [Sprint Zero Plan](/sprint-zero-plan) | [Sprint plan](/sprint-plan)
-| [WSJF](/wsjf) | [Estimation](/estimation) | [Release plan](/release-plan)
-| [Value Points](/value-points) | [Relative Sizing](/relative-sizing)
-
+| [Priority Sliders](/priority-sliders.html) | [Product feedback approach](/product-feedback-approach.html) | [Development approach](/development-approach.html) | [Feature Prioritization](/feature-prioritization.html)
+| [MVP Plan](/mvp-plan.html) | [Sprint Zero Plan](/sprint-zero-plan.html) | [Sprint plan](/sprint-plan.html)
+| [WSJF](/wsjf.html) | [Estimation](/estimation.html) | [Release plan](/release-plan.html)
+| [Relative Sizing](/relative-sizing.html) | [Governance](/governance.html)
 
 ## Management concerns
-| [RAIDs](/raids) | [Communication Plan](/communication-plan) | [Retrospective](/retrospective) | [Presentation](/presentation)
+
+| [RAIDs](/raids.html) | [Communication Plan](/communication-plan.html) | [Retrospective](/retrospective.html) | [Presentation](/presentation.html)
 
 ## Accompanying Presentations
 
-| [Features vs. Benefits](/features-vs-benefits) 
+| [Features vs. Benefits](/features-vs-benefits.html) 
 
-## Accompanying Games
-
-| [Lego Game](/lego-game) | [Estimation Game](/estimation-game) 

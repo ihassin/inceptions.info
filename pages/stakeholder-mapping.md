@@ -3,13 +3,14 @@ layout: page
 title: Stakeholder Mapping
 permalink: /stakeholder-mapping.html
 parent: Desired outcomes
+nav_order: 1
 ---
 
 # Stakeholder mapping
 
 Stakeholders are the interested parties in a product. They affect and influence the product, as well as those who will ultimately use it.
 
-## Utility
+## Outcome
 
 Documenting the stakeholders is essential in order to assess their importance in determining the product's character and value proposition.
 Knowing the stakeholders and their proxies also directs who, and to what measure, to keep up to date on the product's development needs and progress. 

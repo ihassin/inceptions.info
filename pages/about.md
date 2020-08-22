@@ -9,8 +9,31 @@ nav_order: 1
 # About this never-ending effort
 
 A source of information about rapid analysis and discovery sessions as a methodology for modern product development based on a consensus of goals, and practicing DevOps as a collaborative product-team, reducing feedback cycle-time to minimize unrealized value and debt at-risk.
-
 This handbook aggregates knowledge about this method by allowing wide-spread contributions as an open-source knowledge-base.
+
+# Introduction
+
+'Inception', 'Discovery', 'Rapid Analysis' - these are all concepts that describe an effort that strives to accelerate a holistic understanding of the reasoning, scope and development tactics to employ in product development.
+
+The sessions and their associated activities that 'Inceptions' are composed of serve two main purposes: Firstly, serving the development team in learning the context of the product, and secondly for the wider organization in learning how to support and pace its development.
+Underlying this, is the goal of reducing lead time from 'Concept to cash', to ensure low value at risk, and fast feedback to the organization from the marketplace.
+
+As the name implies, Inceptions are analysis sessions held at the beginning of development efforts.
+
+They comprise of a set of accelerated learning workshops, and result in:
+- A common understanding across the team (business and implementation participants alike) and a commitment to the goals and scope of the engagement.
+- A set of one or more deliverables, including a release plan, the epics, features and stories they contain, and a set of visual tools that describe the customer's journey as they use the product.
+- Communication and documentation plans for the product's stakeholders.
+- A shared understanding across the team (business and implementation participants alike) and commitment to the goals and scope of the engagement.
+- Crystallize the project's objectives.
+- Current and aspired Value Stream Mapping documents (VSM) that holistically describe the underlying processes by which a customer request is satisfied.
+- A set of one or more MVPs as the deliverables of the engagement, including a release plan, the epics, features and stories they contain and a set of visual tools that describe the customer's journey as they use the product.
+- Exploration of technical and operational boundaries.
+- Planning a product road map.
+- Developing relationships and form the cross-functional product delivery team.
+- Technical implementation architecture and development tools, including a CI/CD production pipeline
+- Staffing, budget and timeline requirements for the first MVP.
+- Communication and documentation plans for the product's stakeholders.
 
 # Version
 
