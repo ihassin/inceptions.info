@@ -2,7 +2,7 @@
 layout: page
 title: Desired outcomes
 nav_order: 3
-permalink: /desired-outcomes
+permalink: /desired-outcomes.html
 ---
 
 # Desired outcomes

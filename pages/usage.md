@@ -1,7 +1,7 @@
 ---
 layout: page
-title: How to use this guide
-permalink: /usage
+title: Usage
+permalink: /usage.html
 nav_order: 2
 ---
 

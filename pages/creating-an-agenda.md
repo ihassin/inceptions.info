@@ -2,7 +2,7 @@
 layout: page
 title: Creating an agenda
 nav_order: 4
-permalink: /creating-an-agenda
+permalink: /creating-an-agenda.html
 ---
 
 # Creating an agenda
