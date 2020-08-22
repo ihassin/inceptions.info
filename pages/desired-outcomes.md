@@ -9,7 +9,7 @@ permalink: /desired-outcomes.html
 
 ## Setting up
 
-| [Agenda & Logistics](/agenda) | [Stakeholder Mapping](/stakeholder-mapping) | [Sponsor Homework](/sponsor-homework) | [Hopes & Fears](/hopes-and-fears)
+| [Agenda & Logistics](/creating-an-agenda.html) | [Stakeholder Mapping](/stakeholder-mapping.html) | [Sponsor Homework](/sponsor-homework) | [Hopes & Fears](/hopes-and-fears)
 
 ## Understanding product context
 

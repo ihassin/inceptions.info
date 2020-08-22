@@ -3,6 +3,7 @@ layout: page
 title: Creating an agenda
 nav_order: 4
 permalink: /creating-an-agenda.html
+parent: Activities
 ---
 
 # Creating an agenda

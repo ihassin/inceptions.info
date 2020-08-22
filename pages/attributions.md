@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Attribution
-permalink: /attribution.html
+title: Attributions
+permalink: /attributions.html
 parent: About
 ---
 
