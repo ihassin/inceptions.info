@@ -3,6 +3,7 @@ layout: page
 title: Desired outcomes
 nav_order: 3
 permalink: /desired-outcomes.html
+has_children: yes
 ---
 
 # Desired outcomes

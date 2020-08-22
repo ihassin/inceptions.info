@@ -2,7 +2,7 @@
 layout: page
 title: Usage
 permalink: /usage.html
-nav_order: 2
+parent: About
 ---
 
 # How to use this guide

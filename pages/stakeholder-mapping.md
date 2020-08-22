@@ -2,7 +2,7 @@
 layout: page
 title: Stakeholder Mapping
 permalink: /stakeholder-mapping.html
-parent: Activities
+parent: Desired outcomes
 ---
 
 # Stakeholder mapping
