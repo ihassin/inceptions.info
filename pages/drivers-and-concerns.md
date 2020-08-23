@@ -7,7 +7,7 @@ permalink: /drivers-and-constraints
 
 # Drivers and Constraints
 
-## Utility
+## Outcome
 This is an activity that helps the participants be vocal about their current product development environment
 
 ## Audience
