@@ -1,12 +1,10 @@
-title: Inceptions Guide
-email: your-email@example.com
+title: Inceptions
+email: ihassin@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-#url: "http://inceptions.info.s3-website-us-east-1.amazonaws.com" # the base hostname & protocol for your site, e.g. http://example.com
-url: "https://inceptions.info" # the base hostname & protocol for your site, e.g. http://example.com
+  A source of information about rapid analysis and discovery sessions as a methodology for modern product development based on
+  a common understanding of shared goals and enabling devops as a collaborative product team reducing feedback cycle-time and unrealized value.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://www.inceptions.info" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: itababy
 github_username:  ihassin
 
@@ -54,3 +52,5 @@ search:
 exclude:
  - build.sh
  - deploy.sh
+ - spellcheck.sh
+ - Rakefile
