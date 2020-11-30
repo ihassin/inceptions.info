@@ -1,2 +1,2 @@
 #!/bin/zsh
-bundle exe jekyll build
+bundle exec jekyll build
