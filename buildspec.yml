@@ -1,0 +1,19 @@
+---
+version: 0.2
+phases:
+  install:
+    runtime_versions:
+#      ruby: 2.7
+    commands:
+      - gem install bundler
+  pre_build:
+    commands:
+      - bundle
+  build:
+    commands:
+      - bundle exec jekyll build
+#  post_build:
+artifacts:
+  base-directory: _site
+  files:
+    - '**/*'
