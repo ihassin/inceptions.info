@@ -9,7 +9,6 @@ phases:
   pre_build:
     commands:
       - bundle
-      - ./spellcheck.sh
   build:
     commands:
       - bundle exec jekyll build
