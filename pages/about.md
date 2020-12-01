@@ -6,7 +6,7 @@ has_children: yes
 nav_order: 1
 ---
 
-# About this endless Sisyphean effort
+# About this Sisyphean effort
 
 A source of information about rapid analysis and discovery sessions as a methodology for modern product development based on a consensus of goals, and practicing DevOps as a collaborative product-team, reducing feedback cycle-time to minimize unrealized value and debt at-risk.
 This handbook aggregates knowledge about this method by allowing wide-spread contributions as an open-source knowledge-base.
