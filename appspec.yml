@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: _site
     destination: /home/ubuntu/www-inceptions
 permissions:
   - object: /home/ubuntu/www-inceptions
