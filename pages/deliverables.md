@@ -12,7 +12,7 @@ has_children: yes
 
 The deliverables of an inception are usually:
 
-- Summary of all the [sessions](/activities)
+- Summary of all the [sessions](/desired-outcomes)
 - Business vision and objectives
 - Understanding of scope
 - UX Approach
