@@ -7,6 +7,8 @@ permalink: /application-architecture.html
 
 # Application Architecture
 
+This section describes the workshops we use to talk about architecture
+
 ## Outcome
 
 ## Audience

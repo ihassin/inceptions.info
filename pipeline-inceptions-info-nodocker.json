@@ -1,0 +1,74 @@
+{
+    "pipeline": {
+        "name": "pipeline-inceptions-info-nodocker",
+        "roleArn": "arn:aws:iam::616429850076:role/service-role/AWSCodePipelineServiceRole-us-east-1-pipeline-inceptions-info-n",
+        "artifactStore": {
+            "type": "S3",
+            "location": "codepipeline-us-east-1-765119093529"
+        },
+        "stages": [
+            {
+                "name": "Source",
+                "actions": [
+                    {
+                        "name": "Source",
+                        "actionTypeId": {
+                            "category": "Source",
+                            "owner": "AWS",
+                            "provider": "CodeCommit",
+                            "version": "1"
+                        },
+                        "runOrder": 1,
+                        "configuration": {
+                            "BranchName": "master",
+                            "OutputArtifactFormat": "CODE_ZIP",
+                            "PollForSourceChanges": "false",
+                            "RepositoryName": "inceptions.info"
+                        },
+                        "outputArtifacts": [
+                            {
+                                "name": "SourceArtifact"
+                            }
+                        ],
+                        "inputArtifacts": [],
+                        "region": "us-east-1",
+                        "namespace": "SourceVariables"
+                    }
+                ]
+            },
+            {
+                "name": "Deploy",
+                "actions": [
+                    {
+                        "name": "Deploy",
+                        "actionTypeId": {
+                            "category": "Deploy",
+                            "owner": "AWS",
+                            "provider": "CodeDeploy",
+                            "version": "1"
+                        },
+                        "runOrder": 1,
+                        "configuration": {
+                            "ApplicationName": "inceptions.info",
+                            "DeploymentGroupName": "inceptions.info"
+                        },
+                        "outputArtifacts": [],
+                        "inputArtifacts": [
+                            {
+                                "name": "SourceArtifact"
+                            }
+                        ],
+                        "region": "us-east-1",
+                        "namespace": "DeployVariables"
+                    }
+                ]
+            }
+        ],
+        "version": 2
+    },
+    "metadata": {
+        "pipelineArn": "arn:aws:codepipeline:us-east-1:616429850076:pipeline-inceptions-info-nodocker",
+        "created": "2020-12-04T13:34:41.516000-05:00",
+        "updated": "2020-12-04T13:36:04.984000-05:00"
+    }
+}

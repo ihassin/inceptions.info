@@ -1,0 +1,17 @@
+---
+version: 0.2
+phases:
+  install:
+    commands:
+      - gem install bundler
+  pre_build:
+    commands:
+      - bundle
+  build:
+    commands:
+      - bundle exec jekyll build
+artifacts:
+  files:
+    - '_site/**/*'
+    - appspec.yml
+    - 'deploy-scripts/**/*'

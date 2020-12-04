@@ -1,0 +1,18 @@
+version: 0.0
+os: linux
+files:
+  - source: _site/
+    destination: /home/ubuntu/www-inceptions
+permissions:
+  - object: /home/ubuntu/www-inceptions
+    pattern: '**'
+    mode: '0755'
+    owner: ubuntu
+    group: ubuntu
+    type:
+      - file
+      - directory
+hooks:
+  ApplicationStart:
+    - location: deploy-scripts/application-start-hook.sh
+      timeout: 300
