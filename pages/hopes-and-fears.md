@@ -6,7 +6,7 @@ parent: Desired outcomes
 nav_order: 3
 ---
 
-# Hopes And Fearss
+# Hopes And Fears
 
 ## Outcome
 
