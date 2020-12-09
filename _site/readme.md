@@ -35,7 +35,7 @@ As a contributor, deployment happens when you push to master, using [netlify](ht
 
 ## Connect
 
-Slack: inceptions.slack.com
+Slack: inceptions.slack.com (coming soon)
 
 ## Contributing
 
