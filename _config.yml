@@ -15,6 +15,7 @@ color_scheme: dark
 plugins:
   - jekyll-feed
 
+#enable search
 search_enabled: true
 
 search:
