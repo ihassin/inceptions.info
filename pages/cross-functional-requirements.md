@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cross-functional requirements
-parent: Deliverables
+parent: Desired outcomes
 permalink: cross-functional-requirements.html
 ---
 
