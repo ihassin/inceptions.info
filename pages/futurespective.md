@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Futurespective
-parent: Discussions
+parent: Desired outcomes
 permalink: /futurespective.html
 ---
 

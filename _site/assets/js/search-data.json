@@ -785,395 +785,395 @@
     "url": "https://www.inceptions.info/creating-an-agenda.html",
     "relUrl": "/creating-an-agenda.html"
   },"131": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "Cross-functional requirements",
     "content": " ",
-    "url": "https://www.inceptions.info/cross-functional-requirements.html",
-    "relUrl": "/cross-functional-requirements.html"
+    "url": "https://www.inceptions.info/cross-functional-requirements.html#cross-functional-requirements",
+    "relUrl": "/cross-functional-requirements.html#cross-functional-requirements"
   },"132": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "Outcome",
     "content": "This is an activity that helps the participants understand and plan for integration of cross-functional requirements (NFR’s) into stories and sprints. ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#outcome",
     "relUrl": "/cross-functional-requirements.html#outcome"
   },"133": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "Audience",
     "content": "Group-wide . ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#audience",
     "relUrl": "/cross-functional-requirements.html#audience"
   },"134": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "When to use",
     "content": "When discussing stories. ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#when-to-use",
     "relUrl": "/cross-functional-requirements.html#when-to-use"
   },"135": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "Activity",
     "content": "A facilitator describes what CFR’s are, and summarizes a list of those that are relevant to the product. The services are listed in a column, along with build/buy/open-source indicators with examples. A conversation ensues to decide which tools can be used. ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#activity",
     "relUrl": "/cross-functional-requirements.html#activity"
   },"136": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "Preparation",
     "content": "Whiteboard, large sticky notes, and dry-erase markers. ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#preparation",
     "relUrl": "/cross-functional-requirements.html#preparation"
   },"137": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "Process",
     "content": "This is a group-wide activity . The CFRs are listed and a discussion ensues to determine the relevance of each. | Why Should We Measure? | How Can We Measure? | Living Documentation | When should we measure? | . ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#process",
     "relUrl": "/cross-functional-requirements.html#process"
   },"138": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#group-size",
     "relUrl": "/cross-functional-requirements.html#group-size"
   },"139": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#timing",
     "relUrl": "/cross-functional-requirements.html#timing"
   },"140": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "Example",
     "content": "Some examples of CFRs are: . | Accessibility | Audit and Control | Availability | Backup | Capacity, Current and Forecast | Certification | Compatibility | Compliance | Configuration Management | Dependency on Other Parties | Deployment | Documentation | Specific and generic constraint description | . ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#example",
     "relUrl": "/cross-functional-requirements.html#example"
   },"141": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#related-activities",
     "relUrl": "/cross-functional-requirements.html#related-activities"
   },"142": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#notes",
     "relUrl": "/cross-functional-requirements.html#notes"
   },"143": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#more-information",
     "relUrl": "/cross-functional-requirements.html#more-information"
   },"144": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#group-size-1",
     "relUrl": "/cross-functional-requirements.html#group-size-1"
   },"145": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#timing-1",
     "relUrl": "/cross-functional-requirements.html#timing-1"
   },"146": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "Example",
     "content": "Some CFRs: . | Accessibility | Audit and Control | Availability | Backup | Capacity, Current and Forecast | Certification | Compatibility | Compliance | Configuration Management | Dependency on Other Parties | Deployment | Documentation | Responsiveness | . ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#example-1",
     "relUrl": "/cross-functional-requirements.html#example-1"
   },"147": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#related-activities-1",
     "relUrl": "/cross-functional-requirements.html#related-activities-1"
   },"148": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#notes-1",
     "relUrl": "/cross-functional-requirements.html#notes-1"
   },"149": {
-    "doc": "Cross-functional requirements",
+    "doc": "Cross-functional Requirements",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/cross-functional-requirements.html#more-information-1",
     "relUrl": "/cross-functional-requirements.html#more-information-1"
   },"150": {
+    "doc": "Cross-functional Requirements",
+    "title": "Cross-functional Requirements",
+    "content": " ",
+    "url": "https://www.inceptions.info/cross-functional-requirements.html",
+    "relUrl": "/cross-functional-requirements.html"
+  },"151": {
     "doc": "Current Tech Challenges",
     "title": "Current Technical Challenges",
     "content": " ",
     "url": "https://www.inceptions.info/current-tech-challenges.html#current-technical-challenges",
     "relUrl": "/current-tech-challenges.html#current-technical-challenges"
-  },"151": {
+  },"152": {
     "doc": "Current Tech Challenges",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/current-tech-challenges.html#outcome",
     "relUrl": "/current-tech-challenges.html#outcome"
-  },"152": {
+  },"153": {
     "doc": "Current Tech Challenges",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/current-tech-challenges.html#audience",
     "relUrl": "/current-tech-challenges.html#audience"
-  },"153": {
+  },"154": {
     "doc": "Current Tech Challenges",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/current-tech-challenges.html#when-to-use",
     "relUrl": "/current-tech-challenges.html#when-to-use"
-  },"154": {
+  },"155": {
     "doc": "Current Tech Challenges",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/current-tech-challenges.html#activity",
     "relUrl": "/current-tech-challenges.html#activity"
-  },"155": {
+  },"156": {
     "doc": "Current Tech Challenges",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/current-tech-challenges.html#preparation",
     "relUrl": "/current-tech-challenges.html#preparation"
-  },"156": {
+  },"157": {
     "doc": "Current Tech Challenges",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/current-tech-challenges.html#process",
     "relUrl": "/current-tech-challenges.html#process"
-  },"157": {
+  },"158": {
     "doc": "Current Tech Challenges",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/current-tech-challenges.html#group-size",
     "relUrl": "/current-tech-challenges.html#group-size"
-  },"158": {
+  },"159": {
     "doc": "Current Tech Challenges",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/current-tech-challenges.html#timing",
     "relUrl": "/current-tech-challenges.html#timing"
-  },"159": {
+  },"160": {
     "doc": "Current Tech Challenges",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/current-tech-challenges.html#example",
     "relUrl": "/current-tech-challenges.html#example"
-  },"160": {
+  },"161": {
     "doc": "Current Tech Challenges",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/current-tech-challenges.html#related-activities",
     "relUrl": "/current-tech-challenges.html#related-activities"
-  },"161": {
+  },"162": {
     "doc": "Current Tech Challenges",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/current-tech-challenges.html#notes",
     "relUrl": "/current-tech-challenges.html#notes"
-  },"162": {
+  },"163": {
     "doc": "Current Tech Challenges",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/current-tech-challenges.html#more-information",
     "relUrl": "/current-tech-challenges.html#more-information"
-  },"163": {
+  },"164": {
     "doc": "Current Tech Challenges",
     "title": "Current Tech Challenges",
     "content": " ",
     "url": "https://www.inceptions.info/current-tech-challenges.html",
     "relUrl": "/current-tech-challenges.html"
-  },"164": {
+  },"165": {
     "doc": "Data Platform Architecture",
     "title": "Data Platform Architecture",
     "content": " ",
     "url": "https://www.inceptions.info/data-platform-architecture.html",
     "relUrl": "/data-platform-architecture.html"
-  },"165": {
+  },"166": {
     "doc": "Data Platform Architecture",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/data-platform-architecture.html#outcome",
     "relUrl": "/data-platform-architecture.html#outcome"
-  },"166": {
+  },"167": {
     "doc": "Data Platform Architecture",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/data-platform-architecture.html#audience",
     "relUrl": "/data-platform-architecture.html#audience"
-  },"167": {
+  },"168": {
     "doc": "Data Platform Architecture",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/data-platform-architecture.html#when-to-use",
     "relUrl": "/data-platform-architecture.html#when-to-use"
-  },"168": {
+  },"169": {
     "doc": "Data Platform Architecture",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/data-platform-architecture.html#activity",
     "relUrl": "/data-platform-architecture.html#activity"
-  },"169": {
+  },"170": {
     "doc": "Data Platform Architecture",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/data-platform-architecture.html#preparation",
     "relUrl": "/data-platform-architecture.html#preparation"
-  },"170": {
+  },"171": {
     "doc": "Data Platform Architecture",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/data-platform-architecture.html#process",
     "relUrl": "/data-platform-architecture.html#process"
-  },"171": {
+  },"172": {
     "doc": "Data Platform Architecture",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/data-platform-architecture.html#group-size",
     "relUrl": "/data-platform-architecture.html#group-size"
-  },"172": {
+  },"173": {
     "doc": "Data Platform Architecture",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/data-platform-architecture.html#timing",
     "relUrl": "/data-platform-architecture.html#timing"
-  },"173": {
+  },"174": {
     "doc": "Data Platform Architecture",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/data-platform-architecture.html#example",
     "relUrl": "/data-platform-architecture.html#example"
-  },"174": {
+  },"175": {
     "doc": "Data Platform Architecture",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/data-platform-architecture.html#related-activities",
     "relUrl": "/data-platform-architecture.html#related-activities"
-  },"175": {
+  },"176": {
     "doc": "Data Platform Architecture",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/data-platform-architecture.html#notes",
     "relUrl": "/data-platform-architecture.html#notes"
-  },"176": {
+  },"177": {
     "doc": "Data Platform Architecture",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/data-platform-architecture.html#more-information",
     "relUrl": "/data-platform-architecture.html#more-information"
-  },"177": {
+  },"178": {
     "doc": "Debt at Risk",
     "title": "Debt At Risk",
     "content": "An excerpt from an article discussing debt-at-risk. ",
     "url": "https://www.inceptions.info/debt-at-risk.html#debt-at-risk",
     "relUrl": "/debt-at-risk.html#debt-at-risk"
-  },"178": {
+  },"179": {
     "doc": "Debt at Risk",
     "title": "Discussion",
     "content": ". | What are we measuring? | Why are we measuring it? | How are these measurements helping us get our product to our customers or improve our processes? | . ",
     "url": "https://www.inceptions.info/debt-at-risk.html#discussion",
     "relUrl": "/debt-at-risk.html#discussion"
-  },"179": {
+  },"180": {
     "doc": "Debt at Risk",
     "title": "Debt at Risk",
     "content": " ",
     "url": "https://www.inceptions.info/debt-at-risk.html",
     "relUrl": "/debt-at-risk.html"
-  },"180": {
+  },"181": {
     "doc": "Deliverables",
     "title": "Deliverables",
     "content": "The deliverables of an inception are usually presented in the form or a readout deck, accompanied by supporting documentation. ",
     "url": "https://www.inceptions.info/deliverables.html",
     "relUrl": "/deliverables.html"
-  },"181": {
+  },"182": {
     "doc": "Deliverables",
     "title": "Sections of a typical ‘readout’",
     "content": " ",
     "url": "https://www.inceptions.info/deliverables.html#sections-of-a-typical-readout",
     "relUrl": "/deliverables.html#sections-of-a-typical-readout"
-  },"182": {
+  },"183": {
     "doc": "Deliverables",
     "title": "General",
     "content": ". | Summary of all the sessions | Business vision and objectives | Documentation of scope | RAIDs | Compliance, financing and gating | Agile Product development and delivery methodology | . ",
     "url": "https://www.inceptions.info/deliverables.html#general",
     "relUrl": "/deliverables.html#general"
-  },"183": {
+  },"184": {
     "doc": "Deliverables",
     "title": "Business aspect",
     "content": ". | Epics and Features | User Journeys in the form of MVPs | UX Approach | Lo-fi sketches | . ",
     "url": "https://www.inceptions.info/deliverables.html#business-aspect",
     "relUrl": "/deliverables.html#business-aspect"
-  },"184": {
+  },"185": {
     "doc": "Deliverables",
     "title": "Technical aspects",
     "content": ". | Technical vision (architecture, environments, pipelines, sequence diagrams) | Testing Approach | . ",
     "url": "https://www.inceptions.info/deliverables.html#technical-aspects",
     "relUrl": "/deliverables.html#technical-aspects"
-  },"185": {
+  },"186": {
     "doc": "Deliverables",
     "title": "Delivery aspects",
     "content": ". | High-level release Plan | Prioritized and Estimated Initial Story list | Staffing and on-boarding | Sprint zero plan | . ",
     "url": "https://www.inceptions.info/deliverables.html#delivery-aspects",
     "relUrl": "/deliverables.html#delivery-aspects"
-  },"186": {
+  },"187": {
     "doc": "Desired outcomes",
     "title": "Desired outcomes",
     "content": " ",
     "url": "https://www.inceptions.info/desired-outcomes.html",
     "relUrl": "/desired-outcomes.html"
-  },"187": {
+  },"188": {
     "doc": "Desired outcomes",
     "title": "Setting up",
     "content": "| Stakeholder Mapping | Agenda &amp; Logistics | Sponsor Homework | Hopes &amp; Fears | . ",
     "url": "https://www.inceptions.info/desired-outcomes.html#setting-up",
     "relUrl": "/desired-outcomes.html#setting-up"
-  },"188": {
+  },"189": {
     "doc": "Desired outcomes",
     "title": "Understanding product context",
     "content": "| Objectives Definition | Competitive Analysis | Business context |   | . | Logical Context | OKRs | KPIs | Challenge Map | . ",
     "url": "https://www.inceptions.info/desired-outcomes.html#understanding-product-context",
     "relUrl": "/desired-outcomes.html#understanding-product-context"
-  },"189": {
+  },"190": {
     "doc": "Desired outcomes",
     "title": "Learning about the organization",
     "content": "| Organizational Context | VSM | Team Assessment | Technology Review | . ",
     "url": "https://www.inceptions.info/desired-outcomes.html#learning-about-the-organization",
     "relUrl": "/desired-outcomes.html#learning-about-the-organization"
-  },"190": {
+  },"191": {
     "doc": "Desired outcomes",
     "title": "Defining the solution",
     "content": "| Elevator Pitch | Product-in-a-box | Personas | . | Goals &amp; Epics | Epics and Features | User Journeys | . | Impact Mapping | Features | Story Mapping | . | Lo-Fi UX | Stakeholder Agreement | Cross-Functional Requirements | . ",
     "url": "https://www.inceptions.info/desired-outcomes.html#defining-the-solution",
     "relUrl": "/desired-outcomes.html#defining-the-solution"
-  },"191": {
+  },"192": {
     "doc": "Desired outcomes",
     "title": "Risk analysis",
     "content": "| Drivers &amp; Constraints | Futurespective | Risk Mapping | . | Cost Of Delay | Scope Risk |   | . ",
     "url": "https://www.inceptions.info/desired-outcomes.html#risk-analysis",
     "relUrl": "/desired-outcomes.html#risk-analysis"
-  },"192": {
-    "doc": "Desired outcomes",
-    "title": "Engineering concerns",
-    "content": "| Current Tech Challenges | Application Architecture | Data Platform Architecture |   | . | Architectural Diagrams | Build vs. Buy | Test Strategy | Test-Data Strategy | . | Technology selection | Sequence Diagrams |   |   | . | CI &amp; Deployment | Tech Debt Reduction |   |   | . ",
-    "url": "https://www.inceptions.info/desired-outcomes.html#engineering-concerns",
-    "relUrl": "/desired-outcomes.html#engineering-concerns"
   },"193": {
     "doc": "Desired outcomes",
-    "title": "Product planning",
-    "content": "| Priority Sliders | Product feedback approach | Development approach | Feature Prioritization | . | MVP Plan | Sprint Zero Plan | Sprint plan |   | . | WSJF | Estimation | Release plan |   | . | Relative Sizing | Governance |   |   | . ",
-    "url": "https://www.inceptions.info/desired-outcomes.html#product-planning",
-    "relUrl": "/desired-outcomes.html#product-planning"
+    "title": "Engineering concerns",
+    "content": "| Current Tech Challenges | Application Architecture | Data Platform Architecture |   | . | Architectural Diagrams | Build vs. Buy | Test Strategy | Test-Data Strategy | . | Technology review | Sequence Diagrams |   |   | . | CI &amp; Deployment | Tech Debt Reduction |   |   | . ",
+    "url": "https://www.inceptions.info/desired-outcomes.html#engineering-concerns",
+    "relUrl": "/desired-outcomes.html#engineering-concerns"
   },"194": {
     "doc": "Desired outcomes",
-    "title": "Management concerns",
-    "content": "| RAIDs | Communication Plan | Retrospective | Presentation | . ",
-    "url": "https://www.inceptions.info/desired-outcomes.html#management-concerns",
-    "relUrl": "/desired-outcomes.html#management-concerns"
+    "title": "Product planning",
+    "content": "| Priority Sliders | Product feedback approach | Development approach | Feature Prioritization |   | . | MVP Plan | Sprint Zero Plan | WSJF | Estimation | Release plan | . | Governance |   |   |   |   | . ",
+    "url": "https://www.inceptions.info/desired-outcomes.html#product-planning",
+    "relUrl": "/desired-outcomes.html#product-planning"
   },"195": {
     "doc": "Desired outcomes",
-    "title": "Accompanying Presentations",
-    "content": "| Features vs. Benefits | . ",
-    "url": "https://www.inceptions.info/desired-outcomes.html#accompanying-presentations",
-    "relUrl": "/desired-outcomes.html#accompanying-presentations"
+    "title": "Management concerns",
+    "content": "| RAIDs | Communication Plan | Retrospective | . ",
+    "url": "https://www.inceptions.info/desired-outcomes.html#management-concerns",
+    "relUrl": "/desired-outcomes.html#management-concerns"
   },"196": {
     "doc": "Development Approach",
     "title": "Development Approach",
@@ -1255,7 +1255,7 @@
   },"209": {
     "doc": "Discussions",
     "title": "Discussions",
-    "content": ". | Debt at risk | Estimations | Futurespective | . ",
+    "content": ". | Debt at risk | Estimations | Futurespective | Relative Sizing | Features vs. Benefits | . ",
     "url": "https://www.inceptions.info/discussions.html",
     "relUrl": "/discussions.html"
   },"210": {
@@ -1823,2334 +1823,2922 @@
     "url": "https://www.inceptions.info/feature-prioritization.html#more-information",
     "relUrl": "/feature-prioritization.html#more-information"
   },"304": {
+    "doc": "Features Vs. Benefits",
+    "title": "Features Vs. Benefits",
+    "content": " ",
+    "url": "https://www.inceptions.info/features-vs-benefits.html",
+    "relUrl": "/features-vs-benefits.html"
+  },"305": {
+    "doc": "Features Vs. Benefits",
+    "title": "Discussion",
+    "content": ". | What are we offering? | How does the offering help the customers? | . ",
+    "url": "https://www.inceptions.info/features-vs-benefits.html#discussion",
+    "relUrl": "/features-vs-benefits.html#discussion"
+  },"306": {
     "doc": "Features",
     "title": "Features",
     "content": " ",
     "url": "https://www.inceptions.info/features.html",
     "relUrl": "/features.html"
-  },"305": {
+  },"307": {
     "doc": "Features",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/features.html#outcome",
     "relUrl": "/features.html#outcome"
-  },"306": {
+  },"308": {
     "doc": "Features",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/features.html#audience",
     "relUrl": "/features.html#audience"
-  },"307": {
+  },"309": {
     "doc": "Features",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/features.html#when-to-use",
     "relUrl": "/features.html#when-to-use"
-  },"308": {
+  },"310": {
     "doc": "Features",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/features.html#activity",
     "relUrl": "/features.html#activity"
-  },"309": {
+  },"311": {
     "doc": "Features",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/features.html#preparation",
     "relUrl": "/features.html#preparation"
-  },"310": {
+  },"312": {
     "doc": "Features",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/features.html#process",
     "relUrl": "/features.html#process"
-  },"311": {
+  },"313": {
     "doc": "Features",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/features.html#group-size",
     "relUrl": "/features.html#group-size"
-  },"312": {
+  },"314": {
     "doc": "Features",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/features.html#timing",
     "relUrl": "/features.html#timing"
-  },"313": {
+  },"315": {
     "doc": "Features",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/features.html#example",
     "relUrl": "/features.html#example"
-  },"314": {
+  },"316": {
     "doc": "Features",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/features.html#related-activities",
     "relUrl": "/features.html#related-activities"
-  },"315": {
+  },"317": {
     "doc": "Features",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/features.html#notes",
     "relUrl": "/features.html#notes"
-  },"316": {
+  },"318": {
     "doc": "Features",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/features.html#more-information",
     "relUrl": "/features.html#more-information"
-  },"317": {
+  },"319": {
     "doc": "Futurespective",
     "title": "Futurespective",
     "content": " ",
     "url": "https://www.inceptions.info/futurespective.html",
     "relUrl": "/futurespective.html"
-  },"318": {
+  },"320": {
     "doc": "Futurespective",
     "title": "Outcome",
     "content": "This is an activity that helps the participants imagine the possible milestones and events that the product would go through as it was developed. ",
     "url": "https://www.inceptions.info/futurespective.html#outcome",
     "relUrl": "/futurespective.html#outcome"
-  },"319": {
+  },"321": {
     "doc": "Futurespective",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/futurespective.html#audience",
     "relUrl": "/futurespective.html#audience"
-  },"320": {
+  },"322": {
     "doc": "Futurespective",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/futurespective.html#when-to-use",
     "relUrl": "/futurespective.html#when-to-use"
-  },"321": {
+  },"323": {
     "doc": "Futurespective",
     "title": "Activity",
     "content": "Participants write the milestones and events as though it was a retrospective held after the launch of V3. ",
     "url": "https://www.inceptions.info/futurespective.html#activity",
     "relUrl": "/futurespective.html#activity"
-  },"322": {
+  },"324": {
     "doc": "Futurespective",
     "title": "Preparation",
     "content": "Whiteboard, sticky notes, sharpies for participants and dry-erase markers. ",
     "url": "https://www.inceptions.info/futurespective.html#preparation",
     "relUrl": "/futurespective.html#preparation"
-  },"323": {
+  },"325": {
     "doc": "Futurespective",
     "title": "Process",
     "content": "This is a group-wide activity Participants write the milestones and events as though it was a retrospective held after the launch of V3. The sticky notes are organized in groups and discussed. Keep the results posted visibly during the rest of the inception, as a reminder of what issues need to be addressed as we develop the product. ",
     "url": "https://www.inceptions.info/futurespective.html#process",
     "relUrl": "/futurespective.html#process"
-  },"324": {
+  },"326": {
     "doc": "Futurespective",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/futurespective.html#group-size",
     "relUrl": "/futurespective.html#group-size"
-  },"325": {
+  },"327": {
     "doc": "Futurespective",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/futurespective.html#timing",
     "relUrl": "/futurespective.html#timing"
-  },"326": {
+  },"328": {
     "doc": "Futurespective",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/futurespective.html#example",
     "relUrl": "/futurespective.html#example"
-  },"327": {
+  },"329": {
     "doc": "Futurespective",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/futurespective.html#related-activities",
     "relUrl": "/futurespective.html#related-activities"
-  },"328": {
+  },"330": {
     "doc": "Futurespective",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/futurespective.html#notes",
     "relUrl": "/futurespective.html#notes"
-  },"329": {
+  },"331": {
     "doc": "Futurespective",
     "title": "More information",
     "content": "https://www.mountaingoatsoftware.com/tools/project-success . ",
     "url": "https://www.inceptions.info/futurespective.html#more-information",
     "relUrl": "/futurespective.html#more-information"
-  },"330": {
+  },"332": {
     "doc": "Goals & Epics",
     "title": "Goals and Epics",
     "content": " ",
     "url": "https://www.inceptions.info/goals-and-epics.html#goals-and-epics",
     "relUrl": "/goals-and-epics.html#goals-and-epics"
-  },"331": {
+  },"333": {
     "doc": "Goals & Epics",
     "title": "Outcome",
     "content": "This is an activity that helps the participants understand and visualize the new path to production after local optimization. ",
     "url": "https://www.inceptions.info/goals-and-epics.html#outcome",
     "relUrl": "/goals-and-epics.html#outcome"
-  },"332": {
+  },"334": {
     "doc": "Goals & Epics",
     "title": "Audience",
     "content": "This is a group-wide activity . ",
     "url": "https://www.inceptions.info/goals-and-epics.html#audience",
     "relUrl": "/goals-and-epics.html#audience"
-  },"333": {
+  },"335": {
     "doc": "Goals & Epics",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/goals-and-epics.html#when-to-use",
     "relUrl": "/goals-and-epics.html#when-to-use"
-  },"334": {
+  },"336": {
     "doc": "Goals & Epics",
     "title": "Activity",
     "content": "A facilitator walks through the current state of the VSM and builds a future state VSM for the team to strive for as they build the new product. The services are listed in a column, along with build/buy/open-source indicators with examples. A conversation ensues to decide which tools can be used. ",
     "url": "https://www.inceptions.info/goals-and-epics.html#activity",
     "relUrl": "/goals-and-epics.html#activity"
-  },"335": {
+  },"337": {
     "doc": "Goals & Epics",
     "title": "Preparation",
     "content": "Whiteboard, large sticky notes, and dry-erase markers. ",
     "url": "https://www.inceptions.info/goals-and-epics.html#preparation",
     "relUrl": "/goals-and-epics.html#preparation"
-  },"336": {
+  },"338": {
     "doc": "Goals & Epics",
     "title": "Process",
     "content": "A facilitator draws the desired value stream while soliciting input from the participants based on the previous local optimizations. New epics are written as changes are made to the existing process. Keep the results posted visibly during the rest of the inception, as a reminder of the current and future states as we develop the product. ",
     "url": "https://www.inceptions.info/goals-and-epics.html#process",
     "relUrl": "/goals-and-epics.html#process"
-  },"337": {
+  },"339": {
     "doc": "Goals & Epics",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/goals-and-epics.html#group-size",
     "relUrl": "/goals-and-epics.html#group-size"
-  },"338": {
+  },"340": {
     "doc": "Goals & Epics",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/goals-and-epics.html#timing",
     "relUrl": "/goals-and-epics.html#timing"
-  },"339": {
+  },"341": {
     "doc": "Goals & Epics",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/goals-and-epics.html#example",
     "relUrl": "/goals-and-epics.html#example"
-  },"340": {
+  },"342": {
     "doc": "Goals & Epics",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/goals-and-epics.html#related-activities",
     "relUrl": "/goals-and-epics.html#related-activities"
-  },"341": {
+  },"343": {
     "doc": "Goals & Epics",
     "title": "Notes",
     "content": "Keep the results posted visibly during the rest of the inception, as a reminder of what issues need to be addressed as we develop the product. ",
     "url": "https://www.inceptions.info/goals-and-epics.html#notes",
     "relUrl": "/goals-and-epics.html#notes"
-  },"342": {
+  },"344": {
     "doc": "Goals & Epics",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/goals-and-epics.html#more-information",
     "relUrl": "/goals-and-epics.html#more-information"
-  },"343": {
+  },"345": {
     "doc": "Goals & Epics",
     "title": "Goals & Epics",
     "content": " ",
     "url": "https://www.inceptions.info/goals-and-epics.html",
     "relUrl": "/goals-and-epics.html"
-  },"344": {
+  },"346": {
     "doc": "Governance",
     "title": "Governance",
     "content": " ",
     "url": "https://www.inceptions.info/governance.html",
     "relUrl": "/governance.html"
-  },"345": {
+  },"347": {
     "doc": "Governance",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/governance.html#outcome",
     "relUrl": "/governance.html#outcome"
-  },"346": {
+  },"348": {
     "doc": "Governance",
     "title": "Audience",
     "content": "This is a group-wide activity . ",
     "url": "https://www.inceptions.info/governance.html#audience",
     "relUrl": "/governance.html#audience"
-  },"347": {
+  },"349": {
     "doc": "Governance",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/governance.html#when-to-use",
     "relUrl": "/governance.html#when-to-use"
-  },"348": {
+  },"350": {
     "doc": "Governance",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/governance.html#activity",
     "relUrl": "/governance.html#activity"
-  },"349": {
+  },"351": {
     "doc": "Governance",
     "title": "Preparation",
     "content": "Whiteboard, large sticky notes, and dry-erase markers. ",
     "url": "https://www.inceptions.info/governance.html#preparation",
     "relUrl": "/governance.html#preparation"
-  },"350": {
+  },"352": {
     "doc": "Governance",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/governance.html#process",
     "relUrl": "/governance.html#process"
-  },"351": {
+  },"353": {
     "doc": "Governance",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/governance.html#group-size",
     "relUrl": "/governance.html#group-size"
-  },"352": {
+  },"354": {
     "doc": "Governance",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/governance.html#timing",
     "relUrl": "/governance.html#timing"
-  },"353": {
+  },"355": {
     "doc": "Governance",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/governance.html#example",
     "relUrl": "/governance.html#example"
-  },"354": {
+  },"356": {
     "doc": "Governance",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/governance.html#related-activities",
     "relUrl": "/governance.html#related-activities"
-  },"355": {
+  },"357": {
     "doc": "Governance",
     "title": "Notes",
     "content": "Keep the results posted visibly during the rest of the inception, as a reminder of the way the system will accomplish its intended functionality. ",
     "url": "https://www.inceptions.info/governance.html#notes",
     "relUrl": "/governance.html#notes"
-  },"356": {
+  },"358": {
     "doc": "Governance",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/governance.html#more-information",
     "relUrl": "/governance.html#more-information"
-  },"357": {
+  },"359": {
     "doc": "Hopes and Fears",
     "title": "Hopes And Fears",
     "content": " ",
     "url": "https://www.inceptions.info/hopes-and-fears.html#hopes-and-fears",
     "relUrl": "/hopes-and-fears.html#hopes-and-fears"
-  },"358": {
+  },"360": {
     "doc": "Hopes and Fears",
     "title": "Outcome",
     "content": "This is an activity that helps the participants be vocal about their hopes and fears in the context of the development of the product. It also serves as an “ice-breaker” between the participants and the facilitator. ",
     "url": "https://www.inceptions.info/hopes-and-fears.html#outcome",
     "relUrl": "/hopes-and-fears.html#outcome"
-  },"359": {
+  },"361": {
     "doc": "Hopes and Fears",
     "title": "Audience",
     "content": "All those present for the inception. ",
     "url": "https://www.inceptions.info/hopes-and-fears.html#audience",
     "relUrl": "/hopes-and-fears.html#audience"
-  },"360": {
+  },"362": {
     "doc": "Hopes and Fears",
     "title": "When to use",
     "content": "Use this right after kickoff. ",
     "url": "https://www.inceptions.info/hopes-and-fears.html#when-to-use",
     "relUrl": "/hopes-and-fears.html#when-to-use"
-  },"361": {
+  },"363": {
     "doc": "Hopes and Fears",
     "title": "Activity",
     "content": "Participants write their hopes and fears in relation to the Inception process and its outcomes. ",
     "url": "https://www.inceptions.info/hopes-and-fears.html#activity",
     "relUrl": "/hopes-and-fears.html#activity"
-  },"362": {
+  },"364": {
     "doc": "Hopes and Fears",
     "title": "Preparation",
     "content": ". | Book a room large enough to hold all the participants. | Make sure each participant has a sharpie and sticky notes to write their hopes and fears on (one per note) | White board for the grouping of the results. | . ",
     "url": "https://www.inceptions.info/hopes-and-fears.html#preparation",
     "relUrl": "/hopes-and-fears.html#preparation"
-  },"363": {
+  },"365": {
     "doc": "Hopes and Fears",
     "title": "Process",
     "content": ". | Allow the participants time to write their hopes and fears on the sticky notes. The facilitator usually posts them on the whiteboard, in grouping per subject. | Discuss the issues briefly and leave the results visible in the Inception room. | . ",
     "url": "https://www.inceptions.info/hopes-and-fears.html#process",
     "relUrl": "/hopes-and-fears.html#process"
-  },"364": {
+  },"366": {
     "doc": "Hopes and Fears",
     "title": "Group size",
     "content": "Everyone, physically present. ",
     "url": "https://www.inceptions.info/hopes-and-fears.html#group-size",
     "relUrl": "/hopes-and-fears.html#group-size"
-  },"365": {
+  },"367": {
     "doc": "Hopes and Fears",
     "title": "Timing",
     "content": "Try to keep this to half an hour. ",
     "url": "https://www.inceptions.info/hopes-and-fears.html#timing",
     "relUrl": "/hopes-and-fears.html#timing"
-  },"366": {
+  },"368": {
     "doc": "Hopes and Fears",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/hopes-and-fears.html#example",
     "relUrl": "/hopes-and-fears.html#example"
-  },"367": {
+  },"369": {
     "doc": "Hopes and Fears",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/hopes-and-fears.html#related-activities",
     "relUrl": "/hopes-and-fears.html#related-activities"
-  },"368": {
+  },"370": {
     "doc": "Hopes and Fears",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/hopes-and-fears.html#notes",
     "relUrl": "/hopes-and-fears.html#notes"
-  },"369": {
+  },"371": {
     "doc": "Hopes and Fears",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/hopes-and-fears.html#more-information",
     "relUrl": "/hopes-and-fears.html#more-information"
-  },"370": {
+  },"372": {
     "doc": "Hopes and Fears",
     "title": "Hopes and Fears",
     "content": " ",
     "url": "https://www.inceptions.info/hopes-and-fears.html",
     "relUrl": "/hopes-and-fears.html"
-  },"371": {
+  },"373": {
     "doc": "Impact Mapping",
     "title": "Impact Mapping",
     "content": " ",
     "url": "https://www.inceptions.info/impact-mapping.html",
     "relUrl": "/impact-mapping.html"
-  },"372": {
+  },"374": {
     "doc": "Impact Mapping",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/impact-mapping.html#outcome",
     "relUrl": "/impact-mapping.html#outcome"
-  },"373": {
+  },"375": {
     "doc": "Impact Mapping",
     "title": "Audience",
     "content": "This is a group-wide activity . ",
     "url": "https://www.inceptions.info/impact-mapping.html#audience",
     "relUrl": "/impact-mapping.html#audience"
-  },"374": {
+  },"376": {
     "doc": "Impact Mapping",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/impact-mapping.html#when-to-use",
     "relUrl": "/impact-mapping.html#when-to-use"
-  },"375": {
+  },"377": {
     "doc": "Impact Mapping",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/impact-mapping.html#activity",
     "relUrl": "/impact-mapping.html#activity"
-  },"376": {
+  },"378": {
     "doc": "Impact Mapping",
     "title": "Preparation",
     "content": "Whiteboard, large sticky notes, and dry-erase markers. ",
     "url": "https://www.inceptions.info/impact-mapping.html#preparation",
     "relUrl": "/impact-mapping.html#preparation"
-  },"377": {
+  },"379": {
     "doc": "Impact Mapping",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/impact-mapping.html#process",
     "relUrl": "/impact-mapping.html#process"
-  },"378": {
+  },"380": {
     "doc": "Impact Mapping",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/impact-mapping.html#group-size",
     "relUrl": "/impact-mapping.html#group-size"
-  },"379": {
+  },"381": {
     "doc": "Impact Mapping",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/impact-mapping.html#timing",
     "relUrl": "/impact-mapping.html#timing"
-  },"380": {
+  },"382": {
     "doc": "Impact Mapping",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/impact-mapping.html#example",
     "relUrl": "/impact-mapping.html#example"
-  },"381": {
+  },"383": {
     "doc": "Impact Mapping",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/impact-mapping.html#related-activities",
     "relUrl": "/impact-mapping.html#related-activities"
-  },"382": {
+  },"384": {
     "doc": "Impact Mapping",
     "title": "Notes",
     "content": "Keep the results posted visibly during the rest of the inception, as a reminder of the way the system will accomplish its intended functionality. ",
     "url": "https://www.inceptions.info/impact-mapping.html#notes",
     "relUrl": "/impact-mapping.html#notes"
-  },"383": {
+  },"385": {
     "doc": "Impact Mapping",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/impact-mapping.html#more-information",
     "relUrl": "/impact-mapping.html#more-information"
-  },"384": {
+  },"386": {
     "doc": "KPIs",
     "title": "KPIs",
     "content": " ",
     "url": "https://www.inceptions.info/kpis.html",
     "relUrl": "/kpis.html"
-  },"385": {
+  },"387": {
     "doc": "KPIs",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/kpis.html#outcome",
     "relUrl": "/kpis.html#outcome"
-  },"386": {
+  },"388": {
     "doc": "KPIs",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/kpis.html#audience",
     "relUrl": "/kpis.html#audience"
-  },"387": {
+  },"389": {
     "doc": "KPIs",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/kpis.html#when-to-use",
     "relUrl": "/kpis.html#when-to-use"
-  },"388": {
+  },"390": {
     "doc": "KPIs",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/kpis.html#activity",
     "relUrl": "/kpis.html#activity"
-  },"389": {
+  },"391": {
     "doc": "KPIs",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/kpis.html#preparation",
     "relUrl": "/kpis.html#preparation"
-  },"390": {
+  },"392": {
     "doc": "KPIs",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/kpis.html#process",
     "relUrl": "/kpis.html#process"
-  },"391": {
+  },"393": {
     "doc": "KPIs",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/kpis.html#group-size",
     "relUrl": "/kpis.html#group-size"
-  },"392": {
+  },"394": {
     "doc": "KPIs",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/kpis.html#timing",
     "relUrl": "/kpis.html#timing"
-  },"393": {
+  },"395": {
     "doc": "KPIs",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/kpis.html#example",
     "relUrl": "/kpis.html#example"
-  },"394": {
+  },"396": {
     "doc": "KPIs",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/kpis.html#related-activities",
     "relUrl": "/kpis.html#related-activities"
-  },"395": {
+  },"397": {
     "doc": "KPIs",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/kpis.html#notes",
     "relUrl": "/kpis.html#notes"
-  },"396": {
+  },"398": {
     "doc": "KPIs",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/kpis.html#more-information",
     "relUrl": "/kpis.html#more-information"
-  },"397": {
+  },"399": {
     "doc": "Lego Game",
     "title": "The Lego game",
     "content": " ",
     "url": "https://www.inceptions.info/lego-game.html#the-lego-game",
     "relUrl": "/lego-game.html#the-lego-game"
-  },"398": {
+  },"400": {
     "doc": "Lego Game",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/lego-game.html#outcome",
     "relUrl": "/lego-game.html#outcome"
-  },"399": {
+  },"401": {
     "doc": "Lego Game",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/lego-game.html#audience",
     "relUrl": "/lego-game.html#audience"
-  },"400": {
+  },"402": {
     "doc": "Lego Game",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/lego-game.html#when-to-use",
     "relUrl": "/lego-game.html#when-to-use"
-  },"401": {
+  },"403": {
     "doc": "Lego Game",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/lego-game.html#activity",
     "relUrl": "/lego-game.html#activity"
-  },"402": {
+  },"404": {
     "doc": "Lego Game",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/lego-game.html#preparation",
     "relUrl": "/lego-game.html#preparation"
-  },"403": {
+  },"405": {
     "doc": "Lego Game",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/lego-game.html#process",
     "relUrl": "/lego-game.html#process"
-  },"404": {
+  },"406": {
     "doc": "Lego Game",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/lego-game.html#group-size",
     "relUrl": "/lego-game.html#group-size"
-  },"405": {
+  },"407": {
     "doc": "Lego Game",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/lego-game.html#timing",
     "relUrl": "/lego-game.html#timing"
-  },"406": {
+  },"408": {
     "doc": "Lego Game",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/lego-game.html#example",
     "relUrl": "/lego-game.html#example"
-  },"407": {
+  },"409": {
     "doc": "Lego Game",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/lego-game.html#related-activities",
     "relUrl": "/lego-game.html#related-activities"
-  },"408": {
+  },"410": {
     "doc": "Lego Game",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/lego-game.html#notes",
     "relUrl": "/lego-game.html#notes"
-  },"409": {
+  },"411": {
     "doc": "Lego Game",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/lego-game.html#more-information",
     "relUrl": "/lego-game.html#more-information"
-  },"410": {
+  },"412": {
     "doc": "Lego Game",
     "title": "Lego Game",
     "content": " ",
     "url": "https://www.inceptions.info/lego-game.html",
     "relUrl": "/lego-game.html"
-  },"411": {
+  },"413": {
     "doc": "Lo-Fi UX",
     "title": "Lo-Fi UX",
     "content": " ",
     "url": "https://www.inceptions.info/lo-fi-ux.html",
     "relUrl": "/lo-fi-ux.html"
-  },"412": {
+  },"414": {
     "doc": "Lo-Fi UX",
     "title": "Outcome",
     "content": "This is an activity that creates a low-fi representation of the UI for per user scenario. ",
     "url": "https://www.inceptions.info/lo-fi-ux.html#outcome",
     "relUrl": "/lo-fi-ux.html#outcome"
-  },"413": {
+  },"415": {
     "doc": "Lo-Fi UX",
     "title": "Audience",
     "content": "This is a group-wide activity . ",
     "url": "https://www.inceptions.info/lo-fi-ux.html#audience",
     "relUrl": "/lo-fi-ux.html#audience"
-  },"414": {
+  },"416": {
     "doc": "Lo-Fi UX",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/lo-fi-ux.html#when-to-use",
     "relUrl": "/lo-fi-ux.html#when-to-use"
-  },"415": {
+  },"417": {
     "doc": "Lo-Fi UX",
     "title": "Activity",
     "content": "The participants create a visual representation of the screens a user would go through to achieve their goal, for each user scenario identified in previous steps. ",
     "url": "https://www.inceptions.info/lo-fi-ux.html#activity",
     "relUrl": "/lo-fi-ux.html#activity"
-  },"416": {
+  },"418": {
     "doc": "Lo-Fi UX",
     "title": "Preparation",
     "content": "Whiteboard, large sticky notes, and dry-erase markers. ",
     "url": "https://www.inceptions.info/lo-fi-ux.html#preparation",
     "relUrl": "/lo-fi-ux.html#preparation"
-  },"417": {
+  },"419": {
     "doc": "Lo-Fi UX",
     "title": "Process",
     "content": "The group creates low-fi screens. ",
     "url": "https://www.inceptions.info/lo-fi-ux.html#process",
     "relUrl": "/lo-fi-ux.html#process"
-  },"418": {
+  },"420": {
     "doc": "Lo-Fi UX",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/lo-fi-ux.html#group-size",
     "relUrl": "/lo-fi-ux.html#group-size"
-  },"419": {
+  },"421": {
     "doc": "Lo-Fi UX",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/lo-fi-ux.html#timing",
     "relUrl": "/lo-fi-ux.html#timing"
-  },"420": {
+  },"422": {
     "doc": "Lo-Fi UX",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/lo-fi-ux.html#example",
     "relUrl": "/lo-fi-ux.html#example"
-  },"421": {
+  },"423": {
     "doc": "Lo-Fi UX",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/lo-fi-ux.html#related-activities",
     "relUrl": "/lo-fi-ux.html#related-activities"
-  },"422": {
+  },"424": {
     "doc": "Lo-Fi UX",
     "title": "Notes",
     "content": "Keep the results posted visibly during the rest of the inception, as a reminder of the way the system will accomplish its intended functionality. ",
     "url": "https://www.inceptions.info/lo-fi-ux.html#notes",
     "relUrl": "/lo-fi-ux.html#notes"
-  },"423": {
+  },"425": {
     "doc": "Lo-Fi UX",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/lo-fi-ux.html#more-information",
     "relUrl": "/lo-fi-ux.html#more-information"
-  },"424": {
+  },"426": {
     "doc": "Logical Context",
     "title": "Logical Context",
     "content": " ",
     "url": "https://www.inceptions.info/logical-context.html",
     "relUrl": "/logical-context.html"
-  },"425": {
+  },"427": {
     "doc": "Logical Context",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/logical-context.html#outcome",
     "relUrl": "/logical-context.html#outcome"
-  },"426": {
+  },"428": {
     "doc": "Logical Context",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/logical-context.html#audience",
     "relUrl": "/logical-context.html#audience"
-  },"427": {
+  },"429": {
     "doc": "Logical Context",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/logical-context.html#when-to-use",
     "relUrl": "/logical-context.html#when-to-use"
-  },"428": {
+  },"430": {
     "doc": "Logical Context",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/logical-context.html#activity",
     "relUrl": "/logical-context.html#activity"
-  },"429": {
+  },"431": {
     "doc": "Logical Context",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/logical-context.html#preparation",
     "relUrl": "/logical-context.html#preparation"
-  },"430": {
+  },"432": {
     "doc": "Logical Context",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/logical-context.html#process",
     "relUrl": "/logical-context.html#process"
-  },"431": {
+  },"433": {
     "doc": "Logical Context",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/logical-context.html#group-size",
     "relUrl": "/logical-context.html#group-size"
-  },"432": {
+  },"434": {
     "doc": "Logical Context",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/logical-context.html#timing",
     "relUrl": "/logical-context.html#timing"
-  },"433": {
+  },"435": {
     "doc": "Logical Context",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/logical-context.html#example",
     "relUrl": "/logical-context.html#example"
-  },"434": {
+  },"436": {
     "doc": "Logical Context",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/logical-context.html#related-activities",
     "relUrl": "/logical-context.html#related-activities"
-  },"435": {
+  },"437": {
     "doc": "Logical Context",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/logical-context.html#notes",
     "relUrl": "/logical-context.html#notes"
-  },"436": {
+  },"438": {
     "doc": "Logical Context",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/logical-context.html#more-information",
     "relUrl": "/logical-context.html#more-information"
-  },"437": {
+  },"439": {
     "doc": "MVP Plan",
     "title": "MVP Plan",
     "content": " ",
     "url": "https://www.inceptions.info/mvp-plan.html",
     "relUrl": "/mvp-plan.html"
-  },"438": {
+  },"440": {
     "doc": "MVP Plan",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/mvp-plan.html#outcome",
     "relUrl": "/mvp-plan.html#outcome"
-  },"439": {
+  },"441": {
     "doc": "MVP Plan",
     "title": "Audience",
     "content": "This is a group-wide activity . ",
     "url": "https://www.inceptions.info/mvp-plan.html#audience",
     "relUrl": "/mvp-plan.html#audience"
-  },"440": {
+  },"442": {
     "doc": "MVP Plan",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/mvp-plan.html#when-to-use",
     "relUrl": "/mvp-plan.html#when-to-use"
-  },"441": {
+  },"443": {
     "doc": "MVP Plan",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/mvp-plan.html#activity",
     "relUrl": "/mvp-plan.html#activity"
-  },"442": {
+  },"444": {
     "doc": "MVP Plan",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/mvp-plan.html#preparation",
     "relUrl": "/mvp-plan.html#preparation"
-  },"443": {
+  },"445": {
     "doc": "MVP Plan",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/mvp-plan.html#process",
     "relUrl": "/mvp-plan.html#process"
-  },"444": {
+  },"446": {
     "doc": "MVP Plan",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/mvp-plan.html#group-size",
     "relUrl": "/mvp-plan.html#group-size"
-  },"445": {
+  },"447": {
     "doc": "MVP Plan",
     "title": "Timing",
     "content": " ",
     "url": "https://www.inceptions.info/mvp-plan.html#timing",
     "relUrl": "/mvp-plan.html#timing"
-  },"446": {
+  },"448": {
     "doc": "MVP Plan",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/mvp-plan.html#example",
     "relUrl": "/mvp-plan.html#example"
-  },"447": {
+  },"449": {
     "doc": "MVP Plan",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/mvp-plan.html#related-activities",
     "relUrl": "/mvp-plan.html#related-activities"
-  },"448": {
+  },"450": {
     "doc": "MVP Plan",
     "title": "Notes",
     "content": "Keep the results posted visibly during the rest of the inception, as a reminder of the way the system will accomplish its intended functionality. ",
     "url": "https://www.inceptions.info/mvp-plan.html#notes",
     "relUrl": "/mvp-plan.html#notes"
-  },"449": {
+  },"451": {
     "doc": "MVP Plan",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/mvp-plan.html#more-information",
     "relUrl": "/mvp-plan.html#more-information"
-  },"450": {
+  },"452": {
     "doc": "Objectives definition",
     "title": "Objectives definition",
     "content": " ",
     "url": "https://www.inceptions.info/objectives-definition.html",
     "relUrl": "/objectives-definition.html"
-  },"451": {
+  },"453": {
     "doc": "Objectives definition",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/objectives-definition.html#outcome",
     "relUrl": "/objectives-definition.html#outcome"
-  },"452": {
+  },"454": {
     "doc": "Objectives definition",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/objectives-definition.html#audience",
     "relUrl": "/objectives-definition.html#audience"
-  },"453": {
+  },"455": {
     "doc": "Objectives definition",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/objectives-definition.html#when-to-use",
     "relUrl": "/objectives-definition.html#when-to-use"
-  },"454": {
+  },"456": {
     "doc": "Objectives definition",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/objectives-definition.html#activity",
     "relUrl": "/objectives-definition.html#activity"
-  },"455": {
+  },"457": {
     "doc": "Objectives definition",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/objectives-definition.html#preparation",
     "relUrl": "/objectives-definition.html#preparation"
-  },"456": {
+  },"458": {
     "doc": "Objectives definition",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/objectives-definition.html#process",
     "relUrl": "/objectives-definition.html#process"
-  },"457": {
+  },"459": {
     "doc": "Objectives definition",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/objectives-definition.html#group-size",
     "relUrl": "/objectives-definition.html#group-size"
-  },"458": {
+  },"460": {
     "doc": "Objectives definition",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/objectives-definition.html#timing",
     "relUrl": "/objectives-definition.html#timing"
-  },"459": {
+  },"461": {
     "doc": "Objectives definition",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/objectives-definition.html#example",
     "relUrl": "/objectives-definition.html#example"
-  },"460": {
+  },"462": {
     "doc": "Objectives definition",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/objectives-definition.html#related-activities",
     "relUrl": "/objectives-definition.html#related-activities"
-  },"461": {
+  },"463": {
     "doc": "Objectives definition",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/objectives-definition.html#notes",
     "relUrl": "/objectives-definition.html#notes"
-  },"462": {
+  },"464": {
     "doc": "Objectives definition",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/objectives-definition.html#more-information",
     "relUrl": "/objectives-definition.html#more-information"
-  },"463": {
+  },"465": {
     "doc": "OKRs",
     "title": "OKRs",
     "content": " ",
     "url": "https://www.inceptions.info/okrs.html",
     "relUrl": "/okrs.html"
-  },"464": {
+  },"466": {
     "doc": "OKRs",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/okrs.html#outcome",
     "relUrl": "/okrs.html#outcome"
-  },"465": {
+  },"467": {
     "doc": "OKRs",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/okrs.html#audience",
     "relUrl": "/okrs.html#audience"
-  },"466": {
+  },"468": {
     "doc": "OKRs",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/okrs.html#when-to-use",
     "relUrl": "/okrs.html#when-to-use"
-  },"467": {
+  },"469": {
     "doc": "OKRs",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/okrs.html#activity",
     "relUrl": "/okrs.html#activity"
-  },"468": {
+  },"470": {
     "doc": "OKRs",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/okrs.html#preparation",
     "relUrl": "/okrs.html#preparation"
-  },"469": {
+  },"471": {
     "doc": "OKRs",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/okrs.html#process",
     "relUrl": "/okrs.html#process"
-  },"470": {
+  },"472": {
     "doc": "OKRs",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/okrs.html#group-size",
     "relUrl": "/okrs.html#group-size"
-  },"471": {
+  },"473": {
     "doc": "OKRs",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/okrs.html#timing",
     "relUrl": "/okrs.html#timing"
-  },"472": {
+  },"474": {
     "doc": "OKRs",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/okrs.html#example",
     "relUrl": "/okrs.html#example"
-  },"473": {
+  },"475": {
     "doc": "OKRs",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/okrs.html#related-activities",
     "relUrl": "/okrs.html#related-activities"
-  },"474": {
+  },"476": {
     "doc": "OKRs",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/okrs.html#notes",
     "relUrl": "/okrs.html#notes"
-  },"475": {
+  },"477": {
     "doc": "OKRs",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/okrs.html#more-information",
     "relUrl": "/okrs.html#more-information"
-  },"476": {
+  },"478": {
     "doc": "Organizational context",
     "title": "Organizational context",
     "content": " ",
     "url": "https://www.inceptions.info/organizational-context.html",
     "relUrl": "/organizational-context.html"
-  },"477": {
+  },"479": {
     "doc": "Organizational context",
     "title": "Outcome",
     "content": "This is an activity that helps the participants understand the product’s organizational reach and involved stakeholders. ",
     "url": "https://www.inceptions.info/organizational-context.html#outcome",
     "relUrl": "/organizational-context.html#outcome"
-  },"478": {
+  },"480": {
     "doc": "Organizational context",
     "title": "Audience",
     "content": "This is a group-wide activity . ",
     "url": "https://www.inceptions.info/organizational-context.html#audience",
     "relUrl": "/organizational-context.html#audience"
-  },"479": {
+  },"481": {
     "doc": "Organizational context",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/organizational-context.html#when-to-use",
     "relUrl": "/organizational-context.html#when-to-use"
-  },"480": {
+  },"482": {
     "doc": "Organizational context",
     "title": "Activity",
     "content": "Participants map the product’s organizational needs and scope as a team-wide discussion. Meet your neighbors! . ",
     "url": "https://www.inceptions.info/organizational-context.html#activity",
     "relUrl": "/organizational-context.html#activity"
-  },"481": {
+  },"483": {
     "doc": "Organizational context",
     "title": "Preparation",
     "content": "Whiteboard, large sticky notes, and dry-erase markers. ",
     "url": "https://www.inceptions.info/organizational-context.html#preparation",
     "relUrl": "/organizational-context.html#preparation"
-  },"482": {
+  },"484": {
     "doc": "Organizational context",
     "title": "Process",
     "content": "Ask the participants to describe the organizations that are, or will be, involved in the development and release of the product. Discuss business entities, IT entities, and external entities. Learn about additional stakeholders that need to be taken in to account as a result of the findings. Copy the map to a large sheet and keep posted in the room to remind people of the product’s span across the company. ",
     "url": "https://www.inceptions.info/organizational-context.html#process",
     "relUrl": "/organizational-context.html#process"
-  },"483": {
+  },"485": {
     "doc": "Organizational context",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/organizational-context.html#group-size",
     "relUrl": "/organizational-context.html#group-size"
-  },"484": {
+  },"486": {
     "doc": "Organizational context",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/organizational-context.html#timing",
     "relUrl": "/organizational-context.html#timing"
-  },"485": {
+  },"487": {
     "doc": "Organizational context",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/organizational-context.html#example",
     "relUrl": "/organizational-context.html#example"
-  },"486": {
+  },"488": {
     "doc": "Organizational context",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/organizational-context.html#related-activities",
     "relUrl": "/organizational-context.html#related-activities"
-  },"487": {
+  },"489": {
     "doc": "Organizational context",
     "title": "Notes",
     "content": "Keep the results posted visibly during the rest of the inception, as a reminder of the way the system will accomplish its intended functionality. ",
     "url": "https://www.inceptions.info/organizational-context.html#notes",
     "relUrl": "/organizational-context.html#notes"
-  },"488": {
+  },"490": {
     "doc": "Organizational context",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/organizational-context.html#more-information",
     "relUrl": "/organizational-context.html#more-information"
-  },"489": {
+  },"491": {
     "doc": "Participants",
     "title": "Participants",
     "content": "The participants (and their level of participation) directly affects the success of the inception. It is imperative to include all participating roles in deploying a product to the market. People included in later stages may pose pertinent questions, or raise issues that could have been discussed and resolved with everyone present. The more aspects of the product you have, the more early consensus you will have. Unfortunately, the larger the group, the harder it is to book everyone becomes. This leads to a trade-off of the number of people, sessions and timeline, based on the situation. ",
     "url": "https://www.inceptions.info/participants.html",
     "relUrl": "/participants.html"
-  },"490": {
+  },"492": {
     "doc": "Participants",
     "title": "Participating roles",
     "content": ". | Architects | Business Analysts | Compliance | Customer Support | Data Architects | Database Administrators | Design / UX | Deployment | Development Engineers | Infrastructure | Legal | Marketing | Operations | Product Owners | Product Sponsor | PMO, Project Managers, and Governance | Scrum Masters | Security | SMEs | Test/QA | . The invitee list should be the result of a collaboration between your team and its sponsor. Additional input will come from the stakeholder map. The sponsor will naturally invite all those who they want to lead in the engagement’s efforts. They will most likely not invite those with whom they have strained relationships or pose a political problem. It’s your duty to solve this challenge by identifying those people, roles, functions and making sure that they are well informed about the exercise, and invite them to breakout sessions, in the least. Yet here be dragons. It’s vital that everyone associated with the organizations and systems interfacing with the project be present at some stage during the inception. ",
     "url": "https://www.inceptions.info/participants.html#participating-roles",
     "relUrl": "/participants.html#participating-roles"
-  },"491": {
+  },"493": {
     "doc": "Personas",
     "title": "Personas",
     "content": " ",
     "url": "https://www.inceptions.info/personas.html",
     "relUrl": "/personas.html"
-  },"492": {
+  },"494": {
     "doc": "Personas",
     "title": "Outcome",
     "content": "This is an activity that helps the participants understand and visualize the product’s users (roles) and their characteristics. ",
     "url": "https://www.inceptions.info/personas.html#outcome",
     "relUrl": "/personas.html#outcome"
-  },"493": {
+  },"495": {
     "doc": "Personas",
     "title": "Audience",
     "content": "This is a group-wide activity . ",
     "url": "https://www.inceptions.info/personas.html#audience",
     "relUrl": "/personas.html#audience"
-  },"494": {
+  },"496": {
     "doc": "Personas",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/personas.html#when-to-use",
     "relUrl": "/personas.html#when-to-use"
-  },"495": {
+  },"497": {
     "doc": "Personas",
     "title": "Activity",
     "content": "The participants create and classify each role and depict them as humans interacting with the system. ",
     "url": "https://www.inceptions.info/personas.html#activity",
     "relUrl": "/personas.html#activity"
-  },"496": {
+  },"498": {
     "doc": "Personas",
     "title": "Preparation",
     "content": "Whiteboard, large sticky notes, and dry-erase markers. ",
     "url": "https://www.inceptions.info/personas.html#preparation",
     "relUrl": "/personas.html#preparation"
-  },"497": {
+  },"499": {
     "doc": "Personas",
     "title": "Process",
     "content": "The group identifies and characterizes who the users are, how they might be using the system differently and their individual needs. ",
     "url": "https://www.inceptions.info/personas.html#process",
     "relUrl": "/personas.html#process"
-  },"498": {
+  },"500": {
     "doc": "Personas",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/personas.html#group-size",
     "relUrl": "/personas.html#group-size"
-  },"499": {
+  },"501": {
     "doc": "Personas",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/personas.html#timing",
     "relUrl": "/personas.html#timing"
-  },"500": {
+  },"502": {
     "doc": "Personas",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/personas.html#example",
     "relUrl": "/personas.html#example"
-  },"501": {
+  },"503": {
     "doc": "Personas",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/personas.html#related-activities",
     "relUrl": "/personas.html#related-activities"
-  },"502": {
+  },"504": {
     "doc": "Personas",
     "title": "Notes",
     "content": "Discuss: . | Biographic | Demographic | Psycho graphic | Techno graphic | Relationship to the business | Knowledge and experience | Context of usage | Goals, needs, desires, attitudes, motivation | . Keep the results posted visibly during the rest of the inception, as a reminder of the way the users will interact with the system. ",
     "url": "https://www.inceptions.info/personas.html#notes",
     "relUrl": "/personas.html#notes"
-  },"503": {
+  },"505": {
     "doc": "Personas",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/personas.html#more-information",
     "relUrl": "/personas.html#more-information"
-  },"504": {
+  },"506": {
     "doc": "Priority Sliders",
     "title": "Priority Sliders",
     "content": " ",
     "url": "https://www.inceptions.info/priority-sliders.html",
     "relUrl": "/priority-sliders.html"
-  },"505": {
+  },"507": {
     "doc": "Priority Sliders",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/priority-sliders.html#outcome",
     "relUrl": "/priority-sliders.html#outcome"
-  },"506": {
+  },"508": {
     "doc": "Priority Sliders",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/priority-sliders.html#audience",
     "relUrl": "/priority-sliders.html#audience"
-  },"507": {
+  },"509": {
     "doc": "Priority Sliders",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/priority-sliders.html#when-to-use",
     "relUrl": "/priority-sliders.html#when-to-use"
-  },"508": {
+  },"510": {
     "doc": "Priority Sliders",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/priority-sliders.html#activity",
     "relUrl": "/priority-sliders.html#activity"
-  },"509": {
+  },"511": {
     "doc": "Priority Sliders",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/priority-sliders.html#preparation",
     "relUrl": "/priority-sliders.html#preparation"
-  },"510": {
+  },"512": {
     "doc": "Priority Sliders",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/priority-sliders.html#process",
     "relUrl": "/priority-sliders.html#process"
-  },"511": {
+  },"513": {
     "doc": "Priority Sliders",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/priority-sliders.html#group-size",
     "relUrl": "/priority-sliders.html#group-size"
-  },"512": {
+  },"514": {
     "doc": "Priority Sliders",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/priority-sliders.html#timing",
     "relUrl": "/priority-sliders.html#timing"
-  },"513": {
+  },"515": {
     "doc": "Priority Sliders",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/priority-sliders.html#example",
     "relUrl": "/priority-sliders.html#example"
-  },"514": {
+  },"516": {
     "doc": "Priority Sliders",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/priority-sliders.html#related-activities",
     "relUrl": "/priority-sliders.html#related-activities"
-  },"515": {
+  },"517": {
     "doc": "Priority Sliders",
     "title": "Notes",
     "content": "Keep the results posted visibly during the rest of the inception, as a reminder of the way the users will interact with the system. ",
     "url": "https://www.inceptions.info/priority-sliders.html#notes",
     "relUrl": "/priority-sliders.html#notes"
-  },"516": {
+  },"518": {
     "doc": "Priority Sliders",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/priority-sliders.html#more-information",
     "relUrl": "/priority-sliders.html#more-information"
-  },"517": {
+  },"519": {
+    "doc": "Product Feedback Approach",
+    "title": "Product Feedback Approach",
+    "content": " ",
+    "url": "https://www.inceptions.info/product-feedback-approach.html",
+    "relUrl": "/product-feedback-approach.html"
+  },"520": {
+    "doc": "Product Feedback Approach",
+    "title": "Outcome",
+    "content": " ",
+    "url": "https://www.inceptions.info/product-feedback-approach.html#outcome",
+    "relUrl": "/product-feedback-approach.html#outcome"
+  },"521": {
+    "doc": "Product Feedback Approach",
+    "title": "Audience",
+    "content": " ",
+    "url": "https://www.inceptions.info/product-feedback-approach.html#audience",
+    "relUrl": "/product-feedback-approach.html#audience"
+  },"522": {
+    "doc": "Product Feedback Approach",
+    "title": "When to use",
+    "content": " ",
+    "url": "https://www.inceptions.info/product-feedback-approach.html#when-to-use",
+    "relUrl": "/product-feedback-approach.html#when-to-use"
+  },"523": {
+    "doc": "Product Feedback Approach",
+    "title": "Activity",
+    "content": " ",
+    "url": "https://www.inceptions.info/product-feedback-approach.html#activity",
+    "relUrl": "/product-feedback-approach.html#activity"
+  },"524": {
+    "doc": "Product Feedback Approach",
+    "title": "Preparation",
+    "content": " ",
+    "url": "https://www.inceptions.info/product-feedback-approach.html#preparation",
+    "relUrl": "/product-feedback-approach.html#preparation"
+  },"525": {
+    "doc": "Product Feedback Approach",
+    "title": "Process",
+    "content": " ",
+    "url": "https://www.inceptions.info/product-feedback-approach.html#process",
+    "relUrl": "/product-feedback-approach.html#process"
+  },"526": {
+    "doc": "Product Feedback Approach",
+    "title": "Group size",
+    "content": " ",
+    "url": "https://www.inceptions.info/product-feedback-approach.html#group-size",
+    "relUrl": "/product-feedback-approach.html#group-size"
+  },"527": {
+    "doc": "Product Feedback Approach",
+    "title": "Timing",
+    "content": "Try to keep this exercise less than an hour. ",
+    "url": "https://www.inceptions.info/product-feedback-approach.html#timing",
+    "relUrl": "/product-feedback-approach.html#timing"
+  },"528": {
+    "doc": "Product Feedback Approach",
+    "title": "Example",
+    "content": " ",
+    "url": "https://www.inceptions.info/product-feedback-approach.html#example",
+    "relUrl": "/product-feedback-approach.html#example"
+  },"529": {
+    "doc": "Product Feedback Approach",
+    "title": "Related activities",
+    "content": " ",
+    "url": "https://www.inceptions.info/product-feedback-approach.html#related-activities",
+    "relUrl": "/product-feedback-approach.html#related-activities"
+  },"530": {
+    "doc": "Product Feedback Approach",
+    "title": "Notes",
+    "content": " ",
+    "url": "https://www.inceptions.info/product-feedback-approach.html#notes",
+    "relUrl": "/product-feedback-approach.html#notes"
+  },"531": {
+    "doc": "Product Feedback Approach",
+    "title": "More information",
+    "content": " ",
+    "url": "https://www.inceptions.info/product-feedback-approach.html#more-information",
+    "relUrl": "/product-feedback-approach.html#more-information"
+  },"532": {
     "doc": "Product in a box",
     "title": "Product In A Box",
     "content": " ",
     "url": "https://www.inceptions.info/product-in-a-box.html#product-in-a-box",
     "relUrl": "/product-in-a-box.html#product-in-a-box"
-  },"518": {
+  },"533": {
     "doc": "Product in a box",
     "title": "Outcome",
     "content": "This is an activity that helps the participants understand the product’s vision. ",
     "url": "https://www.inceptions.info/product-in-a-box.html#outcome",
     "relUrl": "/product-in-a-box.html#outcome"
-  },"519": {
+  },"534": {
     "doc": "Product in a box",
     "title": "Audience",
     "content": "All stakeholders, and all members of the product development team. ",
     "url": "https://www.inceptions.info/product-in-a-box.html#audience",
     "relUrl": "/product-in-a-box.html#audience"
-  },"520": {
+  },"535": {
     "doc": "Product in a box",
     "title": "When to use",
     "content": "This activity is central to gaining a common understanding of the goals of the product, and even more so if there are multiple stakeholders. ",
     "url": "https://www.inceptions.info/product-in-a-box.html#when-to-use",
     "relUrl": "/product-in-a-box.html#when-to-use"
-  },"521": {
+  },"536": {
     "doc": "Product in a box",
     "title": "Activity",
     "content": "Participants attempt to distill the product’s main features and selling points as if it were a physical product on a store’s shelf. ",
     "url": "https://www.inceptions.info/product-in-a-box.html#activity",
     "relUrl": "/product-in-a-box.html#activity"
-  },"522": {
+  },"537": {
     "doc": "Product in a box",
     "title": "Preparation",
     "content": ". | Fun version: Enough stationary supplies for each group to be able to construct a physical box that represents the product being studied. Colors, scissors, tape, and material for construction. | Express version: Sharpies and paper to write the product’s description. | Tables and seats for the groups. | . ",
     "url": "https://www.inceptions.info/product-in-a-box.html#preparation",
     "relUrl": "/product-in-a-box.html#preparation"
-  },"523": {
+  },"538": {
     "doc": "Product in a box",
     "title": "Process",
     "content": ". | Organize the participants in equally-sized groups, trying to have cross-functional representation in each, avoiding being organized by silo.Ask the participants to imagine that the product will be sold in a box. | Ask them to design the box so that it best describes the product, conveys it’s attributes and appeal to buyers. | After the allotted time, each group presents their box to the rest of the participants. | After all versions have been presented, the consensus should be summarized and documented as the leading option for the product’s description. This helps set the context of the upcoming development efforts. In addition, document the rejected content, to help set scope. | Keep the “winning” box in the room for the rest of the inception, as a reminder of what the team agreed to build. | . ",
     "url": "https://www.inceptions.info/product-in-a-box.html#process",
     "relUrl": "/product-in-a-box.html#process"
-  },"524": {
+  },"539": {
     "doc": "Product in a box",
     "title": "Group size",
     "content": "4-5 people per product box table. ",
     "url": "https://www.inceptions.info/product-in-a-box.html#group-size",
     "relUrl": "/product-in-a-box.html#group-size"
-  },"525": {
+  },"540": {
     "doc": "Product in a box",
     "title": "Timing",
     "content": ". | 5 minutes introduction | 5 minutes for setup and team selection | 20 minutes for producing the boxes | 5 minutes per group for presenting their product | 10 minutes for voting | 5 minutes for posting the selected product in the war room | . Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/product-in-a-box.html#timing",
     "relUrl": "/product-in-a-box.html#timing"
-  },"526": {
+  },"541": {
     "doc": "Product in a box",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/product-in-a-box.html#example",
     "relUrl": "/product-in-a-box.html#example"
-  },"527": {
+  },"542": {
     "doc": "Product in a box",
     "title": "Related activities",
     "content": ". | Elevator pitch | . ",
     "url": "https://www.inceptions.info/product-in-a-box.html#related-activities",
     "relUrl": "/product-in-a-box.html#related-activities"
-  },"528": {
+  },"543": {
     "doc": "Product in a box",
     "title": "Notes",
     "content": ". | Be aware that this exercise is presenting a solution, i.e. the product box represents a vision for the product, and subsequent development will follow its guidelines. Make sure not to do this exercise too early in the inception, and be sure to learn more about the reasons for needing a product before soliciting product attributes. | In a highly silo-ed organization, you may pick teams based on their organizational affiliation or specifically cross-organizational. This is to make the point that cross-silo-ed teams produce a ‘rounded’ product rather than a biased product coming from silo-ed teams, for educational purposes. | . ",
     "url": "https://www.inceptions.info/product-in-a-box.html#notes",
     "relUrl": "/product-in-a-box.html#notes"
-  },"529": {
+  },"544": {
     "doc": "Product in a box",
     "title": "More information",
     "content": "InnovationGames product-box . ",
     "url": "https://www.inceptions.info/product-in-a-box.html#more-information",
     "relUrl": "/product-in-a-box.html#more-information"
-  },"530": {
+  },"545": {
     "doc": "Product in a box",
     "title": "Product in a box",
     "content": " ",
     "url": "https://www.inceptions.info/product-in-a-box.html",
     "relUrl": "/product-in-a-box.html"
-  },"531": {
+  },"546": {
+    "doc": "RAIDs",
+    "title": "RAIDS",
+    "content": " ",
+    "url": "https://www.inceptions.info/raids.html#raids",
+    "relUrl": "/raids.html#raids"
+  },"547": {
+    "doc": "RAIDs",
+    "title": "Outcome",
+    "content": " ",
+    "url": "https://www.inceptions.info/raids.html#outcome",
+    "relUrl": "/raids.html#outcome"
+  },"548": {
+    "doc": "RAIDs",
+    "title": "Audience",
+    "content": "This is a group-wide activity . ",
+    "url": "https://www.inceptions.info/raids.html#audience",
+    "relUrl": "/raids.html#audience"
+  },"549": {
+    "doc": "RAIDs",
+    "title": "When to use",
+    "content": " ",
+    "url": "https://www.inceptions.info/raids.html#when-to-use",
+    "relUrl": "/raids.html#when-to-use"
+  },"550": {
+    "doc": "RAIDs",
+    "title": "Activity",
+    "content": " ",
+    "url": "https://www.inceptions.info/raids.html#activity",
+    "relUrl": "/raids.html#activity"
+  },"551": {
+    "doc": "RAIDs",
+    "title": "Preparation",
+    "content": " ",
+    "url": "https://www.inceptions.info/raids.html#preparation",
+    "relUrl": "/raids.html#preparation"
+  },"552": {
+    "doc": "RAIDs",
+    "title": "Process",
+    "content": " ",
+    "url": "https://www.inceptions.info/raids.html#process",
+    "relUrl": "/raids.html#process"
+  },"553": {
+    "doc": "RAIDs",
+    "title": "Group size",
+    "content": " ",
+    "url": "https://www.inceptions.info/raids.html#group-size",
+    "relUrl": "/raids.html#group-size"
+  },"554": {
+    "doc": "RAIDs",
+    "title": "Timing",
+    "content": "Try to keep this exercise less than an hour. ",
+    "url": "https://www.inceptions.info/raids.html#timing",
+    "relUrl": "/raids.html#timing"
+  },"555": {
+    "doc": "RAIDs",
+    "title": "Example",
+    "content": " ",
+    "url": "https://www.inceptions.info/raids.html#example",
+    "relUrl": "/raids.html#example"
+  },"556": {
+    "doc": "RAIDs",
+    "title": "Related activities",
+    "content": " ",
+    "url": "https://www.inceptions.info/raids.html#related-activities",
+    "relUrl": "/raids.html#related-activities"
+  },"557": {
+    "doc": "RAIDs",
+    "title": "Notes",
+    "content": " ",
+    "url": "https://www.inceptions.info/raids.html#notes",
+    "relUrl": "/raids.html#notes"
+  },"558": {
+    "doc": "RAIDs",
+    "title": "More information",
+    "content": " ",
+    "url": "https://www.inceptions.info/raids.html#more-information",
+    "relUrl": "/raids.html#more-information"
+  },"559": {
+    "doc": "RAIDs",
+    "title": "RAIDs",
+    "content": " ",
+    "url": "https://www.inceptions.info/raids.html",
+    "relUrl": "/raids.html"
+  },"560": {
+    "doc": "Relative Sizing",
+    "title": "Relative Sizing",
+    "content": " ",
+    "url": "https://www.inceptions.info/relative-sizing.html",
+    "relUrl": "/relative-sizing.html"
+  },"561": {
+    "doc": "Relative Sizing",
+    "title": "Discussion",
+    "content": ". | What are we measuring? | Why are we measuring it? | How are these measurements helping us get our product to our customers or improve our processes? | . ",
+    "url": "https://www.inceptions.info/relative-sizing.html#discussion",
+    "relUrl": "/relative-sizing.html#discussion"
+  },"562": {
+    "doc": "Release Plan",
+    "title": "Release Plan",
+    "content": " ",
+    "url": "https://www.inceptions.info/release-plan.html",
+    "relUrl": "/release-plan.html"
+  },"563": {
+    "doc": "Release Plan",
+    "title": "Outcome",
+    "content": " ",
+    "url": "https://www.inceptions.info/release-plan.html#outcome",
+    "relUrl": "/release-plan.html#outcome"
+  },"564": {
+    "doc": "Release Plan",
+    "title": "Audience",
+    "content": "This is a group-wide activity . ",
+    "url": "https://www.inceptions.info/release-plan.html#audience",
+    "relUrl": "/release-plan.html#audience"
+  },"565": {
+    "doc": "Release Plan",
+    "title": "When to use",
+    "content": " ",
+    "url": "https://www.inceptions.info/release-plan.html#when-to-use",
+    "relUrl": "/release-plan.html#when-to-use"
+  },"566": {
+    "doc": "Release Plan",
+    "title": "Activity",
+    "content": " ",
+    "url": "https://www.inceptions.info/release-plan.html#activity",
+    "relUrl": "/release-plan.html#activity"
+  },"567": {
+    "doc": "Release Plan",
+    "title": "Preparation",
+    "content": " ",
+    "url": "https://www.inceptions.info/release-plan.html#preparation",
+    "relUrl": "/release-plan.html#preparation"
+  },"568": {
+    "doc": "Release Plan",
+    "title": "Process",
+    "content": " ",
+    "url": "https://www.inceptions.info/release-plan.html#process",
+    "relUrl": "/release-plan.html#process"
+  },"569": {
+    "doc": "Release Plan",
+    "title": "Group size",
+    "content": " ",
+    "url": "https://www.inceptions.info/release-plan.html#group-size",
+    "relUrl": "/release-plan.html#group-size"
+  },"570": {
+    "doc": "Release Plan",
+    "title": "Timing",
+    "content": "Try to keep this exercise less than an hour. ",
+    "url": "https://www.inceptions.info/release-plan.html#timing",
+    "relUrl": "/release-plan.html#timing"
+  },"571": {
+    "doc": "Release Plan",
+    "title": "Example",
+    "content": " ",
+    "url": "https://www.inceptions.info/release-plan.html#example",
+    "relUrl": "/release-plan.html#example"
+  },"572": {
+    "doc": "Release Plan",
+    "title": "Related activities",
+    "content": " ",
+    "url": "https://www.inceptions.info/release-plan.html#related-activities",
+    "relUrl": "/release-plan.html#related-activities"
+  },"573": {
+    "doc": "Release Plan",
+    "title": "Notes",
+    "content": " ",
+    "url": "https://www.inceptions.info/release-plan.html#notes",
+    "relUrl": "/release-plan.html#notes"
+  },"574": {
+    "doc": "Release Plan",
+    "title": "More information",
+    "content": " ",
+    "url": "https://www.inceptions.info/release-plan.html#more-information",
+    "relUrl": "/release-plan.html#more-information"
+  },"575": {
+    "doc": "Retrospective",
+    "title": "Retrospective",
+    "content": " ",
+    "url": "https://www.inceptions.info/retrospective.html",
+    "relUrl": "/retrospective.html"
+  },"576": {
+    "doc": "Retrospective",
+    "title": "Outcome",
+    "content": " ",
+    "url": "https://www.inceptions.info/retrospective.html#outcome",
+    "relUrl": "/retrospective.html#outcome"
+  },"577": {
+    "doc": "Retrospective",
+    "title": "Audience",
+    "content": "This is a group-wide activity . ",
+    "url": "https://www.inceptions.info/retrospective.html#audience",
+    "relUrl": "/retrospective.html#audience"
+  },"578": {
+    "doc": "Retrospective",
+    "title": "When to use",
+    "content": " ",
+    "url": "https://www.inceptions.info/retrospective.html#when-to-use",
+    "relUrl": "/retrospective.html#when-to-use"
+  },"579": {
+    "doc": "Retrospective",
+    "title": "Activity",
+    "content": " ",
+    "url": "https://www.inceptions.info/retrospective.html#activity",
+    "relUrl": "/retrospective.html#activity"
+  },"580": {
+    "doc": "Retrospective",
+    "title": "Preparation",
+    "content": " ",
+    "url": "https://www.inceptions.info/retrospective.html#preparation",
+    "relUrl": "/retrospective.html#preparation"
+  },"581": {
+    "doc": "Retrospective",
+    "title": "Process",
+    "content": " ",
+    "url": "https://www.inceptions.info/retrospective.html#process",
+    "relUrl": "/retrospective.html#process"
+  },"582": {
+    "doc": "Retrospective",
+    "title": "Group size",
+    "content": " ",
+    "url": "https://www.inceptions.info/retrospective.html#group-size",
+    "relUrl": "/retrospective.html#group-size"
+  },"583": {
+    "doc": "Retrospective",
+    "title": "Timing",
+    "content": "Try to keep this exercise less than an hour. ",
+    "url": "https://www.inceptions.info/retrospective.html#timing",
+    "relUrl": "/retrospective.html#timing"
+  },"584": {
+    "doc": "Retrospective",
+    "title": "Example",
+    "content": " ",
+    "url": "https://www.inceptions.info/retrospective.html#example",
+    "relUrl": "/retrospective.html#example"
+  },"585": {
+    "doc": "Retrospective",
+    "title": "Related activities",
+    "content": " ",
+    "url": "https://www.inceptions.info/retrospective.html#related-activities",
+    "relUrl": "/retrospective.html#related-activities"
+  },"586": {
+    "doc": "Retrospective",
+    "title": "Notes",
+    "content": " ",
+    "url": "https://www.inceptions.info/retrospective.html#notes",
+    "relUrl": "/retrospective.html#notes"
+  },"587": {
+    "doc": "Retrospective",
+    "title": "More information",
+    "content": " ",
+    "url": "https://www.inceptions.info/retrospective.html#more-information",
+    "relUrl": "/retrospective.html#more-information"
+  },"588": {
     "doc": "Risk Mapping",
     "title": "Risk Mapping",
     "content": " ",
     "url": "https://www.inceptions.info/risk-mapping.html",
     "relUrl": "/risk-mapping.html"
-  },"532": {
+  },"589": {
     "doc": "Risk Mapping",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/risk-mapping.html#outcome",
     "relUrl": "/risk-mapping.html#outcome"
-  },"533": {
+  },"590": {
     "doc": "Risk Mapping",
     "title": "Audience",
     "content": "This is a group-wide activity . ",
     "url": "https://www.inceptions.info/risk-mapping.html#audience",
     "relUrl": "/risk-mapping.html#audience"
-  },"534": {
+  },"591": {
     "doc": "Risk Mapping",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/risk-mapping.html#when-to-use",
     "relUrl": "/risk-mapping.html#when-to-use"
-  },"535": {
+  },"592": {
     "doc": "Risk Mapping",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/risk-mapping.html#activity",
     "relUrl": "/risk-mapping.html#activity"
-  },"536": {
+  },"593": {
     "doc": "Risk Mapping",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/risk-mapping.html#preparation",
     "relUrl": "/risk-mapping.html#preparation"
-  },"537": {
+  },"594": {
     "doc": "Risk Mapping",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/risk-mapping.html#process",
     "relUrl": "/risk-mapping.html#process"
-  },"538": {
+  },"595": {
     "doc": "Risk Mapping",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/risk-mapping.html#group-size",
     "relUrl": "/risk-mapping.html#group-size"
-  },"539": {
+  },"596": {
     "doc": "Risk Mapping",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/risk-mapping.html#timing",
     "relUrl": "/risk-mapping.html#timing"
-  },"540": {
+  },"597": {
     "doc": "Risk Mapping",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/risk-mapping.html#example",
     "relUrl": "/risk-mapping.html#example"
-  },"541": {
+  },"598": {
     "doc": "Risk Mapping",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/risk-mapping.html#related-activities",
     "relUrl": "/risk-mapping.html#related-activities"
-  },"542": {
+  },"599": {
     "doc": "Risk Mapping",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/risk-mapping.html#notes",
     "relUrl": "/risk-mapping.html#notes"
-  },"543": {
+  },"600": {
     "doc": "Risk Mapping",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/risk-mapping.html#more-information",
     "relUrl": "/risk-mapping.html#more-information"
-  },"544": {
+  },"601": {
     "doc": "Scope risk",
     "title": "Scope Risk",
     "content": " ",
     "url": "https://www.inceptions.info/scope-risk.html#scope-risk",
     "relUrl": "/scope-risk.html#scope-risk"
-  },"545": {
+  },"602": {
     "doc": "Scope risk",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/scope-risk.html#outcome",
     "relUrl": "/scope-risk.html#outcome"
-  },"546": {
+  },"603": {
     "doc": "Scope risk",
     "title": "Audience",
     "content": "This is a group-wide activity . ",
     "url": "https://www.inceptions.info/scope-risk.html#audience",
     "relUrl": "/scope-risk.html#audience"
-  },"547": {
+  },"604": {
     "doc": "Scope risk",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/scope-risk.html#when-to-use",
     "relUrl": "/scope-risk.html#when-to-use"
-  },"548": {
+  },"605": {
     "doc": "Scope risk",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/scope-risk.html#activity",
     "relUrl": "/scope-risk.html#activity"
-  },"549": {
+  },"606": {
     "doc": "Scope risk",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/scope-risk.html#preparation",
     "relUrl": "/scope-risk.html#preparation"
-  },"550": {
+  },"607": {
     "doc": "Scope risk",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/scope-risk.html#process",
     "relUrl": "/scope-risk.html#process"
-  },"551": {
+  },"608": {
     "doc": "Scope risk",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/scope-risk.html#group-size",
     "relUrl": "/scope-risk.html#group-size"
-  },"552": {
+  },"609": {
     "doc": "Scope risk",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/scope-risk.html#timing",
     "relUrl": "/scope-risk.html#timing"
-  },"553": {
+  },"610": {
     "doc": "Scope risk",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/scope-risk.html#example",
     "relUrl": "/scope-risk.html#example"
-  },"554": {
+  },"611": {
     "doc": "Scope risk",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/scope-risk.html#related-activities",
     "relUrl": "/scope-risk.html#related-activities"
-  },"555": {
+  },"612": {
     "doc": "Scope risk",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/scope-risk.html#notes",
     "relUrl": "/scope-risk.html#notes"
-  },"556": {
+  },"613": {
     "doc": "Scope risk",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/scope-risk.html#more-information",
     "relUrl": "/scope-risk.html#more-information"
-  },"557": {
+  },"614": {
     "doc": "Scope risk",
     "title": "Scope risk",
     "content": " ",
     "url": "https://www.inceptions.info/scope-risk.html",
     "relUrl": "/scope-risk.html"
-  },"558": {
+  },"615": {
+    "doc": "Sequence diagrams",
+    "title": "Sequence Diagrams",
+    "content": " ",
+    "url": "https://www.inceptions.info/sequence-diagrams.html#sequence-diagrams",
+    "relUrl": "/sequence-diagrams.html#sequence-diagrams"
+  },"616": {
+    "doc": "Sequence diagrams",
+    "title": "Outcome",
+    "content": " ",
+    "url": "https://www.inceptions.info/sequence-diagrams.html#outcome",
+    "relUrl": "/sequence-diagrams.html#outcome"
+  },"617": {
+    "doc": "Sequence diagrams",
+    "title": "Audience",
+    "content": " ",
+    "url": "https://www.inceptions.info/sequence-diagrams.html#audience",
+    "relUrl": "/sequence-diagrams.html#audience"
+  },"618": {
+    "doc": "Sequence diagrams",
+    "title": "When to use",
+    "content": " ",
+    "url": "https://www.inceptions.info/sequence-diagrams.html#when-to-use",
+    "relUrl": "/sequence-diagrams.html#when-to-use"
+  },"619": {
+    "doc": "Sequence diagrams",
+    "title": "Activity",
+    "content": " ",
+    "url": "https://www.inceptions.info/sequence-diagrams.html#activity",
+    "relUrl": "/sequence-diagrams.html#activity"
+  },"620": {
+    "doc": "Sequence diagrams",
+    "title": "Preparation",
+    "content": " ",
+    "url": "https://www.inceptions.info/sequence-diagrams.html#preparation",
+    "relUrl": "/sequence-diagrams.html#preparation"
+  },"621": {
+    "doc": "Sequence diagrams",
+    "title": "Process",
+    "content": " ",
+    "url": "https://www.inceptions.info/sequence-diagrams.html#process",
+    "relUrl": "/sequence-diagrams.html#process"
+  },"622": {
+    "doc": "Sequence diagrams",
+    "title": "Group size",
+    "content": " ",
+    "url": "https://www.inceptions.info/sequence-diagrams.html#group-size",
+    "relUrl": "/sequence-diagrams.html#group-size"
+  },"623": {
+    "doc": "Sequence diagrams",
+    "title": "Timing",
+    "content": "Try to keep this exercise less than an hour. ",
+    "url": "https://www.inceptions.info/sequence-diagrams.html#timing",
+    "relUrl": "/sequence-diagrams.html#timing"
+  },"624": {
+    "doc": "Sequence diagrams",
+    "title": "Example",
+    "content": " ",
+    "url": "https://www.inceptions.info/sequence-diagrams.html#example",
+    "relUrl": "/sequence-diagrams.html#example"
+  },"625": {
+    "doc": "Sequence diagrams",
+    "title": "Related activities",
+    "content": " ",
+    "url": "https://www.inceptions.info/sequence-diagrams.html#related-activities",
+    "relUrl": "/sequence-diagrams.html#related-activities"
+  },"626": {
+    "doc": "Sequence diagrams",
+    "title": "Notes",
+    "content": " ",
+    "url": "https://www.inceptions.info/sequence-diagrams.html#notes",
+    "relUrl": "/sequence-diagrams.html#notes"
+  },"627": {
+    "doc": "Sequence diagrams",
+    "title": "More information",
+    "content": " ",
+    "url": "https://www.inceptions.info/sequence-diagrams.html#more-information",
+    "relUrl": "/sequence-diagrams.html#more-information"
+  },"628": {
+    "doc": "Sequence diagrams",
+    "title": "Sequence diagrams",
+    "content": " ",
+    "url": "https://www.inceptions.info/sequence-diagrams.html",
+    "relUrl": "/sequence-diagrams.html"
+  },"629": {
     "doc": "Sponsor Homework",
     "title": "Sponsor Homework",
     "content": " ",
     "url": "https://www.inceptions.info/sponsor-homework.html",
     "relUrl": "/sponsor-homework.html"
-  },"559": {
+  },"630": {
     "doc": "Sponsor Homework",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/sponsor-homework.html#outcome",
     "relUrl": "/sponsor-homework.html#outcome"
-  },"560": {
+  },"631": {
     "doc": "Sponsor Homework",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/sponsor-homework.html#audience",
     "relUrl": "/sponsor-homework.html#audience"
-  },"561": {
+  },"632": {
     "doc": "Sponsor Homework",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/sponsor-homework.html#when-to-use",
     "relUrl": "/sponsor-homework.html#when-to-use"
-  },"562": {
+  },"633": {
     "doc": "Sponsor Homework",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/sponsor-homework.html#activity",
     "relUrl": "/sponsor-homework.html#activity"
-  },"563": {
+  },"634": {
     "doc": "Sponsor Homework",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/sponsor-homework.html#preparation",
     "relUrl": "/sponsor-homework.html#preparation"
-  },"564": {
+  },"635": {
     "doc": "Sponsor Homework",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/sponsor-homework.html#process",
     "relUrl": "/sponsor-homework.html#process"
-  },"565": {
+  },"636": {
     "doc": "Sponsor Homework",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/sponsor-homework.html#group-size",
     "relUrl": "/sponsor-homework.html#group-size"
-  },"566": {
+  },"637": {
     "doc": "Sponsor Homework",
     "title": "Timing",
     "content": " ",
     "url": "https://www.inceptions.info/sponsor-homework.html#timing",
     "relUrl": "/sponsor-homework.html#timing"
-  },"567": {
+  },"638": {
     "doc": "Sponsor Homework",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/sponsor-homework.html#example",
     "relUrl": "/sponsor-homework.html#example"
-  },"568": {
+  },"639": {
     "doc": "Sponsor Homework",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/sponsor-homework.html#related-activities",
     "relUrl": "/sponsor-homework.html#related-activities"
-  },"569": {
+  },"640": {
     "doc": "Sponsor Homework",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/sponsor-homework.html#notes",
     "relUrl": "/sponsor-homework.html#notes"
-  },"570": {
+  },"641": {
     "doc": "Sponsor Homework",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/sponsor-homework.html#more-information",
     "relUrl": "/sponsor-homework.html#more-information"
-  },"571": {
+  },"642": {
+    "doc": "Sprint Zero Plan",
+    "title": "Sprint Zero Plan",
+    "content": " ",
+    "url": "https://www.inceptions.info/sprint-zero-plan.html",
+    "relUrl": "/sprint-zero-plan.html"
+  },"643": {
+    "doc": "Sprint Zero Plan",
+    "title": "Outcome",
+    "content": " ",
+    "url": "https://www.inceptions.info/sprint-zero-plan.html#outcome",
+    "relUrl": "/sprint-zero-plan.html#outcome"
+  },"644": {
+    "doc": "Sprint Zero Plan",
+    "title": "Audience",
+    "content": " ",
+    "url": "https://www.inceptions.info/sprint-zero-plan.html#audience",
+    "relUrl": "/sprint-zero-plan.html#audience"
+  },"645": {
+    "doc": "Sprint Zero Plan",
+    "title": "When to use",
+    "content": " ",
+    "url": "https://www.inceptions.info/sprint-zero-plan.html#when-to-use",
+    "relUrl": "/sprint-zero-plan.html#when-to-use"
+  },"646": {
+    "doc": "Sprint Zero Plan",
+    "title": "Activity",
+    "content": " ",
+    "url": "https://www.inceptions.info/sprint-zero-plan.html#activity",
+    "relUrl": "/sprint-zero-plan.html#activity"
+  },"647": {
+    "doc": "Sprint Zero Plan",
+    "title": "Preparation",
+    "content": " ",
+    "url": "https://www.inceptions.info/sprint-zero-plan.html#preparation",
+    "relUrl": "/sprint-zero-plan.html#preparation"
+  },"648": {
+    "doc": "Sprint Zero Plan",
+    "title": "Process",
+    "content": " ",
+    "url": "https://www.inceptions.info/sprint-zero-plan.html#process",
+    "relUrl": "/sprint-zero-plan.html#process"
+  },"649": {
+    "doc": "Sprint Zero Plan",
+    "title": "Group size",
+    "content": " ",
+    "url": "https://www.inceptions.info/sprint-zero-plan.html#group-size",
+    "relUrl": "/sprint-zero-plan.html#group-size"
+  },"650": {
+    "doc": "Sprint Zero Plan",
+    "title": "Timing",
+    "content": "Try to keep this exercise less than an hour. ",
+    "url": "https://www.inceptions.info/sprint-zero-plan.html#timing",
+    "relUrl": "/sprint-zero-plan.html#timing"
+  },"651": {
+    "doc": "Sprint Zero Plan",
+    "title": "Example",
+    "content": " ",
+    "url": "https://www.inceptions.info/sprint-zero-plan.html#example",
+    "relUrl": "/sprint-zero-plan.html#example"
+  },"652": {
+    "doc": "Sprint Zero Plan",
+    "title": "Related activities",
+    "content": " ",
+    "url": "https://www.inceptions.info/sprint-zero-plan.html#related-activities",
+    "relUrl": "/sprint-zero-plan.html#related-activities"
+  },"653": {
+    "doc": "Sprint Zero Plan",
+    "title": "Notes",
+    "content": " ",
+    "url": "https://www.inceptions.info/sprint-zero-plan.html#notes",
+    "relUrl": "/sprint-zero-plan.html#notes"
+  },"654": {
+    "doc": "Sprint Zero Plan",
+    "title": "More information",
+    "content": " ",
+    "url": "https://www.inceptions.info/sprint-zero-plan.html#more-information",
+    "relUrl": "/sprint-zero-plan.html#more-information"
+  },"655": {
     "doc": "Stakeholder Agreement",
     "title": "Stakeholder Agreement",
     "content": " ",
     "url": "https://www.inceptions.info/stakeholder-agreement.html",
     "relUrl": "/stakeholder-agreement.html"
-  },"572": {
+  },"656": {
     "doc": "Stakeholder Agreement",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/stakeholder-agreement.html#outcome",
     "relUrl": "/stakeholder-agreement.html#outcome"
-  },"573": {
+  },"657": {
     "doc": "Stakeholder Agreement",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/stakeholder-agreement.html#audience",
     "relUrl": "/stakeholder-agreement.html#audience"
-  },"574": {
+  },"658": {
     "doc": "Stakeholder Agreement",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/stakeholder-agreement.html#when-to-use",
     "relUrl": "/stakeholder-agreement.html#when-to-use"
-  },"575": {
+  },"659": {
     "doc": "Stakeholder Agreement",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/stakeholder-agreement.html#activity",
     "relUrl": "/stakeholder-agreement.html#activity"
-  },"576": {
+  },"660": {
     "doc": "Stakeholder Agreement",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/stakeholder-agreement.html#preparation",
     "relUrl": "/stakeholder-agreement.html#preparation"
-  },"577": {
+  },"661": {
     "doc": "Stakeholder Agreement",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/stakeholder-agreement.html#process",
     "relUrl": "/stakeholder-agreement.html#process"
-  },"578": {
+  },"662": {
     "doc": "Stakeholder Agreement",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/stakeholder-agreement.html#group-size",
     "relUrl": "/stakeholder-agreement.html#group-size"
-  },"579": {
+  },"663": {
     "doc": "Stakeholder Agreement",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/stakeholder-agreement.html#timing",
     "relUrl": "/stakeholder-agreement.html#timing"
-  },"580": {
+  },"664": {
     "doc": "Stakeholder Agreement",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/stakeholder-agreement.html#example",
     "relUrl": "/stakeholder-agreement.html#example"
-  },"581": {
+  },"665": {
     "doc": "Stakeholder Agreement",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/stakeholder-agreement.html#related-activities",
     "relUrl": "/stakeholder-agreement.html#related-activities"
-  },"582": {
+  },"666": {
     "doc": "Stakeholder Agreement",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/stakeholder-agreement.html#notes",
     "relUrl": "/stakeholder-agreement.html#notes"
-  },"583": {
+  },"667": {
     "doc": "Stakeholder Agreement",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/stakeholder-agreement.html#more-information",
     "relUrl": "/stakeholder-agreement.html#more-information"
-  },"584": {
+  },"668": {
     "doc": "Stakeholder Mapping",
     "title": "Stakeholder mapping",
     "content": "Stakeholders are the interested parties in a product. They affect and influence the product, as well as those who will ultimately use it. ",
     "url": "https://www.inceptions.info/stakeholder-mapping.html#stakeholder-mapping",
     "relUrl": "/stakeholder-mapping.html#stakeholder-mapping"
-  },"585": {
+  },"669": {
     "doc": "Stakeholder Mapping",
     "title": "Outcome",
     "content": "Documenting the stakeholders is essential in order to assess their importance in determining the product’s character and value proposition. Knowing the stakeholders and their proxies also directs who, and to what measure, to keep up to date on the product’s development needs and progress. ",
     "url": "https://www.inceptions.info/stakeholder-mapping.html#outcome",
     "relUrl": "/stakeholder-mapping.html#outcome"
-  },"586": {
+  },"670": {
     "doc": "Stakeholder Mapping",
     "title": "Audience",
     "content": "The wider product group. It is essential to identify the stakeholders prior to any other Inception sessions. ",
     "url": "https://www.inceptions.info/stakeholder-mapping.html#audience",
     "relUrl": "/stakeholder-mapping.html#audience"
-  },"587": {
+  },"671": {
     "doc": "Stakeholder Mapping",
     "title": "When to use",
     "content": "At the beginning of the Inception, or after an organizational re-shuffle. ",
     "url": "https://www.inceptions.info/stakeholder-mapping.html#when-to-use",
     "relUrl": "/stakeholder-mapping.html#when-to-use"
-  },"588": {
+  },"672": {
     "doc": "Stakeholder Mapping",
     "title": "Activity",
     "content": "Conduct a discussion that elicits the needed information, answering questions such as: . | Who are the most influential stakeholders? | Which stakeholders will be most affected by the product? | Who controls the shared-services needed for product development? | Who has a financial interest? | What are the top motivations for each stakeholder? | Who are the biggest supporters? | ​Who are the biggest opposers? | . ",
     "url": "https://www.inceptions.info/stakeholder-mapping.html#activity",
     "relUrl": "/stakeholder-mapping.html#activity"
-  },"589": {
+  },"673": {
     "doc": "Stakeholder Mapping",
     "title": "Preparation",
     "content": "Create a quadrant: . | Stakeholder interest (low to high) | Stakeholder influence (low to high) | . ",
     "url": "https://www.inceptions.info/stakeholder-mapping.html#preparation",
     "relUrl": "/stakeholder-mapping.html#preparation"
-  },"590": {
+  },"674": {
     "doc": "Stakeholder Mapping",
     "title": "Process",
     "content": ". | Document the name and role of each stakeholder | Place a marker (preferably their avatar) on the Stakeholder map. | Place a marker (preferably their avatar) on the Communications plan. | . ",
     "url": "https://www.inceptions.info/stakeholder-mapping.html#process",
     "relUrl": "/stakeholder-mapping.html#process"
-  },"591": {
+  },"675": {
     "doc": "Stakeholder Mapping",
     "title": "Group size",
     "content": "The entire kickoff group. ",
     "url": "https://www.inceptions.info/stakeholder-mapping.html#group-size",
     "relUrl": "/stakeholder-mapping.html#group-size"
-  },"592": {
+  },"676": {
     "doc": "Stakeholder Mapping",
     "title": "Timing",
     "content": "Try to keep this session to half an hour at most. ",
     "url": "https://www.inceptions.info/stakeholder-mapping.html#timing",
     "relUrl": "/stakeholder-mapping.html#timing"
-  },"593": {
+  },"677": {
     "doc": "Stakeholder Mapping",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/stakeholder-mapping.html#example",
     "relUrl": "/stakeholder-mapping.html#example"
-  },"594": {
+  },"678": {
     "doc": "Stakeholder Mapping",
     "title": "Related activities",
     "content": ". | Stakeholder Agreement | Communication Plan | . ",
     "url": "https://www.inceptions.info/stakeholder-mapping.html#related-activities",
     "relUrl": "/stakeholder-mapping.html#related-activities"
-  },"595": {
+  },"679": {
     "doc": "Stakeholder Mapping",
     "title": "Notes",
     "content": "Make sure that anyone identified as major stakeholder, but was not invited initially, is added to list and be able to participate in subsequent sessions. ",
     "url": "https://www.inceptions.info/stakeholder-mapping.html#notes",
     "relUrl": "/stakeholder-mapping.html#notes"
-  },"596": {
+  },"680": {
     "doc": "Stakeholder Mapping",
     "title": "More information",
     "content": "BSR Org . ",
     "url": "https://www.inceptions.info/stakeholder-mapping.html#more-information",
     "relUrl": "/stakeholder-mapping.html#more-information"
-  },"597": {
+  },"681": {
     "doc": "Stakeholder Mapping",
     "title": "Stakeholder Mapping",
     "content": " ",
     "url": "https://www.inceptions.info/stakeholder-mapping.html",
     "relUrl": "/stakeholder-mapping.html"
-  },"598": {
+  },"682": {
     "doc": "Story Mapping",
     "title": "Story Mapping",
     "content": " ",
     "url": "https://www.inceptions.info/story-mapping.html",
     "relUrl": "/story-mapping.html"
-  },"599": {
+  },"683": {
     "doc": "Story Mapping",
     "title": "Outcome",
     "content": "This activity creates the initial story list for the product. Activity This is a group-wide activity. The participants create the initial list of stories based on the goals and epics identified in the previous sessions. Preparation Poster-size sheets, index cards, and sharpies. Process The group identifies and writes lightweight stories that contain: . The requirements at a level of granularity for planning purposes. Define initial acceptance criteria Capture assumptions, risks and dependence complexity Keep the results posted visibly during the rest of the inception to be used in future mapping sessions. ",
     "url": "https://www.inceptions.info/story-mapping.html#outcome",
     "relUrl": "/story-mapping.html#outcome"
-  },"600": {
+  },"684": {
     "doc": "Story Mapping",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/story-mapping.html#audience",
     "relUrl": "/story-mapping.html#audience"
-  },"601": {
+  },"685": {
     "doc": "Story Mapping",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/story-mapping.html#when-to-use",
     "relUrl": "/story-mapping.html#when-to-use"
-  },"602": {
+  },"686": {
     "doc": "Story Mapping",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/story-mapping.html#activity",
     "relUrl": "/story-mapping.html#activity"
-  },"603": {
+  },"687": {
     "doc": "Story Mapping",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/story-mapping.html#preparation",
     "relUrl": "/story-mapping.html#preparation"
-  },"604": {
+  },"688": {
     "doc": "Story Mapping",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/story-mapping.html#process",
     "relUrl": "/story-mapping.html#process"
-  },"605": {
+  },"689": {
     "doc": "Story Mapping",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/story-mapping.html#group-size",
     "relUrl": "/story-mapping.html#group-size"
-  },"606": {
+  },"690": {
     "doc": "Story Mapping",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/story-mapping.html#timing",
     "relUrl": "/story-mapping.html#timing"
-  },"607": {
+  },"691": {
     "doc": "Story Mapping",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/story-mapping.html#example",
     "relUrl": "/story-mapping.html#example"
-  },"608": {
+  },"692": {
     "doc": "Story Mapping",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/story-mapping.html#related-activities",
     "relUrl": "/story-mapping.html#related-activities"
-  },"609": {
+  },"693": {
     "doc": "Story Mapping",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/story-mapping.html#notes",
     "relUrl": "/story-mapping.html#notes"
-  },"610": {
+  },"694": {
     "doc": "Story Mapping",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/story-mapping.html#more-information",
     "relUrl": "/story-mapping.html#more-information"
-  },"611": {
+  },"695": {
     "doc": "Team Assessment",
     "title": "Team Assessment",
     "content": " ",
     "url": "https://www.inceptions.info/team-assessment.html",
     "relUrl": "/team-assessment.html"
-  },"612": {
+  },"696": {
     "doc": "Team Assessment",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/team-assessment.html#outcome",
     "relUrl": "/team-assessment.html#outcome"
-  },"613": {
+  },"697": {
     "doc": "Team Assessment",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/team-assessment.html#audience",
     "relUrl": "/team-assessment.html#audience"
-  },"614": {
+  },"698": {
     "doc": "Team Assessment",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/team-assessment.html#when-to-use",
     "relUrl": "/team-assessment.html#when-to-use"
-  },"615": {
+  },"699": {
     "doc": "Team Assessment",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/team-assessment.html#activity",
     "relUrl": "/team-assessment.html#activity"
-  },"616": {
+  },"700": {
     "doc": "Team Assessment",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/team-assessment.html#preparation",
     "relUrl": "/team-assessment.html#preparation"
-  },"617": {
+  },"701": {
     "doc": "Team Assessment",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/team-assessment.html#process",
     "relUrl": "/team-assessment.html#process"
-  },"618": {
+  },"702": {
     "doc": "Team Assessment",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/team-assessment.html#group-size",
     "relUrl": "/team-assessment.html#group-size"
-  },"619": {
+  },"703": {
     "doc": "Team Assessment",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/team-assessment.html#timing",
     "relUrl": "/team-assessment.html#timing"
-  },"620": {
+  },"704": {
     "doc": "Team Assessment",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/team-assessment.html#example",
     "relUrl": "/team-assessment.html#example"
-  },"621": {
+  },"705": {
     "doc": "Team Assessment",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/team-assessment.html#related-activities",
     "relUrl": "/team-assessment.html#related-activities"
-  },"622": {
+  },"706": {
     "doc": "Team Assessment",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/team-assessment.html#notes",
     "relUrl": "/team-assessment.html#notes"
-  },"623": {
+  },"707": {
     "doc": "Team Assessment",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/team-assessment.html#more-information",
     "relUrl": "/team-assessment.html#more-information"
-  },"624": {
+  },"708": {
+    "doc": "Tech-debt Reduction",
+    "title": "Tech Debt Reduction",
+    "content": " ",
+    "url": "https://www.inceptions.info/tech-debt-reduction.html#tech-debt-reduction",
+    "relUrl": "/tech-debt-reduction.html#tech-debt-reduction"
+  },"709": {
+    "doc": "Tech-debt Reduction",
+    "title": "Outcome",
+    "content": " ",
+    "url": "https://www.inceptions.info/tech-debt-reduction.html#outcome",
+    "relUrl": "/tech-debt-reduction.html#outcome"
+  },"710": {
+    "doc": "Tech-debt Reduction",
+    "title": "Audience",
+    "content": " ",
+    "url": "https://www.inceptions.info/tech-debt-reduction.html#audience",
+    "relUrl": "/tech-debt-reduction.html#audience"
+  },"711": {
+    "doc": "Tech-debt Reduction",
+    "title": "When to use",
+    "content": " ",
+    "url": "https://www.inceptions.info/tech-debt-reduction.html#when-to-use",
+    "relUrl": "/tech-debt-reduction.html#when-to-use"
+  },"712": {
+    "doc": "Tech-debt Reduction",
+    "title": "Activity",
+    "content": " ",
+    "url": "https://www.inceptions.info/tech-debt-reduction.html#activity",
+    "relUrl": "/tech-debt-reduction.html#activity"
+  },"713": {
+    "doc": "Tech-debt Reduction",
+    "title": "Preparation",
+    "content": " ",
+    "url": "https://www.inceptions.info/tech-debt-reduction.html#preparation",
+    "relUrl": "/tech-debt-reduction.html#preparation"
+  },"714": {
+    "doc": "Tech-debt Reduction",
+    "title": "Process",
+    "content": " ",
+    "url": "https://www.inceptions.info/tech-debt-reduction.html#process",
+    "relUrl": "/tech-debt-reduction.html#process"
+  },"715": {
+    "doc": "Tech-debt Reduction",
+    "title": "Group size",
+    "content": " ",
+    "url": "https://www.inceptions.info/tech-debt-reduction.html#group-size",
+    "relUrl": "/tech-debt-reduction.html#group-size"
+  },"716": {
+    "doc": "Tech-debt Reduction",
+    "title": "Timing",
+    "content": "Try to keep this exercise less than an hour. ",
+    "url": "https://www.inceptions.info/tech-debt-reduction.html#timing",
+    "relUrl": "/tech-debt-reduction.html#timing"
+  },"717": {
+    "doc": "Tech-debt Reduction",
+    "title": "Example",
+    "content": " ",
+    "url": "https://www.inceptions.info/tech-debt-reduction.html#example",
+    "relUrl": "/tech-debt-reduction.html#example"
+  },"718": {
+    "doc": "Tech-debt Reduction",
+    "title": "Related activities",
+    "content": " ",
+    "url": "https://www.inceptions.info/tech-debt-reduction.html#related-activities",
+    "relUrl": "/tech-debt-reduction.html#related-activities"
+  },"719": {
+    "doc": "Tech-debt Reduction",
+    "title": "Notes",
+    "content": " ",
+    "url": "https://www.inceptions.info/tech-debt-reduction.html#notes",
+    "relUrl": "/tech-debt-reduction.html#notes"
+  },"720": {
+    "doc": "Tech-debt Reduction",
+    "title": "More information",
+    "content": " ",
+    "url": "https://www.inceptions.info/tech-debt-reduction.html#more-information",
+    "relUrl": "/tech-debt-reduction.html#more-information"
+  },"721": {
+    "doc": "Tech-debt Reduction",
+    "title": "Tech-debt Reduction",
+    "content": " ",
+    "url": "https://www.inceptions.info/tech-debt-reduction.html",
+    "relUrl": "/tech-debt-reduction.html"
+  },"722": {
     "doc": "Technology Review",
     "title": "Technology Review",
     "content": " ",
     "url": "https://www.inceptions.info/technology-review.html",
     "relUrl": "/technology-review.html"
-  },"625": {
+  },"723": {
     "doc": "Technology Review",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/technology-review.html#outcome",
     "relUrl": "/technology-review.html#outcome"
-  },"626": {
+  },"724": {
     "doc": "Technology Review",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/technology-review.html#audience",
     "relUrl": "/technology-review.html#audience"
-  },"627": {
+  },"725": {
     "doc": "Technology Review",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/technology-review.html#when-to-use",
     "relUrl": "/technology-review.html#when-to-use"
-  },"628": {
+  },"726": {
     "doc": "Technology Review",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/technology-review.html#activity",
     "relUrl": "/technology-review.html#activity"
-  },"629": {
+  },"727": {
     "doc": "Technology Review",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/technology-review.html#preparation",
     "relUrl": "/technology-review.html#preparation"
-  },"630": {
+  },"728": {
     "doc": "Technology Review",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/technology-review.html#process",
     "relUrl": "/technology-review.html#process"
-  },"631": {
+  },"729": {
     "doc": "Technology Review",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/technology-review.html#group-size",
     "relUrl": "/technology-review.html#group-size"
-  },"632": {
+  },"730": {
     "doc": "Technology Review",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/technology-review.html#timing",
     "relUrl": "/technology-review.html#timing"
-  },"633": {
+  },"731": {
     "doc": "Technology Review",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/technology-review.html#example",
     "relUrl": "/technology-review.html#example"
-  },"634": {
+  },"732": {
     "doc": "Technology Review",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/technology-review.html#related-activities",
     "relUrl": "/technology-review.html#related-activities"
-  },"635": {
+  },"733": {
     "doc": "Technology Review",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/technology-review.html#notes",
     "relUrl": "/technology-review.html#notes"
-  },"636": {
+  },"734": {
     "doc": "Technology Review",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/technology-review.html#more-information",
     "relUrl": "/technology-review.html#more-information"
-  },"637": {
+  },"735": {
     "doc": "Test Data Strategy",
     "title": "Test Data Strategy",
     "content": " ",
     "url": "https://www.inceptions.info/test-data-strategy.html",
     "relUrl": "/test-data-strategy.html"
-  },"638": {
+  },"736": {
     "doc": "Test Data Strategy",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/test-data-strategy.html#outcome",
     "relUrl": "/test-data-strategy.html#outcome"
-  },"639": {
+  },"737": {
     "doc": "Test Data Strategy",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/test-data-strategy.html#audience",
     "relUrl": "/test-data-strategy.html#audience"
-  },"640": {
+  },"738": {
     "doc": "Test Data Strategy",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/test-data-strategy.html#when-to-use",
     "relUrl": "/test-data-strategy.html#when-to-use"
-  },"641": {
+  },"739": {
     "doc": "Test Data Strategy",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/test-data-strategy.html#activity",
     "relUrl": "/test-data-strategy.html#activity"
-  },"642": {
+  },"740": {
     "doc": "Test Data Strategy",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/test-data-strategy.html#preparation",
     "relUrl": "/test-data-strategy.html#preparation"
-  },"643": {
+  },"741": {
     "doc": "Test Data Strategy",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/test-data-strategy.html#process",
     "relUrl": "/test-data-strategy.html#process"
-  },"644": {
+  },"742": {
     "doc": "Test Data Strategy",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/test-data-strategy.html#group-size",
     "relUrl": "/test-data-strategy.html#group-size"
-  },"645": {
+  },"743": {
     "doc": "Test Data Strategy",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/test-data-strategy.html#timing",
     "relUrl": "/test-data-strategy.html#timing"
-  },"646": {
+  },"744": {
     "doc": "Test Data Strategy",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/test-data-strategy.html#example",
     "relUrl": "/test-data-strategy.html#example"
-  },"647": {
+  },"745": {
     "doc": "Test Data Strategy",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/test-data-strategy.html#related-activities",
     "relUrl": "/test-data-strategy.html#related-activities"
-  },"648": {
+  },"746": {
     "doc": "Test Data Strategy",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/test-data-strategy.html#notes",
     "relUrl": "/test-data-strategy.html#notes"
-  },"649": {
+  },"747": {
     "doc": "Test Data Strategy",
     "title": "More information",
     "content": " ",
     "url": "https://www.inceptions.info/test-data-strategy.html#more-information",
     "relUrl": "/test-data-strategy.html#more-information"
-  },"650": {
+  },"748": {
     "doc": "Test Strategy",
     "title": "Test Strategy",
     "content": " ",
     "url": "https://www.inceptions.info/test-strategy.html",
     "relUrl": "/test-strategy.html"
-  },"651": {
+  },"749": {
     "doc": "Test Strategy",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/test-strategy.html#outcome",
     "relUrl": "/test-strategy.html#outcome"
-  },"652": {
+  },"750": {
     "doc": "Test Strategy",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/test-strategy.html#audience",
     "relUrl": "/test-strategy.html#audience"
-  },"653": {
+  },"751": {
     "doc": "Test Strategy",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/test-strategy.html#when-to-use",
     "relUrl": "/test-strategy.html#when-to-use"
-  },"654": {
+  },"752": {
     "doc": "Test Strategy",
     "title": "Activity",
     "content": "Discuss the Test Pyramid and Test Impact Analysis . ",
     "url": "https://www.inceptions.info/test-strategy.html#activity",
     "relUrl": "/test-strategy.html#activity"
-  },"655": {
+  },"753": {
     "doc": "Test Strategy",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/test-strategy.html#preparation",
     "relUrl": "/test-strategy.html#preparation"
-  },"656": {
+  },"754": {
     "doc": "Test Strategy",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/test-strategy.html#process",
     "relUrl": "/test-strategy.html#process"
-  },"657": {
+  },"755": {
     "doc": "Test Strategy",
     "title": "Group size",
     "content": "Developers, BAs and QAs, physically present. ",
     "url": "https://www.inceptions.info/test-strategy.html#group-size",
     "relUrl": "/test-strategy.html#group-size"
-  },"658": {
+  },"756": {
     "doc": "Test Strategy",
     "title": "Timing",
     "content": " ",
     "url": "https://www.inceptions.info/test-strategy.html#timing",
     "relUrl": "/test-strategy.html#timing"
-  },"659": {
+  },"757": {
     "doc": "Test Strategy",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/test-strategy.html#example",
     "relUrl": "/test-strategy.html#example"
-  },"660": {
+  },"758": {
     "doc": "Test Strategy",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/test-strategy.html#related-activities",
     "relUrl": "/test-strategy.html#related-activities"
-  },"661": {
+  },"759": {
     "doc": "Test Strategy",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/test-strategy.html#notes",
     "relUrl": "/test-strategy.html#notes"
-  },"662": {
+  },"760": {
     "doc": "Test Strategy",
     "title": "More information",
     "content": "TIA . ",
     "url": "https://www.inceptions.info/test-strategy.html#more-information",
     "relUrl": "/test-strategy.html#more-information"
-  },"663": {
+  },"761": {
     "doc": "Usage",
     "title": "How to use this guide",
     "content": "This guide is presented from the point of view of a dispassionate facilitator, whose goal is to steer the participants to a common understanding of what and how the product can be developed. Initially, facilitation addresses two audiences: stakeholders and the product development team, with the primary goal to merge those two outlooks in to a single product team. Therefore, the facilitator will surface business and technical goals and challenges throughout the sessions. This guide details how to set up an agenda, select the sessions and workshops to employ and, finally, present their findings. Whether this is the first time you’re running an inception, or have already done so, please read the guide in its entirety, to allow you to make an informed selection of the sessions and establish an agenda that suites your context. Happy learning, and good luck with your facilitation! . ",
     "url": "https://www.inceptions.info/usage.html#how-to-use-this-guide",
     "relUrl": "/usage.html#how-to-use-this-guide"
-  },"664": {
+  },"762": {
     "doc": "Usage",
     "title": "Usage",
     "content": " ",
     "url": "https://www.inceptions.info/usage.html",
     "relUrl": "/usage.html"
-  },"665": {
+  },"763": {
     "doc": "User Journeys",
     "title": "User Journeys",
     "content": " ",
     "url": "https://www.inceptions.info/user-journeys.html",
     "relUrl": "/user-journeys.html"
-  },"666": {
+  },"764": {
     "doc": "User Journeys",
     "title": "Outcome",
     "content": " ",
     "url": "https://www.inceptions.info/user-journeys.html#outcome",
     "relUrl": "/user-journeys.html#outcome"
-  },"667": {
+  },"765": {
     "doc": "User Journeys",
     "title": "Audience",
     "content": " ",
     "url": "https://www.inceptions.info/user-journeys.html#audience",
     "relUrl": "/user-journeys.html#audience"
-  },"668": {
+  },"766": {
     "doc": "User Journeys",
     "title": "When to use",
     "content": " ",
     "url": "https://www.inceptions.info/user-journeys.html#when-to-use",
     "relUrl": "/user-journeys.html#when-to-use"
-  },"669": {
+  },"767": {
     "doc": "User Journeys",
     "title": "Activity",
     "content": " ",
     "url": "https://www.inceptions.info/user-journeys.html#activity",
     "relUrl": "/user-journeys.html#activity"
-  },"670": {
+  },"768": {
     "doc": "User Journeys",
     "title": "Preparation",
     "content": " ",
     "url": "https://www.inceptions.info/user-journeys.html#preparation",
     "relUrl": "/user-journeys.html#preparation"
-  },"671": {
+  },"769": {
     "doc": "User Journeys",
     "title": "Process",
     "content": " ",
     "url": "https://www.inceptions.info/user-journeys.html#process",
     "relUrl": "/user-journeys.html#process"
-  },"672": {
+  },"770": {
     "doc": "User Journeys",
     "title": "Group size",
     "content": " ",
     "url": "https://www.inceptions.info/user-journeys.html#group-size",
     "relUrl": "/user-journeys.html#group-size"
-  },"673": {
+  },"771": {
     "doc": "User Journeys",
     "title": "Timing",
     "content": "Try to keep this exercise less than an hour. ",
     "url": "https://www.inceptions.info/user-journeys.html#timing",
     "relUrl": "/user-journeys.html#timing"
-  },"674": {
+  },"772": {
     "doc": "User Journeys",
     "title": "Example",
     "content": " ",
     "url": "https://www.inceptions.info/user-journeys.html#example",
     "relUrl": "/user-journeys.html#example"
-  },"675": {
+  },"773": {
     "doc": "User Journeys",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/user-journeys.html#related-activities",
     "relUrl": "/user-journeys.html#related-activities"
-  },"676": {
+  },"774": {
     "doc": "User Journeys",
     "title": "Notes",
     "content": " ",
     "url": "https://www.inceptions.info/user-journeys.html#notes",
     "relUrl": "/user-journeys.html#notes"
-  },"677": {
+  },"775": {
     "doc": "User Journeys",
     "title": "More information",
     "content": "Utility This is an activity that helps the participants understand and visualize the product’s users use cases as they attain their goals. Activity This is a group-wide activity. The participants create the functional interaction flows with the system for each of the user’s goals. Preparation Poster-size sheets, large sticky notes, and sharpies. Process The group identifies and characterizes how the users progress in attaining their goals as they use the system. Discuss What paths each persona may use Functional description of each path Variation of each path based on persona usage End-to-end journey Keep the results posted visibly during the rest of the inception, as a reminder of the way the users will interact with the system compared to the VSMs. ",
     "url": "https://www.inceptions.info/user-journeys.html#more-information",
     "relUrl": "/user-journeys.html#more-information"
-  },"678": {
+  },"776": {
     "doc": "Value points",
     "title": "Value points",
     "content": "An excerpt from an article discussing value points. ",
     "url": "https://www.inceptions.info/value-points.html",
     "relUrl": "/value-points.html"
-  },"679": {
+  },"777": {
     "doc": "Value points",
     "title": "Discussion",
     "content": ". | What are we estimating? | Why are we estimating? | How are these estimations helping us get our product to our customers or improve our processes? | . ",
     "url": "https://www.inceptions.info/value-points.html#discussion",
     "relUrl": "/value-points.html#discussion"
-  },"680": {
+  },"778": {
     "doc": "Value Stream Mapping",
     "title": "Value Stream Mapping",
     "content": " ",
     "url": "https://www.inceptions.info/vsm.html",
     "relUrl": "/vsm.html"
-  },"681": {
+  },"779": {
     "doc": "Value Stream Mapping",
     "title": "Outcome",
     "content": "This is a session that will yield the current and future product development steps needed to put features in production, or “concept-to-cash”. Its main utility is to: . | Expose debt at risk / increase the realization of unrealized value | Understand how the organization manages change | Highlight system constraints | Provide a measurable basis for optimization | Use rational, value-based information for organizational change | . ",
     "url": "https://www.inceptions.info/vsm.html#outcome",
     "relUrl": "/vsm.html#outcome"
-  },"682": {
+  },"780": {
     "doc": "Value Stream Mapping",
     "title": "Audience",
     "content": "All stakeholders, and all members of the product and support teams. Typically needed roles: . | Application owner | Business, Product manager/owner | Project manager | Application architect | Platform architect | Development lead | QA lead | SEO &amp; Social Media Rep | UX lead | Infrastructure lead | Ops lead | Compliance lead | Security lead | Performance lead | Deployment lead | CAB rep | L1, L2, L3 Support | . ",
     "url": "https://www.inceptions.info/vsm.html#audience",
     "relUrl": "/vsm.html#audience"
-  },"683": {
+  },"781": {
     "doc": "Value Stream Mapping",
     "title": "When to use",
     "content": "Use this prior to any planning and commitment sessions, as it will inform the teams about the effort needed to put features into production. ",
     "url": "https://www.inceptions.info/vsm.html#when-to-use",
     "relUrl": "/vsm.html#when-to-use"
-  },"684": {
+  },"782": {
     "doc": "Value Stream Mapping",
     "title": "Activity",
     "content": "Participants describe the steps needed to conceive, and deploy a feature to satisfy a customer’s request. ",
     "url": "https://www.inceptions.info/vsm.html#activity",
     "relUrl": "/vsm.html#activity"
-  },"685": {
+  },"783": {
     "doc": "Value Stream Mapping",
     "title": "Preparation",
     "content": ". | Book a room large enough to hold all the participants. | Make sure that the room has enough wall-space to visualize the VSM with cards. | If you have never seen the room before, ask the sponsor to send photos so you can plan placement. | Make sure A/V can show both the participants and a shared screen if you will have people calling in remotely. | Agree on ground rules. | Establish an agenda that takes people’s obligations into account. | Repeat the Prime Directive to ensure that people feel safe. | To facilitate flow, defer collecting details through breakout sessions as needed. | On average, a thorough VSM session takes between one and three days, depending on people’s availability and system breath. | . Example of an agenda: . | Day 1: Morning: Kickoff, Prime Directive, Retro, Hopes-and-Fears, start Current–state VSM Afternoon: Continued . | Days 2 &amp; 3: Mornings: Org/Tech deep-dive &amp; Future-state VSM Afternoons: Continued . | Day 3: Retro &amp; next steps. | . ",
     "url": "https://www.inceptions.info/vsm.html#preparation",
     "relUrl": "/vsm.html#preparation"
-  },"686": {
+  },"784": {
     "doc": "Value Stream Mapping",
     "title": "Process",
     "content": "Select which process to map. Define the extent of the process to be covered. Optimally, it would be “concept to cash” to see the end-to-end flow of work. | Decide on the bounds of the map. | Discuss and document the process steps. | Document measurements. | Reflect on optimization for the future state. | Document the future state. | Create actionable steps to implement the future state. | Repeat in a few months and incorporate learning. | . Measurements: . | Wait (wt): The time it takes from submission of a request till work starts. | Value added (v): The effort time it takes to fulfill a request. | Unneeded non value-add (u): The time spent on irrelevant tasks. | Needed non value-add (n): The time spent on compliance tasks. | %FPCA (p): The rate at which incoming requests are deemed sufficiently correct for work to begin. | Lead time (l): The time it takes to fulfill a request (wt+v). | Waste (w): Time not spent on value-adding tasks (l - v). | Efficiency (e): Value added time as ratio of elapsed time and lead time (v/w). | True Efficiency (te): FPCA factored in (v/p) | . ",
     "url": "https://www.inceptions.info/vsm.html#process",
     "relUrl": "/vsm.html#process"
-  },"687": {
+  },"785": {
     "doc": "Value Stream Mapping",
     "title": "Group size",
     "content": "Everyone, physically present. ",
     "url": "https://www.inceptions.info/vsm.html#group-size",
     "relUrl": "/vsm.html#group-size"
-  },"688": {
+  },"786": {
     "doc": "Value Stream Mapping",
     "title": "Timing",
     "content": "Depending on the size of the effort, the number of components and the width of the goal-posts, this may take between 2 and 4 days. ",
     "url": "https://www.inceptions.info/vsm.html#timing",
     "relUrl": "/vsm.html#timing"
-  },"689": {
+  },"787": {
     "doc": "Value Stream Mapping",
     "title": "Example",
     "content": ". ",
     "url": "https://www.inceptions.info/vsm.html#example",
     "relUrl": "/vsm.html#example"
-  },"690": {
+  },"788": {
     "doc": "Value Stream Mapping",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/vsm.html#related-activities",
     "relUrl": "/vsm.html#related-activities"
-  },"691": {
+  },"789": {
     "doc": "Value Stream Mapping",
     "title": "Notes",
     "content": "Find a balance: . | Selecting a limited scope may lead to misinformed local optimization. | Selecting a large scope will be rewarding, but logistically challenging. | . ",
     "url": "https://www.inceptions.info/vsm.html#notes",
     "relUrl": "/vsm.html#notes"
-  },"692": {
+  },"790": {
     "doc": "Value Stream Mapping",
     "title": "More information",
     "content": " ",

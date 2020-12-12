@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cross-functional requirements
+title: Cross-functional Requirements
 parent: Desired outcomes
 permalink: /cross-functional-requirements.html
 ---

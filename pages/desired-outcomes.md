@@ -37,21 +37,16 @@ has_children: yes
 
 | [Current Tech Challenges](/current-tech-challenges.html) | [Application Architecture](/application-architecture.html) | [Data Platform Architecture](/data-platform-architecture.html)
 | [Architectural Diagrams](/architectural-diagrams.html) | [Build vs. Buy](/build-vs-buy.html) | [Test Strategy](/test-strategy.html) | [Test-Data Strategy](/test-data-strategy.html)
-| [Technology selection](/technology-selection) | [Sequence Diagrams](/sequence-diagrams.html)
+| [Technology review](/technology-review) | [Sequence Diagrams](/sequence-diagrams.html)
 | [CI & Deployment](/ci-and-deployment.html)| [Tech Debt Reduction](/tech-debt.html)
 
 ## Product planning
 
 | [Priority Sliders](/priority-sliders.html) | [Product feedback approach](/product-feedback-approach.html) | [Development approach](/development-approach.html) | [Feature Prioritization](/feature-prioritization.html)
-| [MVP Plan](/mvp-plan.html) | [Sprint Zero Plan](/sprint-zero-plan.html) | [Sprint plan](/sprint-plan.html)
-| [WSJF](/wsjf.html) | [Estimation](/estimation.html) | [Release plan](/release-plan.html)
-| [Relative Sizing](/relative-sizing.html) | [Governance](/governance.html)
+| [MVP Plan](/mvp-plan.html) | [Sprint Zero Plan](/sprint-zero-plan.html) | [WSJF](/wsjf.html) | [Estimation](/estimation.html) | [Release plan](/release-plan.html)
+| [Governance](/governance.html)
 
 ## Management concerns
 
-| [RAIDs](/raids.html) | [Communication Plan](/communication-plan.html) | [Retrospective](/retrospective.html) | [Presentation](/presentation.html)
-
-## Accompanying Presentations
-
-| [Features vs. Benefits](/features-vs-benefits.html) 
+| [RAIDs](/raids.html) | [Communication Plan](/communication-plan.html) | [Retrospective](/retrospective.html)
 
