@@ -39,4 +39,3 @@ The deliverables of an inception are usually presented in the form or a readout 
 - Prioritized and Estimated Initial Story list
 - Staffing and on-boarding
 - Sprint zero plan
-
