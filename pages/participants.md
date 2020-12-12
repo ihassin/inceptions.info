@@ -38,9 +38,8 @@ This leads to a trade-off of the number of people, sessions and timeline, based 
 - SMEs
 - Test/QA
 
-The invitee list should be the result of a collaboration between us and our client sponsor. Additional input will come from the stakeholder map.
+The invitee list should be the result of a collaboration between your team and its sponsor. Additional input will come from the stakeholder map.
 
-The sponsor will naturally invite all those who they want to lead in the engagement's efforts. They will most likely not invite those with whom they have strained relationships or pose a political problem. It's our duty to solve this challenge by identifying those people, roles, functions and making sure that they are well informed about the exercise, and invite them to breakout sessions, in the least.
-
-Here be dragons. It's vital that everyone associated with the organizations and systems interfacing with the project be present at some stage during the inception.
+The sponsor will naturally invite all those who they want to lead in the engagement's efforts. They will most likely not invite those with whom they have strained relationships or pose a political problem. It's your duty to solve this challenge by identifying those people, roles, functions and making sure that they are well informed about the exercise, and invite them to breakout sessions, in the least.
+Yet here be dragons. It's vital that everyone associated with the organizations and systems interfacing with the project be present at some stage during the inception.
 
