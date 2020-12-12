@@ -3,6 +3,7 @@ layout: page
 title: Participants
 permalink: /participants.html
 parent: Creating an agenda
+nav_order: 1
 ---
 
 # Participants

@@ -3,6 +3,7 @@ layout: page
 title: Example - Agenda
 permalink: /example-agenda.html
 parent: Creating an agenda
+nav_order: 2
 ---
 
 # Duration of the inception
