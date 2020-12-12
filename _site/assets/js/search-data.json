@@ -1135,7 +1135,7 @@
   },"189": {
     "doc": "Desired outcomes",
     "title": "Understanding product context",
-    "content": "| Objectives Definition | Competitive Analysis | Business context |   | . | Logical Context | OKRs | KPIs | Challenge Map | . ",
+    "content": "| Objectives Definition | Competitive Analysis | Business context | Logical Context | . | OKRs | KPIs | Challenge Map |   | . ",
     "url": "https://www.inceptions.info/desired-outcomes.html#understanding-product-context",
     "relUrl": "/desired-outcomes.html#understanding-product-context"
   },"190": {
@@ -1159,13 +1159,13 @@
   },"193": {
     "doc": "Desired outcomes",
     "title": "Engineering concerns",
-    "content": "| Current Tech Challenges | Application Architecture | Data Platform Architecture |   | . | Architectural Diagrams | Build vs. Buy | Test Strategy | Test-Data Strategy | . | Technology review | Sequence Diagrams |   |   | . | CI &amp; Deployment | Tech Debt Reduction |   |   | . ",
+    "content": "| Current Tech Challenges | Application Architecture | Data Platform Architecture |   | . | Architectural Diagrams | Build vs. Buy | Test Strategy | Test-Data Strategy | . | Technology review | Sequence Diagrams | CI &amp; Deployment | Tech Debt Reduction | . ",
     "url": "https://www.inceptions.info/desired-outcomes.html#engineering-concerns",
     "relUrl": "/desired-outcomes.html#engineering-concerns"
   },"194": {
     "doc": "Desired outcomes",
     "title": "Product planning",
-    "content": "| Priority Sliders | Product feedback approach | Development approach | Feature Prioritization |   | . | MVP Plan | Sprint Zero Plan | WSJF | Estimation | Release plan | . | Governance |   |   |   |   | . ",
+    "content": "| Priority Sliders | Product feedback approach | Development approach | Feature Prioritization | . | MVP Plan | Sprint Zero Plan | WSJF | Estimation | . | Release plan | Governance |   |   | . ",
     "url": "https://www.inceptions.info/desired-outcomes.html#product-planning",
     "relUrl": "/desired-outcomes.html#product-planning"
   },"195": {
