@@ -7,28 +7,10 @@ permalink: /debt-at-risk.html
 
 # Debt At Risk
 
-## Outcome
+An excerpt from an [article](https://www.in-context.com/agile/pmo/cab/governance/product%20development/project%20development/2019/01/16/governance-alternative.html) discussing debt-at-risk.
 
-## Audience
+# Discussion
 
-## When to use
-
-## Activity
-
-## Preparation
-
-## Process
-
-## Group size
-
-## Timing
-
-Try to keep this exercise less than an hour.
-
-## Example
-
-## Related activities
-
-## Notes
-
-## More information
+- What are we measuring?
+- Why are we measuring it?
+- How are these measurements helping us get our product to our customers or improve our processes?
