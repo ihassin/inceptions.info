@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Discussions
-nav_order: 2
+nav_order: 5
 permalink: /discussions.html
 has_children: yes
 ---
