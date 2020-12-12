@@ -64,7 +64,7 @@ Try to keep this session to half an hour at most.
 
 ## Notes
 
-Make sure that anyone identified as major stakeholder but is missing from the initial Inception invitations is quickly added to list and will be able to participate in subsequent sessions. 
+Make sure that anyone identified as major stakeholder, but was not invited initially, is added to list and be able to participate in subsequent sessions. 
 
 ## More information
 
