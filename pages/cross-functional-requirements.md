@@ -2,7 +2,7 @@
 layout: page
 title: Cross-functional requirements
 parent: Desired outcomes
-permalink: cross-functional-requirements.html
+permalink: /cross-functional-requirements.html
 ---
 
 # Cross-functional requirements

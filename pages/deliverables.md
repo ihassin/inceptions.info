@@ -18,7 +18,7 @@ The deliverables of an inception are usually:
 - UX Approach
 - User Journeys in the form of MVPs
 - Lo-fi sketches
-- Features
+- [Features](/features.html)
 - Prioritized and Estimated Initial Story list
 - Technical vision (architecture, environments, pipelines, sequence diagrams)
 - Testing Approach

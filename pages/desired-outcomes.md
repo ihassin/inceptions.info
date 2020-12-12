@@ -26,7 +26,7 @@ has_children: yes
 | [Elevator Pitch](/elevator-pitch.html) | [Product-in-a-box](/product-in-a-box.html) | [Personas](/personas.html)  
 | [Goals & Epics](/goals-and-epics.html) | [Epics and Features](/epics-and-features.html) | [User Journeys](/user-journeys.html)
 | [Impact Mapping](/impact-mapping.html) | [Features](/features.html) | [Story Mapping](/story-mapping.html)
-| [Lo-Fi UX](/lo-fi-ux.html) | [Stakeholder Agreement](/stakeholder-agreement.html)
+| [Lo-Fi UX](/lo-fi-ux.html) | [Stakeholder Agreement](/stakeholder-agreement.html) | [Cross-Functional Requirements](/cross-functional-requirements.html)
 
 ## Risk analysis
 
