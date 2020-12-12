@@ -14,3 +14,9 @@ nav_order: 2
 ## Essential interviews and sessions
 ## Synthesis
 ## Presentation
+
+# Examples
+
+## Rapid inception agenda
+
+## 'Standard' inception agenda
