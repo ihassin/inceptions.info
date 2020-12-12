@@ -12,20 +12,33 @@ has_children: yes
 
 The deliverables of an inception are usually:
 
+# Sections of a typical readout
+
+## General
+
 - Summary of all the [sessions](/desired-outcomes)
 - Business vision and objectives
-- Understanding of scope
-- UX Approach
+- Documentation of scope
+- RAIDs
+- Compliance, financing and gating
+- Agile Product development and delivery methodology
+  
+## Business aspect
+
+- [Epics and Features](/features.html)
 - User Journeys in the form of MVPs
+- UX Approach
 - Lo-fi sketches
-- [Features](/features.html)
-- Prioritized and Estimated Initial Story list
+  
+## Technical aspects
+
 - Technical vision (architecture, environments, pipelines, sequence diagrams)
 - Testing Approach
-- Agile Product development methodology and staffing model
-- Distributed delivery approach (if applicable)
+
+## Delivery aspects
+
 - High-level release Plan
-- Compliance, financing and gating
+- Prioritized and Estimated Initial Story list
 - Staffing and on-boarding
-- RAIDs
 - Sprint zero plan
+
