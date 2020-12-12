@@ -3,7 +3,6 @@ layout: page
 title: Hopes and Fears
 permalink: /hopes-and-fears.html
 parent: Desired outcomes
-nav_order: 3
 ---
 
 # Hopes And Fears

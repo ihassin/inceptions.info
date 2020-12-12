@@ -3,7 +3,6 @@ layout: page
 title: Sponsor Homework
 parent: Desired outcomes
 permalink: /sponsor-homework.html
-nav_order: 2
 ---
 
 # Sponsor Homework
