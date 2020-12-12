@@ -5,7 +5,7 @@ parent: Discussions
 permalink: /lego-game.html
 ---
 
-# Estimation Game
+# The Lego game
 
 ## Outcome
 
