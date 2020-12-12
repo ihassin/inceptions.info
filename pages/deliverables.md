@@ -8,11 +8,9 @@ has_children: yes
 
 # Deliverables
 
-[Cross Functional Requirements](/cross-functional-requirements.html)
+The deliverables of an inception are usually presented in the form or a readout deck, accompanied by supporting documentation.
 
-The deliverables of an inception are usually:
-
-# Sections of a typical readout
+# Sections of a typical 'readout'
 
 ## General
 
