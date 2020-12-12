@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Deliverables
-nav_order: 6
+nav_order: 5
 permalink: /deliverables.html
 has_children: yes
 ---
