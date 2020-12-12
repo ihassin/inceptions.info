@@ -57,3 +57,5 @@ exclude:
  - deploy.sh
  - spellcheck.sh
  - Rakefile
+ - publish.sh
+
