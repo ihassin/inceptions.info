@@ -3937,154 +3937,88 @@
   },"656": {
     "doc": "Value points",
     "title": "Value points",
-    "content": " ",
+    "content": "An excerpt from an article discussing value points. ",
     "url": "https://www.inceptions.info/value-points.html",
     "relUrl": "/value-points.html"
   },"657": {
     "doc": "Value points",
-    "title": "Outcome",
-    "content": " ",
-    "url": "https://www.inceptions.info/value-points.html#outcome",
-    "relUrl": "/value-points.html#outcome"
+    "title": "Discussion",
+    "content": ". | What are we estimating? | Why are we estimating? | How are these estimations helping us get our product to our customers or improve our processes? | . ",
+    "url": "https://www.inceptions.info/value-points.html#discussion",
+    "relUrl": "/value-points.html#discussion"
   },"658": {
-    "doc": "Value points",
-    "title": "Audience",
-    "content": " ",
-    "url": "https://www.inceptions.info/value-points.html#audience",
-    "relUrl": "/value-points.html#audience"
-  },"659": {
-    "doc": "Value points",
-    "title": "When to use",
-    "content": " ",
-    "url": "https://www.inceptions.info/value-points.html#when-to-use",
-    "relUrl": "/value-points.html#when-to-use"
-  },"660": {
-    "doc": "Value points",
-    "title": "Activity",
-    "content": " ",
-    "url": "https://www.inceptions.info/value-points.html#activity",
-    "relUrl": "/value-points.html#activity"
-  },"661": {
-    "doc": "Value points",
-    "title": "Preparation",
-    "content": " ",
-    "url": "https://www.inceptions.info/value-points.html#preparation",
-    "relUrl": "/value-points.html#preparation"
-  },"662": {
-    "doc": "Value points",
-    "title": "Process",
-    "content": " ",
-    "url": "https://www.inceptions.info/value-points.html#process",
-    "relUrl": "/value-points.html#process"
-  },"663": {
-    "doc": "Value points",
-    "title": "Group size",
-    "content": " ",
-    "url": "https://www.inceptions.info/value-points.html#group-size",
-    "relUrl": "/value-points.html#group-size"
-  },"664": {
-    "doc": "Value points",
-    "title": "Timing",
-    "content": "Try to keep this exercise less than an hour. ",
-    "url": "https://www.inceptions.info/value-points.html#timing",
-    "relUrl": "/value-points.html#timing"
-  },"665": {
-    "doc": "Value points",
-    "title": "Example",
-    "content": " ",
-    "url": "https://www.inceptions.info/value-points.html#example",
-    "relUrl": "/value-points.html#example"
-  },"666": {
-    "doc": "Value points",
-    "title": "Related activities",
-    "content": " ",
-    "url": "https://www.inceptions.info/value-points.html#related-activities",
-    "relUrl": "/value-points.html#related-activities"
-  },"667": {
-    "doc": "Value points",
-    "title": "Notes",
-    "content": " ",
-    "url": "https://www.inceptions.info/value-points.html#notes",
-    "relUrl": "/value-points.html#notes"
-  },"668": {
-    "doc": "Value points",
-    "title": "More information",
-    "content": " ",
-    "url": "https://www.inceptions.info/value-points.html#more-information",
-    "relUrl": "/value-points.html#more-information"
-  },"669": {
     "doc": "Value Stream Mapping",
     "title": "Value Stream Mapping",
     "content": " ",
     "url": "https://www.inceptions.info/vsm.html",
     "relUrl": "/vsm.html"
-  },"670": {
+  },"659": {
     "doc": "Value Stream Mapping",
     "title": "Outcome",
     "content": "This is a session that will yield the current and future product development steps needed to put features in production, or “concept-to-cash”. Its main utility is to: . | Expose debt at risk / increase the realization of unrealized value | Understand how the organization manages change | Highlight system constraints | Provide a measurable basis for optimization | Use rational, value-based information for organizational change | . ",
     "url": "https://www.inceptions.info/vsm.html#outcome",
     "relUrl": "/vsm.html#outcome"
-  },"671": {
+  },"660": {
     "doc": "Value Stream Mapping",
     "title": "Audience",
     "content": "All stakeholders, and all members of the product and support teams. Typically needed roles: . | Application owner | Business, Product manager/owner | Project manager | Application architect | Platform architect | Development lead | QA lead | SEO &amp; Social Media Rep | UX lead | Infrastructure lead | Ops lead | Compliance lead | Security lead | Performance lead | Deployment lead | CAB rep | L1, L2, L3 Support | . ",
     "url": "https://www.inceptions.info/vsm.html#audience",
     "relUrl": "/vsm.html#audience"
-  },"672": {
+  },"661": {
     "doc": "Value Stream Mapping",
     "title": "When to use",
     "content": "Use this prior to any planning and commitment sessions, as it will inform the teams about the effort needed to put features into production. ",
     "url": "https://www.inceptions.info/vsm.html#when-to-use",
     "relUrl": "/vsm.html#when-to-use"
-  },"673": {
+  },"662": {
     "doc": "Value Stream Mapping",
     "title": "Activity",
     "content": "Participants describe the steps needed to conceive, and deploy a feature to satisfy a customer’s request. ",
     "url": "https://www.inceptions.info/vsm.html#activity",
     "relUrl": "/vsm.html#activity"
-  },"674": {
+  },"663": {
     "doc": "Value Stream Mapping",
     "title": "Preparation",
     "content": ". | Book a room large enough to hold all the participants. | Make sure that the room has enough wall-space to visualize the VSM with cards. | If you have never seen the room before, ask the sponsor to send photos so you can plan placement. | Make sure A/V can show both the participants and a shared screen if you will have people calling in remotely. | Agree on ground rules. | Establish an agenda that takes people’s obligations into account. | Repeat the Prime Directive to ensure that people feel safe. | To facilitate flow, defer collecting details through breakout sessions as needed. | On average, a thorough VSM session takes between one and three days, depending on people’s availability and system breath. | . Example of an agenda: . | Day 1: Morning: Kickoff, Prime Directive, Retro, Hopes-and-Fears, start Current–state VSM Afternoon: Continued . | Days 2 &amp; 3: Mornings: Org/Tech deep-dive &amp; Future-state VSM Afternoons: Continued . | Day 3: Retro &amp; next steps. | . ",
     "url": "https://www.inceptions.info/vsm.html#preparation",
     "relUrl": "/vsm.html#preparation"
-  },"675": {
+  },"664": {
     "doc": "Value Stream Mapping",
     "title": "Process",
     "content": "Select which process to map. Define the extent of the process to be covered. Optimally, it would be “concept to cash” to see the end-to-end flow of work. | Decide on the bounds of the map. | Discuss and document the process steps. | Document measurements. | Reflect on optimization for the future state. | Document the future state. | Create actionable steps to implement the future state. | Repeat in a few months and incorporate learning. | . Measurements: . | Wait (wt): The time it takes from submission of a request till work starts. | Value added (v): The effort time it takes to fulfill a request. | Unneeded non value-add (u): The time spent on irrelevant tasks. | Needed non value-add (n): The time spent on compliance tasks. | %FPCA (p): The rate at which incoming requests are deemed sufficiently correct for work to begin. | Lead time (l): The time it takes to fulfill a request (wt+v). | Waste (w): Time not spent on value-adding tasks (l - v). | Efficiency (e): Value added time as ratio of elapsed time and lead time (v/w). | True Efficiency (te): FPCA factored in (v/p) | . ",
     "url": "https://www.inceptions.info/vsm.html#process",
     "relUrl": "/vsm.html#process"
-  },"676": {
+  },"665": {
     "doc": "Value Stream Mapping",
     "title": "Group size",
     "content": "Everyone, physically present. ",
     "url": "https://www.inceptions.info/vsm.html#group-size",
     "relUrl": "/vsm.html#group-size"
-  },"677": {
+  },"666": {
     "doc": "Value Stream Mapping",
     "title": "Timing",
     "content": "Depending on the size of the effort, the number of components and the width of the goal-posts, this may take between 2 and 4 days. ",
     "url": "https://www.inceptions.info/vsm.html#timing",
     "relUrl": "/vsm.html#timing"
-  },"678": {
+  },"667": {
     "doc": "Value Stream Mapping",
     "title": "Example",
     "content": ". ",
     "url": "https://www.inceptions.info/vsm.html#example",
     "relUrl": "/vsm.html#example"
-  },"679": {
+  },"668": {
     "doc": "Value Stream Mapping",
     "title": "Related activities",
     "content": " ",
     "url": "https://www.inceptions.info/vsm.html#related-activities",
     "relUrl": "/vsm.html#related-activities"
-  },"680": {
+  },"669": {
     "doc": "Value Stream Mapping",
     "title": "Notes",
     "content": "Find a balance: . | Selecting a limited scope may lead to misinformed local optimization. | Selecting a large scope will be rewarding, but logistically challenging. | . ",
     "url": "https://www.inceptions.info/vsm.html#notes",
     "relUrl": "/vsm.html#notes"
-  },"681": {
+  },"670": {
     "doc": "Value Stream Mapping",
     "title": "More information",
     "content": " ",

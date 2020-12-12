@@ -7,28 +7,10 @@ permalink: /value-points.html
 
 # Value points
 
-## Outcome
+An excerpt from an [article](https://www.in-context.com/agile/governance/product%20development/project%20development/2019/01/18/stop-story-points-start-value-points.html) discussing value points.
 
-## Audience
+# Discussion
 
-## When to use
-
-## Activity
-
-## Preparation
-
-## Process
-
-## Group size
-
-## Timing
-
-Try to keep this exercise less than an hour.
-
-## Example
-
-## Related activities
-
-## Notes
-
-## More information
+- What are we estimating?
+- Why are we estimating?
+- How are these estimations helping us get our product to our customers or improve our processes?
