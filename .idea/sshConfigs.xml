@@ -2,7 +2,7 @@
 <project version="4">
   <component name="SshConfigs">
     <configs>
-      <sshConfig authType="OPEN_SSH" host="www.inceptions.info" id="903ec678-d311-42dc-96f1-a69b71f4367f" port="22" nameFormat="DESCRIPTIVE" username="ubuntu" />
+      <sshConfig authType="OPEN_SSH" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="www.inceptions.info" id="903ec678-d311-42dc-96f1-a69b71f4367f" port="22" nameFormat="DESCRIPTIVE" username="ubuntu" />
     </configs>
   </component>
 </project>
