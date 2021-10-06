@@ -1,4 +1,7 @@
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-.idea
+.idea/
+**/*/.DS_Store
+.DS_Store
+
