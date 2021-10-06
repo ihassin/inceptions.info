@@ -1,3 +1,3 @@
 #!/bin/zsh
-bundle exec jekyll build
+./build.sh
 scp -r _site/* ubuntu@inceptions.info:~/www-inceptions
