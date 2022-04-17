@@ -42,7 +42,7 @@ has_children: yes
 ## Product planning
 
 | [Priority Sliders](/priority-sliders.html) | [Product feedback approach](/product-feedback-approach.html) | [Development approach](/development-approach.html) | [Feature Prioritization](/feature-prioritization.html)
-| [MVP Plan](/mvp-plan.html) | [Sprint Zero Plan](/sprint-zero-plan.html) | [WSJF](/wsjf.html) | [Estimation](/estimation.html)
+| [MVP Plan](/mvp-plan.html) | [Sprint Zero Plan](/sprint-zero-plan.html) | [WSJF](/wsjf.html) | [Estimations](/estimations.html)
 | [Release plan](/release-plan.html) | [Governance](/governance.html)
 
 ## Management concerns
