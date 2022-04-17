@@ -51,8 +51,6 @@ search:
 # their entries' file path in the `include:` list.
 #
 exclude:
- - pipeline-inceptions-info.json
- - pipeline-inceptions-info-nodocker.json
  - build.sh
  - deploy.sh
  - spellcheck.sh
