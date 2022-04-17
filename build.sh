@@ -5,5 +5,5 @@ git add .
 git commit -am"Edits"
 git push
 
-aws s3 cp ./_site s3://inceptions-info-customresourcestack-s3bucketroot-1fb8ssmgnkr8f --recursive --region us-east-1 --profile personal
+aws s3 cp ./_site s3://inceptions-customresourcestack-1n9j0-s3bucketroot-ouce98s0f9on --recursive --region us-east-1 --profile personal
 
