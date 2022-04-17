@@ -37,7 +37,7 @@ has_children: yes
 
 | [Current Tech Challenges](/current-tech-challenges.html) | [Application Architecture](/application-architecture.html) | [Data Platform Architecture](/data-platform-architecture.html)
 | [Architectural Diagrams](/architectural-diagrams.html) | [Build vs. Buy](/build-vs-buy.html) | [Test Strategy](/test-strategy.html) | [Test-Data Strategy](/test-data-strategy.html)
-| [Technology review](/technology-review.html) | [Sequence Diagrams](/sequence-diagrams.html) | [CI & Deployment](/ci-and-deployment.html)| [Tech Debt Reduction](/tech-debt.html)
+| [Technology review](/technology-review.html) | [Sequence Diagrams](/sequence-diagrams.html) | [CI & Deployment](/ci-and-deployment.html)| [Tech Debt Reduction](/tech-debt-reduction.html)
 
 ## Product planning
 
