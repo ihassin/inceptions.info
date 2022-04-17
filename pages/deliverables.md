@@ -14,7 +14,7 @@ The deliverables of an inception are usually presented in the form or a readout 
 
 ## General
 
-- Summary of all the [sessions](/desired-outcomes)
+- Summary of all the [sessions](/desired-outcomes.html)
 - Business vision and objectives
 - Documentation of scope
 - RAIDs
