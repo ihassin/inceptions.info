@@ -32,7 +32,7 @@ Conduct a discussion that elicits the needed information, answering questions su
 - Who has a financial interest?
 - What are the top motivations for each stakeholder?
 - Who are the biggest supporters?
-- ​Who are the biggest opposers?
+- Who are the biggest opposers?
 
 ## Preparation
 
