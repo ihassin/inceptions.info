@@ -1,0 +1,837 @@
+# WARNING ABOUT GENERATED CODE
+#
+# This file is generated. See the contributing guide for more information:
+# https://github.com/aws/aws-sdk-ruby/blob/version-3/CONTRIBUTING.md
+#
+# WARNING ABOUT GENERATED CODE
+
+module Aws
+  module MediaPackageV2
+    class Client < ::Seahorse::Client::Base
+      include ::Aws::ClientStubs
+
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#initialize-instance_method
+      def self.new: (
+                      ?credentials: untyped,
+                      ?region: String,
+                      ?access_key_id: String,
+                      ?account_id: String,
+                      ?active_endpoint_cache: bool,
+                      ?adaptive_retry_wait_to_fill: bool,
+                      ?client_side_monitoring: bool,
+                      ?client_side_monitoring_client_id: String,
+                      ?client_side_monitoring_host: String,
+                      ?client_side_monitoring_port: Integer,
+                      ?client_side_monitoring_publisher: untyped,
+                      ?convert_params: bool,
+                      ?correct_clock_skew: bool,
+                      ?defaults_mode: String,
+                      ?disable_host_prefix_injection: bool,
+                      ?disable_request_compression: bool,
+                      ?endpoint: String,
+                      ?endpoint_cache_max_entries: Integer,
+                      ?endpoint_cache_max_threads: Integer,
+                      ?endpoint_cache_poll_interval: Integer,
+                      ?endpoint_discovery: bool,
+                      ?ignore_configured_endpoint_urls: bool,
+                      ?log_formatter: untyped,
+                      ?log_level: Symbol,
+                      ?logger: untyped,
+                      ?max_attempts: Integer,
+                      ?profile: String,
+                      ?request_checksum_calculation: String,
+                      ?request_min_compression_size_bytes: Integer,
+                      ?response_checksum_validation: String,
+                      ?retry_backoff: Proc,
+                      ?retry_base_delay: Float,
+                      ?retry_jitter: (:none | :equal | :full | ^(Integer) -> Integer),
+                      ?retry_limit: Integer,
+                      ?retry_max_delay: Integer,
+                      ?retry_mode: ("legacy" | "standard" | "adaptive"),
+                      ?sdk_ua_app_id: String,
+                      ?secret_access_key: String,
+                      ?session_token: String,
+                      ?sigv4a_signing_region_set: Array[String],
+                      ?stub_responses: untyped,
+                      ?telemetry_provider: Aws::Telemetry::TelemetryProviderBase,
+                      ?token_provider: untyped,
+                      ?use_dualstack_endpoint: bool,
+                      ?use_fips_endpoint: bool,
+                      ?validate_params: bool,
+                      ?endpoint_provider: untyped,
+                      ?http_proxy: String,
+                      ?http_open_timeout: (Float | Integer),
+                      ?http_read_timeout: (Float | Integer),
+                      ?http_idle_timeout: (Float | Integer),
+                      ?http_continue_timeout: (Float | Integer),
+                      ?ssl_timeout: (Float | Integer | nil),
+                      ?http_wire_trace: bool,
+                      ?ssl_verify_peer: bool,
+                      ?ssl_ca_bundle: String,
+                      ?ssl_ca_directory: String,
+                      ?ssl_ca_store: String,
+                      ?on_chunk_received: Proc,
+                      ?on_chunk_sent: Proc,
+                      ?raise_response_errors: bool
+                    ) -> instance
+                  | (?Hash[Symbol, untyped]) -> instance
+
+
+      interface _CancelHarvestJobResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CancelHarvestJobResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#cancel_harvest_job-instance_method
+      def cancel_harvest_job: (
+                                channel_group_name: ::String,
+                                channel_name: ::String,
+                                origin_endpoint_name: ::String,
+                                harvest_job_name: ::String,
+                                ?etag: ::String
+                              ) -> _CancelHarvestJobResponseSuccess
+                            | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CancelHarvestJobResponseSuccess
+
+      interface _CreateChannelResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CreateChannelResponse]
+        def arn: () -> ::String
+        def channel_name: () -> ::String
+        def channel_group_name: () -> ::String
+        def created_at: () -> ::Time
+        def modified_at: () -> ::Time
+        def description: () -> ::String
+        def ingest_endpoints: () -> ::Array[Types::IngestEndpoint]
+        def input_type: () -> ("HLS" | "CMAF")
+        def etag: () -> ::String
+        def tags: () -> ::Hash[::String, ::String]
+        def input_switch_configuration: () -> Types::InputSwitchConfiguration
+        def output_header_configuration: () -> Types::OutputHeaderConfiguration
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#create_channel-instance_method
+      def create_channel: (
+                            channel_group_name: ::String,
+                            channel_name: ::String,
+                            ?client_token: ::String,
+                            ?input_type: ("HLS" | "CMAF"),
+                            ?description: ::String,
+                            ?input_switch_configuration: {
+                              mqcs_input_switching: bool?
+                            },
+                            ?output_header_configuration: {
+                              publish_mqcs: bool?
+                            },
+                            ?tags: Hash[::String, ::String]
+                          ) -> _CreateChannelResponseSuccess
+                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CreateChannelResponseSuccess
+
+      interface _CreateChannelGroupResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CreateChannelGroupResponse]
+        def channel_group_name: () -> ::String
+        def arn: () -> ::String
+        def egress_domain: () -> ::String
+        def created_at: () -> ::Time
+        def modified_at: () -> ::Time
+        def etag: () -> ::String
+        def description: () -> ::String
+        def tags: () -> ::Hash[::String, ::String]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#create_channel_group-instance_method
+      def create_channel_group: (
+                                  channel_group_name: ::String,
+                                  ?client_token: ::String,
+                                  ?description: ::String,
+                                  ?tags: Hash[::String, ::String]
+                                ) -> _CreateChannelGroupResponseSuccess
+                              | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CreateChannelGroupResponseSuccess
+
+      interface _CreateHarvestJobResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CreateHarvestJobResponse]
+        def channel_group_name: () -> ::String
+        def channel_name: () -> ::String
+        def origin_endpoint_name: () -> ::String
+        def destination: () -> Types::Destination
+        def harvest_job_name: () -> ::String
+        def harvested_manifests: () -> Types::HarvestedManifests
+        def description: () -> ::String
+        def schedule_configuration: () -> Types::HarvesterScheduleConfiguration
+        def arn: () -> ::String
+        def created_at: () -> ::Time
+        def modified_at: () -> ::Time
+        def status: () -> ("QUEUED" | "IN_PROGRESS" | "CANCELLED" | "COMPLETED" | "FAILED")
+        def error_message: () -> ::String
+        def etag: () -> ::String
+        def tags: () -> ::Hash[::String, ::String]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#create_harvest_job-instance_method
+      def create_harvest_job: (
+                                channel_group_name: ::String,
+                                channel_name: ::String,
+                                origin_endpoint_name: ::String,
+                                ?description: ::String,
+                                harvested_manifests: {
+                                  hls_manifests: Array[
+                                    {
+                                      manifest_name: ::String
+                                    },
+                                  ]?,
+                                  dash_manifests: Array[
+                                    {
+                                      manifest_name: ::String
+                                    },
+                                  ]?,
+                                  low_latency_hls_manifests: Array[
+                                    {
+                                      manifest_name: ::String
+                                    },
+                                  ]?
+                                },
+                                schedule_configuration: {
+                                  start_time: ::Time,
+                                  end_time: ::Time
+                                },
+                                destination: {
+                                  s3_destination: {
+                                    bucket_name: ::String,
+                                    destination_path: ::String
+                                  }
+                                },
+                                ?client_token: ::String,
+                                ?harvest_job_name: ::String,
+                                ?tags: Hash[::String, ::String]
+                              ) -> _CreateHarvestJobResponseSuccess
+                            | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CreateHarvestJobResponseSuccess
+
+      interface _CreateOriginEndpointResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CreateOriginEndpointResponse]
+        def arn: () -> ::String
+        def channel_group_name: () -> ::String
+        def channel_name: () -> ::String
+        def origin_endpoint_name: () -> ::String
+        def container_type: () -> ("TS" | "CMAF")
+        def segment: () -> Types::Segment
+        def created_at: () -> ::Time
+        def modified_at: () -> ::Time
+        def description: () -> ::String
+        def startover_window_seconds: () -> ::Integer
+        def hls_manifests: () -> ::Array[Types::GetHlsManifestConfiguration]
+        def low_latency_hls_manifests: () -> ::Array[Types::GetLowLatencyHlsManifestConfiguration]
+        def dash_manifests: () -> ::Array[Types::GetDashManifestConfiguration]
+        def force_endpoint_error_configuration: () -> Types::ForceEndpointErrorConfiguration
+        def etag: () -> ::String
+        def tags: () -> ::Hash[::String, ::String]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#create_origin_endpoint-instance_method
+      def create_origin_endpoint: (
+                                    channel_group_name: ::String,
+                                    channel_name: ::String,
+                                    origin_endpoint_name: ::String,
+                                    container_type: ("TS" | "CMAF"),
+                                    ?segment: {
+                                      segment_duration_seconds: ::Integer?,
+                                      segment_name: ::String?,
+                                      ts_use_audio_rendition_group: bool?,
+                                      include_iframe_only_streams: bool?,
+                                      ts_include_dvb_subtitles: bool?,
+                                      scte: {
+                                        scte_filter: Array[("SPLICE_INSERT" | "BREAK" | "PROVIDER_ADVERTISEMENT" | "DISTRIBUTOR_ADVERTISEMENT" | "PROVIDER_PLACEMENT_OPPORTUNITY" | "DISTRIBUTOR_PLACEMENT_OPPORTUNITY" | "PROVIDER_OVERLAY_PLACEMENT_OPPORTUNITY" | "DISTRIBUTOR_OVERLAY_PLACEMENT_OPPORTUNITY" | "PROGRAM")]?
+                                      }?,
+                                      encryption: {
+                                        constant_initialization_vector: ::String?,
+                                        encryption_method: {
+                                          ts_encryption_method: ("AES_128" | "SAMPLE_AES")?,
+                                          cmaf_encryption_method: ("CENC" | "CBCS")?
+                                        },
+                                        key_rotation_interval_seconds: ::Integer?,
+                                        speke_key_provider: {
+                                          encryption_contract_configuration: {
+                                            preset_speke_20_audio: ("PRESET_AUDIO_1" | "PRESET_AUDIO_2" | "PRESET_AUDIO_3" | "SHARED" | "UNENCRYPTED"),
+                                            preset_speke_20_video: ("PRESET_VIDEO_1" | "PRESET_VIDEO_2" | "PRESET_VIDEO_3" | "PRESET_VIDEO_4" | "PRESET_VIDEO_5" | "PRESET_VIDEO_6" | "PRESET_VIDEO_7" | "PRESET_VIDEO_8" | "SHARED" | "UNENCRYPTED")
+                                          },
+                                          resource_id: ::String,
+                                          drm_systems: Array[("CLEAR_KEY_AES_128" | "FAIRPLAY" | "PLAYREADY" | "WIDEVINE" | "IRDETO")],
+                                          role_arn: ::String,
+                                          url: ::String
+                                        }
+                                      }?
+                                    },
+                                    ?client_token: ::String,
+                                    ?description: ::String,
+                                    ?startover_window_seconds: ::Integer,
+                                    ?hls_manifests: Array[
+                                      {
+                                        manifest_name: ::String,
+                                        child_manifest_name: ::String?,
+                                        scte_hls: {
+                                          ad_marker_hls: ("DATERANGE")?
+                                        }?,
+                                        start_tag: {
+                                          time_offset: ::Float,
+                                          precise: bool?
+                                        }?,
+                                        manifest_window_seconds: ::Integer?,
+                                        program_date_time_interval_seconds: ::Integer?,
+                                        filter_configuration: {
+                                          manifest_filter: ::String?,
+                                          start: ::Time?,
+                                          end: ::Time?,
+                                          time_delay_seconds: ::Integer?,
+                                          clip_start_time: ::Time?
+                                        }?,
+                                        url_encode_child_manifest: bool?
+                                      },
+                                    ],
+                                    ?low_latency_hls_manifests: Array[
+                                      {
+                                        manifest_name: ::String,
+                                        child_manifest_name: ::String?,
+                                        scte_hls: {
+                                          ad_marker_hls: ("DATERANGE")?
+                                        }?,
+                                        start_tag: {
+                                          time_offset: ::Float,
+                                          precise: bool?
+                                        }?,
+                                        manifest_window_seconds: ::Integer?,
+                                        program_date_time_interval_seconds: ::Integer?,
+                                        filter_configuration: {
+                                          manifest_filter: ::String?,
+                                          start: ::Time?,
+                                          end: ::Time?,
+                                          time_delay_seconds: ::Integer?,
+                                          clip_start_time: ::Time?
+                                        }?,
+                                        url_encode_child_manifest: bool?
+                                      },
+                                    ],
+                                    ?dash_manifests: Array[
+                                      {
+                                        manifest_name: ::String,
+                                        manifest_window_seconds: ::Integer?,
+                                        filter_configuration: {
+                                          manifest_filter: ::String?,
+                                          start: ::Time?,
+                                          end: ::Time?,
+                                          time_delay_seconds: ::Integer?,
+                                          clip_start_time: ::Time?
+                                        }?,
+                                        min_update_period_seconds: ::Integer?,
+                                        min_buffer_time_seconds: ::Integer?,
+                                        suggested_presentation_delay_seconds: ::Integer?,
+                                        segment_template_format: ("NUMBER_WITH_TIMELINE")?,
+                                        period_triggers: Array[("AVAILS" | "DRM_KEY_ROTATION" | "SOURCE_CHANGES" | "SOURCE_DISRUPTIONS" | "NONE")]?,
+                                        scte_dash: {
+                                          ad_marker_dash: ("BINARY" | "XML")?
+                                        }?,
+                                        drm_signaling: ("INDIVIDUAL" | "REFERENCED")?,
+                                        utc_timing: {
+                                          timing_mode: ("HTTP_HEAD" | "HTTP_ISO" | "HTTP_XSDATE" | "UTC_DIRECT")?,
+                                          timing_source: ::String?
+                                        }?
+                                      },
+                                    ],
+                                    ?force_endpoint_error_configuration: {
+                                      endpoint_error_conditions: Array[("STALE_MANIFEST" | "INCOMPLETE_MANIFEST" | "MISSING_DRM_KEY" | "SLATE_INPUT")]?
+                                    },
+                                    ?tags: Hash[::String, ::String]
+                                  ) -> _CreateOriginEndpointResponseSuccess
+                                | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CreateOriginEndpointResponseSuccess
+
+      interface _DeleteChannelResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteChannelResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#delete_channel-instance_method
+      def delete_channel: (
+                            channel_group_name: ::String,
+                            channel_name: ::String
+                          ) -> _DeleteChannelResponseSuccess
+                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteChannelResponseSuccess
+
+      interface _DeleteChannelGroupResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteChannelGroupResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#delete_channel_group-instance_method
+      def delete_channel_group: (
+                                  channel_group_name: ::String
+                                ) -> _DeleteChannelGroupResponseSuccess
+                              | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteChannelGroupResponseSuccess
+
+      interface _DeleteChannelPolicyResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteChannelPolicyResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#delete_channel_policy-instance_method
+      def delete_channel_policy: (
+                                   channel_group_name: ::String,
+                                   channel_name: ::String
+                                 ) -> _DeleteChannelPolicyResponseSuccess
+                               | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteChannelPolicyResponseSuccess
+
+      interface _DeleteOriginEndpointResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteOriginEndpointResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#delete_origin_endpoint-instance_method
+      def delete_origin_endpoint: (
+                                    channel_group_name: ::String,
+                                    channel_name: ::String,
+                                    origin_endpoint_name: ::String
+                                  ) -> _DeleteOriginEndpointResponseSuccess
+                                | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteOriginEndpointResponseSuccess
+
+      interface _DeleteOriginEndpointPolicyResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteOriginEndpointPolicyResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#delete_origin_endpoint_policy-instance_method
+      def delete_origin_endpoint_policy: (
+                                           channel_group_name: ::String,
+                                           channel_name: ::String,
+                                           origin_endpoint_name: ::String
+                                         ) -> _DeleteOriginEndpointPolicyResponseSuccess
+                                       | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteOriginEndpointPolicyResponseSuccess
+
+      interface _GetChannelResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetChannelResponse]
+        def arn: () -> ::String
+        def channel_name: () -> ::String
+        def channel_group_name: () -> ::String
+        def created_at: () -> ::Time
+        def modified_at: () -> ::Time
+        def reset_at: () -> ::Time
+        def description: () -> ::String
+        def ingest_endpoints: () -> ::Array[Types::IngestEndpoint]
+        def input_type: () -> ("HLS" | "CMAF")
+        def etag: () -> ::String
+        def tags: () -> ::Hash[::String, ::String]
+        def input_switch_configuration: () -> Types::InputSwitchConfiguration
+        def output_header_configuration: () -> Types::OutputHeaderConfiguration
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#get_channel-instance_method
+      def get_channel: (
+                         channel_group_name: ::String,
+                         channel_name: ::String
+                       ) -> _GetChannelResponseSuccess
+                     | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetChannelResponseSuccess
+
+      interface _GetChannelGroupResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetChannelGroupResponse]
+        def channel_group_name: () -> ::String
+        def arn: () -> ::String
+        def egress_domain: () -> ::String
+        def created_at: () -> ::Time
+        def modified_at: () -> ::Time
+        def description: () -> ::String
+        def etag: () -> ::String
+        def tags: () -> ::Hash[::String, ::String]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#get_channel_group-instance_method
+      def get_channel_group: (
+                               channel_group_name: ::String
+                             ) -> _GetChannelGroupResponseSuccess
+                           | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetChannelGroupResponseSuccess
+
+      interface _GetChannelPolicyResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetChannelPolicyResponse]
+        def channel_group_name: () -> ::String
+        def channel_name: () -> ::String
+        def policy: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#get_channel_policy-instance_method
+      def get_channel_policy: (
+                                channel_group_name: ::String,
+                                channel_name: ::String
+                              ) -> _GetChannelPolicyResponseSuccess
+                            | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetChannelPolicyResponseSuccess
+
+      interface _GetHarvestJobResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetHarvestJobResponse]
+        def channel_group_name: () -> ::String
+        def channel_name: () -> ::String
+        def origin_endpoint_name: () -> ::String
+        def destination: () -> Types::Destination
+        def harvest_job_name: () -> ::String
+        def harvested_manifests: () -> Types::HarvestedManifests
+        def description: () -> ::String
+        def schedule_configuration: () -> Types::HarvesterScheduleConfiguration
+        def arn: () -> ::String
+        def created_at: () -> ::Time
+        def modified_at: () -> ::Time
+        def status: () -> ("QUEUED" | "IN_PROGRESS" | "CANCELLED" | "COMPLETED" | "FAILED")
+        def error_message: () -> ::String
+        def etag: () -> ::String
+        def tags: () -> ::Hash[::String, ::String]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#get_harvest_job-instance_method
+      def get_harvest_job: (
+                             channel_group_name: ::String,
+                             channel_name: ::String,
+                             origin_endpoint_name: ::String,
+                             harvest_job_name: ::String
+                           ) -> _GetHarvestJobResponseSuccess
+                         | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetHarvestJobResponseSuccess
+
+      interface _GetOriginEndpointResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetOriginEndpointResponse]
+        def arn: () -> ::String
+        def channel_group_name: () -> ::String
+        def channel_name: () -> ::String
+        def origin_endpoint_name: () -> ::String
+        def container_type: () -> ("TS" | "CMAF")
+        def segment: () -> Types::Segment
+        def created_at: () -> ::Time
+        def modified_at: () -> ::Time
+        def reset_at: () -> ::Time
+        def description: () -> ::String
+        def startover_window_seconds: () -> ::Integer
+        def hls_manifests: () -> ::Array[Types::GetHlsManifestConfiguration]
+        def low_latency_hls_manifests: () -> ::Array[Types::GetLowLatencyHlsManifestConfiguration]
+        def dash_manifests: () -> ::Array[Types::GetDashManifestConfiguration]
+        def force_endpoint_error_configuration: () -> Types::ForceEndpointErrorConfiguration
+        def etag: () -> ::String
+        def tags: () -> ::Hash[::String, ::String]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#get_origin_endpoint-instance_method
+      def get_origin_endpoint: (
+                                 channel_group_name: ::String,
+                                 channel_name: ::String,
+                                 origin_endpoint_name: ::String
+                               ) -> _GetOriginEndpointResponseSuccess
+                             | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetOriginEndpointResponseSuccess
+
+      interface _GetOriginEndpointPolicyResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetOriginEndpointPolicyResponse]
+        def channel_group_name: () -> ::String
+        def channel_name: () -> ::String
+        def origin_endpoint_name: () -> ::String
+        def policy: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#get_origin_endpoint_policy-instance_method
+      def get_origin_endpoint_policy: (
+                                        channel_group_name: ::String,
+                                        channel_name: ::String,
+                                        origin_endpoint_name: ::String
+                                      ) -> _GetOriginEndpointPolicyResponseSuccess
+                                    | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetOriginEndpointPolicyResponseSuccess
+
+      interface _ListChannelGroupsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListChannelGroupsResponse]
+        def items: () -> ::Array[Types::ChannelGroupListConfiguration]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#list_channel_groups-instance_method
+      def list_channel_groups: (
+                                 ?max_results: ::Integer,
+                                 ?next_token: ::String
+                               ) -> _ListChannelGroupsResponseSuccess
+                             | (?Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListChannelGroupsResponseSuccess
+
+      interface _ListChannelsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListChannelsResponse]
+        def items: () -> ::Array[Types::ChannelListConfiguration]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#list_channels-instance_method
+      def list_channels: (
+                           channel_group_name: ::String,
+                           ?max_results: ::Integer,
+                           ?next_token: ::String
+                         ) -> _ListChannelsResponseSuccess
+                       | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListChannelsResponseSuccess
+
+      interface _ListHarvestJobsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListHarvestJobsResponse]
+        def items: () -> ::Array[Types::HarvestJob]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#list_harvest_jobs-instance_method
+      def list_harvest_jobs: (
+                               channel_group_name: ::String,
+                               ?channel_name: ::String,
+                               ?origin_endpoint_name: ::String,
+                               ?status: ("QUEUED" | "IN_PROGRESS" | "CANCELLED" | "COMPLETED" | "FAILED"),
+                               ?max_results: ::Integer,
+                               ?next_token: ::String
+                             ) -> _ListHarvestJobsResponseSuccess
+                           | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListHarvestJobsResponseSuccess
+
+      interface _ListOriginEndpointsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListOriginEndpointsResponse]
+        def items: () -> ::Array[Types::OriginEndpointListConfiguration]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#list_origin_endpoints-instance_method
+      def list_origin_endpoints: (
+                                   channel_group_name: ::String,
+                                   channel_name: ::String,
+                                   ?max_results: ::Integer,
+                                   ?next_token: ::String
+                                 ) -> _ListOriginEndpointsResponseSuccess
+                               | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListOriginEndpointsResponseSuccess
+
+      interface _ListTagsForResourceResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListTagsForResourceResponse]
+        def tags: () -> ::Hash[::String, ::String]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#list_tags_for_resource-instance_method
+      def list_tags_for_resource: (
+                                    resource_arn: ::String
+                                  ) -> _ListTagsForResourceResponseSuccess
+                                | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListTagsForResourceResponseSuccess
+
+      interface _PutChannelPolicyResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::PutChannelPolicyResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#put_channel_policy-instance_method
+      def put_channel_policy: (
+                                channel_group_name: ::String,
+                                channel_name: ::String,
+                                policy: ::String
+                              ) -> _PutChannelPolicyResponseSuccess
+                            | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _PutChannelPolicyResponseSuccess
+
+      interface _PutOriginEndpointPolicyResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::PutOriginEndpointPolicyResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#put_origin_endpoint_policy-instance_method
+      def put_origin_endpoint_policy: (
+                                        channel_group_name: ::String,
+                                        channel_name: ::String,
+                                        origin_endpoint_name: ::String,
+                                        policy: ::String
+                                      ) -> _PutOriginEndpointPolicyResponseSuccess
+                                    | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _PutOriginEndpointPolicyResponseSuccess
+
+      interface _ResetChannelStateResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ResetChannelStateResponse]
+        def channel_group_name: () -> ::String
+        def channel_name: () -> ::String
+        def arn: () -> ::String
+        def reset_at: () -> ::Time
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#reset_channel_state-instance_method
+      def reset_channel_state: (
+                                 channel_group_name: ::String,
+                                 channel_name: ::String
+                               ) -> _ResetChannelStateResponseSuccess
+                             | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ResetChannelStateResponseSuccess
+
+      interface _ResetOriginEndpointStateResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ResetOriginEndpointStateResponse]
+        def channel_group_name: () -> ::String
+        def channel_name: () -> ::String
+        def origin_endpoint_name: () -> ::String
+        def arn: () -> ::String
+        def reset_at: () -> ::Time
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#reset_origin_endpoint_state-instance_method
+      def reset_origin_endpoint_state: (
+                                         channel_group_name: ::String,
+                                         channel_name: ::String,
+                                         origin_endpoint_name: ::String
+                                       ) -> _ResetOriginEndpointStateResponseSuccess
+                                     | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ResetOriginEndpointStateResponseSuccess
+
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#tag_resource-instance_method
+      def tag_resource: (
+                          resource_arn: ::String,
+                          tags: Hash[::String, ::String]
+                        ) -> ::Seahorse::Client::_ResponseSuccess[::Aws::EmptyStructure]
+                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> ::Seahorse::Client::_ResponseSuccess[::Aws::EmptyStructure]
+
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#untag_resource-instance_method
+      def untag_resource: (
+                            resource_arn: ::String,
+                            tag_keys: Array[::String]
+                          ) -> ::Seahorse::Client::_ResponseSuccess[::Aws::EmptyStructure]
+                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> ::Seahorse::Client::_ResponseSuccess[::Aws::EmptyStructure]
+
+      interface _UpdateChannelResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateChannelResponse]
+        def arn: () -> ::String
+        def channel_name: () -> ::String
+        def channel_group_name: () -> ::String
+        def created_at: () -> ::Time
+        def modified_at: () -> ::Time
+        def description: () -> ::String
+        def ingest_endpoints: () -> ::Array[Types::IngestEndpoint]
+        def input_type: () -> ("HLS" | "CMAF")
+        def etag: () -> ::String
+        def tags: () -> ::Hash[::String, ::String]
+        def input_switch_configuration: () -> Types::InputSwitchConfiguration
+        def output_header_configuration: () -> Types::OutputHeaderConfiguration
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#update_channel-instance_method
+      def update_channel: (
+                            channel_group_name: ::String,
+                            channel_name: ::String,
+                            ?etag: ::String,
+                            ?description: ::String,
+                            ?input_switch_configuration: {
+                              mqcs_input_switching: bool?
+                            },
+                            ?output_header_configuration: {
+                              publish_mqcs: bool?
+                            }
+                          ) -> _UpdateChannelResponseSuccess
+                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateChannelResponseSuccess
+
+      interface _UpdateChannelGroupResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateChannelGroupResponse]
+        def channel_group_name: () -> ::String
+        def arn: () -> ::String
+        def egress_domain: () -> ::String
+        def created_at: () -> ::Time
+        def modified_at: () -> ::Time
+        def description: () -> ::String
+        def etag: () -> ::String
+        def tags: () -> ::Hash[::String, ::String]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#update_channel_group-instance_method
+      def update_channel_group: (
+                                  channel_group_name: ::String,
+                                  ?etag: ::String,
+                                  ?description: ::String
+                                ) -> _UpdateChannelGroupResponseSuccess
+                              | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateChannelGroupResponseSuccess
+
+      interface _UpdateOriginEndpointResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateOriginEndpointResponse]
+        def arn: () -> ::String
+        def channel_group_name: () -> ::String
+        def channel_name: () -> ::String
+        def origin_endpoint_name: () -> ::String
+        def container_type: () -> ("TS" | "CMAF")
+        def segment: () -> Types::Segment
+        def created_at: () -> ::Time
+        def modified_at: () -> ::Time
+        def description: () -> ::String
+        def startover_window_seconds: () -> ::Integer
+        def hls_manifests: () -> ::Array[Types::GetHlsManifestConfiguration]
+        def low_latency_hls_manifests: () -> ::Array[Types::GetLowLatencyHlsManifestConfiguration]
+        def force_endpoint_error_configuration: () -> Types::ForceEndpointErrorConfiguration
+        def etag: () -> ::String
+        def tags: () -> ::Hash[::String, ::String]
+        def dash_manifests: () -> ::Array[Types::GetDashManifestConfiguration]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#update_origin_endpoint-instance_method
+      def update_origin_endpoint: (
+                                    channel_group_name: ::String,
+                                    channel_name: ::String,
+                                    origin_endpoint_name: ::String,
+                                    container_type: ("TS" | "CMAF"),
+                                    ?segment: {
+                                      segment_duration_seconds: ::Integer?,
+                                      segment_name: ::String?,
+                                      ts_use_audio_rendition_group: bool?,
+                                      include_iframe_only_streams: bool?,
+                                      ts_include_dvb_subtitles: bool?,
+                                      scte: {
+                                        scte_filter: Array[("SPLICE_INSERT" | "BREAK" | "PROVIDER_ADVERTISEMENT" | "DISTRIBUTOR_ADVERTISEMENT" | "PROVIDER_PLACEMENT_OPPORTUNITY" | "DISTRIBUTOR_PLACEMENT_OPPORTUNITY" | "PROVIDER_OVERLAY_PLACEMENT_OPPORTUNITY" | "DISTRIBUTOR_OVERLAY_PLACEMENT_OPPORTUNITY" | "PROGRAM")]?
+                                      }?,
+                                      encryption: {
+                                        constant_initialization_vector: ::String?,
+                                        encryption_method: {
+                                          ts_encryption_method: ("AES_128" | "SAMPLE_AES")?,
+                                          cmaf_encryption_method: ("CENC" | "CBCS")?
+                                        },
+                                        key_rotation_interval_seconds: ::Integer?,
+                                        speke_key_provider: {
+                                          encryption_contract_configuration: {
+                                            preset_speke_20_audio: ("PRESET_AUDIO_1" | "PRESET_AUDIO_2" | "PRESET_AUDIO_3" | "SHARED" | "UNENCRYPTED"),
+                                            preset_speke_20_video: ("PRESET_VIDEO_1" | "PRESET_VIDEO_2" | "PRESET_VIDEO_3" | "PRESET_VIDEO_4" | "PRESET_VIDEO_5" | "PRESET_VIDEO_6" | "PRESET_VIDEO_7" | "PRESET_VIDEO_8" | "SHARED" | "UNENCRYPTED")
+                                          },
+                                          resource_id: ::String,
+                                          drm_systems: Array[("CLEAR_KEY_AES_128" | "FAIRPLAY" | "PLAYREADY" | "WIDEVINE" | "IRDETO")],
+                                          role_arn: ::String,
+                                          url: ::String
+                                        }
+                                      }?
+                                    },
+                                    ?description: ::String,
+                                    ?startover_window_seconds: ::Integer,
+                                    ?hls_manifests: Array[
+                                      {
+                                        manifest_name: ::String,
+                                        child_manifest_name: ::String?,
+                                        scte_hls: {
+                                          ad_marker_hls: ("DATERANGE")?
+                                        }?,
+                                        start_tag: {
+                                          time_offset: ::Float,
+                                          precise: bool?
+                                        }?,
+                                        manifest_window_seconds: ::Integer?,
+                                        program_date_time_interval_seconds: ::Integer?,
+                                        filter_configuration: {
+                                          manifest_filter: ::String?,
+                                          start: ::Time?,
+                                          end: ::Time?,
+                                          time_delay_seconds: ::Integer?,
+                                          clip_start_time: ::Time?
+                                        }?,
+                                        url_encode_child_manifest: bool?
+                                      },
+                                    ],
+                                    ?low_latency_hls_manifests: Array[
+                                      {
+                                        manifest_name: ::String,
+                                        child_manifest_name: ::String?,
+                                        scte_hls: {
+                                          ad_marker_hls: ("DATERANGE")?
+                                        }?,
+                                        start_tag: {
+                                          time_offset: ::Float,
+                                          precise: bool?
+                                        }?,
+                                        manifest_window_seconds: ::Integer?,
+                                        program_date_time_interval_seconds: ::Integer?,
+                                        filter_configuration: {
+                                          manifest_filter: ::String?,
+                                          start: ::Time?,
+                                          end: ::Time?,
+                                          time_delay_seconds: ::Integer?,
+                                          clip_start_time: ::Time?
+                                        }?,
+                                        url_encode_child_manifest: bool?
+                                      },
+                                    ],
+                                    ?dash_manifests: Array[
+                                      {
+                                        manifest_name: ::String,
+                                        manifest_window_seconds: ::Integer?,
+                                        filter_configuration: {
+                                          manifest_filter: ::String?,
+                                          start: ::Time?,
+                                          end: ::Time?,
+                                          time_delay_seconds: ::Integer?,
+                                          clip_start_time: ::Time?
+                                        }?,
+                                        min_update_period_seconds: ::Integer?,
+                                        min_buffer_time_seconds: ::Integer?,
+                                        suggested_presentation_delay_seconds: ::Integer?,
+                                        segment_template_format: ("NUMBER_WITH_TIMELINE")?,
+                                        period_triggers: Array[("AVAILS" | "DRM_KEY_ROTATION" | "SOURCE_CHANGES" | "SOURCE_DISRUPTIONS" | "NONE")]?,
+                                        scte_dash: {
+                                          ad_marker_dash: ("BINARY" | "XML")?
+                                        }?,
+                                        drm_signaling: ("INDIVIDUAL" | "REFERENCED")?,
+                                        utc_timing: {
+                                          timing_mode: ("HTTP_HEAD" | "HTTP_ISO" | "HTTP_XSDATE" | "UTC_DIRECT")?,
+                                          timing_source: ::String?
+                                        }?
+                                      },
+                                    ],
+                                    ?force_endpoint_error_configuration: {
+                                      endpoint_error_conditions: Array[("STALE_MANIFEST" | "INCOMPLETE_MANIFEST" | "MISSING_DRM_KEY" | "SLATE_INPUT")]?
+                                    },
+                                    ?etag: ::String
+                                  ) -> _UpdateOriginEndpointResponseSuccess
+                                | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateOriginEndpointResponseSuccess
+
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/MediaPackageV2/Client.html#wait_until-instance_method
+      def wait_until: (:harvest_job_finished waiter_name, 
+                    channel_group_name: ::String,
+                    channel_name: ::String,
+                    origin_endpoint_name: ::String,
+                    harvest_job_name: ::String
+                  ) -> Client::_GetHarvestJobResponseSuccess
+                    | (:harvest_job_finished waiter_name, Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> Client::_GetHarvestJobResponseSuccess
+    end
+  end
+end
+

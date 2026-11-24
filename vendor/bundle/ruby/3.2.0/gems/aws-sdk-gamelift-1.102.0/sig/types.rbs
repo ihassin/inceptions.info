@@ -1,0 +1,2392 @@
+# WARNING ABOUT GENERATED CODE
+#
+# This file is generated. See the contributing guide for more information:
+# https://github.com/aws/aws-sdk-ruby/blob/version-3/CONTRIBUTING.md
+#
+# WARNING ABOUT GENERATED CODE
+
+module Aws::GameLift
+  module Types
+
+    class AcceptMatchInput
+      attr_accessor ticket_id: ::String
+      attr_accessor player_ids: ::Array[::String]
+      attr_accessor acceptance_type: ("ACCEPT" | "REJECT")
+      SENSITIVE: [:player_ids]
+    end
+
+    class AcceptMatchOutput < Aws::EmptyStructure
+    end
+
+    class Alias
+      attr_accessor alias_id: ::String
+      attr_accessor name: ::String
+      attr_accessor alias_arn: ::String
+      attr_accessor description: ::String
+      attr_accessor routing_strategy: Types::RoutingStrategy
+      attr_accessor creation_time: ::Time
+      attr_accessor last_updated_time: ::Time
+      SENSITIVE: []
+    end
+
+    class AnywhereConfiguration
+      attr_accessor cost: ::String
+      SENSITIVE: []
+    end
+
+    class AttributeValue
+      attr_accessor s: ::String
+      attr_accessor n: ::Float
+      attr_accessor sl: ::Array[::String]
+      attr_accessor sdm: ::Hash[::String, ::Float]
+      SENSITIVE: []
+    end
+
+    class AwsCredentials
+      attr_accessor access_key_id: ::String
+      attr_accessor secret_access_key: ::String
+      attr_accessor session_token: ::String
+      SENSITIVE: []
+    end
+
+    class Build
+      attr_accessor build_id: ::String
+      attr_accessor build_arn: ::String
+      attr_accessor name: ::String
+      attr_accessor version: ::String
+      attr_accessor status: ("INITIALIZED" | "READY" | "FAILED")
+      attr_accessor size_on_disk: ::Integer
+      attr_accessor operating_system: ("WINDOWS_2012" | "AMAZON_LINUX" | "AMAZON_LINUX_2" | "WINDOWS_2016" | "AMAZON_LINUX_2023")
+      attr_accessor creation_time: ::Time
+      attr_accessor server_sdk_version: ::String
+      SENSITIVE: []
+    end
+
+    class CertificateConfiguration
+      attr_accessor certificate_type: ("DISABLED" | "GENERATED")
+      SENSITIVE: []
+    end
+
+    class ClaimFilterOption
+      attr_accessor instance_statuses: ::Array[("ACTIVE" | "DRAINING")]
+      SENSITIVE: []
+    end
+
+    class ClaimGameServerInput
+      attr_accessor game_server_group_name: ::String
+      attr_accessor game_server_id: ::String
+      attr_accessor game_server_data: ::String
+      attr_accessor filter_option: Types::ClaimFilterOption
+      SENSITIVE: []
+    end
+
+    class ClaimGameServerOutput
+      attr_accessor game_server: Types::GameServer
+      SENSITIVE: []
+    end
+
+    class Compute
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      attr_accessor compute_name: ::String
+      attr_accessor compute_arn: ::String
+      attr_accessor ip_address: ::String
+      attr_accessor dns_name: ::String
+      attr_accessor compute_status: ("PENDING" | "ACTIVE" | "TERMINATING" | "IMPAIRED")
+      attr_accessor location: ::String
+      attr_accessor creation_time: ::Time
+      attr_accessor operating_system: ("WINDOWS_2012" | "AMAZON_LINUX" | "AMAZON_LINUX_2" | "WINDOWS_2016" | "AMAZON_LINUX_2023")
+      attr_accessor type: ("t2.micro" | "t2.small" | "t2.medium" | "t2.large" | "c3.large" | "c3.xlarge" | "c3.2xlarge" | "c3.4xlarge" | "c3.8xlarge" | "c4.large" | "c4.xlarge" | "c4.2xlarge" | "c4.4xlarge" | "c4.8xlarge" | "c5.large" | "c5.xlarge" | "c5.2xlarge" | "c5.4xlarge" | "c5.9xlarge" | "c5.12xlarge" | "c5.18xlarge" | "c5.24xlarge" | "c5a.large" | "c5a.xlarge" | "c5a.2xlarge" | "c5a.4xlarge" | "c5a.8xlarge" | "c5a.12xlarge" | "c5a.16xlarge" | "c5a.24xlarge" | "r3.large" | "r3.xlarge" | "r3.2xlarge" | "r3.4xlarge" | "r3.8xlarge" | "r4.large" | "r4.xlarge" | "r4.2xlarge" | "r4.4xlarge" | "r4.8xlarge" | "r4.16xlarge" | "r5.large" | "r5.xlarge" | "r5.2xlarge" | "r5.4xlarge" | "r5.8xlarge" | "r5.12xlarge" | "r5.16xlarge" | "r5.24xlarge" | "r5a.large" | "r5a.xlarge" | "r5a.2xlarge" | "r5a.4xlarge" | "r5a.8xlarge" | "r5a.12xlarge" | "r5a.16xlarge" | "r5a.24xlarge" | "m3.medium" | "m3.large" | "m3.xlarge" | "m3.2xlarge" | "m4.large" | "m4.xlarge" | "m4.2xlarge" | "m4.4xlarge" | "m4.10xlarge" | "m5.large" | "m5.xlarge" | "m5.2xlarge" | "m5.4xlarge" | "m5.8xlarge" | "m5.12xlarge" | "m5.16xlarge" | "m5.24xlarge" | "m5a.large" | "m5a.xlarge" | "m5a.2xlarge" | "m5a.4xlarge" | "m5a.8xlarge" | "m5a.12xlarge" | "m5a.16xlarge" | "m5a.24xlarge" | "c5d.large" | "c5d.xlarge" | "c5d.2xlarge" | "c5d.4xlarge" | "c5d.9xlarge" | "c5d.12xlarge" | "c5d.18xlarge" | "c5d.24xlarge" | "c6a.large" | "c6a.xlarge" | "c6a.2xlarge" | "c6a.4xlarge" | "c6a.8xlarge" | "c6a.12xlarge" | "c6a.16xlarge" | "c6a.24xlarge" | "c6i.large" | "c6i.xlarge" | "c6i.2xlarge" | "c6i.4xlarge" | "c6i.8xlarge" | "c6i.12xlarge" | "c6i.16xlarge" | "c6i.24xlarge" | "r5d.large" | "r5d.xlarge" | "r5d.2xlarge" | "r5d.4xlarge" | "r5d.8xlarge" | "r5d.12xlarge" | "r5d.16xlarge" | "r5d.24xlarge" | "m6g.medium" | "m6g.large" | "m6g.xlarge" | "m6g.2xlarge" | "m6g.4xlarge" | "m6g.8xlarge" | "m6g.12xlarge" | "m6g.16xlarge" | "c6g.medium" | "c6g.large" | "c6g.xlarge" | "c6g.2xlarge" | "c6g.4xlarge" | "c6g.8xlarge" | "c6g.12xlarge" | "c6g.16xlarge" | "r6g.medium" | "r6g.large" | "r6g.xlarge" | "r6g.2xlarge" | "r6g.4xlarge" | "r6g.8xlarge" | "r6g.12xlarge" | "r6g.16xlarge" | "c6gn.medium" | "c6gn.large" | "c6gn.xlarge" | "c6gn.2xlarge" | "c6gn.4xlarge" | "c6gn.8xlarge" | "c6gn.12xlarge" | "c6gn.16xlarge" | "c7g.medium" | "c7g.large" | "c7g.xlarge" | "c7g.2xlarge" | "c7g.4xlarge" | "c7g.8xlarge" | "c7g.12xlarge" | "c7g.16xlarge" | "r7g.medium" | "r7g.large" | "r7g.xlarge" | "r7g.2xlarge" | "r7g.4xlarge" | "r7g.8xlarge" | "r7g.12xlarge" | "r7g.16xlarge" | "m7g.medium" | "m7g.large" | "m7g.xlarge" | "m7g.2xlarge" | "m7g.4xlarge" | "m7g.8xlarge" | "m7g.12xlarge" | "m7g.16xlarge" | "g5g.xlarge" | "g5g.2xlarge" | "g5g.4xlarge" | "g5g.8xlarge" | "g5g.16xlarge" | "r6i.large" | "r6i.xlarge" | "r6i.2xlarge" | "r6i.4xlarge" | "r6i.8xlarge" | "r6i.12xlarge" | "r6i.16xlarge" | "c6gd.medium" | "c6gd.large" | "c6gd.xlarge" | "c6gd.2xlarge" | "c6gd.4xlarge" | "c6gd.8xlarge" | "c6gd.12xlarge" | "c6gd.16xlarge" | "c6in.large" | "c6in.xlarge" | "c6in.2xlarge" | "c6in.4xlarge" | "c6in.8xlarge" | "c6in.12xlarge" | "c6in.16xlarge" | "c7a.medium" | "c7a.large" | "c7a.xlarge" | "c7a.2xlarge" | "c7a.4xlarge" | "c7a.8xlarge" | "c7a.12xlarge" | "c7a.16xlarge" | "c7gd.medium" | "c7gd.large" | "c7gd.xlarge" | "c7gd.2xlarge" | "c7gd.4xlarge" | "c7gd.8xlarge" | "c7gd.12xlarge" | "c7gd.16xlarge" | "c7gn.medium" | "c7gn.large" | "c7gn.xlarge" | "c7gn.2xlarge" | "c7gn.4xlarge" | "c7gn.8xlarge" | "c7gn.12xlarge" | "c7gn.16xlarge" | "c7i.large" | "c7i.xlarge" | "c7i.2xlarge" | "c7i.4xlarge" | "c7i.8xlarge" | "c7i.12xlarge" | "c7i.16xlarge" | "m6a.large" | "m6a.xlarge" | "m6a.2xlarge" | "m6a.4xlarge" | "m6a.8xlarge" | "m6a.12xlarge" | "m6a.16xlarge" | "m6gd.medium" | "m6gd.large" | "m6gd.xlarge" | "m6gd.2xlarge" | "m6gd.4xlarge" | "m6gd.8xlarge" | "m6gd.12xlarge" | "m6gd.16xlarge" | "m6i.large" | "m6i.xlarge" | "m6i.2xlarge" | "m6i.4xlarge" | "m6i.8xlarge" | "m6i.12xlarge" | "m6i.16xlarge" | "m7a.medium" | "m7a.large" | "m7a.xlarge" | "m7a.2xlarge" | "m7a.4xlarge" | "m7a.8xlarge" | "m7a.12xlarge" | "m7a.16xlarge" | "m7gd.medium" | "m7gd.large" | "m7gd.xlarge" | "m7gd.2xlarge" | "m7gd.4xlarge" | "m7gd.8xlarge" | "m7gd.12xlarge" | "m7gd.16xlarge" | "m7i.large" | "m7i.xlarge" | "m7i.2xlarge" | "m7i.4xlarge" | "m7i.8xlarge" | "m7i.12xlarge" | "m7i.16xlarge" | "r6gd.medium" | "r6gd.large" | "r6gd.xlarge" | "r6gd.2xlarge" | "r6gd.4xlarge" | "r6gd.8xlarge" | "r6gd.12xlarge" | "r6gd.16xlarge" | "r7a.medium" | "r7a.large" | "r7a.xlarge" | "r7a.2xlarge" | "r7a.4xlarge" | "r7a.8xlarge" | "r7a.12xlarge" | "r7a.16xlarge" | "r7gd.medium" | "r7gd.large" | "r7gd.xlarge" | "r7gd.2xlarge" | "r7gd.4xlarge" | "r7gd.8xlarge" | "r7gd.12xlarge" | "r7gd.16xlarge" | "r7i.large" | "r7i.xlarge" | "r7i.2xlarge" | "r7i.4xlarge" | "r7i.8xlarge" | "r7i.12xlarge" | "r7i.16xlarge" | "r7i.24xlarge" | "r7i.48xlarge" | "c5ad.large" | "c5ad.xlarge" | "c5ad.2xlarge" | "c5ad.4xlarge" | "c5ad.8xlarge" | "c5ad.12xlarge" | "c5ad.16xlarge" | "c5ad.24xlarge" | "c5n.large" | "c5n.xlarge" | "c5n.2xlarge" | "c5n.4xlarge" | "c5n.9xlarge" | "c5n.18xlarge" | "r5ad.large" | "r5ad.xlarge" | "r5ad.2xlarge" | "r5ad.4xlarge" | "r5ad.8xlarge" | "r5ad.12xlarge" | "r5ad.16xlarge" | "r5ad.24xlarge" | "c6id.large" | "c6id.xlarge" | "c6id.2xlarge" | "c6id.4xlarge" | "c6id.8xlarge" | "c6id.12xlarge" | "c6id.16xlarge" | "c6id.24xlarge" | "c6id.32xlarge" | "c8g.medium" | "c8g.large" | "c8g.xlarge" | "c8g.2xlarge" | "c8g.4xlarge" | "c8g.8xlarge" | "c8g.12xlarge" | "c8g.16xlarge" | "c8g.24xlarge" | "c8g.48xlarge" | "m5ad.large" | "m5ad.xlarge" | "m5ad.2xlarge" | "m5ad.4xlarge" | "m5ad.8xlarge" | "m5ad.12xlarge" | "m5ad.16xlarge" | "m5ad.24xlarge" | "m5d.large" | "m5d.xlarge" | "m5d.2xlarge" | "m5d.4xlarge" | "m5d.8xlarge" | "m5d.12xlarge" | "m5d.16xlarge" | "m5d.24xlarge" | "m5dn.large" | "m5dn.xlarge" | "m5dn.2xlarge" | "m5dn.4xlarge" | "m5dn.8xlarge" | "m5dn.12xlarge" | "m5dn.16xlarge" | "m5dn.24xlarge" | "m5n.large" | "m5n.xlarge" | "m5n.2xlarge" | "m5n.4xlarge" | "m5n.8xlarge" | "m5n.12xlarge" | "m5n.16xlarge" | "m5n.24xlarge" | "m6id.large" | "m6id.xlarge" | "m6id.2xlarge" | "m6id.4xlarge" | "m6id.8xlarge" | "m6id.12xlarge" | "m6id.16xlarge" | "m6id.24xlarge" | "m6id.32xlarge" | "m6idn.large" | "m6idn.xlarge" | "m6idn.2xlarge" | "m6idn.4xlarge" | "m6idn.8xlarge" | "m6idn.12xlarge" | "m6idn.16xlarge" | "m6idn.24xlarge" | "m6idn.32xlarge" | "m6in.large" | "m6in.xlarge" | "m6in.2xlarge" | "m6in.4xlarge" | "m6in.8xlarge" | "m6in.12xlarge" | "m6in.16xlarge" | "m6in.24xlarge" | "m6in.32xlarge" | "m8g.medium" | "m8g.large" | "m8g.xlarge" | "m8g.2xlarge" | "m8g.4xlarge" | "m8g.8xlarge" | "m8g.12xlarge" | "m8g.16xlarge" | "m8g.24xlarge" | "m8g.48xlarge" | "r5dn.large" | "r5dn.xlarge" | "r5dn.2xlarge" | "r5dn.4xlarge" | "r5dn.8xlarge" | "r5dn.12xlarge" | "r5dn.16xlarge" | "r5dn.24xlarge" | "r5n.large" | "r5n.xlarge" | "r5n.2xlarge" | "r5n.4xlarge" | "r5n.8xlarge" | "r5n.12xlarge" | "r5n.16xlarge" | "r5n.24xlarge" | "r6a.large" | "r6a.xlarge" | "r6a.2xlarge" | "r6a.4xlarge" | "r6a.8xlarge" | "r6a.12xlarge" | "r6a.16xlarge" | "r6a.24xlarge" | "r6a.32xlarge" | "r6a.48xlarge" | "r6id.large" | "r6id.xlarge" | "r6id.2xlarge" | "r6id.4xlarge" | "r6id.8xlarge" | "r6id.12xlarge" | "r6id.16xlarge" | "r6id.24xlarge" | "r6id.32xlarge" | "r6idn.large" | "r6idn.xlarge" | "r6idn.2xlarge" | "r6idn.4xlarge" | "r6idn.8xlarge" | "r6idn.12xlarge" | "r6idn.16xlarge" | "r6idn.24xlarge" | "r6idn.32xlarge" | "r6in.large" | "r6in.xlarge" | "r6in.2xlarge" | "r6in.4xlarge" | "r6in.8xlarge" | "r6in.12xlarge" | "r6in.16xlarge" | "r6in.24xlarge" | "r6in.32xlarge" | "r8g.medium" | "r8g.large" | "r8g.xlarge" | "r8g.2xlarge" | "r8g.4xlarge" | "r8g.8xlarge" | "r8g.12xlarge" | "r8g.16xlarge" | "r8g.24xlarge" | "r8g.48xlarge" | "m4.16xlarge" | "c6a.32xlarge" | "c6a.48xlarge" | "c6i.32xlarge" | "r6i.24xlarge" | "r6i.32xlarge" | "c6in.24xlarge" | "c6in.32xlarge" | "c7a.24xlarge" | "c7a.32xlarge" | "c7a.48xlarge" | "c7i.24xlarge" | "c7i.48xlarge" | "m6a.24xlarge" | "m6a.32xlarge" | "m6a.48xlarge" | "m6i.24xlarge" | "m6i.32xlarge" | "m7a.24xlarge" | "m7a.32xlarge" | "m7a.48xlarge" | "m7i.24xlarge" | "m7i.48xlarge" | "r7a.24xlarge" | "r7a.32xlarge" | "r7a.48xlarge")
+      attr_accessor game_lift_service_sdk_endpoint: ::String
+      attr_accessor game_lift_agent_endpoint: ::String
+      attr_accessor instance_id: ::String
+      attr_accessor container_attributes: ::Array[Types::ContainerAttribute]
+      attr_accessor game_server_container_group_definition_arn: ::String
+      SENSITIVE: [:ip_address]
+    end
+
+    class ConflictException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class ConnectionPortRange
+      attr_accessor from_port: ::Integer
+      attr_accessor to_port: ::Integer
+      SENSITIVE: [:from_port, :to_port]
+    end
+
+    class ContainerAttribute
+      attr_accessor container_name: ::String
+      attr_accessor container_runtime_id: ::String
+      SENSITIVE: []
+    end
+
+    class ContainerDependency
+      attr_accessor container_name: ::String
+      attr_accessor condition: ("START" | "COMPLETE" | "SUCCESS" | "HEALTHY")
+      SENSITIVE: []
+    end
+
+    class ContainerEnvironment
+      attr_accessor name: ::String
+      attr_accessor value: ::String
+      SENSITIVE: []
+    end
+
+    class ContainerFleet
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      attr_accessor fleet_role_arn: ::String
+      attr_accessor game_server_container_group_definition_name: ::String
+      attr_accessor game_server_container_group_definition_arn: ::String
+      attr_accessor per_instance_container_group_definition_name: ::String
+      attr_accessor per_instance_container_group_definition_arn: ::String
+      attr_accessor instance_connection_port_range: Types::ConnectionPortRange
+      attr_accessor instance_inbound_permissions: ::Array[Types::IpPermission]
+      attr_accessor game_server_container_groups_per_instance: ::Integer
+      attr_accessor maximum_game_server_container_groups_per_instance: ::Integer
+      attr_accessor instance_type: ::String
+      attr_accessor billing_type: ("ON_DEMAND" | "SPOT")
+      attr_accessor description: ::String
+      attr_accessor creation_time: ::Time
+      attr_accessor metric_groups: ::Array[::String]
+      attr_accessor new_game_session_protection_policy: ("NoProtection" | "FullProtection")
+      attr_accessor game_session_creation_limit_policy: Types::GameSessionCreationLimitPolicy
+      attr_accessor status: ("PENDING" | "CREATING" | "CREATED" | "ACTIVATING" | "ACTIVE" | "UPDATING" | "DELETING")
+      attr_accessor deployment_details: Types::DeploymentDetails
+      attr_accessor log_configuration: Types::LogConfiguration
+      attr_accessor location_attributes: ::Array[Types::ContainerFleetLocationAttributes]
+      SENSITIVE: []
+    end
+
+    class ContainerFleetLocationAttributes
+      attr_accessor location: ::String
+      attr_accessor status: ("PENDING" | "CREATING" | "CREATED" | "ACTIVATING" | "ACTIVE" | "UPDATING" | "DELETING")
+      SENSITIVE: []
+    end
+
+    class ContainerGroupDefinition
+      attr_accessor container_group_definition_arn: ::String
+      attr_accessor creation_time: ::Time
+      attr_accessor operating_system: ("AMAZON_LINUX_2023")
+      attr_accessor name: ::String
+      attr_accessor container_group_type: ("GAME_SERVER" | "PER_INSTANCE")
+      attr_accessor total_memory_limit_mebibytes: ::Integer
+      attr_accessor total_vcpu_limit: ::Float
+      attr_accessor game_server_container_definition: Types::GameServerContainerDefinition
+      attr_accessor support_container_definitions: ::Array[Types::SupportContainerDefinition]
+      attr_accessor version_number: ::Integer
+      attr_accessor version_description: ::String
+      attr_accessor status: ("READY" | "COPYING" | "FAILED")
+      attr_accessor status_reason: ::String
+      SENSITIVE: []
+    end
+
+    class ContainerHealthCheck
+      attr_accessor command: ::Array[::String]
+      attr_accessor interval: ::Integer
+      attr_accessor retries: ::Integer
+      attr_accessor start_period: ::Integer
+      attr_accessor timeout: ::Integer
+      SENSITIVE: []
+    end
+
+    class ContainerIdentifier
+      attr_accessor container_name: ::String
+      attr_accessor container_runtime_id: ::String
+      SENSITIVE: []
+    end
+
+    class ContainerMountPoint
+      attr_accessor instance_path: ::String
+      attr_accessor container_path: ::String
+      attr_accessor access_level: ("READ_ONLY" | "READ_AND_WRITE")
+      SENSITIVE: []
+    end
+
+    class ContainerPortConfiguration
+      attr_accessor container_port_ranges: ::Array[Types::ContainerPortRange]
+      SENSITIVE: []
+    end
+
+    class ContainerPortRange
+      attr_accessor from_port: ::Integer
+      attr_accessor to_port: ::Integer
+      attr_accessor protocol: ("TCP" | "UDP")
+      SENSITIVE: [:from_port, :to_port]
+    end
+
+    class CreateAliasInput
+      attr_accessor name: ::String
+      attr_accessor description: ::String
+      attr_accessor routing_strategy: Types::RoutingStrategy
+      attr_accessor tags: ::Array[Types::Tag]
+      SENSITIVE: []
+    end
+
+    class CreateAliasOutput
+      attr_accessor alias: Types::Alias
+      SENSITIVE: []
+    end
+
+    class CreateBuildInput
+      attr_accessor name: ::String
+      attr_accessor version: ::String
+      attr_accessor storage_location: Types::S3Location
+      attr_accessor operating_system: ("WINDOWS_2012" | "AMAZON_LINUX" | "AMAZON_LINUX_2" | "WINDOWS_2016" | "AMAZON_LINUX_2023")
+      attr_accessor tags: ::Array[Types::Tag]
+      attr_accessor server_sdk_version: ::String
+      SENSITIVE: []
+    end
+
+    class CreateBuildOutput
+      attr_accessor build: Types::Build
+      attr_accessor upload_credentials: Types::AwsCredentials
+      attr_accessor storage_location: Types::S3Location
+      SENSITIVE: [:upload_credentials]
+    end
+
+    class CreateContainerFleetInput
+      attr_accessor fleet_role_arn: ::String
+      attr_accessor description: ::String
+      attr_accessor game_server_container_group_definition_name: ::String
+      attr_accessor per_instance_container_group_definition_name: ::String
+      attr_accessor instance_connection_port_range: Types::ConnectionPortRange
+      attr_accessor instance_inbound_permissions: ::Array[Types::IpPermission]
+      attr_accessor game_server_container_groups_per_instance: ::Integer
+      attr_accessor instance_type: ::String
+      attr_accessor billing_type: ("ON_DEMAND" | "SPOT")
+      attr_accessor locations: ::Array[Types::LocationConfiguration]
+      attr_accessor metric_groups: ::Array[::String]
+      attr_accessor new_game_session_protection_policy: ("NoProtection" | "FullProtection")
+      attr_accessor game_session_creation_limit_policy: Types::GameSessionCreationLimitPolicy
+      attr_accessor log_configuration: Types::LogConfiguration
+      attr_accessor tags: ::Array[Types::Tag]
+      SENSITIVE: []
+    end
+
+    class CreateContainerFleetOutput
+      attr_accessor container_fleet: Types::ContainerFleet
+      SENSITIVE: []
+    end
+
+    class CreateContainerGroupDefinitionInput
+      attr_accessor name: ::String
+      attr_accessor container_group_type: ("GAME_SERVER" | "PER_INSTANCE")
+      attr_accessor total_memory_limit_mebibytes: ::Integer
+      attr_accessor total_vcpu_limit: ::Float
+      attr_accessor game_server_container_definition: Types::GameServerContainerDefinitionInput
+      attr_accessor support_container_definitions: ::Array[Types::SupportContainerDefinitionInput]
+      attr_accessor operating_system: ("AMAZON_LINUX_2023")
+      attr_accessor version_description: ::String
+      attr_accessor tags: ::Array[Types::Tag]
+      SENSITIVE: []
+    end
+
+    class CreateContainerGroupDefinitionOutput
+      attr_accessor container_group_definition: Types::ContainerGroupDefinition
+      SENSITIVE: []
+    end
+
+    class CreateFleetInput
+      attr_accessor name: ::String
+      attr_accessor description: ::String
+      attr_accessor build_id: ::String
+      attr_accessor script_id: ::String
+      attr_accessor server_launch_path: ::String
+      attr_accessor server_launch_parameters: ::String
+      attr_accessor log_paths: ::Array[::String]
+      attr_accessor ec2_instance_type: ("t2.micro" | "t2.small" | "t2.medium" | "t2.large" | "c3.large" | "c3.xlarge" | "c3.2xlarge" | "c3.4xlarge" | "c3.8xlarge" | "c4.large" | "c4.xlarge" | "c4.2xlarge" | "c4.4xlarge" | "c4.8xlarge" | "c5.large" | "c5.xlarge" | "c5.2xlarge" | "c5.4xlarge" | "c5.9xlarge" | "c5.12xlarge" | "c5.18xlarge" | "c5.24xlarge" | "c5a.large" | "c5a.xlarge" | "c5a.2xlarge" | "c5a.4xlarge" | "c5a.8xlarge" | "c5a.12xlarge" | "c5a.16xlarge" | "c5a.24xlarge" | "r3.large" | "r3.xlarge" | "r3.2xlarge" | "r3.4xlarge" | "r3.8xlarge" | "r4.large" | "r4.xlarge" | "r4.2xlarge" | "r4.4xlarge" | "r4.8xlarge" | "r4.16xlarge" | "r5.large" | "r5.xlarge" | "r5.2xlarge" | "r5.4xlarge" | "r5.8xlarge" | "r5.12xlarge" | "r5.16xlarge" | "r5.24xlarge" | "r5a.large" | "r5a.xlarge" | "r5a.2xlarge" | "r5a.4xlarge" | "r5a.8xlarge" | "r5a.12xlarge" | "r5a.16xlarge" | "r5a.24xlarge" | "m3.medium" | "m3.large" | "m3.xlarge" | "m3.2xlarge" | "m4.large" | "m4.xlarge" | "m4.2xlarge" | "m4.4xlarge" | "m4.10xlarge" | "m5.large" | "m5.xlarge" | "m5.2xlarge" | "m5.4xlarge" | "m5.8xlarge" | "m5.12xlarge" | "m5.16xlarge" | "m5.24xlarge" | "m5a.large" | "m5a.xlarge" | "m5a.2xlarge" | "m5a.4xlarge" | "m5a.8xlarge" | "m5a.12xlarge" | "m5a.16xlarge" | "m5a.24xlarge" | "c5d.large" | "c5d.xlarge" | "c5d.2xlarge" | "c5d.4xlarge" | "c5d.9xlarge" | "c5d.12xlarge" | "c5d.18xlarge" | "c5d.24xlarge" | "c6a.large" | "c6a.xlarge" | "c6a.2xlarge" | "c6a.4xlarge" | "c6a.8xlarge" | "c6a.12xlarge" | "c6a.16xlarge" | "c6a.24xlarge" | "c6i.large" | "c6i.xlarge" | "c6i.2xlarge" | "c6i.4xlarge" | "c6i.8xlarge" | "c6i.12xlarge" | "c6i.16xlarge" | "c6i.24xlarge" | "r5d.large" | "r5d.xlarge" | "r5d.2xlarge" | "r5d.4xlarge" | "r5d.8xlarge" | "r5d.12xlarge" | "r5d.16xlarge" | "r5d.24xlarge" | "m6g.medium" | "m6g.large" | "m6g.xlarge" | "m6g.2xlarge" | "m6g.4xlarge" | "m6g.8xlarge" | "m6g.12xlarge" | "m6g.16xlarge" | "c6g.medium" | "c6g.large" | "c6g.xlarge" | "c6g.2xlarge" | "c6g.4xlarge" | "c6g.8xlarge" | "c6g.12xlarge" | "c6g.16xlarge" | "r6g.medium" | "r6g.large" | "r6g.xlarge" | "r6g.2xlarge" | "r6g.4xlarge" | "r6g.8xlarge" | "r6g.12xlarge" | "r6g.16xlarge" | "c6gn.medium" | "c6gn.large" | "c6gn.xlarge" | "c6gn.2xlarge" | "c6gn.4xlarge" | "c6gn.8xlarge" | "c6gn.12xlarge" | "c6gn.16xlarge" | "c7g.medium" | "c7g.large" | "c7g.xlarge" | "c7g.2xlarge" | "c7g.4xlarge" | "c7g.8xlarge" | "c7g.12xlarge" | "c7g.16xlarge" | "r7g.medium" | "r7g.large" | "r7g.xlarge" | "r7g.2xlarge" | "r7g.4xlarge" | "r7g.8xlarge" | "r7g.12xlarge" | "r7g.16xlarge" | "m7g.medium" | "m7g.large" | "m7g.xlarge" | "m7g.2xlarge" | "m7g.4xlarge" | "m7g.8xlarge" | "m7g.12xlarge" | "m7g.16xlarge" | "g5g.xlarge" | "g5g.2xlarge" | "g5g.4xlarge" | "g5g.8xlarge" | "g5g.16xlarge" | "r6i.large" | "r6i.xlarge" | "r6i.2xlarge" | "r6i.4xlarge" | "r6i.8xlarge" | "r6i.12xlarge" | "r6i.16xlarge" | "c6gd.medium" | "c6gd.large" | "c6gd.xlarge" | "c6gd.2xlarge" | "c6gd.4xlarge" | "c6gd.8xlarge" | "c6gd.12xlarge" | "c6gd.16xlarge" | "c6in.large" | "c6in.xlarge" | "c6in.2xlarge" | "c6in.4xlarge" | "c6in.8xlarge" | "c6in.12xlarge" | "c6in.16xlarge" | "c7a.medium" | "c7a.large" | "c7a.xlarge" | "c7a.2xlarge" | "c7a.4xlarge" | "c7a.8xlarge" | "c7a.12xlarge" | "c7a.16xlarge" | "c7gd.medium" | "c7gd.large" | "c7gd.xlarge" | "c7gd.2xlarge" | "c7gd.4xlarge" | "c7gd.8xlarge" | "c7gd.12xlarge" | "c7gd.16xlarge" | "c7gn.medium" | "c7gn.large" | "c7gn.xlarge" | "c7gn.2xlarge" | "c7gn.4xlarge" | "c7gn.8xlarge" | "c7gn.12xlarge" | "c7gn.16xlarge" | "c7i.large" | "c7i.xlarge" | "c7i.2xlarge" | "c7i.4xlarge" | "c7i.8xlarge" | "c7i.12xlarge" | "c7i.16xlarge" | "m6a.large" | "m6a.xlarge" | "m6a.2xlarge" | "m6a.4xlarge" | "m6a.8xlarge" | "m6a.12xlarge" | "m6a.16xlarge" | "m6gd.medium" | "m6gd.large" | "m6gd.xlarge" | "m6gd.2xlarge" | "m6gd.4xlarge" | "m6gd.8xlarge" | "m6gd.12xlarge" | "m6gd.16xlarge" | "m6i.large" | "m6i.xlarge" | "m6i.2xlarge" | "m6i.4xlarge" | "m6i.8xlarge" | "m6i.12xlarge" | "m6i.16xlarge" | "m7a.medium" | "m7a.large" | "m7a.xlarge" | "m7a.2xlarge" | "m7a.4xlarge" | "m7a.8xlarge" | "m7a.12xlarge" | "m7a.16xlarge" | "m7gd.medium" | "m7gd.large" | "m7gd.xlarge" | "m7gd.2xlarge" | "m7gd.4xlarge" | "m7gd.8xlarge" | "m7gd.12xlarge" | "m7gd.16xlarge" | "m7i.large" | "m7i.xlarge" | "m7i.2xlarge" | "m7i.4xlarge" | "m7i.8xlarge" | "m7i.12xlarge" | "m7i.16xlarge" | "r6gd.medium" | "r6gd.large" | "r6gd.xlarge" | "r6gd.2xlarge" | "r6gd.4xlarge" | "r6gd.8xlarge" | "r6gd.12xlarge" | "r6gd.16xlarge" | "r7a.medium" | "r7a.large" | "r7a.xlarge" | "r7a.2xlarge" | "r7a.4xlarge" | "r7a.8xlarge" | "r7a.12xlarge" | "r7a.16xlarge" | "r7gd.medium" | "r7gd.large" | "r7gd.xlarge" | "r7gd.2xlarge" | "r7gd.4xlarge" | "r7gd.8xlarge" | "r7gd.12xlarge" | "r7gd.16xlarge" | "r7i.large" | "r7i.xlarge" | "r7i.2xlarge" | "r7i.4xlarge" | "r7i.8xlarge" | "r7i.12xlarge" | "r7i.16xlarge" | "r7i.24xlarge" | "r7i.48xlarge" | "c5ad.large" | "c5ad.xlarge" | "c5ad.2xlarge" | "c5ad.4xlarge" | "c5ad.8xlarge" | "c5ad.12xlarge" | "c5ad.16xlarge" | "c5ad.24xlarge" | "c5n.large" | "c5n.xlarge" | "c5n.2xlarge" | "c5n.4xlarge" | "c5n.9xlarge" | "c5n.18xlarge" | "r5ad.large" | "r5ad.xlarge" | "r5ad.2xlarge" | "r5ad.4xlarge" | "r5ad.8xlarge" | "r5ad.12xlarge" | "r5ad.16xlarge" | "r5ad.24xlarge" | "c6id.large" | "c6id.xlarge" | "c6id.2xlarge" | "c6id.4xlarge" | "c6id.8xlarge" | "c6id.12xlarge" | "c6id.16xlarge" | "c6id.24xlarge" | "c6id.32xlarge" | "c8g.medium" | "c8g.large" | "c8g.xlarge" | "c8g.2xlarge" | "c8g.4xlarge" | "c8g.8xlarge" | "c8g.12xlarge" | "c8g.16xlarge" | "c8g.24xlarge" | "c8g.48xlarge" | "m5ad.large" | "m5ad.xlarge" | "m5ad.2xlarge" | "m5ad.4xlarge" | "m5ad.8xlarge" | "m5ad.12xlarge" | "m5ad.16xlarge" | "m5ad.24xlarge" | "m5d.large" | "m5d.xlarge" | "m5d.2xlarge" | "m5d.4xlarge" | "m5d.8xlarge" | "m5d.12xlarge" | "m5d.16xlarge" | "m5d.24xlarge" | "m5dn.large" | "m5dn.xlarge" | "m5dn.2xlarge" | "m5dn.4xlarge" | "m5dn.8xlarge" | "m5dn.12xlarge" | "m5dn.16xlarge" | "m5dn.24xlarge" | "m5n.large" | "m5n.xlarge" | "m5n.2xlarge" | "m5n.4xlarge" | "m5n.8xlarge" | "m5n.12xlarge" | "m5n.16xlarge" | "m5n.24xlarge" | "m6id.large" | "m6id.xlarge" | "m6id.2xlarge" | "m6id.4xlarge" | "m6id.8xlarge" | "m6id.12xlarge" | "m6id.16xlarge" | "m6id.24xlarge" | "m6id.32xlarge" | "m6idn.large" | "m6idn.xlarge" | "m6idn.2xlarge" | "m6idn.4xlarge" | "m6idn.8xlarge" | "m6idn.12xlarge" | "m6idn.16xlarge" | "m6idn.24xlarge" | "m6idn.32xlarge" | "m6in.large" | "m6in.xlarge" | "m6in.2xlarge" | "m6in.4xlarge" | "m6in.8xlarge" | "m6in.12xlarge" | "m6in.16xlarge" | "m6in.24xlarge" | "m6in.32xlarge" | "m8g.medium" | "m8g.large" | "m8g.xlarge" | "m8g.2xlarge" | "m8g.4xlarge" | "m8g.8xlarge" | "m8g.12xlarge" | "m8g.16xlarge" | "m8g.24xlarge" | "m8g.48xlarge" | "r5dn.large" | "r5dn.xlarge" | "r5dn.2xlarge" | "r5dn.4xlarge" | "r5dn.8xlarge" | "r5dn.12xlarge" | "r5dn.16xlarge" | "r5dn.24xlarge" | "r5n.large" | "r5n.xlarge" | "r5n.2xlarge" | "r5n.4xlarge" | "r5n.8xlarge" | "r5n.12xlarge" | "r5n.16xlarge" | "r5n.24xlarge" | "r6a.large" | "r6a.xlarge" | "r6a.2xlarge" | "r6a.4xlarge" | "r6a.8xlarge" | "r6a.12xlarge" | "r6a.16xlarge" | "r6a.24xlarge" | "r6a.32xlarge" | "r6a.48xlarge" | "r6id.large" | "r6id.xlarge" | "r6id.2xlarge" | "r6id.4xlarge" | "r6id.8xlarge" | "r6id.12xlarge" | "r6id.16xlarge" | "r6id.24xlarge" | "r6id.32xlarge" | "r6idn.large" | "r6idn.xlarge" | "r6idn.2xlarge" | "r6idn.4xlarge" | "r6idn.8xlarge" | "r6idn.12xlarge" | "r6idn.16xlarge" | "r6idn.24xlarge" | "r6idn.32xlarge" | "r6in.large" | "r6in.xlarge" | "r6in.2xlarge" | "r6in.4xlarge" | "r6in.8xlarge" | "r6in.12xlarge" | "r6in.16xlarge" | "r6in.24xlarge" | "r6in.32xlarge" | "r8g.medium" | "r8g.large" | "r8g.xlarge" | "r8g.2xlarge" | "r8g.4xlarge" | "r8g.8xlarge" | "r8g.12xlarge" | "r8g.16xlarge" | "r8g.24xlarge" | "r8g.48xlarge" | "m4.16xlarge" | "c6a.32xlarge" | "c6a.48xlarge" | "c6i.32xlarge" | "r6i.24xlarge" | "r6i.32xlarge" | "c6in.24xlarge" | "c6in.32xlarge" | "c7a.24xlarge" | "c7a.32xlarge" | "c7a.48xlarge" | "c7i.24xlarge" | "c7i.48xlarge" | "m6a.24xlarge" | "m6a.32xlarge" | "m6a.48xlarge" | "m6i.24xlarge" | "m6i.32xlarge" | "m7a.24xlarge" | "m7a.32xlarge" | "m7a.48xlarge" | "m7i.24xlarge" | "m7i.48xlarge" | "r7a.24xlarge" | "r7a.32xlarge" | "r7a.48xlarge")
+      attr_accessor ec2_inbound_permissions: ::Array[Types::IpPermission]
+      attr_accessor new_game_session_protection_policy: ("NoProtection" | "FullProtection")
+      attr_accessor runtime_configuration: Types::RuntimeConfiguration
+      attr_accessor resource_creation_limit_policy: Types::ResourceCreationLimitPolicy
+      attr_accessor metric_groups: ::Array[::String]
+      attr_accessor peer_vpc_aws_account_id: ::String
+      attr_accessor peer_vpc_id: ::String
+      attr_accessor fleet_type: ("ON_DEMAND" | "SPOT")
+      attr_accessor instance_role_arn: ::String
+      attr_accessor certificate_configuration: Types::CertificateConfiguration
+      attr_accessor locations: ::Array[Types::LocationConfiguration]
+      attr_accessor tags: ::Array[Types::Tag]
+      attr_accessor compute_type: ("EC2" | "ANYWHERE")
+      attr_accessor anywhere_configuration: Types::AnywhereConfiguration
+      attr_accessor instance_role_credentials_provider: ("SHARED_CREDENTIAL_FILE")
+      SENSITIVE: []
+    end
+
+    class CreateFleetLocationsInput
+      attr_accessor fleet_id: ::String
+      attr_accessor locations: ::Array[Types::LocationConfiguration]
+      SENSITIVE: []
+    end
+
+    class CreateFleetLocationsOutput
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      attr_accessor location_states: ::Array[Types::LocationState]
+      SENSITIVE: []
+    end
+
+    class CreateFleetOutput
+      attr_accessor fleet_attributes: Types::FleetAttributes
+      attr_accessor location_states: ::Array[Types::LocationState]
+      SENSITIVE: []
+    end
+
+    class CreateGameServerGroupInput
+      attr_accessor game_server_group_name: ::String
+      attr_accessor role_arn: ::String
+      attr_accessor min_size: ::Integer
+      attr_accessor max_size: ::Integer
+      attr_accessor launch_template: Types::LaunchTemplateSpecification
+      attr_accessor instance_definitions: ::Array[Types::InstanceDefinition]
+      attr_accessor auto_scaling_policy: Types::GameServerGroupAutoScalingPolicy
+      attr_accessor balancing_strategy: ("SPOT_ONLY" | "SPOT_PREFERRED" | "ON_DEMAND_ONLY")
+      attr_accessor game_server_protection_policy: ("NO_PROTECTION" | "FULL_PROTECTION")
+      attr_accessor vpc_subnets: ::Array[::String]
+      attr_accessor tags: ::Array[Types::Tag]
+      SENSITIVE: []
+    end
+
+    class CreateGameServerGroupOutput
+      attr_accessor game_server_group: Types::GameServerGroup
+      SENSITIVE: []
+    end
+
+    class CreateGameSessionInput
+      attr_accessor fleet_id: ::String
+      attr_accessor alias_id: ::String
+      attr_accessor maximum_player_session_count: ::Integer
+      attr_accessor name: ::String
+      attr_accessor game_properties: ::Array[Types::GameProperty]
+      attr_accessor creator_id: ::String
+      attr_accessor game_session_id: ::String
+      attr_accessor idempotency_token: ::String
+      attr_accessor game_session_data: ::String
+      attr_accessor location: ::String
+      SENSITIVE: []
+    end
+
+    class CreateGameSessionOutput
+      attr_accessor game_session: Types::GameSession
+      SENSITIVE: []
+    end
+
+    class CreateGameSessionQueueInput
+      attr_accessor name: ::String
+      attr_accessor timeout_in_seconds: ::Integer
+      attr_accessor player_latency_policies: ::Array[Types::PlayerLatencyPolicy]
+      attr_accessor destinations: ::Array[Types::GameSessionQueueDestination]
+      attr_accessor filter_configuration: Types::FilterConfiguration
+      attr_accessor priority_configuration: Types::PriorityConfiguration
+      attr_accessor custom_event_data: ::String
+      attr_accessor notification_target: ::String
+      attr_accessor tags: ::Array[Types::Tag]
+      SENSITIVE: []
+    end
+
+    class CreateGameSessionQueueOutput
+      attr_accessor game_session_queue: Types::GameSessionQueue
+      SENSITIVE: []
+    end
+
+    class CreateLocationInput
+      attr_accessor location_name: ::String
+      attr_accessor tags: ::Array[Types::Tag]
+      SENSITIVE: []
+    end
+
+    class CreateLocationOutput
+      attr_accessor location: Types::LocationModel
+      SENSITIVE: []
+    end
+
+    class CreateMatchmakingConfigurationInput
+      attr_accessor name: ::String
+      attr_accessor description: ::String
+      attr_accessor game_session_queue_arns: ::Array[::String]
+      attr_accessor request_timeout_seconds: ::Integer
+      attr_accessor acceptance_timeout_seconds: ::Integer
+      attr_accessor acceptance_required: bool
+      attr_accessor rule_set_name: ::String
+      attr_accessor notification_target: ::String
+      attr_accessor additional_player_count: ::Integer
+      attr_accessor custom_event_data: ::String
+      attr_accessor game_properties: ::Array[Types::GameProperty]
+      attr_accessor game_session_data: ::String
+      attr_accessor backfill_mode: ("AUTOMATIC" | "MANUAL")
+      attr_accessor flex_match_mode: ("STANDALONE" | "WITH_QUEUE")
+      attr_accessor tags: ::Array[Types::Tag]
+      SENSITIVE: []
+    end
+
+    class CreateMatchmakingConfigurationOutput
+      attr_accessor configuration: Types::MatchmakingConfiguration
+      SENSITIVE: []
+    end
+
+    class CreateMatchmakingRuleSetInput
+      attr_accessor name: ::String
+      attr_accessor rule_set_body: ::String
+      attr_accessor tags: ::Array[Types::Tag]
+      SENSITIVE: []
+    end
+
+    class CreateMatchmakingRuleSetOutput
+      attr_accessor rule_set: Types::MatchmakingRuleSet
+      SENSITIVE: []
+    end
+
+    class CreatePlayerSessionInput
+      attr_accessor game_session_id: ::String
+      attr_accessor player_id: ::String
+      attr_accessor player_data: ::String
+      SENSITIVE: [:player_id]
+    end
+
+    class CreatePlayerSessionOutput
+      attr_accessor player_session: Types::PlayerSession
+      SENSITIVE: []
+    end
+
+    class CreatePlayerSessionsInput
+      attr_accessor game_session_id: ::String
+      attr_accessor player_ids: ::Array[::String]
+      attr_accessor player_data_map: ::Hash[::String, ::String]
+      SENSITIVE: [:player_ids]
+    end
+
+    class CreatePlayerSessionsOutput
+      attr_accessor player_sessions: ::Array[Types::PlayerSession]
+      SENSITIVE: []
+    end
+
+    class CreateScriptInput
+      attr_accessor name: ::String
+      attr_accessor version: ::String
+      attr_accessor storage_location: Types::S3Location
+      attr_accessor zip_file: ::String
+      attr_accessor tags: ::Array[Types::Tag]
+      SENSITIVE: []
+    end
+
+    class CreateScriptOutput
+      attr_accessor script: Types::Script
+      SENSITIVE: []
+    end
+
+    class CreateVpcPeeringAuthorizationInput
+      attr_accessor game_lift_aws_account_id: ::String
+      attr_accessor peer_vpc_id: ::String
+      SENSITIVE: []
+    end
+
+    class CreateVpcPeeringAuthorizationOutput
+      attr_accessor vpc_peering_authorization: Types::VpcPeeringAuthorization
+      SENSITIVE: []
+    end
+
+    class CreateVpcPeeringConnectionInput
+      attr_accessor fleet_id: ::String
+      attr_accessor peer_vpc_aws_account_id: ::String
+      attr_accessor peer_vpc_id: ::String
+      SENSITIVE: []
+    end
+
+    class CreateVpcPeeringConnectionOutput < Aws::EmptyStructure
+    end
+
+    class DeleteAliasInput
+      attr_accessor alias_id: ::String
+      SENSITIVE: []
+    end
+
+    class DeleteBuildInput
+      attr_accessor build_id: ::String
+      SENSITIVE: []
+    end
+
+    class DeleteContainerFleetInput
+      attr_accessor fleet_id: ::String
+      SENSITIVE: []
+    end
+
+    class DeleteContainerFleetOutput < Aws::EmptyStructure
+    end
+
+    class DeleteContainerGroupDefinitionInput
+      attr_accessor name: ::String
+      attr_accessor version_number: ::Integer
+      attr_accessor version_count_to_retain: ::Integer
+      SENSITIVE: []
+    end
+
+    class DeleteContainerGroupDefinitionOutput < Aws::EmptyStructure
+    end
+
+    class DeleteFleetInput
+      attr_accessor fleet_id: ::String
+      SENSITIVE: []
+    end
+
+    class DeleteFleetLocationsInput
+      attr_accessor fleet_id: ::String
+      attr_accessor locations: ::Array[::String]
+      SENSITIVE: []
+    end
+
+    class DeleteFleetLocationsOutput
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      attr_accessor location_states: ::Array[Types::LocationState]
+      SENSITIVE: []
+    end
+
+    class DeleteGameServerGroupInput
+      attr_accessor game_server_group_name: ::String
+      attr_accessor delete_option: ("SAFE_DELETE" | "FORCE_DELETE" | "RETAIN")
+      SENSITIVE: []
+    end
+
+    class DeleteGameServerGroupOutput
+      attr_accessor game_server_group: Types::GameServerGroup
+      SENSITIVE: []
+    end
+
+    class DeleteGameSessionQueueInput
+      attr_accessor name: ::String
+      SENSITIVE: []
+    end
+
+    class DeleteGameSessionQueueOutput < Aws::EmptyStructure
+    end
+
+    class DeleteLocationInput
+      attr_accessor location_name: ::String
+      SENSITIVE: []
+    end
+
+    class DeleteLocationOutput < Aws::EmptyStructure
+    end
+
+    class DeleteMatchmakingConfigurationInput
+      attr_accessor name: ::String
+      SENSITIVE: []
+    end
+
+    class DeleteMatchmakingConfigurationOutput < Aws::EmptyStructure
+    end
+
+    class DeleteMatchmakingRuleSetInput
+      attr_accessor name: ::String
+      SENSITIVE: []
+    end
+
+    class DeleteMatchmakingRuleSetOutput < Aws::EmptyStructure
+    end
+
+    class DeleteScalingPolicyInput
+      attr_accessor name: ::String
+      attr_accessor fleet_id: ::String
+      SENSITIVE: []
+    end
+
+    class DeleteScriptInput
+      attr_accessor script_id: ::String
+      SENSITIVE: []
+    end
+
+    class DeleteVpcPeeringAuthorizationInput
+      attr_accessor game_lift_aws_account_id: ::String
+      attr_accessor peer_vpc_id: ::String
+      SENSITIVE: []
+    end
+
+    class DeleteVpcPeeringAuthorizationOutput < Aws::EmptyStructure
+    end
+
+    class DeleteVpcPeeringConnectionInput
+      attr_accessor fleet_id: ::String
+      attr_accessor vpc_peering_connection_id: ::String
+      SENSITIVE: []
+    end
+
+    class DeleteVpcPeeringConnectionOutput < Aws::EmptyStructure
+    end
+
+    class DeploymentConfiguration
+      attr_accessor protection_strategy: ("WITH_PROTECTION" | "IGNORE_PROTECTION")
+      attr_accessor minimum_healthy_percentage: ::Integer
+      attr_accessor impairment_strategy: ("MAINTAIN" | "ROLLBACK")
+      SENSITIVE: []
+    end
+
+    class DeploymentDetails
+      attr_accessor latest_deployment_id: ::String
+      SENSITIVE: []
+    end
+
+    class DeregisterComputeInput
+      attr_accessor fleet_id: ::String
+      attr_accessor compute_name: ::String
+      SENSITIVE: []
+    end
+
+    class DeregisterComputeOutput < Aws::EmptyStructure
+    end
+
+    class DeregisterGameServerInput
+      attr_accessor game_server_group_name: ::String
+      attr_accessor game_server_id: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeAliasInput
+      attr_accessor alias_id: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeAliasOutput
+      attr_accessor alias: Types::Alias
+      SENSITIVE: []
+    end
+
+    class DescribeBuildInput
+      attr_accessor build_id: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeBuildOutput
+      attr_accessor build: Types::Build
+      SENSITIVE: []
+    end
+
+    class DescribeComputeInput
+      attr_accessor fleet_id: ::String
+      attr_accessor compute_name: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeComputeOutput
+      attr_accessor compute: Types::Compute
+      SENSITIVE: []
+    end
+
+    class DescribeContainerFleetInput
+      attr_accessor fleet_id: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeContainerFleetOutput
+      attr_accessor container_fleet: Types::ContainerFleet
+      SENSITIVE: []
+    end
+
+    class DescribeContainerGroupDefinitionInput
+      attr_accessor name: ::String
+      attr_accessor version_number: ::Integer
+      SENSITIVE: []
+    end
+
+    class DescribeContainerGroupDefinitionOutput
+      attr_accessor container_group_definition: Types::ContainerGroupDefinition
+      SENSITIVE: []
+    end
+
+    class DescribeEC2InstanceLimitsInput
+      attr_accessor ec2_instance_type: ("t2.micro" | "t2.small" | "t2.medium" | "t2.large" | "c3.large" | "c3.xlarge" | "c3.2xlarge" | "c3.4xlarge" | "c3.8xlarge" | "c4.large" | "c4.xlarge" | "c4.2xlarge" | "c4.4xlarge" | "c4.8xlarge" | "c5.large" | "c5.xlarge" | "c5.2xlarge" | "c5.4xlarge" | "c5.9xlarge" | "c5.12xlarge" | "c5.18xlarge" | "c5.24xlarge" | "c5a.large" | "c5a.xlarge" | "c5a.2xlarge" | "c5a.4xlarge" | "c5a.8xlarge" | "c5a.12xlarge" | "c5a.16xlarge" | "c5a.24xlarge" | "r3.large" | "r3.xlarge" | "r3.2xlarge" | "r3.4xlarge" | "r3.8xlarge" | "r4.large" | "r4.xlarge" | "r4.2xlarge" | "r4.4xlarge" | "r4.8xlarge" | "r4.16xlarge" | "r5.large" | "r5.xlarge" | "r5.2xlarge" | "r5.4xlarge" | "r5.8xlarge" | "r5.12xlarge" | "r5.16xlarge" | "r5.24xlarge" | "r5a.large" | "r5a.xlarge" | "r5a.2xlarge" | "r5a.4xlarge" | "r5a.8xlarge" | "r5a.12xlarge" | "r5a.16xlarge" | "r5a.24xlarge" | "m3.medium" | "m3.large" | "m3.xlarge" | "m3.2xlarge" | "m4.large" | "m4.xlarge" | "m4.2xlarge" | "m4.4xlarge" | "m4.10xlarge" | "m5.large" | "m5.xlarge" | "m5.2xlarge" | "m5.4xlarge" | "m5.8xlarge" | "m5.12xlarge" | "m5.16xlarge" | "m5.24xlarge" | "m5a.large" | "m5a.xlarge" | "m5a.2xlarge" | "m5a.4xlarge" | "m5a.8xlarge" | "m5a.12xlarge" | "m5a.16xlarge" | "m5a.24xlarge" | "c5d.large" | "c5d.xlarge" | "c5d.2xlarge" | "c5d.4xlarge" | "c5d.9xlarge" | "c5d.12xlarge" | "c5d.18xlarge" | "c5d.24xlarge" | "c6a.large" | "c6a.xlarge" | "c6a.2xlarge" | "c6a.4xlarge" | "c6a.8xlarge" | "c6a.12xlarge" | "c6a.16xlarge" | "c6a.24xlarge" | "c6i.large" | "c6i.xlarge" | "c6i.2xlarge" | "c6i.4xlarge" | "c6i.8xlarge" | "c6i.12xlarge" | "c6i.16xlarge" | "c6i.24xlarge" | "r5d.large" | "r5d.xlarge" | "r5d.2xlarge" | "r5d.4xlarge" | "r5d.8xlarge" | "r5d.12xlarge" | "r5d.16xlarge" | "r5d.24xlarge" | "m6g.medium" | "m6g.large" | "m6g.xlarge" | "m6g.2xlarge" | "m6g.4xlarge" | "m6g.8xlarge" | "m6g.12xlarge" | "m6g.16xlarge" | "c6g.medium" | "c6g.large" | "c6g.xlarge" | "c6g.2xlarge" | "c6g.4xlarge" | "c6g.8xlarge" | "c6g.12xlarge" | "c6g.16xlarge" | "r6g.medium" | "r6g.large" | "r6g.xlarge" | "r6g.2xlarge" | "r6g.4xlarge" | "r6g.8xlarge" | "r6g.12xlarge" | "r6g.16xlarge" | "c6gn.medium" | "c6gn.large" | "c6gn.xlarge" | "c6gn.2xlarge" | "c6gn.4xlarge" | "c6gn.8xlarge" | "c6gn.12xlarge" | "c6gn.16xlarge" | "c7g.medium" | "c7g.large" | "c7g.xlarge" | "c7g.2xlarge" | "c7g.4xlarge" | "c7g.8xlarge" | "c7g.12xlarge" | "c7g.16xlarge" | "r7g.medium" | "r7g.large" | "r7g.xlarge" | "r7g.2xlarge" | "r7g.4xlarge" | "r7g.8xlarge" | "r7g.12xlarge" | "r7g.16xlarge" | "m7g.medium" | "m7g.large" | "m7g.xlarge" | "m7g.2xlarge" | "m7g.4xlarge" | "m7g.8xlarge" | "m7g.12xlarge" | "m7g.16xlarge" | "g5g.xlarge" | "g5g.2xlarge" | "g5g.4xlarge" | "g5g.8xlarge" | "g5g.16xlarge" | "r6i.large" | "r6i.xlarge" | "r6i.2xlarge" | "r6i.4xlarge" | "r6i.8xlarge" | "r6i.12xlarge" | "r6i.16xlarge" | "c6gd.medium" | "c6gd.large" | "c6gd.xlarge" | "c6gd.2xlarge" | "c6gd.4xlarge" | "c6gd.8xlarge" | "c6gd.12xlarge" | "c6gd.16xlarge" | "c6in.large" | "c6in.xlarge" | "c6in.2xlarge" | "c6in.4xlarge" | "c6in.8xlarge" | "c6in.12xlarge" | "c6in.16xlarge" | "c7a.medium" | "c7a.large" | "c7a.xlarge" | "c7a.2xlarge" | "c7a.4xlarge" | "c7a.8xlarge" | "c7a.12xlarge" | "c7a.16xlarge" | "c7gd.medium" | "c7gd.large" | "c7gd.xlarge" | "c7gd.2xlarge" | "c7gd.4xlarge" | "c7gd.8xlarge" | "c7gd.12xlarge" | "c7gd.16xlarge" | "c7gn.medium" | "c7gn.large" | "c7gn.xlarge" | "c7gn.2xlarge" | "c7gn.4xlarge" | "c7gn.8xlarge" | "c7gn.12xlarge" | "c7gn.16xlarge" | "c7i.large" | "c7i.xlarge" | "c7i.2xlarge" | "c7i.4xlarge" | "c7i.8xlarge" | "c7i.12xlarge" | "c7i.16xlarge" | "m6a.large" | "m6a.xlarge" | "m6a.2xlarge" | "m6a.4xlarge" | "m6a.8xlarge" | "m6a.12xlarge" | "m6a.16xlarge" | "m6gd.medium" | "m6gd.large" | "m6gd.xlarge" | "m6gd.2xlarge" | "m6gd.4xlarge" | "m6gd.8xlarge" | "m6gd.12xlarge" | "m6gd.16xlarge" | "m6i.large" | "m6i.xlarge" | "m6i.2xlarge" | "m6i.4xlarge" | "m6i.8xlarge" | "m6i.12xlarge" | "m6i.16xlarge" | "m7a.medium" | "m7a.large" | "m7a.xlarge" | "m7a.2xlarge" | "m7a.4xlarge" | "m7a.8xlarge" | "m7a.12xlarge" | "m7a.16xlarge" | "m7gd.medium" | "m7gd.large" | "m7gd.xlarge" | "m7gd.2xlarge" | "m7gd.4xlarge" | "m7gd.8xlarge" | "m7gd.12xlarge" | "m7gd.16xlarge" | "m7i.large" | "m7i.xlarge" | "m7i.2xlarge" | "m7i.4xlarge" | "m7i.8xlarge" | "m7i.12xlarge" | "m7i.16xlarge" | "r6gd.medium" | "r6gd.large" | "r6gd.xlarge" | "r6gd.2xlarge" | "r6gd.4xlarge" | "r6gd.8xlarge" | "r6gd.12xlarge" | "r6gd.16xlarge" | "r7a.medium" | "r7a.large" | "r7a.xlarge" | "r7a.2xlarge" | "r7a.4xlarge" | "r7a.8xlarge" | "r7a.12xlarge" | "r7a.16xlarge" | "r7gd.medium" | "r7gd.large" | "r7gd.xlarge" | "r7gd.2xlarge" | "r7gd.4xlarge" | "r7gd.8xlarge" | "r7gd.12xlarge" | "r7gd.16xlarge" | "r7i.large" | "r7i.xlarge" | "r7i.2xlarge" | "r7i.4xlarge" | "r7i.8xlarge" | "r7i.12xlarge" | "r7i.16xlarge" | "r7i.24xlarge" | "r7i.48xlarge" | "c5ad.large" | "c5ad.xlarge" | "c5ad.2xlarge" | "c5ad.4xlarge" | "c5ad.8xlarge" | "c5ad.12xlarge" | "c5ad.16xlarge" | "c5ad.24xlarge" | "c5n.large" | "c5n.xlarge" | "c5n.2xlarge" | "c5n.4xlarge" | "c5n.9xlarge" | "c5n.18xlarge" | "r5ad.large" | "r5ad.xlarge" | "r5ad.2xlarge" | "r5ad.4xlarge" | "r5ad.8xlarge" | "r5ad.12xlarge" | "r5ad.16xlarge" | "r5ad.24xlarge" | "c6id.large" | "c6id.xlarge" | "c6id.2xlarge" | "c6id.4xlarge" | "c6id.8xlarge" | "c6id.12xlarge" | "c6id.16xlarge" | "c6id.24xlarge" | "c6id.32xlarge" | "c8g.medium" | "c8g.large" | "c8g.xlarge" | "c8g.2xlarge" | "c8g.4xlarge" | "c8g.8xlarge" | "c8g.12xlarge" | "c8g.16xlarge" | "c8g.24xlarge" | "c8g.48xlarge" | "m5ad.large" | "m5ad.xlarge" | "m5ad.2xlarge" | "m5ad.4xlarge" | "m5ad.8xlarge" | "m5ad.12xlarge" | "m5ad.16xlarge" | "m5ad.24xlarge" | "m5d.large" | "m5d.xlarge" | "m5d.2xlarge" | "m5d.4xlarge" | "m5d.8xlarge" | "m5d.12xlarge" | "m5d.16xlarge" | "m5d.24xlarge" | "m5dn.large" | "m5dn.xlarge" | "m5dn.2xlarge" | "m5dn.4xlarge" | "m5dn.8xlarge" | "m5dn.12xlarge" | "m5dn.16xlarge" | "m5dn.24xlarge" | "m5n.large" | "m5n.xlarge" | "m5n.2xlarge" | "m5n.4xlarge" | "m5n.8xlarge" | "m5n.12xlarge" | "m5n.16xlarge" | "m5n.24xlarge" | "m6id.large" | "m6id.xlarge" | "m6id.2xlarge" | "m6id.4xlarge" | "m6id.8xlarge" | "m6id.12xlarge" | "m6id.16xlarge" | "m6id.24xlarge" | "m6id.32xlarge" | "m6idn.large" | "m6idn.xlarge" | "m6idn.2xlarge" | "m6idn.4xlarge" | "m6idn.8xlarge" | "m6idn.12xlarge" | "m6idn.16xlarge" | "m6idn.24xlarge" | "m6idn.32xlarge" | "m6in.large" | "m6in.xlarge" | "m6in.2xlarge" | "m6in.4xlarge" | "m6in.8xlarge" | "m6in.12xlarge" | "m6in.16xlarge" | "m6in.24xlarge" | "m6in.32xlarge" | "m8g.medium" | "m8g.large" | "m8g.xlarge" | "m8g.2xlarge" | "m8g.4xlarge" | "m8g.8xlarge" | "m8g.12xlarge" | "m8g.16xlarge" | "m8g.24xlarge" | "m8g.48xlarge" | "r5dn.large" | "r5dn.xlarge" | "r5dn.2xlarge" | "r5dn.4xlarge" | "r5dn.8xlarge" | "r5dn.12xlarge" | "r5dn.16xlarge" | "r5dn.24xlarge" | "r5n.large" | "r5n.xlarge" | "r5n.2xlarge" | "r5n.4xlarge" | "r5n.8xlarge" | "r5n.12xlarge" | "r5n.16xlarge" | "r5n.24xlarge" | "r6a.large" | "r6a.xlarge" | "r6a.2xlarge" | "r6a.4xlarge" | "r6a.8xlarge" | "r6a.12xlarge" | "r6a.16xlarge" | "r6a.24xlarge" | "r6a.32xlarge" | "r6a.48xlarge" | "r6id.large" | "r6id.xlarge" | "r6id.2xlarge" | "r6id.4xlarge" | "r6id.8xlarge" | "r6id.12xlarge" | "r6id.16xlarge" | "r6id.24xlarge" | "r6id.32xlarge" | "r6idn.large" | "r6idn.xlarge" | "r6idn.2xlarge" | "r6idn.4xlarge" | "r6idn.8xlarge" | "r6idn.12xlarge" | "r6idn.16xlarge" | "r6idn.24xlarge" | "r6idn.32xlarge" | "r6in.large" | "r6in.xlarge" | "r6in.2xlarge" | "r6in.4xlarge" | "r6in.8xlarge" | "r6in.12xlarge" | "r6in.16xlarge" | "r6in.24xlarge" | "r6in.32xlarge" | "r8g.medium" | "r8g.large" | "r8g.xlarge" | "r8g.2xlarge" | "r8g.4xlarge" | "r8g.8xlarge" | "r8g.12xlarge" | "r8g.16xlarge" | "r8g.24xlarge" | "r8g.48xlarge" | "m4.16xlarge" | "c6a.32xlarge" | "c6a.48xlarge" | "c6i.32xlarge" | "r6i.24xlarge" | "r6i.32xlarge" | "c6in.24xlarge" | "c6in.32xlarge" | "c7a.24xlarge" | "c7a.32xlarge" | "c7a.48xlarge" | "c7i.24xlarge" | "c7i.48xlarge" | "m6a.24xlarge" | "m6a.32xlarge" | "m6a.48xlarge" | "m6i.24xlarge" | "m6i.32xlarge" | "m7a.24xlarge" | "m7a.32xlarge" | "m7a.48xlarge" | "m7i.24xlarge" | "m7i.48xlarge" | "r7a.24xlarge" | "r7a.32xlarge" | "r7a.48xlarge")
+      attr_accessor location: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeEC2InstanceLimitsOutput
+      attr_accessor ec2_instance_limits: ::Array[Types::EC2InstanceLimit]
+      SENSITIVE: []
+    end
+
+    class DescribeFleetAttributesInput
+      attr_accessor fleet_ids: ::Array[::String]
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeFleetAttributesOutput
+      attr_accessor fleet_attributes: ::Array[Types::FleetAttributes]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeFleetCapacityInput
+      attr_accessor fleet_ids: ::Array[::String]
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeFleetCapacityOutput
+      attr_accessor fleet_capacity: ::Array[Types::FleetCapacity]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeFleetDeploymentInput
+      attr_accessor fleet_id: ::String
+      attr_accessor deployment_id: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeFleetDeploymentOutput
+      attr_accessor fleet_deployment: Types::FleetDeployment
+      attr_accessor locational_deployments: ::Hash[::String, Types::LocationalDeployment]
+      SENSITIVE: []
+    end
+
+    class DescribeFleetEventsInput
+      attr_accessor fleet_id: ::String
+      attr_accessor start_time: ::Time
+      attr_accessor end_time: ::Time
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeFleetEventsOutput
+      attr_accessor events: ::Array[Types::Event]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeFleetLocationAttributesInput
+      attr_accessor fleet_id: ::String
+      attr_accessor locations: ::Array[::String]
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeFleetLocationAttributesOutput
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      attr_accessor location_attributes: ::Array[Types::LocationAttributes]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeFleetLocationCapacityInput
+      attr_accessor fleet_id: ::String
+      attr_accessor location: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeFleetLocationCapacityOutput
+      attr_accessor fleet_capacity: Types::FleetCapacity
+      SENSITIVE: []
+    end
+
+    class DescribeFleetLocationUtilizationInput
+      attr_accessor fleet_id: ::String
+      attr_accessor location: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeFleetLocationUtilizationOutput
+      attr_accessor fleet_utilization: Types::FleetUtilization
+      SENSITIVE: []
+    end
+
+    class DescribeFleetPortSettingsInput
+      attr_accessor fleet_id: ::String
+      attr_accessor location: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeFleetPortSettingsOutput
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      attr_accessor inbound_permissions: ::Array[Types::IpPermission]
+      attr_accessor update_status: ("PENDING_UPDATE")
+      attr_accessor location: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeFleetUtilizationInput
+      attr_accessor fleet_ids: ::Array[::String]
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeFleetUtilizationOutput
+      attr_accessor fleet_utilization: ::Array[Types::FleetUtilization]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeGameServerGroupInput
+      attr_accessor game_server_group_name: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeGameServerGroupOutput
+      attr_accessor game_server_group: Types::GameServerGroup
+      SENSITIVE: []
+    end
+
+    class DescribeGameServerInput
+      attr_accessor game_server_group_name: ::String
+      attr_accessor game_server_id: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeGameServerInstancesInput
+      attr_accessor game_server_group_name: ::String
+      attr_accessor instance_ids: ::Array[::String]
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeGameServerInstancesOutput
+      attr_accessor game_server_instances: ::Array[Types::GameServerInstance]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeGameServerOutput
+      attr_accessor game_server: Types::GameServer
+      SENSITIVE: []
+    end
+
+    class DescribeGameSessionDetailsInput
+      attr_accessor fleet_id: ::String
+      attr_accessor game_session_id: ::String
+      attr_accessor alias_id: ::String
+      attr_accessor location: ::String
+      attr_accessor status_filter: ::String
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeGameSessionDetailsOutput
+      attr_accessor game_session_details: ::Array[Types::GameSessionDetail]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeGameSessionPlacementInput
+      attr_accessor placement_id: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeGameSessionPlacementOutput
+      attr_accessor game_session_placement: Types::GameSessionPlacement
+      SENSITIVE: []
+    end
+
+    class DescribeGameSessionQueuesInput
+      attr_accessor names: ::Array[::String]
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeGameSessionQueuesOutput
+      attr_accessor game_session_queues: ::Array[Types::GameSessionQueue]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeGameSessionsInput
+      attr_accessor fleet_id: ::String
+      attr_accessor game_session_id: ::String
+      attr_accessor alias_id: ::String
+      attr_accessor location: ::String
+      attr_accessor status_filter: ::String
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeGameSessionsOutput
+      attr_accessor game_sessions: ::Array[Types::GameSession]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeInstancesInput
+      attr_accessor fleet_id: ::String
+      attr_accessor instance_id: ::String
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      attr_accessor location: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeInstancesOutput
+      attr_accessor instances: ::Array[Types::Instance]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeMatchmakingConfigurationsInput
+      attr_accessor names: ::Array[::String]
+      attr_accessor rule_set_name: ::String
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeMatchmakingConfigurationsOutput
+      attr_accessor configurations: ::Array[Types::MatchmakingConfiguration]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeMatchmakingInput
+      attr_accessor ticket_ids: ::Array[::String]
+      SENSITIVE: []
+    end
+
+    class DescribeMatchmakingOutput
+      attr_accessor ticket_list: ::Array[Types::MatchmakingTicket]
+      SENSITIVE: []
+    end
+
+    class DescribeMatchmakingRuleSetsInput
+      attr_accessor names: ::Array[::String]
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeMatchmakingRuleSetsOutput
+      attr_accessor rule_sets: ::Array[Types::MatchmakingRuleSet]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribePlayerSessionsInput
+      attr_accessor game_session_id: ::String
+      attr_accessor player_id: ::String
+      attr_accessor player_session_id: ::String
+      attr_accessor player_session_status_filter: ::String
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: [:player_id]
+    end
+
+    class DescribePlayerSessionsOutput
+      attr_accessor player_sessions: ::Array[Types::PlayerSession]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeRuntimeConfigurationInput
+      attr_accessor fleet_id: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeRuntimeConfigurationOutput
+      attr_accessor runtime_configuration: Types::RuntimeConfiguration
+      SENSITIVE: []
+    end
+
+    class DescribeScalingPoliciesInput
+      attr_accessor fleet_id: ::String
+      attr_accessor status_filter: ("ACTIVE" | "UPDATE_REQUESTED" | "UPDATING" | "DELETE_REQUESTED" | "DELETING" | "DELETED" | "ERROR")
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      attr_accessor location: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeScalingPoliciesOutput
+      attr_accessor scaling_policies: ::Array[Types::ScalingPolicy]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeScriptInput
+      attr_accessor script_id: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeScriptOutput
+      attr_accessor script: Types::Script
+      SENSITIVE: []
+    end
+
+    class DescribeVpcPeeringAuthorizationsInput < Aws::EmptyStructure
+    end
+
+    class DescribeVpcPeeringAuthorizationsOutput
+      attr_accessor vpc_peering_authorizations: ::Array[Types::VpcPeeringAuthorization]
+      SENSITIVE: []
+    end
+
+    class DescribeVpcPeeringConnectionsInput
+      attr_accessor fleet_id: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeVpcPeeringConnectionsOutput
+      attr_accessor vpc_peering_connections: ::Array[Types::VpcPeeringConnection]
+      SENSITIVE: []
+    end
+
+    class DesiredPlayerSession
+      attr_accessor player_id: ::String
+      attr_accessor player_data: ::String
+      SENSITIVE: [:player_id]
+    end
+
+    class EC2InstanceCounts
+      attr_accessor desired: ::Integer
+      attr_accessor minimum: ::Integer
+      attr_accessor maximum: ::Integer
+      attr_accessor pending: ::Integer
+      attr_accessor active: ::Integer
+      attr_accessor idle: ::Integer
+      attr_accessor terminating: ::Integer
+      SENSITIVE: []
+    end
+
+    class EC2InstanceLimit
+      attr_accessor ec2_instance_type: ("t2.micro" | "t2.small" | "t2.medium" | "t2.large" | "c3.large" | "c3.xlarge" | "c3.2xlarge" | "c3.4xlarge" | "c3.8xlarge" | "c4.large" | "c4.xlarge" | "c4.2xlarge" | "c4.4xlarge" | "c4.8xlarge" | "c5.large" | "c5.xlarge" | "c5.2xlarge" | "c5.4xlarge" | "c5.9xlarge" | "c5.12xlarge" | "c5.18xlarge" | "c5.24xlarge" | "c5a.large" | "c5a.xlarge" | "c5a.2xlarge" | "c5a.4xlarge" | "c5a.8xlarge" | "c5a.12xlarge" | "c5a.16xlarge" | "c5a.24xlarge" | "r3.large" | "r3.xlarge" | "r3.2xlarge" | "r3.4xlarge" | "r3.8xlarge" | "r4.large" | "r4.xlarge" | "r4.2xlarge" | "r4.4xlarge" | "r4.8xlarge" | "r4.16xlarge" | "r5.large" | "r5.xlarge" | "r5.2xlarge" | "r5.4xlarge" | "r5.8xlarge" | "r5.12xlarge" | "r5.16xlarge" | "r5.24xlarge" | "r5a.large" | "r5a.xlarge" | "r5a.2xlarge" | "r5a.4xlarge" | "r5a.8xlarge" | "r5a.12xlarge" | "r5a.16xlarge" | "r5a.24xlarge" | "m3.medium" | "m3.large" | "m3.xlarge" | "m3.2xlarge" | "m4.large" | "m4.xlarge" | "m4.2xlarge" | "m4.4xlarge" | "m4.10xlarge" | "m5.large" | "m5.xlarge" | "m5.2xlarge" | "m5.4xlarge" | "m5.8xlarge" | "m5.12xlarge" | "m5.16xlarge" | "m5.24xlarge" | "m5a.large" | "m5a.xlarge" | "m5a.2xlarge" | "m5a.4xlarge" | "m5a.8xlarge" | "m5a.12xlarge" | "m5a.16xlarge" | "m5a.24xlarge" | "c5d.large" | "c5d.xlarge" | "c5d.2xlarge" | "c5d.4xlarge" | "c5d.9xlarge" | "c5d.12xlarge" | "c5d.18xlarge" | "c5d.24xlarge" | "c6a.large" | "c6a.xlarge" | "c6a.2xlarge" | "c6a.4xlarge" | "c6a.8xlarge" | "c6a.12xlarge" | "c6a.16xlarge" | "c6a.24xlarge" | "c6i.large" | "c6i.xlarge" | "c6i.2xlarge" | "c6i.4xlarge" | "c6i.8xlarge" | "c6i.12xlarge" | "c6i.16xlarge" | "c6i.24xlarge" | "r5d.large" | "r5d.xlarge" | "r5d.2xlarge" | "r5d.4xlarge" | "r5d.8xlarge" | "r5d.12xlarge" | "r5d.16xlarge" | "r5d.24xlarge" | "m6g.medium" | "m6g.large" | "m6g.xlarge" | "m6g.2xlarge" | "m6g.4xlarge" | "m6g.8xlarge" | "m6g.12xlarge" | "m6g.16xlarge" | "c6g.medium" | "c6g.large" | "c6g.xlarge" | "c6g.2xlarge" | "c6g.4xlarge" | "c6g.8xlarge" | "c6g.12xlarge" | "c6g.16xlarge" | "r6g.medium" | "r6g.large" | "r6g.xlarge" | "r6g.2xlarge" | "r6g.4xlarge" | "r6g.8xlarge" | "r6g.12xlarge" | "r6g.16xlarge" | "c6gn.medium" | "c6gn.large" | "c6gn.xlarge" | "c6gn.2xlarge" | "c6gn.4xlarge" | "c6gn.8xlarge" | "c6gn.12xlarge" | "c6gn.16xlarge" | "c7g.medium" | "c7g.large" | "c7g.xlarge" | "c7g.2xlarge" | "c7g.4xlarge" | "c7g.8xlarge" | "c7g.12xlarge" | "c7g.16xlarge" | "r7g.medium" | "r7g.large" | "r7g.xlarge" | "r7g.2xlarge" | "r7g.4xlarge" | "r7g.8xlarge" | "r7g.12xlarge" | "r7g.16xlarge" | "m7g.medium" | "m7g.large" | "m7g.xlarge" | "m7g.2xlarge" | "m7g.4xlarge" | "m7g.8xlarge" | "m7g.12xlarge" | "m7g.16xlarge" | "g5g.xlarge" | "g5g.2xlarge" | "g5g.4xlarge" | "g5g.8xlarge" | "g5g.16xlarge" | "r6i.large" | "r6i.xlarge" | "r6i.2xlarge" | "r6i.4xlarge" | "r6i.8xlarge" | "r6i.12xlarge" | "r6i.16xlarge" | "c6gd.medium" | "c6gd.large" | "c6gd.xlarge" | "c6gd.2xlarge" | "c6gd.4xlarge" | "c6gd.8xlarge" | "c6gd.12xlarge" | "c6gd.16xlarge" | "c6in.large" | "c6in.xlarge" | "c6in.2xlarge" | "c6in.4xlarge" | "c6in.8xlarge" | "c6in.12xlarge" | "c6in.16xlarge" | "c7a.medium" | "c7a.large" | "c7a.xlarge" | "c7a.2xlarge" | "c7a.4xlarge" | "c7a.8xlarge" | "c7a.12xlarge" | "c7a.16xlarge" | "c7gd.medium" | "c7gd.large" | "c7gd.xlarge" | "c7gd.2xlarge" | "c7gd.4xlarge" | "c7gd.8xlarge" | "c7gd.12xlarge" | "c7gd.16xlarge" | "c7gn.medium" | "c7gn.large" | "c7gn.xlarge" | "c7gn.2xlarge" | "c7gn.4xlarge" | "c7gn.8xlarge" | "c7gn.12xlarge" | "c7gn.16xlarge" | "c7i.large" | "c7i.xlarge" | "c7i.2xlarge" | "c7i.4xlarge" | "c7i.8xlarge" | "c7i.12xlarge" | "c7i.16xlarge" | "m6a.large" | "m6a.xlarge" | "m6a.2xlarge" | "m6a.4xlarge" | "m6a.8xlarge" | "m6a.12xlarge" | "m6a.16xlarge" | "m6gd.medium" | "m6gd.large" | "m6gd.xlarge" | "m6gd.2xlarge" | "m6gd.4xlarge" | "m6gd.8xlarge" | "m6gd.12xlarge" | "m6gd.16xlarge" | "m6i.large" | "m6i.xlarge" | "m6i.2xlarge" | "m6i.4xlarge" | "m6i.8xlarge" | "m6i.12xlarge" | "m6i.16xlarge" | "m7a.medium" | "m7a.large" | "m7a.xlarge" | "m7a.2xlarge" | "m7a.4xlarge" | "m7a.8xlarge" | "m7a.12xlarge" | "m7a.16xlarge" | "m7gd.medium" | "m7gd.large" | "m7gd.xlarge" | "m7gd.2xlarge" | "m7gd.4xlarge" | "m7gd.8xlarge" | "m7gd.12xlarge" | "m7gd.16xlarge" | "m7i.large" | "m7i.xlarge" | "m7i.2xlarge" | "m7i.4xlarge" | "m7i.8xlarge" | "m7i.12xlarge" | "m7i.16xlarge" | "r6gd.medium" | "r6gd.large" | "r6gd.xlarge" | "r6gd.2xlarge" | "r6gd.4xlarge" | "r6gd.8xlarge" | "r6gd.12xlarge" | "r6gd.16xlarge" | "r7a.medium" | "r7a.large" | "r7a.xlarge" | "r7a.2xlarge" | "r7a.4xlarge" | "r7a.8xlarge" | "r7a.12xlarge" | "r7a.16xlarge" | "r7gd.medium" | "r7gd.large" | "r7gd.xlarge" | "r7gd.2xlarge" | "r7gd.4xlarge" | "r7gd.8xlarge" | "r7gd.12xlarge" | "r7gd.16xlarge" | "r7i.large" | "r7i.xlarge" | "r7i.2xlarge" | "r7i.4xlarge" | "r7i.8xlarge" | "r7i.12xlarge" | "r7i.16xlarge" | "r7i.24xlarge" | "r7i.48xlarge" | "c5ad.large" | "c5ad.xlarge" | "c5ad.2xlarge" | "c5ad.4xlarge" | "c5ad.8xlarge" | "c5ad.12xlarge" | "c5ad.16xlarge" | "c5ad.24xlarge" | "c5n.large" | "c5n.xlarge" | "c5n.2xlarge" | "c5n.4xlarge" | "c5n.9xlarge" | "c5n.18xlarge" | "r5ad.large" | "r5ad.xlarge" | "r5ad.2xlarge" | "r5ad.4xlarge" | "r5ad.8xlarge" | "r5ad.12xlarge" | "r5ad.16xlarge" | "r5ad.24xlarge" | "c6id.large" | "c6id.xlarge" | "c6id.2xlarge" | "c6id.4xlarge" | "c6id.8xlarge" | "c6id.12xlarge" | "c6id.16xlarge" | "c6id.24xlarge" | "c6id.32xlarge" | "c8g.medium" | "c8g.large" | "c8g.xlarge" | "c8g.2xlarge" | "c8g.4xlarge" | "c8g.8xlarge" | "c8g.12xlarge" | "c8g.16xlarge" | "c8g.24xlarge" | "c8g.48xlarge" | "m5ad.large" | "m5ad.xlarge" | "m5ad.2xlarge" | "m5ad.4xlarge" | "m5ad.8xlarge" | "m5ad.12xlarge" | "m5ad.16xlarge" | "m5ad.24xlarge" | "m5d.large" | "m5d.xlarge" | "m5d.2xlarge" | "m5d.4xlarge" | "m5d.8xlarge" | "m5d.12xlarge" | "m5d.16xlarge" | "m5d.24xlarge" | "m5dn.large" | "m5dn.xlarge" | "m5dn.2xlarge" | "m5dn.4xlarge" | "m5dn.8xlarge" | "m5dn.12xlarge" | "m5dn.16xlarge" | "m5dn.24xlarge" | "m5n.large" | "m5n.xlarge" | "m5n.2xlarge" | "m5n.4xlarge" | "m5n.8xlarge" | "m5n.12xlarge" | "m5n.16xlarge" | "m5n.24xlarge" | "m6id.large" | "m6id.xlarge" | "m6id.2xlarge" | "m6id.4xlarge" | "m6id.8xlarge" | "m6id.12xlarge" | "m6id.16xlarge" | "m6id.24xlarge" | "m6id.32xlarge" | "m6idn.large" | "m6idn.xlarge" | "m6idn.2xlarge" | "m6idn.4xlarge" | "m6idn.8xlarge" | "m6idn.12xlarge" | "m6idn.16xlarge" | "m6idn.24xlarge" | "m6idn.32xlarge" | "m6in.large" | "m6in.xlarge" | "m6in.2xlarge" | "m6in.4xlarge" | "m6in.8xlarge" | "m6in.12xlarge" | "m6in.16xlarge" | "m6in.24xlarge" | "m6in.32xlarge" | "m8g.medium" | "m8g.large" | "m8g.xlarge" | "m8g.2xlarge" | "m8g.4xlarge" | "m8g.8xlarge" | "m8g.12xlarge" | "m8g.16xlarge" | "m8g.24xlarge" | "m8g.48xlarge" | "r5dn.large" | "r5dn.xlarge" | "r5dn.2xlarge" | "r5dn.4xlarge" | "r5dn.8xlarge" | "r5dn.12xlarge" | "r5dn.16xlarge" | "r5dn.24xlarge" | "r5n.large" | "r5n.xlarge" | "r5n.2xlarge" | "r5n.4xlarge" | "r5n.8xlarge" | "r5n.12xlarge" | "r5n.16xlarge" | "r5n.24xlarge" | "r6a.large" | "r6a.xlarge" | "r6a.2xlarge" | "r6a.4xlarge" | "r6a.8xlarge" | "r6a.12xlarge" | "r6a.16xlarge" | "r6a.24xlarge" | "r6a.32xlarge" | "r6a.48xlarge" | "r6id.large" | "r6id.xlarge" | "r6id.2xlarge" | "r6id.4xlarge" | "r6id.8xlarge" | "r6id.12xlarge" | "r6id.16xlarge" | "r6id.24xlarge" | "r6id.32xlarge" | "r6idn.large" | "r6idn.xlarge" | "r6idn.2xlarge" | "r6idn.4xlarge" | "r6idn.8xlarge" | "r6idn.12xlarge" | "r6idn.16xlarge" | "r6idn.24xlarge" | "r6idn.32xlarge" | "r6in.large" | "r6in.xlarge" | "r6in.2xlarge" | "r6in.4xlarge" | "r6in.8xlarge" | "r6in.12xlarge" | "r6in.16xlarge" | "r6in.24xlarge" | "r6in.32xlarge" | "r8g.medium" | "r8g.large" | "r8g.xlarge" | "r8g.2xlarge" | "r8g.4xlarge" | "r8g.8xlarge" | "r8g.12xlarge" | "r8g.16xlarge" | "r8g.24xlarge" | "r8g.48xlarge" | "m4.16xlarge" | "c6a.32xlarge" | "c6a.48xlarge" | "c6i.32xlarge" | "r6i.24xlarge" | "r6i.32xlarge" | "c6in.24xlarge" | "c6in.32xlarge" | "c7a.24xlarge" | "c7a.32xlarge" | "c7a.48xlarge" | "c7i.24xlarge" | "c7i.48xlarge" | "m6a.24xlarge" | "m6a.32xlarge" | "m6a.48xlarge" | "m6i.24xlarge" | "m6i.32xlarge" | "m7a.24xlarge" | "m7a.32xlarge" | "m7a.48xlarge" | "m7i.24xlarge" | "m7i.48xlarge" | "r7a.24xlarge" | "r7a.32xlarge" | "r7a.48xlarge")
+      attr_accessor current_instances: ::Integer
+      attr_accessor instance_limit: ::Integer
+      attr_accessor location: ::String
+      SENSITIVE: []
+    end
+
+    class Event
+      attr_accessor event_id: ::String
+      attr_accessor resource_id: ::String
+      attr_accessor event_code: ("GENERIC_EVENT" | "FLEET_CREATED" | "FLEET_DELETED" | "FLEET_SCALING_EVENT" | "FLEET_STATE_DOWNLOADING" | "FLEET_STATE_VALIDATING" | "FLEET_STATE_BUILDING" | "FLEET_STATE_ACTIVATING" | "FLEET_STATE_ACTIVE" | "FLEET_STATE_ERROR" | "FLEET_STATE_PENDING" | "FLEET_STATE_CREATING" | "FLEET_STATE_CREATED" | "FLEET_STATE_UPDATING" | "FLEET_INITIALIZATION_FAILED" | "FLEET_BINARY_DOWNLOAD_FAILED" | "FLEET_VALIDATION_LAUNCH_PATH_NOT_FOUND" | "FLEET_VALIDATION_EXECUTABLE_RUNTIME_FAILURE" | "FLEET_VALIDATION_TIMED_OUT" | "FLEET_ACTIVATION_FAILED" | "FLEET_ACTIVATION_FAILED_NO_INSTANCES" | "FLEET_NEW_GAME_SESSION_PROTECTION_POLICY_UPDATED" | "SERVER_PROCESS_INVALID_PATH" | "SERVER_PROCESS_SDK_INITIALIZATION_TIMEOUT" | "SERVER_PROCESS_PROCESS_READY_TIMEOUT" | "SERVER_PROCESS_CRASHED" | "SERVER_PROCESS_TERMINATED_UNHEALTHY" | "SERVER_PROCESS_FORCE_TERMINATED" | "SERVER_PROCESS_PROCESS_EXIT_TIMEOUT" | "SERVER_PROCESS_SDK_INITIALIZATION_FAILED" | "SERVER_PROCESS_MISCONFIGURED_CONTAINER_PORT" | "GAME_SESSION_ACTIVATION_TIMEOUT" | "FLEET_CREATION_EXTRACTING_BUILD" | "FLEET_CREATION_RUNNING_INSTALLER" | "FLEET_CREATION_VALIDATING_RUNTIME_CONFIG" | "FLEET_VPC_PEERING_SUCCEEDED" | "FLEET_VPC_PEERING_FAILED" | "FLEET_VPC_PEERING_DELETED" | "INSTANCE_INTERRUPTED" | "INSTANCE_RECYCLED" | "INSTANCE_REPLACED_UNHEALTHY" | "FLEET_CREATION_COMPLETED_INSTALLER" | "FLEET_CREATION_FAILED_INSTALLER" | "COMPUTE_LOG_UPLOAD_FAILED" | "GAME_SERVER_CONTAINER_GROUP_CRASHED" | "PER_INSTANCE_CONTAINER_GROUP_CRASHED" | "GAME_SERVER_CONTAINER_GROUP_REPLACED_UNHEALTHY" | "LOCATION_STATE_PENDING" | "LOCATION_STATE_CREATING" | "LOCATION_STATE_CREATED" | "LOCATION_STATE_ACTIVATING" | "LOCATION_STATE_ACTIVE" | "LOCATION_STATE_UPDATING" | "LOCATION_STATE_ERROR" | "LOCATION_STATE_DELETING" | "LOCATION_STATE_DELETED")
+      attr_accessor message: ::String
+      attr_accessor event_time: ::Time
+      attr_accessor pre_signed_log_url: ::String
+      attr_accessor count: ::Integer
+      SENSITIVE: []
+    end
+
+    class FilterConfiguration
+      attr_accessor allowed_locations: ::Array[::String]
+      SENSITIVE: []
+    end
+
+    class FleetAttributes
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      attr_accessor fleet_type: ("ON_DEMAND" | "SPOT")
+      attr_accessor instance_type: ("t2.micro" | "t2.small" | "t2.medium" | "t2.large" | "c3.large" | "c3.xlarge" | "c3.2xlarge" | "c3.4xlarge" | "c3.8xlarge" | "c4.large" | "c4.xlarge" | "c4.2xlarge" | "c4.4xlarge" | "c4.8xlarge" | "c5.large" | "c5.xlarge" | "c5.2xlarge" | "c5.4xlarge" | "c5.9xlarge" | "c5.12xlarge" | "c5.18xlarge" | "c5.24xlarge" | "c5a.large" | "c5a.xlarge" | "c5a.2xlarge" | "c5a.4xlarge" | "c5a.8xlarge" | "c5a.12xlarge" | "c5a.16xlarge" | "c5a.24xlarge" | "r3.large" | "r3.xlarge" | "r3.2xlarge" | "r3.4xlarge" | "r3.8xlarge" | "r4.large" | "r4.xlarge" | "r4.2xlarge" | "r4.4xlarge" | "r4.8xlarge" | "r4.16xlarge" | "r5.large" | "r5.xlarge" | "r5.2xlarge" | "r5.4xlarge" | "r5.8xlarge" | "r5.12xlarge" | "r5.16xlarge" | "r5.24xlarge" | "r5a.large" | "r5a.xlarge" | "r5a.2xlarge" | "r5a.4xlarge" | "r5a.8xlarge" | "r5a.12xlarge" | "r5a.16xlarge" | "r5a.24xlarge" | "m3.medium" | "m3.large" | "m3.xlarge" | "m3.2xlarge" | "m4.large" | "m4.xlarge" | "m4.2xlarge" | "m4.4xlarge" | "m4.10xlarge" | "m5.large" | "m5.xlarge" | "m5.2xlarge" | "m5.4xlarge" | "m5.8xlarge" | "m5.12xlarge" | "m5.16xlarge" | "m5.24xlarge" | "m5a.large" | "m5a.xlarge" | "m5a.2xlarge" | "m5a.4xlarge" | "m5a.8xlarge" | "m5a.12xlarge" | "m5a.16xlarge" | "m5a.24xlarge" | "c5d.large" | "c5d.xlarge" | "c5d.2xlarge" | "c5d.4xlarge" | "c5d.9xlarge" | "c5d.12xlarge" | "c5d.18xlarge" | "c5d.24xlarge" | "c6a.large" | "c6a.xlarge" | "c6a.2xlarge" | "c6a.4xlarge" | "c6a.8xlarge" | "c6a.12xlarge" | "c6a.16xlarge" | "c6a.24xlarge" | "c6i.large" | "c6i.xlarge" | "c6i.2xlarge" | "c6i.4xlarge" | "c6i.8xlarge" | "c6i.12xlarge" | "c6i.16xlarge" | "c6i.24xlarge" | "r5d.large" | "r5d.xlarge" | "r5d.2xlarge" | "r5d.4xlarge" | "r5d.8xlarge" | "r5d.12xlarge" | "r5d.16xlarge" | "r5d.24xlarge" | "m6g.medium" | "m6g.large" | "m6g.xlarge" | "m6g.2xlarge" | "m6g.4xlarge" | "m6g.8xlarge" | "m6g.12xlarge" | "m6g.16xlarge" | "c6g.medium" | "c6g.large" | "c6g.xlarge" | "c6g.2xlarge" | "c6g.4xlarge" | "c6g.8xlarge" | "c6g.12xlarge" | "c6g.16xlarge" | "r6g.medium" | "r6g.large" | "r6g.xlarge" | "r6g.2xlarge" | "r6g.4xlarge" | "r6g.8xlarge" | "r6g.12xlarge" | "r6g.16xlarge" | "c6gn.medium" | "c6gn.large" | "c6gn.xlarge" | "c6gn.2xlarge" | "c6gn.4xlarge" | "c6gn.8xlarge" | "c6gn.12xlarge" | "c6gn.16xlarge" | "c7g.medium" | "c7g.large" | "c7g.xlarge" | "c7g.2xlarge" | "c7g.4xlarge" | "c7g.8xlarge" | "c7g.12xlarge" | "c7g.16xlarge" | "r7g.medium" | "r7g.large" | "r7g.xlarge" | "r7g.2xlarge" | "r7g.4xlarge" | "r7g.8xlarge" | "r7g.12xlarge" | "r7g.16xlarge" | "m7g.medium" | "m7g.large" | "m7g.xlarge" | "m7g.2xlarge" | "m7g.4xlarge" | "m7g.8xlarge" | "m7g.12xlarge" | "m7g.16xlarge" | "g5g.xlarge" | "g5g.2xlarge" | "g5g.4xlarge" | "g5g.8xlarge" | "g5g.16xlarge" | "r6i.large" | "r6i.xlarge" | "r6i.2xlarge" | "r6i.4xlarge" | "r6i.8xlarge" | "r6i.12xlarge" | "r6i.16xlarge" | "c6gd.medium" | "c6gd.large" | "c6gd.xlarge" | "c6gd.2xlarge" | "c6gd.4xlarge" | "c6gd.8xlarge" | "c6gd.12xlarge" | "c6gd.16xlarge" | "c6in.large" | "c6in.xlarge" | "c6in.2xlarge" | "c6in.4xlarge" | "c6in.8xlarge" | "c6in.12xlarge" | "c6in.16xlarge" | "c7a.medium" | "c7a.large" | "c7a.xlarge" | "c7a.2xlarge" | "c7a.4xlarge" | "c7a.8xlarge" | "c7a.12xlarge" | "c7a.16xlarge" | "c7gd.medium" | "c7gd.large" | "c7gd.xlarge" | "c7gd.2xlarge" | "c7gd.4xlarge" | "c7gd.8xlarge" | "c7gd.12xlarge" | "c7gd.16xlarge" | "c7gn.medium" | "c7gn.large" | "c7gn.xlarge" | "c7gn.2xlarge" | "c7gn.4xlarge" | "c7gn.8xlarge" | "c7gn.12xlarge" | "c7gn.16xlarge" | "c7i.large" | "c7i.xlarge" | "c7i.2xlarge" | "c7i.4xlarge" | "c7i.8xlarge" | "c7i.12xlarge" | "c7i.16xlarge" | "m6a.large" | "m6a.xlarge" | "m6a.2xlarge" | "m6a.4xlarge" | "m6a.8xlarge" | "m6a.12xlarge" | "m6a.16xlarge" | "m6gd.medium" | "m6gd.large" | "m6gd.xlarge" | "m6gd.2xlarge" | "m6gd.4xlarge" | "m6gd.8xlarge" | "m6gd.12xlarge" | "m6gd.16xlarge" | "m6i.large" | "m6i.xlarge" | "m6i.2xlarge" | "m6i.4xlarge" | "m6i.8xlarge" | "m6i.12xlarge" | "m6i.16xlarge" | "m7a.medium" | "m7a.large" | "m7a.xlarge" | "m7a.2xlarge" | "m7a.4xlarge" | "m7a.8xlarge" | "m7a.12xlarge" | "m7a.16xlarge" | "m7gd.medium" | "m7gd.large" | "m7gd.xlarge" | "m7gd.2xlarge" | "m7gd.4xlarge" | "m7gd.8xlarge" | "m7gd.12xlarge" | "m7gd.16xlarge" | "m7i.large" | "m7i.xlarge" | "m7i.2xlarge" | "m7i.4xlarge" | "m7i.8xlarge" | "m7i.12xlarge" | "m7i.16xlarge" | "r6gd.medium" | "r6gd.large" | "r6gd.xlarge" | "r6gd.2xlarge" | "r6gd.4xlarge" | "r6gd.8xlarge" | "r6gd.12xlarge" | "r6gd.16xlarge" | "r7a.medium" | "r7a.large" | "r7a.xlarge" | "r7a.2xlarge" | "r7a.4xlarge" | "r7a.8xlarge" | "r7a.12xlarge" | "r7a.16xlarge" | "r7gd.medium" | "r7gd.large" | "r7gd.xlarge" | "r7gd.2xlarge" | "r7gd.4xlarge" | "r7gd.8xlarge" | "r7gd.12xlarge" | "r7gd.16xlarge" | "r7i.large" | "r7i.xlarge" | "r7i.2xlarge" | "r7i.4xlarge" | "r7i.8xlarge" | "r7i.12xlarge" | "r7i.16xlarge" | "r7i.24xlarge" | "r7i.48xlarge" | "c5ad.large" | "c5ad.xlarge" | "c5ad.2xlarge" | "c5ad.4xlarge" | "c5ad.8xlarge" | "c5ad.12xlarge" | "c5ad.16xlarge" | "c5ad.24xlarge" | "c5n.large" | "c5n.xlarge" | "c5n.2xlarge" | "c5n.4xlarge" | "c5n.9xlarge" | "c5n.18xlarge" | "r5ad.large" | "r5ad.xlarge" | "r5ad.2xlarge" | "r5ad.4xlarge" | "r5ad.8xlarge" | "r5ad.12xlarge" | "r5ad.16xlarge" | "r5ad.24xlarge" | "c6id.large" | "c6id.xlarge" | "c6id.2xlarge" | "c6id.4xlarge" | "c6id.8xlarge" | "c6id.12xlarge" | "c6id.16xlarge" | "c6id.24xlarge" | "c6id.32xlarge" | "c8g.medium" | "c8g.large" | "c8g.xlarge" | "c8g.2xlarge" | "c8g.4xlarge" | "c8g.8xlarge" | "c8g.12xlarge" | "c8g.16xlarge" | "c8g.24xlarge" | "c8g.48xlarge" | "m5ad.large" | "m5ad.xlarge" | "m5ad.2xlarge" | "m5ad.4xlarge" | "m5ad.8xlarge" | "m5ad.12xlarge" | "m5ad.16xlarge" | "m5ad.24xlarge" | "m5d.large" | "m5d.xlarge" | "m5d.2xlarge" | "m5d.4xlarge" | "m5d.8xlarge" | "m5d.12xlarge" | "m5d.16xlarge" | "m5d.24xlarge" | "m5dn.large" | "m5dn.xlarge" | "m5dn.2xlarge" | "m5dn.4xlarge" | "m5dn.8xlarge" | "m5dn.12xlarge" | "m5dn.16xlarge" | "m5dn.24xlarge" | "m5n.large" | "m5n.xlarge" | "m5n.2xlarge" | "m5n.4xlarge" | "m5n.8xlarge" | "m5n.12xlarge" | "m5n.16xlarge" | "m5n.24xlarge" | "m6id.large" | "m6id.xlarge" | "m6id.2xlarge" | "m6id.4xlarge" | "m6id.8xlarge" | "m6id.12xlarge" | "m6id.16xlarge" | "m6id.24xlarge" | "m6id.32xlarge" | "m6idn.large" | "m6idn.xlarge" | "m6idn.2xlarge" | "m6idn.4xlarge" | "m6idn.8xlarge" | "m6idn.12xlarge" | "m6idn.16xlarge" | "m6idn.24xlarge" | "m6idn.32xlarge" | "m6in.large" | "m6in.xlarge" | "m6in.2xlarge" | "m6in.4xlarge" | "m6in.8xlarge" | "m6in.12xlarge" | "m6in.16xlarge" | "m6in.24xlarge" | "m6in.32xlarge" | "m8g.medium" | "m8g.large" | "m8g.xlarge" | "m8g.2xlarge" | "m8g.4xlarge" | "m8g.8xlarge" | "m8g.12xlarge" | "m8g.16xlarge" | "m8g.24xlarge" | "m8g.48xlarge" | "r5dn.large" | "r5dn.xlarge" | "r5dn.2xlarge" | "r5dn.4xlarge" | "r5dn.8xlarge" | "r5dn.12xlarge" | "r5dn.16xlarge" | "r5dn.24xlarge" | "r5n.large" | "r5n.xlarge" | "r5n.2xlarge" | "r5n.4xlarge" | "r5n.8xlarge" | "r5n.12xlarge" | "r5n.16xlarge" | "r5n.24xlarge" | "r6a.large" | "r6a.xlarge" | "r6a.2xlarge" | "r6a.4xlarge" | "r6a.8xlarge" | "r6a.12xlarge" | "r6a.16xlarge" | "r6a.24xlarge" | "r6a.32xlarge" | "r6a.48xlarge" | "r6id.large" | "r6id.xlarge" | "r6id.2xlarge" | "r6id.4xlarge" | "r6id.8xlarge" | "r6id.12xlarge" | "r6id.16xlarge" | "r6id.24xlarge" | "r6id.32xlarge" | "r6idn.large" | "r6idn.xlarge" | "r6idn.2xlarge" | "r6idn.4xlarge" | "r6idn.8xlarge" | "r6idn.12xlarge" | "r6idn.16xlarge" | "r6idn.24xlarge" | "r6idn.32xlarge" | "r6in.large" | "r6in.xlarge" | "r6in.2xlarge" | "r6in.4xlarge" | "r6in.8xlarge" | "r6in.12xlarge" | "r6in.16xlarge" | "r6in.24xlarge" | "r6in.32xlarge" | "r8g.medium" | "r8g.large" | "r8g.xlarge" | "r8g.2xlarge" | "r8g.4xlarge" | "r8g.8xlarge" | "r8g.12xlarge" | "r8g.16xlarge" | "r8g.24xlarge" | "r8g.48xlarge" | "m4.16xlarge" | "c6a.32xlarge" | "c6a.48xlarge" | "c6i.32xlarge" | "r6i.24xlarge" | "r6i.32xlarge" | "c6in.24xlarge" | "c6in.32xlarge" | "c7a.24xlarge" | "c7a.32xlarge" | "c7a.48xlarge" | "c7i.24xlarge" | "c7i.48xlarge" | "m6a.24xlarge" | "m6a.32xlarge" | "m6a.48xlarge" | "m6i.24xlarge" | "m6i.32xlarge" | "m7a.24xlarge" | "m7a.32xlarge" | "m7a.48xlarge" | "m7i.24xlarge" | "m7i.48xlarge" | "r7a.24xlarge" | "r7a.32xlarge" | "r7a.48xlarge")
+      attr_accessor description: ::String
+      attr_accessor name: ::String
+      attr_accessor creation_time: ::Time
+      attr_accessor termination_time: ::Time
+      attr_accessor status: ("NEW" | "DOWNLOADING" | "VALIDATING" | "BUILDING" | "ACTIVATING" | "ACTIVE" | "DELETING" | "ERROR" | "TERMINATED" | "NOT_FOUND")
+      attr_accessor build_id: ::String
+      attr_accessor build_arn: ::String
+      attr_accessor script_id: ::String
+      attr_accessor script_arn: ::String
+      attr_accessor server_launch_path: ::String
+      attr_accessor server_launch_parameters: ::String
+      attr_accessor log_paths: ::Array[::String]
+      attr_accessor new_game_session_protection_policy: ("NoProtection" | "FullProtection")
+      attr_accessor operating_system: ("WINDOWS_2012" | "AMAZON_LINUX" | "AMAZON_LINUX_2" | "WINDOWS_2016" | "AMAZON_LINUX_2023")
+      attr_accessor resource_creation_limit_policy: Types::ResourceCreationLimitPolicy
+      attr_accessor metric_groups: ::Array[::String]
+      attr_accessor stopped_actions: ::Array[("AUTO_SCALING")]
+      attr_accessor instance_role_arn: ::String
+      attr_accessor certificate_configuration: Types::CertificateConfiguration
+      attr_accessor compute_type: ("EC2" | "ANYWHERE")
+      attr_accessor anywhere_configuration: Types::AnywhereConfiguration
+      attr_accessor instance_role_credentials_provider: ("SHARED_CREDENTIAL_FILE")
+      SENSITIVE: []
+    end
+
+    class FleetCapacity
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      attr_accessor instance_type: ("t2.micro" | "t2.small" | "t2.medium" | "t2.large" | "c3.large" | "c3.xlarge" | "c3.2xlarge" | "c3.4xlarge" | "c3.8xlarge" | "c4.large" | "c4.xlarge" | "c4.2xlarge" | "c4.4xlarge" | "c4.8xlarge" | "c5.large" | "c5.xlarge" | "c5.2xlarge" | "c5.4xlarge" | "c5.9xlarge" | "c5.12xlarge" | "c5.18xlarge" | "c5.24xlarge" | "c5a.large" | "c5a.xlarge" | "c5a.2xlarge" | "c5a.4xlarge" | "c5a.8xlarge" | "c5a.12xlarge" | "c5a.16xlarge" | "c5a.24xlarge" | "r3.large" | "r3.xlarge" | "r3.2xlarge" | "r3.4xlarge" | "r3.8xlarge" | "r4.large" | "r4.xlarge" | "r4.2xlarge" | "r4.4xlarge" | "r4.8xlarge" | "r4.16xlarge" | "r5.large" | "r5.xlarge" | "r5.2xlarge" | "r5.4xlarge" | "r5.8xlarge" | "r5.12xlarge" | "r5.16xlarge" | "r5.24xlarge" | "r5a.large" | "r5a.xlarge" | "r5a.2xlarge" | "r5a.4xlarge" | "r5a.8xlarge" | "r5a.12xlarge" | "r5a.16xlarge" | "r5a.24xlarge" | "m3.medium" | "m3.large" | "m3.xlarge" | "m3.2xlarge" | "m4.large" | "m4.xlarge" | "m4.2xlarge" | "m4.4xlarge" | "m4.10xlarge" | "m5.large" | "m5.xlarge" | "m5.2xlarge" | "m5.4xlarge" | "m5.8xlarge" | "m5.12xlarge" | "m5.16xlarge" | "m5.24xlarge" | "m5a.large" | "m5a.xlarge" | "m5a.2xlarge" | "m5a.4xlarge" | "m5a.8xlarge" | "m5a.12xlarge" | "m5a.16xlarge" | "m5a.24xlarge" | "c5d.large" | "c5d.xlarge" | "c5d.2xlarge" | "c5d.4xlarge" | "c5d.9xlarge" | "c5d.12xlarge" | "c5d.18xlarge" | "c5d.24xlarge" | "c6a.large" | "c6a.xlarge" | "c6a.2xlarge" | "c6a.4xlarge" | "c6a.8xlarge" | "c6a.12xlarge" | "c6a.16xlarge" | "c6a.24xlarge" | "c6i.large" | "c6i.xlarge" | "c6i.2xlarge" | "c6i.4xlarge" | "c6i.8xlarge" | "c6i.12xlarge" | "c6i.16xlarge" | "c6i.24xlarge" | "r5d.large" | "r5d.xlarge" | "r5d.2xlarge" | "r5d.4xlarge" | "r5d.8xlarge" | "r5d.12xlarge" | "r5d.16xlarge" | "r5d.24xlarge" | "m6g.medium" | "m6g.large" | "m6g.xlarge" | "m6g.2xlarge" | "m6g.4xlarge" | "m6g.8xlarge" | "m6g.12xlarge" | "m6g.16xlarge" | "c6g.medium" | "c6g.large" | "c6g.xlarge" | "c6g.2xlarge" | "c6g.4xlarge" | "c6g.8xlarge" | "c6g.12xlarge" | "c6g.16xlarge" | "r6g.medium" | "r6g.large" | "r6g.xlarge" | "r6g.2xlarge" | "r6g.4xlarge" | "r6g.8xlarge" | "r6g.12xlarge" | "r6g.16xlarge" | "c6gn.medium" | "c6gn.large" | "c6gn.xlarge" | "c6gn.2xlarge" | "c6gn.4xlarge" | "c6gn.8xlarge" | "c6gn.12xlarge" | "c6gn.16xlarge" | "c7g.medium" | "c7g.large" | "c7g.xlarge" | "c7g.2xlarge" | "c7g.4xlarge" | "c7g.8xlarge" | "c7g.12xlarge" | "c7g.16xlarge" | "r7g.medium" | "r7g.large" | "r7g.xlarge" | "r7g.2xlarge" | "r7g.4xlarge" | "r7g.8xlarge" | "r7g.12xlarge" | "r7g.16xlarge" | "m7g.medium" | "m7g.large" | "m7g.xlarge" | "m7g.2xlarge" | "m7g.4xlarge" | "m7g.8xlarge" | "m7g.12xlarge" | "m7g.16xlarge" | "g5g.xlarge" | "g5g.2xlarge" | "g5g.4xlarge" | "g5g.8xlarge" | "g5g.16xlarge" | "r6i.large" | "r6i.xlarge" | "r6i.2xlarge" | "r6i.4xlarge" | "r6i.8xlarge" | "r6i.12xlarge" | "r6i.16xlarge" | "c6gd.medium" | "c6gd.large" | "c6gd.xlarge" | "c6gd.2xlarge" | "c6gd.4xlarge" | "c6gd.8xlarge" | "c6gd.12xlarge" | "c6gd.16xlarge" | "c6in.large" | "c6in.xlarge" | "c6in.2xlarge" | "c6in.4xlarge" | "c6in.8xlarge" | "c6in.12xlarge" | "c6in.16xlarge" | "c7a.medium" | "c7a.large" | "c7a.xlarge" | "c7a.2xlarge" | "c7a.4xlarge" | "c7a.8xlarge" | "c7a.12xlarge" | "c7a.16xlarge" | "c7gd.medium" | "c7gd.large" | "c7gd.xlarge" | "c7gd.2xlarge" | "c7gd.4xlarge" | "c7gd.8xlarge" | "c7gd.12xlarge" | "c7gd.16xlarge" | "c7gn.medium" | "c7gn.large" | "c7gn.xlarge" | "c7gn.2xlarge" | "c7gn.4xlarge" | "c7gn.8xlarge" | "c7gn.12xlarge" | "c7gn.16xlarge" | "c7i.large" | "c7i.xlarge" | "c7i.2xlarge" | "c7i.4xlarge" | "c7i.8xlarge" | "c7i.12xlarge" | "c7i.16xlarge" | "m6a.large" | "m6a.xlarge" | "m6a.2xlarge" | "m6a.4xlarge" | "m6a.8xlarge" | "m6a.12xlarge" | "m6a.16xlarge" | "m6gd.medium" | "m6gd.large" | "m6gd.xlarge" | "m6gd.2xlarge" | "m6gd.4xlarge" | "m6gd.8xlarge" | "m6gd.12xlarge" | "m6gd.16xlarge" | "m6i.large" | "m6i.xlarge" | "m6i.2xlarge" | "m6i.4xlarge" | "m6i.8xlarge" | "m6i.12xlarge" | "m6i.16xlarge" | "m7a.medium" | "m7a.large" | "m7a.xlarge" | "m7a.2xlarge" | "m7a.4xlarge" | "m7a.8xlarge" | "m7a.12xlarge" | "m7a.16xlarge" | "m7gd.medium" | "m7gd.large" | "m7gd.xlarge" | "m7gd.2xlarge" | "m7gd.4xlarge" | "m7gd.8xlarge" | "m7gd.12xlarge" | "m7gd.16xlarge" | "m7i.large" | "m7i.xlarge" | "m7i.2xlarge" | "m7i.4xlarge" | "m7i.8xlarge" | "m7i.12xlarge" | "m7i.16xlarge" | "r6gd.medium" | "r6gd.large" | "r6gd.xlarge" | "r6gd.2xlarge" | "r6gd.4xlarge" | "r6gd.8xlarge" | "r6gd.12xlarge" | "r6gd.16xlarge" | "r7a.medium" | "r7a.large" | "r7a.xlarge" | "r7a.2xlarge" | "r7a.4xlarge" | "r7a.8xlarge" | "r7a.12xlarge" | "r7a.16xlarge" | "r7gd.medium" | "r7gd.large" | "r7gd.xlarge" | "r7gd.2xlarge" | "r7gd.4xlarge" | "r7gd.8xlarge" | "r7gd.12xlarge" | "r7gd.16xlarge" | "r7i.large" | "r7i.xlarge" | "r7i.2xlarge" | "r7i.4xlarge" | "r7i.8xlarge" | "r7i.12xlarge" | "r7i.16xlarge" | "r7i.24xlarge" | "r7i.48xlarge" | "c5ad.large" | "c5ad.xlarge" | "c5ad.2xlarge" | "c5ad.4xlarge" | "c5ad.8xlarge" | "c5ad.12xlarge" | "c5ad.16xlarge" | "c5ad.24xlarge" | "c5n.large" | "c5n.xlarge" | "c5n.2xlarge" | "c5n.4xlarge" | "c5n.9xlarge" | "c5n.18xlarge" | "r5ad.large" | "r5ad.xlarge" | "r5ad.2xlarge" | "r5ad.4xlarge" | "r5ad.8xlarge" | "r5ad.12xlarge" | "r5ad.16xlarge" | "r5ad.24xlarge" | "c6id.large" | "c6id.xlarge" | "c6id.2xlarge" | "c6id.4xlarge" | "c6id.8xlarge" | "c6id.12xlarge" | "c6id.16xlarge" | "c6id.24xlarge" | "c6id.32xlarge" | "c8g.medium" | "c8g.large" | "c8g.xlarge" | "c8g.2xlarge" | "c8g.4xlarge" | "c8g.8xlarge" | "c8g.12xlarge" | "c8g.16xlarge" | "c8g.24xlarge" | "c8g.48xlarge" | "m5ad.large" | "m5ad.xlarge" | "m5ad.2xlarge" | "m5ad.4xlarge" | "m5ad.8xlarge" | "m5ad.12xlarge" | "m5ad.16xlarge" | "m5ad.24xlarge" | "m5d.large" | "m5d.xlarge" | "m5d.2xlarge" | "m5d.4xlarge" | "m5d.8xlarge" | "m5d.12xlarge" | "m5d.16xlarge" | "m5d.24xlarge" | "m5dn.large" | "m5dn.xlarge" | "m5dn.2xlarge" | "m5dn.4xlarge" | "m5dn.8xlarge" | "m5dn.12xlarge" | "m5dn.16xlarge" | "m5dn.24xlarge" | "m5n.large" | "m5n.xlarge" | "m5n.2xlarge" | "m5n.4xlarge" | "m5n.8xlarge" | "m5n.12xlarge" | "m5n.16xlarge" | "m5n.24xlarge" | "m6id.large" | "m6id.xlarge" | "m6id.2xlarge" | "m6id.4xlarge" | "m6id.8xlarge" | "m6id.12xlarge" | "m6id.16xlarge" | "m6id.24xlarge" | "m6id.32xlarge" | "m6idn.large" | "m6idn.xlarge" | "m6idn.2xlarge" | "m6idn.4xlarge" | "m6idn.8xlarge" | "m6idn.12xlarge" | "m6idn.16xlarge" | "m6idn.24xlarge" | "m6idn.32xlarge" | "m6in.large" | "m6in.xlarge" | "m6in.2xlarge" | "m6in.4xlarge" | "m6in.8xlarge" | "m6in.12xlarge" | "m6in.16xlarge" | "m6in.24xlarge" | "m6in.32xlarge" | "m8g.medium" | "m8g.large" | "m8g.xlarge" | "m8g.2xlarge" | "m8g.4xlarge" | "m8g.8xlarge" | "m8g.12xlarge" | "m8g.16xlarge" | "m8g.24xlarge" | "m8g.48xlarge" | "r5dn.large" | "r5dn.xlarge" | "r5dn.2xlarge" | "r5dn.4xlarge" | "r5dn.8xlarge" | "r5dn.12xlarge" | "r5dn.16xlarge" | "r5dn.24xlarge" | "r5n.large" | "r5n.xlarge" | "r5n.2xlarge" | "r5n.4xlarge" | "r5n.8xlarge" | "r5n.12xlarge" | "r5n.16xlarge" | "r5n.24xlarge" | "r6a.large" | "r6a.xlarge" | "r6a.2xlarge" | "r6a.4xlarge" | "r6a.8xlarge" | "r6a.12xlarge" | "r6a.16xlarge" | "r6a.24xlarge" | "r6a.32xlarge" | "r6a.48xlarge" | "r6id.large" | "r6id.xlarge" | "r6id.2xlarge" | "r6id.4xlarge" | "r6id.8xlarge" | "r6id.12xlarge" | "r6id.16xlarge" | "r6id.24xlarge" | "r6id.32xlarge" | "r6idn.large" | "r6idn.xlarge" | "r6idn.2xlarge" | "r6idn.4xlarge" | "r6idn.8xlarge" | "r6idn.12xlarge" | "r6idn.16xlarge" | "r6idn.24xlarge" | "r6idn.32xlarge" | "r6in.large" | "r6in.xlarge" | "r6in.2xlarge" | "r6in.4xlarge" | "r6in.8xlarge" | "r6in.12xlarge" | "r6in.16xlarge" | "r6in.24xlarge" | "r6in.32xlarge" | "r8g.medium" | "r8g.large" | "r8g.xlarge" | "r8g.2xlarge" | "r8g.4xlarge" | "r8g.8xlarge" | "r8g.12xlarge" | "r8g.16xlarge" | "r8g.24xlarge" | "r8g.48xlarge" | "m4.16xlarge" | "c6a.32xlarge" | "c6a.48xlarge" | "c6i.32xlarge" | "r6i.24xlarge" | "r6i.32xlarge" | "c6in.24xlarge" | "c6in.32xlarge" | "c7a.24xlarge" | "c7a.32xlarge" | "c7a.48xlarge" | "c7i.24xlarge" | "c7i.48xlarge" | "m6a.24xlarge" | "m6a.32xlarge" | "m6a.48xlarge" | "m6i.24xlarge" | "m6i.32xlarge" | "m7a.24xlarge" | "m7a.32xlarge" | "m7a.48xlarge" | "m7i.24xlarge" | "m7i.48xlarge" | "r7a.24xlarge" | "r7a.32xlarge" | "r7a.48xlarge")
+      attr_accessor instance_counts: Types::EC2InstanceCounts
+      attr_accessor location: ::String
+      attr_accessor game_server_container_group_counts: Types::GameServerContainerGroupCounts
+      SENSITIVE: []
+    end
+
+    class FleetCapacityExceededException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class FleetDeployment
+      attr_accessor deployment_id: ::String
+      attr_accessor fleet_id: ::String
+      attr_accessor game_server_binary_arn: ::String
+      attr_accessor rollback_game_server_binary_arn: ::String
+      attr_accessor per_instance_binary_arn: ::String
+      attr_accessor rollback_per_instance_binary_arn: ::String
+      attr_accessor deployment_status: ("IN_PROGRESS" | "IMPAIRED" | "COMPLETE" | "ROLLBACK_IN_PROGRESS" | "ROLLBACK_COMPLETE" | "CANCELLED" | "PENDING")
+      attr_accessor deployment_configuration: Types::DeploymentConfiguration
+      attr_accessor creation_time: ::Time
+      SENSITIVE: []
+    end
+
+    class FleetUtilization
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      attr_accessor active_server_process_count: ::Integer
+      attr_accessor active_game_session_count: ::Integer
+      attr_accessor current_player_session_count: ::Integer
+      attr_accessor maximum_player_session_count: ::Integer
+      attr_accessor location: ::String
+      SENSITIVE: []
+    end
+
+    class GameProperty
+      attr_accessor key: ::String
+      attr_accessor value: ::String
+      SENSITIVE: []
+    end
+
+    class GameServer
+      attr_accessor game_server_group_name: ::String
+      attr_accessor game_server_group_arn: ::String
+      attr_accessor game_server_id: ::String
+      attr_accessor instance_id: ::String
+      attr_accessor connection_info: ::String
+      attr_accessor game_server_data: ::String
+      attr_accessor claim_status: ("CLAIMED")
+      attr_accessor utilization_status: ("AVAILABLE" | "UTILIZED")
+      attr_accessor registration_time: ::Time
+      attr_accessor last_claim_time: ::Time
+      attr_accessor last_health_check_time: ::Time
+      SENSITIVE: []
+    end
+
+    class GameServerContainerDefinition
+      attr_accessor container_name: ::String
+      attr_accessor depends_on: ::Array[Types::ContainerDependency]
+      attr_accessor mount_points: ::Array[Types::ContainerMountPoint]
+      attr_accessor environment_override: ::Array[Types::ContainerEnvironment]
+      attr_accessor image_uri: ::String
+      attr_accessor port_configuration: Types::ContainerPortConfiguration
+      attr_accessor resolved_image_digest: ::String
+      attr_accessor server_sdk_version: ::String
+      SENSITIVE: []
+    end
+
+    class GameServerContainerDefinitionInput
+      attr_accessor container_name: ::String
+      attr_accessor depends_on: ::Array[Types::ContainerDependency]
+      attr_accessor mount_points: ::Array[Types::ContainerMountPoint]
+      attr_accessor environment_override: ::Array[Types::ContainerEnvironment]
+      attr_accessor image_uri: ::String
+      attr_accessor port_configuration: Types::ContainerPortConfiguration
+      attr_accessor server_sdk_version: ::String
+      SENSITIVE: []
+    end
+
+    class GameServerContainerGroupCounts
+      attr_accessor pending: ::Integer
+      attr_accessor active: ::Integer
+      attr_accessor idle: ::Integer
+      attr_accessor terminating: ::Integer
+      SENSITIVE: []
+    end
+
+    class GameServerGroup
+      attr_accessor game_server_group_name: ::String
+      attr_accessor game_server_group_arn: ::String
+      attr_accessor role_arn: ::String
+      attr_accessor instance_definitions: ::Array[Types::InstanceDefinition]
+      attr_accessor balancing_strategy: ("SPOT_ONLY" | "SPOT_PREFERRED" | "ON_DEMAND_ONLY")
+      attr_accessor game_server_protection_policy: ("NO_PROTECTION" | "FULL_PROTECTION")
+      attr_accessor auto_scaling_group_arn: ::String
+      attr_accessor status: ("NEW" | "ACTIVATING" | "ACTIVE" | "DELETE_SCHEDULED" | "DELETING" | "DELETED" | "ERROR")
+      attr_accessor status_reason: ::String
+      attr_accessor suspended_actions: ::Array[("REPLACE_INSTANCE_TYPES")]
+      attr_accessor creation_time: ::Time
+      attr_accessor last_updated_time: ::Time
+      SENSITIVE: []
+    end
+
+    class GameServerGroupAutoScalingPolicy
+      attr_accessor estimated_instance_warmup: ::Integer
+      attr_accessor target_tracking_configuration: Types::TargetTrackingConfiguration
+      SENSITIVE: []
+    end
+
+    class GameServerInstance
+      attr_accessor game_server_group_name: ::String
+      attr_accessor game_server_group_arn: ::String
+      attr_accessor instance_id: ::String
+      attr_accessor instance_status: ("ACTIVE" | "DRAINING" | "SPOT_TERMINATING")
+      SENSITIVE: []
+    end
+
+    class GameSession
+      attr_accessor game_session_id: ::String
+      attr_accessor name: ::String
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      attr_accessor creation_time: ::Time
+      attr_accessor termination_time: ::Time
+      attr_accessor current_player_session_count: ::Integer
+      attr_accessor maximum_player_session_count: ::Integer
+      attr_accessor status: ("ACTIVE" | "ACTIVATING" | "TERMINATED" | "TERMINATING" | "ERROR")
+      attr_accessor status_reason: ("INTERRUPTED" | "TRIGGERED_ON_PROCESS_TERMINATE" | "FORCE_TERMINATED")
+      attr_accessor game_properties: ::Array[Types::GameProperty]
+      attr_accessor ip_address: ::String
+      attr_accessor dns_name: ::String
+      attr_accessor port: ::Integer
+      attr_accessor player_session_creation_policy: ("ACCEPT_ALL" | "DENY_ALL")
+      attr_accessor creator_id: ::String
+      attr_accessor game_session_data: ::String
+      attr_accessor matchmaker_data: ::String
+      attr_accessor location: ::String
+      SENSITIVE: [:ip_address, :port]
+    end
+
+    class GameSessionConnectionInfo
+      attr_accessor game_session_arn: ::String
+      attr_accessor ip_address: ::String
+      attr_accessor dns_name: ::String
+      attr_accessor port: ::Integer
+      attr_accessor matched_player_sessions: ::Array[Types::MatchedPlayerSession]
+      SENSITIVE: [:ip_address]
+    end
+
+    class GameSessionCreationLimitPolicy
+      attr_accessor new_game_sessions_per_creator: ::Integer
+      attr_accessor policy_period_in_minutes: ::Integer
+      SENSITIVE: []
+    end
+
+    class GameSessionDetail
+      attr_accessor game_session: Types::GameSession
+      attr_accessor protection_policy: ("NoProtection" | "FullProtection")
+      SENSITIVE: []
+    end
+
+    class GameSessionFullException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class GameSessionPlacement
+      attr_accessor placement_id: ::String
+      attr_accessor game_session_queue_name: ::String
+      attr_accessor status: ("PENDING" | "FULFILLED" | "CANCELLED" | "TIMED_OUT" | "FAILED")
+      attr_accessor game_properties: ::Array[Types::GameProperty]
+      attr_accessor maximum_player_session_count: ::Integer
+      attr_accessor game_session_name: ::String
+      attr_accessor game_session_id: ::String
+      attr_accessor game_session_arn: ::String
+      attr_accessor game_session_region: ::String
+      attr_accessor player_latencies: ::Array[Types::PlayerLatency]
+      attr_accessor start_time: ::Time
+      attr_accessor end_time: ::Time
+      attr_accessor ip_address: ::String
+      attr_accessor dns_name: ::String
+      attr_accessor port: ::Integer
+      attr_accessor placed_player_sessions: ::Array[Types::PlacedPlayerSession]
+      attr_accessor game_session_data: ::String
+      attr_accessor matchmaker_data: ::String
+      attr_accessor priority_configuration_override: Types::PriorityConfigurationOverride
+      SENSITIVE: [:ip_address, :port]
+    end
+
+    class GameSessionQueue
+      attr_accessor name: ::String
+      attr_accessor game_session_queue_arn: ::String
+      attr_accessor timeout_in_seconds: ::Integer
+      attr_accessor player_latency_policies: ::Array[Types::PlayerLatencyPolicy]
+      attr_accessor destinations: ::Array[Types::GameSessionQueueDestination]
+      attr_accessor filter_configuration: Types::FilterConfiguration
+      attr_accessor priority_configuration: Types::PriorityConfiguration
+      attr_accessor custom_event_data: ::String
+      attr_accessor notification_target: ::String
+      SENSITIVE: []
+    end
+
+    class GameSessionQueueDestination
+      attr_accessor destination_arn: ::String
+      SENSITIVE: []
+    end
+
+    class GetComputeAccessInput
+      attr_accessor fleet_id: ::String
+      attr_accessor compute_name: ::String
+      SENSITIVE: []
+    end
+
+    class GetComputeAccessOutput
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      attr_accessor compute_name: ::String
+      attr_accessor compute_arn: ::String
+      attr_accessor credentials: Types::AwsCredentials
+      attr_accessor target: ::String
+      attr_accessor container_identifiers: ::Array[Types::ContainerIdentifier]
+      SENSITIVE: [:credentials]
+    end
+
+    class GetComputeAuthTokenInput
+      attr_accessor fleet_id: ::String
+      attr_accessor compute_name: ::String
+      SENSITIVE: []
+    end
+
+    class GetComputeAuthTokenOutput
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      attr_accessor compute_name: ::String
+      attr_accessor compute_arn: ::String
+      attr_accessor auth_token: ::String
+      attr_accessor expiration_timestamp: ::Time
+      SENSITIVE: []
+    end
+
+    class GetGameSessionLogUrlInput
+      attr_accessor game_session_id: ::String
+      SENSITIVE: []
+    end
+
+    class GetGameSessionLogUrlOutput
+      attr_accessor pre_signed_url: ::String
+      SENSITIVE: []
+    end
+
+    class GetInstanceAccessInput
+      attr_accessor fleet_id: ::String
+      attr_accessor instance_id: ::String
+      SENSITIVE: []
+    end
+
+    class GetInstanceAccessOutput
+      attr_accessor instance_access: Types::InstanceAccess
+      SENSITIVE: []
+    end
+
+    class IdempotentParameterMismatchException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class Instance
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      attr_accessor instance_id: ::String
+      attr_accessor ip_address: ::String
+      attr_accessor dns_name: ::String
+      attr_accessor operating_system: ("WINDOWS_2012" | "AMAZON_LINUX" | "AMAZON_LINUX_2" | "WINDOWS_2016" | "AMAZON_LINUX_2023")
+      attr_accessor type: ("t2.micro" | "t2.small" | "t2.medium" | "t2.large" | "c3.large" | "c3.xlarge" | "c3.2xlarge" | "c3.4xlarge" | "c3.8xlarge" | "c4.large" | "c4.xlarge" | "c4.2xlarge" | "c4.4xlarge" | "c4.8xlarge" | "c5.large" | "c5.xlarge" | "c5.2xlarge" | "c5.4xlarge" | "c5.9xlarge" | "c5.12xlarge" | "c5.18xlarge" | "c5.24xlarge" | "c5a.large" | "c5a.xlarge" | "c5a.2xlarge" | "c5a.4xlarge" | "c5a.8xlarge" | "c5a.12xlarge" | "c5a.16xlarge" | "c5a.24xlarge" | "r3.large" | "r3.xlarge" | "r3.2xlarge" | "r3.4xlarge" | "r3.8xlarge" | "r4.large" | "r4.xlarge" | "r4.2xlarge" | "r4.4xlarge" | "r4.8xlarge" | "r4.16xlarge" | "r5.large" | "r5.xlarge" | "r5.2xlarge" | "r5.4xlarge" | "r5.8xlarge" | "r5.12xlarge" | "r5.16xlarge" | "r5.24xlarge" | "r5a.large" | "r5a.xlarge" | "r5a.2xlarge" | "r5a.4xlarge" | "r5a.8xlarge" | "r5a.12xlarge" | "r5a.16xlarge" | "r5a.24xlarge" | "m3.medium" | "m3.large" | "m3.xlarge" | "m3.2xlarge" | "m4.large" | "m4.xlarge" | "m4.2xlarge" | "m4.4xlarge" | "m4.10xlarge" | "m5.large" | "m5.xlarge" | "m5.2xlarge" | "m5.4xlarge" | "m5.8xlarge" | "m5.12xlarge" | "m5.16xlarge" | "m5.24xlarge" | "m5a.large" | "m5a.xlarge" | "m5a.2xlarge" | "m5a.4xlarge" | "m5a.8xlarge" | "m5a.12xlarge" | "m5a.16xlarge" | "m5a.24xlarge" | "c5d.large" | "c5d.xlarge" | "c5d.2xlarge" | "c5d.4xlarge" | "c5d.9xlarge" | "c5d.12xlarge" | "c5d.18xlarge" | "c5d.24xlarge" | "c6a.large" | "c6a.xlarge" | "c6a.2xlarge" | "c6a.4xlarge" | "c6a.8xlarge" | "c6a.12xlarge" | "c6a.16xlarge" | "c6a.24xlarge" | "c6i.large" | "c6i.xlarge" | "c6i.2xlarge" | "c6i.4xlarge" | "c6i.8xlarge" | "c6i.12xlarge" | "c6i.16xlarge" | "c6i.24xlarge" | "r5d.large" | "r5d.xlarge" | "r5d.2xlarge" | "r5d.4xlarge" | "r5d.8xlarge" | "r5d.12xlarge" | "r5d.16xlarge" | "r5d.24xlarge" | "m6g.medium" | "m6g.large" | "m6g.xlarge" | "m6g.2xlarge" | "m6g.4xlarge" | "m6g.8xlarge" | "m6g.12xlarge" | "m6g.16xlarge" | "c6g.medium" | "c6g.large" | "c6g.xlarge" | "c6g.2xlarge" | "c6g.4xlarge" | "c6g.8xlarge" | "c6g.12xlarge" | "c6g.16xlarge" | "r6g.medium" | "r6g.large" | "r6g.xlarge" | "r6g.2xlarge" | "r6g.4xlarge" | "r6g.8xlarge" | "r6g.12xlarge" | "r6g.16xlarge" | "c6gn.medium" | "c6gn.large" | "c6gn.xlarge" | "c6gn.2xlarge" | "c6gn.4xlarge" | "c6gn.8xlarge" | "c6gn.12xlarge" | "c6gn.16xlarge" | "c7g.medium" | "c7g.large" | "c7g.xlarge" | "c7g.2xlarge" | "c7g.4xlarge" | "c7g.8xlarge" | "c7g.12xlarge" | "c7g.16xlarge" | "r7g.medium" | "r7g.large" | "r7g.xlarge" | "r7g.2xlarge" | "r7g.4xlarge" | "r7g.8xlarge" | "r7g.12xlarge" | "r7g.16xlarge" | "m7g.medium" | "m7g.large" | "m7g.xlarge" | "m7g.2xlarge" | "m7g.4xlarge" | "m7g.8xlarge" | "m7g.12xlarge" | "m7g.16xlarge" | "g5g.xlarge" | "g5g.2xlarge" | "g5g.4xlarge" | "g5g.8xlarge" | "g5g.16xlarge" | "r6i.large" | "r6i.xlarge" | "r6i.2xlarge" | "r6i.4xlarge" | "r6i.8xlarge" | "r6i.12xlarge" | "r6i.16xlarge" | "c6gd.medium" | "c6gd.large" | "c6gd.xlarge" | "c6gd.2xlarge" | "c6gd.4xlarge" | "c6gd.8xlarge" | "c6gd.12xlarge" | "c6gd.16xlarge" | "c6in.large" | "c6in.xlarge" | "c6in.2xlarge" | "c6in.4xlarge" | "c6in.8xlarge" | "c6in.12xlarge" | "c6in.16xlarge" | "c7a.medium" | "c7a.large" | "c7a.xlarge" | "c7a.2xlarge" | "c7a.4xlarge" | "c7a.8xlarge" | "c7a.12xlarge" | "c7a.16xlarge" | "c7gd.medium" | "c7gd.large" | "c7gd.xlarge" | "c7gd.2xlarge" | "c7gd.4xlarge" | "c7gd.8xlarge" | "c7gd.12xlarge" | "c7gd.16xlarge" | "c7gn.medium" | "c7gn.large" | "c7gn.xlarge" | "c7gn.2xlarge" | "c7gn.4xlarge" | "c7gn.8xlarge" | "c7gn.12xlarge" | "c7gn.16xlarge" | "c7i.large" | "c7i.xlarge" | "c7i.2xlarge" | "c7i.4xlarge" | "c7i.8xlarge" | "c7i.12xlarge" | "c7i.16xlarge" | "m6a.large" | "m6a.xlarge" | "m6a.2xlarge" | "m6a.4xlarge" | "m6a.8xlarge" | "m6a.12xlarge" | "m6a.16xlarge" | "m6gd.medium" | "m6gd.large" | "m6gd.xlarge" | "m6gd.2xlarge" | "m6gd.4xlarge" | "m6gd.8xlarge" | "m6gd.12xlarge" | "m6gd.16xlarge" | "m6i.large" | "m6i.xlarge" | "m6i.2xlarge" | "m6i.4xlarge" | "m6i.8xlarge" | "m6i.12xlarge" | "m6i.16xlarge" | "m7a.medium" | "m7a.large" | "m7a.xlarge" | "m7a.2xlarge" | "m7a.4xlarge" | "m7a.8xlarge" | "m7a.12xlarge" | "m7a.16xlarge" | "m7gd.medium" | "m7gd.large" | "m7gd.xlarge" | "m7gd.2xlarge" | "m7gd.4xlarge" | "m7gd.8xlarge" | "m7gd.12xlarge" | "m7gd.16xlarge" | "m7i.large" | "m7i.xlarge" | "m7i.2xlarge" | "m7i.4xlarge" | "m7i.8xlarge" | "m7i.12xlarge" | "m7i.16xlarge" | "r6gd.medium" | "r6gd.large" | "r6gd.xlarge" | "r6gd.2xlarge" | "r6gd.4xlarge" | "r6gd.8xlarge" | "r6gd.12xlarge" | "r6gd.16xlarge" | "r7a.medium" | "r7a.large" | "r7a.xlarge" | "r7a.2xlarge" | "r7a.4xlarge" | "r7a.8xlarge" | "r7a.12xlarge" | "r7a.16xlarge" | "r7gd.medium" | "r7gd.large" | "r7gd.xlarge" | "r7gd.2xlarge" | "r7gd.4xlarge" | "r7gd.8xlarge" | "r7gd.12xlarge" | "r7gd.16xlarge" | "r7i.large" | "r7i.xlarge" | "r7i.2xlarge" | "r7i.4xlarge" | "r7i.8xlarge" | "r7i.12xlarge" | "r7i.16xlarge" | "r7i.24xlarge" | "r7i.48xlarge" | "c5ad.large" | "c5ad.xlarge" | "c5ad.2xlarge" | "c5ad.4xlarge" | "c5ad.8xlarge" | "c5ad.12xlarge" | "c5ad.16xlarge" | "c5ad.24xlarge" | "c5n.large" | "c5n.xlarge" | "c5n.2xlarge" | "c5n.4xlarge" | "c5n.9xlarge" | "c5n.18xlarge" | "r5ad.large" | "r5ad.xlarge" | "r5ad.2xlarge" | "r5ad.4xlarge" | "r5ad.8xlarge" | "r5ad.12xlarge" | "r5ad.16xlarge" | "r5ad.24xlarge" | "c6id.large" | "c6id.xlarge" | "c6id.2xlarge" | "c6id.4xlarge" | "c6id.8xlarge" | "c6id.12xlarge" | "c6id.16xlarge" | "c6id.24xlarge" | "c6id.32xlarge" | "c8g.medium" | "c8g.large" | "c8g.xlarge" | "c8g.2xlarge" | "c8g.4xlarge" | "c8g.8xlarge" | "c8g.12xlarge" | "c8g.16xlarge" | "c8g.24xlarge" | "c8g.48xlarge" | "m5ad.large" | "m5ad.xlarge" | "m5ad.2xlarge" | "m5ad.4xlarge" | "m5ad.8xlarge" | "m5ad.12xlarge" | "m5ad.16xlarge" | "m5ad.24xlarge" | "m5d.large" | "m5d.xlarge" | "m5d.2xlarge" | "m5d.4xlarge" | "m5d.8xlarge" | "m5d.12xlarge" | "m5d.16xlarge" | "m5d.24xlarge" | "m5dn.large" | "m5dn.xlarge" | "m5dn.2xlarge" | "m5dn.4xlarge" | "m5dn.8xlarge" | "m5dn.12xlarge" | "m5dn.16xlarge" | "m5dn.24xlarge" | "m5n.large" | "m5n.xlarge" | "m5n.2xlarge" | "m5n.4xlarge" | "m5n.8xlarge" | "m5n.12xlarge" | "m5n.16xlarge" | "m5n.24xlarge" | "m6id.large" | "m6id.xlarge" | "m6id.2xlarge" | "m6id.4xlarge" | "m6id.8xlarge" | "m6id.12xlarge" | "m6id.16xlarge" | "m6id.24xlarge" | "m6id.32xlarge" | "m6idn.large" | "m6idn.xlarge" | "m6idn.2xlarge" | "m6idn.4xlarge" | "m6idn.8xlarge" | "m6idn.12xlarge" | "m6idn.16xlarge" | "m6idn.24xlarge" | "m6idn.32xlarge" | "m6in.large" | "m6in.xlarge" | "m6in.2xlarge" | "m6in.4xlarge" | "m6in.8xlarge" | "m6in.12xlarge" | "m6in.16xlarge" | "m6in.24xlarge" | "m6in.32xlarge" | "m8g.medium" | "m8g.large" | "m8g.xlarge" | "m8g.2xlarge" | "m8g.4xlarge" | "m8g.8xlarge" | "m8g.12xlarge" | "m8g.16xlarge" | "m8g.24xlarge" | "m8g.48xlarge" | "r5dn.large" | "r5dn.xlarge" | "r5dn.2xlarge" | "r5dn.4xlarge" | "r5dn.8xlarge" | "r5dn.12xlarge" | "r5dn.16xlarge" | "r5dn.24xlarge" | "r5n.large" | "r5n.xlarge" | "r5n.2xlarge" | "r5n.4xlarge" | "r5n.8xlarge" | "r5n.12xlarge" | "r5n.16xlarge" | "r5n.24xlarge" | "r6a.large" | "r6a.xlarge" | "r6a.2xlarge" | "r6a.4xlarge" | "r6a.8xlarge" | "r6a.12xlarge" | "r6a.16xlarge" | "r6a.24xlarge" | "r6a.32xlarge" | "r6a.48xlarge" | "r6id.large" | "r6id.xlarge" | "r6id.2xlarge" | "r6id.4xlarge" | "r6id.8xlarge" | "r6id.12xlarge" | "r6id.16xlarge" | "r6id.24xlarge" | "r6id.32xlarge" | "r6idn.large" | "r6idn.xlarge" | "r6idn.2xlarge" | "r6idn.4xlarge" | "r6idn.8xlarge" | "r6idn.12xlarge" | "r6idn.16xlarge" | "r6idn.24xlarge" | "r6idn.32xlarge" | "r6in.large" | "r6in.xlarge" | "r6in.2xlarge" | "r6in.4xlarge" | "r6in.8xlarge" | "r6in.12xlarge" | "r6in.16xlarge" | "r6in.24xlarge" | "r6in.32xlarge" | "r8g.medium" | "r8g.large" | "r8g.xlarge" | "r8g.2xlarge" | "r8g.4xlarge" | "r8g.8xlarge" | "r8g.12xlarge" | "r8g.16xlarge" | "r8g.24xlarge" | "r8g.48xlarge" | "m4.16xlarge" | "c6a.32xlarge" | "c6a.48xlarge" | "c6i.32xlarge" | "r6i.24xlarge" | "r6i.32xlarge" | "c6in.24xlarge" | "c6in.32xlarge" | "c7a.24xlarge" | "c7a.32xlarge" | "c7a.48xlarge" | "c7i.24xlarge" | "c7i.48xlarge" | "m6a.24xlarge" | "m6a.32xlarge" | "m6a.48xlarge" | "m6i.24xlarge" | "m6i.32xlarge" | "m7a.24xlarge" | "m7a.32xlarge" | "m7a.48xlarge" | "m7i.24xlarge" | "m7i.48xlarge" | "r7a.24xlarge" | "r7a.32xlarge" | "r7a.48xlarge")
+      attr_accessor status: ("PENDING" | "ACTIVE" | "TERMINATING")
+      attr_accessor creation_time: ::Time
+      attr_accessor location: ::String
+      SENSITIVE: [:ip_address]
+    end
+
+    class InstanceAccess
+      attr_accessor fleet_id: ::String
+      attr_accessor instance_id: ::String
+      attr_accessor ip_address: ::String
+      attr_accessor operating_system: ("WINDOWS_2012" | "AMAZON_LINUX" | "AMAZON_LINUX_2" | "WINDOWS_2016" | "AMAZON_LINUX_2023")
+      attr_accessor credentials: Types::InstanceCredentials
+      SENSITIVE: [:ip_address, :credentials]
+    end
+
+    class InstanceCredentials
+      attr_accessor user_name: ::String
+      attr_accessor secret: ::String
+      SENSITIVE: []
+    end
+
+    class InstanceDefinition
+      attr_accessor instance_type: ("c4.large" | "c4.xlarge" | "c4.2xlarge" | "c4.4xlarge" | "c4.8xlarge" | "c5.large" | "c5.xlarge" | "c5.2xlarge" | "c5.4xlarge" | "c5.9xlarge" | "c5.12xlarge" | "c5.18xlarge" | "c5.24xlarge" | "c5a.large" | "c5a.xlarge" | "c5a.2xlarge" | "c5a.4xlarge" | "c5a.8xlarge" | "c5a.12xlarge" | "c5a.16xlarge" | "c5a.24xlarge" | "c6g.medium" | "c6g.large" | "c6g.xlarge" | "c6g.2xlarge" | "c6g.4xlarge" | "c6g.8xlarge" | "c6g.12xlarge" | "c6g.16xlarge" | "r4.large" | "r4.xlarge" | "r4.2xlarge" | "r4.4xlarge" | "r4.8xlarge" | "r4.16xlarge" | "r5.large" | "r5.xlarge" | "r5.2xlarge" | "r5.4xlarge" | "r5.8xlarge" | "r5.12xlarge" | "r5.16xlarge" | "r5.24xlarge" | "r5a.large" | "r5a.xlarge" | "r5a.2xlarge" | "r5a.4xlarge" | "r5a.8xlarge" | "r5a.12xlarge" | "r5a.16xlarge" | "r5a.24xlarge" | "r6g.medium" | "r6g.large" | "r6g.xlarge" | "r6g.2xlarge" | "r6g.4xlarge" | "r6g.8xlarge" | "r6g.12xlarge" | "r6g.16xlarge" | "m4.large" | "m4.xlarge" | "m4.2xlarge" | "m4.4xlarge" | "m4.10xlarge" | "m5.large" | "m5.xlarge" | "m5.2xlarge" | "m5.4xlarge" | "m5.8xlarge" | "m5.12xlarge" | "m5.16xlarge" | "m5.24xlarge" | "m5a.large" | "m5a.xlarge" | "m5a.2xlarge" | "m5a.4xlarge" | "m5a.8xlarge" | "m5a.12xlarge" | "m5a.16xlarge" | "m5a.24xlarge" | "m6g.medium" | "m6g.large" | "m6g.xlarge" | "m6g.2xlarge" | "m6g.4xlarge" | "m6g.8xlarge" | "m6g.12xlarge" | "m6g.16xlarge")
+      attr_accessor weighted_capacity: ::String
+      SENSITIVE: []
+    end
+
+    class InternalServiceException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class InvalidFleetStatusException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class InvalidGameSessionStatusException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class InvalidRequestException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class IpPermission
+      attr_accessor from_port: ::Integer
+      attr_accessor to_port: ::Integer
+      attr_accessor ip_range: ::String
+      attr_accessor protocol: ("TCP" | "UDP")
+      SENSITIVE: [:from_port, :to_port, :ip_range]
+    end
+
+    class LaunchTemplateSpecification
+      attr_accessor launch_template_id: ::String
+      attr_accessor launch_template_name: ::String
+      attr_accessor version: ::String
+      SENSITIVE: []
+    end
+
+    class LimitExceededException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class ListAliasesInput
+      attr_accessor routing_strategy_type: ("SIMPLE" | "TERMINAL")
+      attr_accessor name: ::String
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListAliasesOutput
+      attr_accessor aliases: ::Array[Types::Alias]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListBuildsInput
+      attr_accessor status: ("INITIALIZED" | "READY" | "FAILED")
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListBuildsOutput
+      attr_accessor builds: ::Array[Types::Build]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListComputeInput
+      attr_accessor fleet_id: ::String
+      attr_accessor location: ::String
+      attr_accessor container_group_definition_name: ::String
+      attr_accessor compute_status: ("ACTIVE" | "IMPAIRED")
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListComputeOutput
+      attr_accessor compute_list: ::Array[Types::Compute]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListContainerFleetsInput
+      attr_accessor container_group_definition_name: ::String
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListContainerFleetsOutput
+      attr_accessor container_fleets: ::Array[Types::ContainerFleet]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListContainerGroupDefinitionVersionsInput
+      attr_accessor name: ::String
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListContainerGroupDefinitionVersionsOutput
+      attr_accessor container_group_definitions: ::Array[Types::ContainerGroupDefinition]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListContainerGroupDefinitionsInput
+      attr_accessor container_group_type: ("GAME_SERVER" | "PER_INSTANCE")
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListContainerGroupDefinitionsOutput
+      attr_accessor container_group_definitions: ::Array[Types::ContainerGroupDefinition]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListFleetDeploymentsInput
+      attr_accessor fleet_id: ::String
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListFleetDeploymentsOutput
+      attr_accessor fleet_deployments: ::Array[Types::FleetDeployment]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListFleetsInput
+      attr_accessor build_id: ::String
+      attr_accessor script_id: ::String
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListFleetsOutput
+      attr_accessor fleet_ids: ::Array[::String]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListGameServerGroupsInput
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListGameServerGroupsOutput
+      attr_accessor game_server_groups: ::Array[Types::GameServerGroup]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListGameServersInput
+      attr_accessor game_server_group_name: ::String
+      attr_accessor sort_order: ("ASCENDING" | "DESCENDING")
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListGameServersOutput
+      attr_accessor game_servers: ::Array[Types::GameServer]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListLocationsInput
+      attr_accessor filters: ::Array[("AWS" | "CUSTOM")]
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListLocationsOutput
+      attr_accessor locations: ::Array[Types::LocationModel]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListScriptsInput
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListScriptsOutput
+      attr_accessor scripts: ::Array[Types::Script]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListTagsForResourceRequest
+      attr_accessor resource_arn: ::String
+      SENSITIVE: []
+    end
+
+    class ListTagsForResourceResponse
+      attr_accessor tags: ::Array[Types::Tag]
+      SENSITIVE: []
+    end
+
+    class LocationAttributes
+      attr_accessor location_state: Types::LocationState
+      attr_accessor stopped_actions: ::Array[("AUTO_SCALING")]
+      attr_accessor update_status: ("PENDING_UPDATE")
+      SENSITIVE: []
+    end
+
+    class LocationConfiguration
+      attr_accessor location: ::String
+      SENSITIVE: []
+    end
+
+    class LocationModel
+      attr_accessor location_name: ::String
+      attr_accessor location_arn: ::String
+      SENSITIVE: []
+    end
+
+    class LocationState
+      attr_accessor location: ::String
+      attr_accessor status: ("NEW" | "DOWNLOADING" | "VALIDATING" | "BUILDING" | "ACTIVATING" | "ACTIVE" | "DELETING" | "ERROR" | "TERMINATED" | "NOT_FOUND")
+      SENSITIVE: []
+    end
+
+    class LocationalDeployment
+      attr_accessor deployment_status: ("IN_PROGRESS" | "IMPAIRED" | "COMPLETE" | "ROLLBACK_IN_PROGRESS" | "ROLLBACK_COMPLETE" | "CANCELLED" | "PENDING")
+      SENSITIVE: []
+    end
+
+    class LogConfiguration
+      attr_accessor log_destination: ("NONE" | "CLOUDWATCH" | "S3")
+      attr_accessor s3_bucket_name: ::String
+      attr_accessor log_group_arn: ::String
+      SENSITIVE: []
+    end
+
+    class MatchedPlayerSession
+      attr_accessor player_id: ::String
+      attr_accessor player_session_id: ::String
+      SENSITIVE: [:player_id]
+    end
+
+    class MatchmakingConfiguration
+      attr_accessor name: ::String
+      attr_accessor configuration_arn: ::String
+      attr_accessor description: ::String
+      attr_accessor game_session_queue_arns: ::Array[::String]
+      attr_accessor request_timeout_seconds: ::Integer
+      attr_accessor acceptance_timeout_seconds: ::Integer
+      attr_accessor acceptance_required: bool
+      attr_accessor rule_set_name: ::String
+      attr_accessor rule_set_arn: ::String
+      attr_accessor notification_target: ::String
+      attr_accessor additional_player_count: ::Integer
+      attr_accessor custom_event_data: ::String
+      attr_accessor creation_time: ::Time
+      attr_accessor game_properties: ::Array[Types::GameProperty]
+      attr_accessor game_session_data: ::String
+      attr_accessor backfill_mode: ("AUTOMATIC" | "MANUAL")
+      attr_accessor flex_match_mode: ("STANDALONE" | "WITH_QUEUE")
+      SENSITIVE: []
+    end
+
+    class MatchmakingRuleSet
+      attr_accessor rule_set_name: ::String
+      attr_accessor rule_set_arn: ::String
+      attr_accessor rule_set_body: ::String
+      attr_accessor creation_time: ::Time
+      SENSITIVE: []
+    end
+
+    class MatchmakingTicket
+      attr_accessor ticket_id: ::String
+      attr_accessor configuration_name: ::String
+      attr_accessor configuration_arn: ::String
+      attr_accessor status: ("CANCELLED" | "COMPLETED" | "FAILED" | "PLACING" | "QUEUED" | "REQUIRES_ACCEPTANCE" | "SEARCHING" | "TIMED_OUT")
+      attr_accessor status_reason: ::String
+      attr_accessor status_message: ::String
+      attr_accessor start_time: ::Time
+      attr_accessor end_time: ::Time
+      attr_accessor players: ::Array[Types::Player]
+      attr_accessor game_session_connection_info: Types::GameSessionConnectionInfo
+      attr_accessor estimated_wait_time: ::Integer
+      SENSITIVE: []
+    end
+
+    class NotFoundException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class NotReadyException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class OutOfCapacityException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class PlacedPlayerSession
+      attr_accessor player_id: ::String
+      attr_accessor player_session_id: ::String
+      SENSITIVE: [:player_id]
+    end
+
+    class Player
+      attr_accessor player_id: ::String
+      attr_accessor player_attributes: ::Hash[::String, Types::AttributeValue]
+      attr_accessor team: ::String
+      attr_accessor latency_in_ms: ::Hash[::String, ::Integer]
+      SENSITIVE: [:player_id]
+    end
+
+    class PlayerLatency
+      attr_accessor player_id: ::String
+      attr_accessor region_identifier: ::String
+      attr_accessor latency_in_milliseconds: ::Float
+      SENSITIVE: [:player_id]
+    end
+
+    class PlayerLatencyPolicy
+      attr_accessor maximum_individual_player_latency_milliseconds: ::Integer
+      attr_accessor policy_duration_seconds: ::Integer
+      SENSITIVE: []
+    end
+
+    class PlayerSession
+      attr_accessor player_session_id: ::String
+      attr_accessor player_id: ::String
+      attr_accessor game_session_id: ::String
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      attr_accessor creation_time: ::Time
+      attr_accessor termination_time: ::Time
+      attr_accessor status: ("RESERVED" | "ACTIVE" | "COMPLETED" | "TIMEDOUT")
+      attr_accessor ip_address: ::String
+      attr_accessor dns_name: ::String
+      attr_accessor port: ::Integer
+      attr_accessor player_data: ::String
+      SENSITIVE: [:player_id, :ip_address, :port]
+    end
+
+    class PriorityConfiguration
+      attr_accessor priority_order: ::Array[("LATENCY" | "COST" | "DESTINATION" | "LOCATION")]
+      attr_accessor location_order: ::Array[::String]
+      SENSITIVE: []
+    end
+
+    class PriorityConfigurationOverride
+      attr_accessor placement_fallback_strategy: ("DEFAULT_AFTER_SINGLE_PASS" | "NONE")
+      attr_accessor location_order: ::Array[::String]
+      SENSITIVE: []
+    end
+
+    class PutScalingPolicyInput
+      attr_accessor name: ::String
+      attr_accessor fleet_id: ::String
+      attr_accessor scaling_adjustment: ::Integer
+      attr_accessor scaling_adjustment_type: ("ChangeInCapacity" | "ExactCapacity" | "PercentChangeInCapacity")
+      attr_accessor threshold: ::Float
+      attr_accessor comparison_operator: ("GreaterThanOrEqualToThreshold" | "GreaterThanThreshold" | "LessThanThreshold" | "LessThanOrEqualToThreshold")
+      attr_accessor evaluation_periods: ::Integer
+      attr_accessor metric_name: ("ActivatingGameSessions" | "ActiveGameSessions" | "ActiveInstances" | "AvailableGameSessions" | "AvailablePlayerSessions" | "CurrentPlayerSessions" | "IdleInstances" | "PercentAvailableGameSessions" | "PercentIdleInstances" | "QueueDepth" | "WaitTime" | "ConcurrentActivatableGameSessions")
+      attr_accessor policy_type: ("RuleBased" | "TargetBased")
+      attr_accessor target_configuration: Types::TargetConfiguration
+      SENSITIVE: []
+    end
+
+    class PutScalingPolicyOutput
+      attr_accessor name: ::String
+      SENSITIVE: []
+    end
+
+    class RegisterComputeInput
+      attr_accessor fleet_id: ::String
+      attr_accessor compute_name: ::String
+      attr_accessor certificate_path: ::String
+      attr_accessor dns_name: ::String
+      attr_accessor ip_address: ::String
+      attr_accessor location: ::String
+      SENSITIVE: [:ip_address]
+    end
+
+    class RegisterComputeOutput
+      attr_accessor compute: Types::Compute
+      SENSITIVE: []
+    end
+
+    class RegisterGameServerInput
+      attr_accessor game_server_group_name: ::String
+      attr_accessor game_server_id: ::String
+      attr_accessor instance_id: ::String
+      attr_accessor connection_info: ::String
+      attr_accessor game_server_data: ::String
+      SENSITIVE: []
+    end
+
+    class RegisterGameServerOutput
+      attr_accessor game_server: Types::GameServer
+      SENSITIVE: []
+    end
+
+    class RequestUploadCredentialsInput
+      attr_accessor build_id: ::String
+      SENSITIVE: []
+    end
+
+    class RequestUploadCredentialsOutput
+      attr_accessor upload_credentials: Types::AwsCredentials
+      attr_accessor storage_location: Types::S3Location
+      SENSITIVE: [:upload_credentials]
+    end
+
+    class ResolveAliasInput
+      attr_accessor alias_id: ::String
+      SENSITIVE: []
+    end
+
+    class ResolveAliasOutput
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      SENSITIVE: []
+    end
+
+    class ResourceCreationLimitPolicy
+      attr_accessor new_game_sessions_per_creator: ::Integer
+      attr_accessor policy_period_in_minutes: ::Integer
+      SENSITIVE: []
+    end
+
+    class ResumeGameServerGroupInput
+      attr_accessor game_server_group_name: ::String
+      attr_accessor resume_actions: ::Array[("REPLACE_INSTANCE_TYPES")]
+      SENSITIVE: []
+    end
+
+    class ResumeGameServerGroupOutput
+      attr_accessor game_server_group: Types::GameServerGroup
+      SENSITIVE: []
+    end
+
+    class RoutingStrategy
+      attr_accessor type: ("SIMPLE" | "TERMINAL")
+      attr_accessor fleet_id: ::String
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class RuntimeConfiguration
+      attr_accessor server_processes: ::Array[Types::ServerProcess]
+      attr_accessor max_concurrent_game_session_activations: ::Integer
+      attr_accessor game_session_activation_timeout_seconds: ::Integer
+      SENSITIVE: []
+    end
+
+    class S3Location
+      attr_accessor bucket: ::String
+      attr_accessor key: ::String
+      attr_accessor role_arn: ::String
+      attr_accessor object_version: ::String
+      SENSITIVE: []
+    end
+
+    class ScalingPolicy
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      attr_accessor name: ::String
+      attr_accessor status: ("ACTIVE" | "UPDATE_REQUESTED" | "UPDATING" | "DELETE_REQUESTED" | "DELETING" | "DELETED" | "ERROR")
+      attr_accessor scaling_adjustment: ::Integer
+      attr_accessor scaling_adjustment_type: ("ChangeInCapacity" | "ExactCapacity" | "PercentChangeInCapacity")
+      attr_accessor comparison_operator: ("GreaterThanOrEqualToThreshold" | "GreaterThanThreshold" | "LessThanThreshold" | "LessThanOrEqualToThreshold")
+      attr_accessor threshold: ::Float
+      attr_accessor evaluation_periods: ::Integer
+      attr_accessor metric_name: ("ActivatingGameSessions" | "ActiveGameSessions" | "ActiveInstances" | "AvailableGameSessions" | "AvailablePlayerSessions" | "CurrentPlayerSessions" | "IdleInstances" | "PercentAvailableGameSessions" | "PercentIdleInstances" | "QueueDepth" | "WaitTime" | "ConcurrentActivatableGameSessions")
+      attr_accessor policy_type: ("RuleBased" | "TargetBased")
+      attr_accessor target_configuration: Types::TargetConfiguration
+      attr_accessor update_status: ("PENDING_UPDATE")
+      attr_accessor location: ::String
+      SENSITIVE: []
+    end
+
+    class Script
+      attr_accessor script_id: ::String
+      attr_accessor script_arn: ::String
+      attr_accessor name: ::String
+      attr_accessor version: ::String
+      attr_accessor size_on_disk: ::Integer
+      attr_accessor creation_time: ::Time
+      attr_accessor storage_location: Types::S3Location
+      SENSITIVE: []
+    end
+
+    class SearchGameSessionsInput
+      attr_accessor fleet_id: ::String
+      attr_accessor alias_id: ::String
+      attr_accessor location: ::String
+      attr_accessor filter_expression: ::String
+      attr_accessor sort_expression: ::String
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class SearchGameSessionsOutput
+      attr_accessor game_sessions: ::Array[Types::GameSession]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ServerProcess
+      attr_accessor launch_path: ::String
+      attr_accessor parameters: ::String
+      attr_accessor concurrent_executions: ::Integer
+      SENSITIVE: []
+    end
+
+    class StartFleetActionsInput
+      attr_accessor fleet_id: ::String
+      attr_accessor actions: ::Array[("AUTO_SCALING")]
+      attr_accessor location: ::String
+      SENSITIVE: []
+    end
+
+    class StartFleetActionsOutput
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      SENSITIVE: []
+    end
+
+    class StartGameSessionPlacementInput
+      attr_accessor placement_id: ::String
+      attr_accessor game_session_queue_name: ::String
+      attr_accessor game_properties: ::Array[Types::GameProperty]
+      attr_accessor maximum_player_session_count: ::Integer
+      attr_accessor game_session_name: ::String
+      attr_accessor player_latencies: ::Array[Types::PlayerLatency]
+      attr_accessor desired_player_sessions: ::Array[Types::DesiredPlayerSession]
+      attr_accessor game_session_data: ::String
+      attr_accessor priority_configuration_override: Types::PriorityConfigurationOverride
+      SENSITIVE: []
+    end
+
+    class StartGameSessionPlacementOutput
+      attr_accessor game_session_placement: Types::GameSessionPlacement
+      SENSITIVE: []
+    end
+
+    class StartMatchBackfillInput
+      attr_accessor ticket_id: ::String
+      attr_accessor configuration_name: ::String
+      attr_accessor game_session_arn: ::String
+      attr_accessor players: ::Array[Types::Player]
+      SENSITIVE: []
+    end
+
+    class StartMatchBackfillOutput
+      attr_accessor matchmaking_ticket: Types::MatchmakingTicket
+      SENSITIVE: []
+    end
+
+    class StartMatchmakingInput
+      attr_accessor ticket_id: ::String
+      attr_accessor configuration_name: ::String
+      attr_accessor players: ::Array[Types::Player]
+      SENSITIVE: []
+    end
+
+    class StartMatchmakingOutput
+      attr_accessor matchmaking_ticket: Types::MatchmakingTicket
+      SENSITIVE: []
+    end
+
+    class StopFleetActionsInput
+      attr_accessor fleet_id: ::String
+      attr_accessor actions: ::Array[("AUTO_SCALING")]
+      attr_accessor location: ::String
+      SENSITIVE: []
+    end
+
+    class StopFleetActionsOutput
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      SENSITIVE: []
+    end
+
+    class StopGameSessionPlacementInput
+      attr_accessor placement_id: ::String
+      SENSITIVE: []
+    end
+
+    class StopGameSessionPlacementOutput
+      attr_accessor game_session_placement: Types::GameSessionPlacement
+      SENSITIVE: []
+    end
+
+    class StopMatchmakingInput
+      attr_accessor ticket_id: ::String
+      SENSITIVE: []
+    end
+
+    class StopMatchmakingOutput < Aws::EmptyStructure
+    end
+
+    class SupportContainerDefinition
+      attr_accessor container_name: ::String
+      attr_accessor depends_on: ::Array[Types::ContainerDependency]
+      attr_accessor mount_points: ::Array[Types::ContainerMountPoint]
+      attr_accessor environment_override: ::Array[Types::ContainerEnvironment]
+      attr_accessor essential: bool
+      attr_accessor health_check: Types::ContainerHealthCheck
+      attr_accessor image_uri: ::String
+      attr_accessor memory_hard_limit_mebibytes: ::Integer
+      attr_accessor port_configuration: Types::ContainerPortConfiguration
+      attr_accessor resolved_image_digest: ::String
+      attr_accessor vcpu: ::Float
+      SENSITIVE: []
+    end
+
+    class SupportContainerDefinitionInput
+      attr_accessor container_name: ::String
+      attr_accessor depends_on: ::Array[Types::ContainerDependency]
+      attr_accessor mount_points: ::Array[Types::ContainerMountPoint]
+      attr_accessor environment_override: ::Array[Types::ContainerEnvironment]
+      attr_accessor essential: bool
+      attr_accessor health_check: Types::ContainerHealthCheck
+      attr_accessor image_uri: ::String
+      attr_accessor memory_hard_limit_mebibytes: ::Integer
+      attr_accessor port_configuration: Types::ContainerPortConfiguration
+      attr_accessor vcpu: ::Float
+      SENSITIVE: []
+    end
+
+    class SuspendGameServerGroupInput
+      attr_accessor game_server_group_name: ::String
+      attr_accessor suspend_actions: ::Array[("REPLACE_INSTANCE_TYPES")]
+      SENSITIVE: []
+    end
+
+    class SuspendGameServerGroupOutput
+      attr_accessor game_server_group: Types::GameServerGroup
+      SENSITIVE: []
+    end
+
+    class Tag
+      attr_accessor key: ::String
+      attr_accessor value: ::String
+      SENSITIVE: []
+    end
+
+    class TagResourceRequest
+      attr_accessor resource_arn: ::String
+      attr_accessor tags: ::Array[Types::Tag]
+      SENSITIVE: []
+    end
+
+    class TagResourceResponse < Aws::EmptyStructure
+    end
+
+    class TaggingFailedException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class TargetConfiguration
+      attr_accessor target_value: ::Float
+      SENSITIVE: []
+    end
+
+    class TargetTrackingConfiguration
+      attr_accessor target_value: ::Float
+      SENSITIVE: []
+    end
+
+    class TerminalRoutingStrategyException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class TerminateGameSessionInput
+      attr_accessor game_session_id: ::String
+      attr_accessor termination_mode: ("TRIGGER_ON_PROCESS_TERMINATE" | "FORCE_TERMINATE")
+      SENSITIVE: []
+    end
+
+    class TerminateGameSessionOutput
+      attr_accessor game_session: Types::GameSession
+      SENSITIVE: []
+    end
+
+    class UnauthorizedException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class UnsupportedRegionException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class UntagResourceRequest
+      attr_accessor resource_arn: ::String
+      attr_accessor tag_keys: ::Array[::String]
+      SENSITIVE: []
+    end
+
+    class UntagResourceResponse < Aws::EmptyStructure
+    end
+
+    class UpdateAliasInput
+      attr_accessor alias_id: ::String
+      attr_accessor name: ::String
+      attr_accessor description: ::String
+      attr_accessor routing_strategy: Types::RoutingStrategy
+      SENSITIVE: []
+    end
+
+    class UpdateAliasOutput
+      attr_accessor alias: Types::Alias
+      SENSITIVE: []
+    end
+
+    class UpdateBuildInput
+      attr_accessor build_id: ::String
+      attr_accessor name: ::String
+      attr_accessor version: ::String
+      SENSITIVE: []
+    end
+
+    class UpdateBuildOutput
+      attr_accessor build: Types::Build
+      SENSITIVE: []
+    end
+
+    class UpdateContainerFleetInput
+      attr_accessor fleet_id: ::String
+      attr_accessor game_server_container_group_definition_name: ::String
+      attr_accessor per_instance_container_group_definition_name: ::String
+      attr_accessor game_server_container_groups_per_instance: ::Integer
+      attr_accessor instance_connection_port_range: Types::ConnectionPortRange
+      attr_accessor instance_inbound_permission_authorizations: ::Array[Types::IpPermission]
+      attr_accessor instance_inbound_permission_revocations: ::Array[Types::IpPermission]
+      attr_accessor deployment_configuration: Types::DeploymentConfiguration
+      attr_accessor description: ::String
+      attr_accessor metric_groups: ::Array[::String]
+      attr_accessor new_game_session_protection_policy: ("NoProtection" | "FullProtection")
+      attr_accessor game_session_creation_limit_policy: Types::GameSessionCreationLimitPolicy
+      attr_accessor log_configuration: Types::LogConfiguration
+      attr_accessor remove_attributes: ::Array[("PER_INSTANCE_CONTAINER_GROUP_DEFINITION")]
+      SENSITIVE: []
+    end
+
+    class UpdateContainerFleetOutput
+      attr_accessor container_fleet: Types::ContainerFleet
+      SENSITIVE: []
+    end
+
+    class UpdateContainerGroupDefinitionInput
+      attr_accessor name: ::String
+      attr_accessor game_server_container_definition: Types::GameServerContainerDefinitionInput
+      attr_accessor support_container_definitions: ::Array[Types::SupportContainerDefinitionInput]
+      attr_accessor total_memory_limit_mebibytes: ::Integer
+      attr_accessor total_vcpu_limit: ::Float
+      attr_accessor version_description: ::String
+      attr_accessor source_version_number: ::Integer
+      attr_accessor operating_system: ("AMAZON_LINUX_2023")
+      SENSITIVE: []
+    end
+
+    class UpdateContainerGroupDefinitionOutput
+      attr_accessor container_group_definition: Types::ContainerGroupDefinition
+      SENSITIVE: []
+    end
+
+    class UpdateFleetAttributesInput
+      attr_accessor fleet_id: ::String
+      attr_accessor name: ::String
+      attr_accessor description: ::String
+      attr_accessor new_game_session_protection_policy: ("NoProtection" | "FullProtection")
+      attr_accessor resource_creation_limit_policy: Types::ResourceCreationLimitPolicy
+      attr_accessor metric_groups: ::Array[::String]
+      attr_accessor anywhere_configuration: Types::AnywhereConfiguration
+      SENSITIVE: []
+    end
+
+    class UpdateFleetAttributesOutput
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      SENSITIVE: []
+    end
+
+    class UpdateFleetCapacityInput
+      attr_accessor fleet_id: ::String
+      attr_accessor desired_instances: ::Integer
+      attr_accessor min_size: ::Integer
+      attr_accessor max_size: ::Integer
+      attr_accessor location: ::String
+      SENSITIVE: []
+    end
+
+    class UpdateFleetCapacityOutput
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      attr_accessor location: ::String
+      SENSITIVE: []
+    end
+
+    class UpdateFleetPortSettingsInput
+      attr_accessor fleet_id: ::String
+      attr_accessor inbound_permission_authorizations: ::Array[Types::IpPermission]
+      attr_accessor inbound_permission_revocations: ::Array[Types::IpPermission]
+      SENSITIVE: []
+    end
+
+    class UpdateFleetPortSettingsOutput
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      SENSITIVE: []
+    end
+
+    class UpdateGameServerGroupInput
+      attr_accessor game_server_group_name: ::String
+      attr_accessor role_arn: ::String
+      attr_accessor instance_definitions: ::Array[Types::InstanceDefinition]
+      attr_accessor game_server_protection_policy: ("NO_PROTECTION" | "FULL_PROTECTION")
+      attr_accessor balancing_strategy: ("SPOT_ONLY" | "SPOT_PREFERRED" | "ON_DEMAND_ONLY")
+      SENSITIVE: []
+    end
+
+    class UpdateGameServerGroupOutput
+      attr_accessor game_server_group: Types::GameServerGroup
+      SENSITIVE: []
+    end
+
+    class UpdateGameServerInput
+      attr_accessor game_server_group_name: ::String
+      attr_accessor game_server_id: ::String
+      attr_accessor game_server_data: ::String
+      attr_accessor utilization_status: ("AVAILABLE" | "UTILIZED")
+      attr_accessor health_check: ("HEALTHY")
+      SENSITIVE: []
+    end
+
+    class UpdateGameServerOutput
+      attr_accessor game_server: Types::GameServer
+      SENSITIVE: []
+    end
+
+    class UpdateGameSessionInput
+      attr_accessor game_session_id: ::String
+      attr_accessor maximum_player_session_count: ::Integer
+      attr_accessor name: ::String
+      attr_accessor player_session_creation_policy: ("ACCEPT_ALL" | "DENY_ALL")
+      attr_accessor protection_policy: ("NoProtection" | "FullProtection")
+      attr_accessor game_properties: ::Array[Types::GameProperty]
+      SENSITIVE: []
+    end
+
+    class UpdateGameSessionOutput
+      attr_accessor game_session: Types::GameSession
+      SENSITIVE: []
+    end
+
+    class UpdateGameSessionQueueInput
+      attr_accessor name: ::String
+      attr_accessor timeout_in_seconds: ::Integer
+      attr_accessor player_latency_policies: ::Array[Types::PlayerLatencyPolicy]
+      attr_accessor destinations: ::Array[Types::GameSessionQueueDestination]
+      attr_accessor filter_configuration: Types::FilterConfiguration
+      attr_accessor priority_configuration: Types::PriorityConfiguration
+      attr_accessor custom_event_data: ::String
+      attr_accessor notification_target: ::String
+      SENSITIVE: []
+    end
+
+    class UpdateGameSessionQueueOutput
+      attr_accessor game_session_queue: Types::GameSessionQueue
+      SENSITIVE: []
+    end
+
+    class UpdateMatchmakingConfigurationInput
+      attr_accessor name: ::String
+      attr_accessor description: ::String
+      attr_accessor game_session_queue_arns: ::Array[::String]
+      attr_accessor request_timeout_seconds: ::Integer
+      attr_accessor acceptance_timeout_seconds: ::Integer
+      attr_accessor acceptance_required: bool
+      attr_accessor rule_set_name: ::String
+      attr_accessor notification_target: ::String
+      attr_accessor additional_player_count: ::Integer
+      attr_accessor custom_event_data: ::String
+      attr_accessor game_properties: ::Array[Types::GameProperty]
+      attr_accessor game_session_data: ::String
+      attr_accessor backfill_mode: ("AUTOMATIC" | "MANUAL")
+      attr_accessor flex_match_mode: ("STANDALONE" | "WITH_QUEUE")
+      SENSITIVE: []
+    end
+
+    class UpdateMatchmakingConfigurationOutput
+      attr_accessor configuration: Types::MatchmakingConfiguration
+      SENSITIVE: []
+    end
+
+    class UpdateRuntimeConfigurationInput
+      attr_accessor fleet_id: ::String
+      attr_accessor runtime_configuration: Types::RuntimeConfiguration
+      SENSITIVE: []
+    end
+
+    class UpdateRuntimeConfigurationOutput
+      attr_accessor runtime_configuration: Types::RuntimeConfiguration
+      SENSITIVE: []
+    end
+
+    class UpdateScriptInput
+      attr_accessor script_id: ::String
+      attr_accessor name: ::String
+      attr_accessor version: ::String
+      attr_accessor storage_location: Types::S3Location
+      attr_accessor zip_file: ::String
+      SENSITIVE: []
+    end
+
+    class UpdateScriptOutput
+      attr_accessor script: Types::Script
+      SENSITIVE: []
+    end
+
+    class ValidateMatchmakingRuleSetInput
+      attr_accessor rule_set_body: ::String
+      SENSITIVE: []
+    end
+
+    class ValidateMatchmakingRuleSetOutput
+      attr_accessor valid: bool
+      SENSITIVE: []
+    end
+
+    class VpcPeeringAuthorization
+      attr_accessor game_lift_aws_account_id: ::String
+      attr_accessor peer_vpc_aws_account_id: ::String
+      attr_accessor peer_vpc_id: ::String
+      attr_accessor creation_time: ::Time
+      attr_accessor expiration_time: ::Time
+      SENSITIVE: []
+    end
+
+    class VpcPeeringConnection
+      attr_accessor fleet_id: ::String
+      attr_accessor fleet_arn: ::String
+      attr_accessor ip_v4_cidr_block: ::String
+      attr_accessor vpc_peering_connection_id: ::String
+      attr_accessor status: Types::VpcPeeringConnectionStatus
+      attr_accessor peer_vpc_id: ::String
+      attr_accessor game_lift_vpc_id: ::String
+      SENSITIVE: []
+    end
+
+    class VpcPeeringConnectionStatus
+      attr_accessor code: ::String
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+  end
+end

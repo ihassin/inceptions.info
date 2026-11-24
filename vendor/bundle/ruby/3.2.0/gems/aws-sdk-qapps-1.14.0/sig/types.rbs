@@ -1,0 +1,877 @@
+# WARNING ABOUT GENERATED CODE
+#
+# This file is generated. See the contributing guide for more information:
+# https://github.com/aws/aws-sdk-ruby/blob/version-3/CONTRIBUTING.md
+#
+# WARNING ABOUT GENERATED CODE
+
+module Aws::QApps
+  module Types
+
+    class AccessDeniedException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class AppDefinition
+      attr_accessor app_definition_version: ::String
+      attr_accessor cards: ::Array[Types::Card]
+      attr_accessor can_edit: bool
+      SENSITIVE: []
+    end
+
+    class AppDefinitionInput
+      attr_accessor cards: ::Array[Types::CardInput]
+      attr_accessor initial_prompt: ::String
+      SENSITIVE: []
+    end
+
+    class AssociateLibraryItemReviewInput
+      attr_accessor instance_id: ::String
+      attr_accessor library_item_id: ::String
+      SENSITIVE: []
+    end
+
+    class AssociateQAppWithUserInput
+      attr_accessor instance_id: ::String
+      attr_accessor app_id: ::String
+      SENSITIVE: []
+    end
+
+    class AttributeFilter
+      attr_accessor and_all_filters: ::Array[Types::AttributeFilter]
+      attr_accessor or_all_filters: ::Array[Types::AttributeFilter]
+      attr_accessor not_filter: Types::AttributeFilter
+      attr_accessor equals_to: Types::DocumentAttribute
+      attr_accessor contains_all: Types::DocumentAttribute
+      attr_accessor contains_any: Types::DocumentAttribute
+      attr_accessor greater_than: Types::DocumentAttribute
+      attr_accessor greater_than_or_equals: Types::DocumentAttribute
+      attr_accessor less_than: Types::DocumentAttribute
+      attr_accessor less_than_or_equals: Types::DocumentAttribute
+      SENSITIVE: []
+    end
+
+    class BatchCreateCategoryInput
+      attr_accessor instance_id: ::String
+      attr_accessor categories: ::Array[Types::BatchCreateCategoryInputCategory]
+      SENSITIVE: []
+    end
+
+    class BatchCreateCategoryInputCategory
+      attr_accessor id: ::String
+      attr_accessor title: ::String
+      attr_accessor color: ::String
+      SENSITIVE: []
+    end
+
+    class BatchDeleteCategoryInput
+      attr_accessor instance_id: ::String
+      attr_accessor categories: ::Array[::String]
+      SENSITIVE: []
+    end
+
+    class BatchUpdateCategoryInput
+      attr_accessor instance_id: ::String
+      attr_accessor categories: ::Array[Types::CategoryInput]
+      SENSITIVE: []
+    end
+
+    class Card
+      attr_accessor text_input: Types::TextInputCard
+      attr_accessor q_query: Types::QQueryCard
+      attr_accessor q_plugin: Types::QPluginCard
+      attr_accessor file_upload: Types::FileUploadCard
+      attr_accessor form_input: Types::FormInputCard
+      attr_accessor unknown: untyped
+      SENSITIVE: []
+
+      class TextInput < Card
+      end
+      class QQuery < Card
+      end
+      class QPlugin < Card
+      end
+      class FileUpload < Card
+      end
+      class FormInput < Card
+      end
+      class Unknown < Card
+      end
+    end
+
+    class CardInput
+      attr_accessor text_input: Types::TextInputCardInput
+      attr_accessor q_query: Types::QQueryCardInput
+      attr_accessor q_plugin: Types::QPluginCardInput
+      attr_accessor file_upload: Types::FileUploadCardInput
+      attr_accessor form_input: Types::FormInputCardInput
+      attr_accessor unknown: untyped
+      SENSITIVE: []
+
+      class TextInput < CardInput
+      end
+      class QQuery < CardInput
+      end
+      class QPlugin < CardInput
+      end
+      class FileUpload < CardInput
+      end
+      class FormInput < CardInput
+      end
+      class Unknown < CardInput
+      end
+    end
+
+    class CardStatus
+      attr_accessor current_state: ("IN_PROGRESS" | "WAITING" | "COMPLETED" | "ERROR")
+      attr_accessor current_value: ::String
+      attr_accessor submissions: ::Array[Types::Submission]
+      SENSITIVE: []
+    end
+
+    class CardValue
+      attr_accessor card_id: ::String
+      attr_accessor value: ::String
+      attr_accessor submission_mutation: Types::SubmissionMutation
+      SENSITIVE: []
+    end
+
+    class Category
+      attr_accessor id: ::String
+      attr_accessor title: ::String
+      attr_accessor color: ::String
+      attr_accessor app_count: ::Integer
+      SENSITIVE: []
+    end
+
+    class CategoryInput
+      attr_accessor id: ::String
+      attr_accessor title: ::String
+      attr_accessor color: ::String
+      SENSITIVE: []
+    end
+
+    class ConflictException
+      attr_accessor message: ::String
+      attr_accessor resource_id: ::String
+      attr_accessor resource_type: ::String
+      SENSITIVE: []
+    end
+
+    class ContentTooLargeException
+      attr_accessor message: ::String
+      attr_accessor resource_id: ::String
+      attr_accessor resource_type: ::String
+      SENSITIVE: []
+    end
+
+    class ConversationMessage
+      attr_accessor body: ::String
+      attr_accessor type: ("USER" | "SYSTEM")
+      SENSITIVE: []
+    end
+
+    class CreateLibraryItemInput
+      attr_accessor instance_id: ::String
+      attr_accessor app_id: ::String
+      attr_accessor app_version: ::Integer
+      attr_accessor categories: ::Array[::String]
+      SENSITIVE: []
+    end
+
+    class CreateLibraryItemOutput
+      attr_accessor library_item_id: ::String
+      attr_accessor status: ::String
+      attr_accessor created_at: ::Time
+      attr_accessor created_by: ::String
+      attr_accessor updated_at: ::Time
+      attr_accessor updated_by: ::String
+      attr_accessor rating_count: ::Integer
+      attr_accessor is_verified: bool
+      SENSITIVE: []
+    end
+
+    class CreatePresignedUrlInput
+      attr_accessor instance_id: ::String
+      attr_accessor card_id: ::String
+      attr_accessor app_id: ::String
+      attr_accessor file_contents_sha_256: ::String
+      attr_accessor file_name: ::String
+      attr_accessor scope: ("APPLICATION" | "SESSION")
+      attr_accessor session_id: ::String
+      SENSITIVE: []
+    end
+
+    class CreatePresignedUrlOutput
+      attr_accessor file_id: ::String
+      attr_accessor presigned_url: ::String
+      attr_accessor presigned_url_fields: ::Hash[::String, ::String]
+      attr_accessor presigned_url_expiration: ::Time
+      SENSITIVE: []
+    end
+
+    class CreateQAppInput
+      attr_accessor instance_id: ::String
+      attr_accessor title: ::String
+      attr_accessor description: ::String
+      attr_accessor app_definition: Types::AppDefinitionInput
+      attr_accessor tags: ::Hash[::String, ::String]
+      SENSITIVE: []
+    end
+
+    class CreateQAppOutput
+      attr_accessor app_id: ::String
+      attr_accessor app_arn: ::String
+      attr_accessor title: ::String
+      attr_accessor description: ::String
+      attr_accessor initial_prompt: ::String
+      attr_accessor app_version: ::Integer
+      attr_accessor status: ("PUBLISHED" | "DRAFT" | "DELETED")
+      attr_accessor created_at: ::Time
+      attr_accessor created_by: ::String
+      attr_accessor updated_at: ::Time
+      attr_accessor updated_by: ::String
+      attr_accessor required_capabilities: ::Array[("FileUpload" | "CreatorMode" | "RetrievalMode" | "PluginMode")]
+      SENSITIVE: []
+    end
+
+    class DeleteLibraryItemInput
+      attr_accessor instance_id: ::String
+      attr_accessor library_item_id: ::String
+      SENSITIVE: []
+    end
+
+    class DeleteQAppInput
+      attr_accessor instance_id: ::String
+      attr_accessor app_id: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeQAppPermissionsInput
+      attr_accessor instance_id: ::String
+      attr_accessor app_id: ::String
+      SENSITIVE: []
+    end
+
+    class DescribeQAppPermissionsOutput
+      attr_accessor resource_arn: ::String
+      attr_accessor app_id: ::String
+      attr_accessor permissions: ::Array[Types::PermissionOutput]
+      SENSITIVE: []
+    end
+
+    class DisassociateLibraryItemReviewInput
+      attr_accessor instance_id: ::String
+      attr_accessor library_item_id: ::String
+      SENSITIVE: []
+    end
+
+    class DisassociateQAppFromUserInput
+      attr_accessor instance_id: ::String
+      attr_accessor app_id: ::String
+      SENSITIVE: []
+    end
+
+    class DocumentAttribute
+      attr_accessor name: ::String
+      attr_accessor value: Types::DocumentAttributeValue
+      SENSITIVE: []
+    end
+
+    class DocumentAttributeValue
+      attr_accessor string_value: ::String
+      attr_accessor string_list_value: ::Array[::String]
+      attr_accessor long_value: ::Integer
+      attr_accessor date_value: ::Time
+      attr_accessor unknown: untyped
+      SENSITIVE: []
+
+      class StringValue < DocumentAttributeValue
+      end
+      class StringListValue < DocumentAttributeValue
+      end
+      class LongValue < DocumentAttributeValue
+      end
+      class DateValue < DocumentAttributeValue
+      end
+      class Unknown < DocumentAttributeValue
+      end
+    end
+
+    class ExportQAppSessionDataInput
+      attr_accessor instance_id: ::String
+      attr_accessor session_id: ::String
+      SENSITIVE: []
+    end
+
+    class ExportQAppSessionDataOutput
+      attr_accessor csv_file_link: ::String
+      attr_accessor expires_at: ::Time
+      attr_accessor session_arn: ::String
+      SENSITIVE: []
+    end
+
+    class FileUploadCard
+      attr_accessor id: ::String
+      attr_accessor title: ::String
+      attr_accessor dependencies: ::Array[::String]
+      attr_accessor type: ("text-input" | "q-query" | "file-upload" | "q-plugin" | "form-input")
+      attr_accessor filename: ::String
+      attr_accessor file_id: ::String
+      attr_accessor allow_override: bool
+      SENSITIVE: []
+    end
+
+    class FileUploadCardInput
+      attr_accessor title: ::String
+      attr_accessor id: ::String
+      attr_accessor type: ("text-input" | "q-query" | "file-upload" | "q-plugin" | "form-input")
+      attr_accessor filename: ::String
+      attr_accessor file_id: ::String
+      attr_accessor allow_override: bool
+      SENSITIVE: []
+    end
+
+    class FormInputCard
+      attr_accessor id: ::String
+      attr_accessor title: ::String
+      attr_accessor dependencies: ::Array[::String]
+      attr_accessor type: ("text-input" | "q-query" | "file-upload" | "q-plugin" | "form-input")
+      attr_accessor metadata: Types::FormInputCardMetadata
+      attr_accessor compute_mode: ("append" | "replace")
+      SENSITIVE: []
+    end
+
+    class FormInputCardInput
+      attr_accessor title: ::String
+      attr_accessor id: ::String
+      attr_accessor type: ("text-input" | "q-query" | "file-upload" | "q-plugin" | "form-input")
+      attr_accessor metadata: Types::FormInputCardMetadata
+      attr_accessor compute_mode: ("append" | "replace")
+      SENSITIVE: []
+    end
+
+    class FormInputCardMetadata
+      attr_accessor schema: untyped
+      SENSITIVE: []
+    end
+
+    class GetLibraryItemInput
+      attr_accessor instance_id: ::String
+      attr_accessor library_item_id: ::String
+      attr_accessor app_id: ::String
+      SENSITIVE: []
+    end
+
+    class GetLibraryItemOutput
+      attr_accessor library_item_id: ::String
+      attr_accessor app_id: ::String
+      attr_accessor app_version: ::Integer
+      attr_accessor categories: ::Array[Types::Category]
+      attr_accessor status: ::String
+      attr_accessor created_at: ::Time
+      attr_accessor created_by: ::String
+      attr_accessor updated_at: ::Time
+      attr_accessor updated_by: ::String
+      attr_accessor rating_count: ::Integer
+      attr_accessor is_rated_by_user: bool
+      attr_accessor user_count: ::Integer
+      attr_accessor is_verified: bool
+      SENSITIVE: []
+    end
+
+    class GetQAppInput
+      attr_accessor instance_id: ::String
+      attr_accessor app_id: ::String
+      attr_accessor app_version: ::Integer
+      SENSITIVE: []
+    end
+
+    class GetQAppOutput
+      attr_accessor app_id: ::String
+      attr_accessor app_arn: ::String
+      attr_accessor title: ::String
+      attr_accessor description: ::String
+      attr_accessor initial_prompt: ::String
+      attr_accessor app_version: ::Integer
+      attr_accessor status: ("PUBLISHED" | "DRAFT" | "DELETED")
+      attr_accessor created_at: ::Time
+      attr_accessor created_by: ::String
+      attr_accessor updated_at: ::Time
+      attr_accessor updated_by: ::String
+      attr_accessor required_capabilities: ::Array[("FileUpload" | "CreatorMode" | "RetrievalMode" | "PluginMode")]
+      attr_accessor app_definition: Types::AppDefinition
+      SENSITIVE: []
+    end
+
+    class GetQAppSessionInput
+      attr_accessor instance_id: ::String
+      attr_accessor session_id: ::String
+      SENSITIVE: []
+    end
+
+    class GetQAppSessionMetadataInput
+      attr_accessor instance_id: ::String
+      attr_accessor session_id: ::String
+      SENSITIVE: []
+    end
+
+    class GetQAppSessionMetadataOutput
+      attr_accessor session_id: ::String
+      attr_accessor session_arn: ::String
+      attr_accessor session_name: ::String
+      attr_accessor sharing_configuration: Types::SessionSharingConfiguration
+      attr_accessor session_owner: bool
+      SENSITIVE: []
+    end
+
+    class GetQAppSessionOutput
+      attr_accessor session_id: ::String
+      attr_accessor session_arn: ::String
+      attr_accessor session_name: ::String
+      attr_accessor app_version: ::Integer
+      attr_accessor latest_published_app_version: ::Integer
+      attr_accessor status: ("IN_PROGRESS" | "WAITING" | "COMPLETED" | "ERROR")
+      attr_accessor card_status: ::Hash[::String, Types::CardStatus]
+      attr_accessor user_is_host: bool
+      SENSITIVE: []
+    end
+
+    class ImportDocumentInput
+      attr_accessor instance_id: ::String
+      attr_accessor card_id: ::String
+      attr_accessor app_id: ::String
+      attr_accessor file_contents_base_64: ::String
+      attr_accessor file_name: ::String
+      attr_accessor scope: ("APPLICATION" | "SESSION")
+      attr_accessor session_id: ::String
+      SENSITIVE: []
+    end
+
+    class ImportDocumentOutput
+      attr_accessor file_id: ::String
+      SENSITIVE: []
+    end
+
+    class InternalServerException
+      attr_accessor message: ::String
+      attr_accessor retry_after_seconds: ::Integer
+      SENSITIVE: []
+    end
+
+    class LibraryItemMember
+      attr_accessor library_item_id: ::String
+      attr_accessor app_id: ::String
+      attr_accessor app_version: ::Integer
+      attr_accessor categories: ::Array[Types::Category]
+      attr_accessor status: ::String
+      attr_accessor created_at: ::Time
+      attr_accessor created_by: ::String
+      attr_accessor updated_at: ::Time
+      attr_accessor updated_by: ::String
+      attr_accessor rating_count: ::Integer
+      attr_accessor is_rated_by_user: bool
+      attr_accessor user_count: ::Integer
+      attr_accessor is_verified: bool
+      SENSITIVE: []
+    end
+
+    class ListCategoriesInput
+      attr_accessor instance_id: ::String
+      SENSITIVE: []
+    end
+
+    class ListCategoriesOutput
+      attr_accessor categories: ::Array[Types::Category]
+      SENSITIVE: []
+    end
+
+    class ListLibraryItemsInput
+      attr_accessor instance_id: ::String
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      attr_accessor category_id: ::String
+      SENSITIVE: []
+    end
+
+    class ListLibraryItemsOutput
+      attr_accessor library_items: ::Array[Types::LibraryItemMember]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListQAppSessionDataInput
+      attr_accessor instance_id: ::String
+      attr_accessor session_id: ::String
+      SENSITIVE: []
+    end
+
+    class ListQAppSessionDataOutput
+      attr_accessor session_id: ::String
+      attr_accessor session_arn: ::String
+      attr_accessor session_data: ::Array[Types::QAppSessionData]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListQAppsInput
+      attr_accessor instance_id: ::String
+      attr_accessor limit: ::Integer
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListQAppsOutput
+      attr_accessor apps: ::Array[Types::UserAppItem]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListTagsForResourceRequest
+      attr_accessor resource_arn: ::String
+      SENSITIVE: []
+    end
+
+    class ListTagsForResourceResponse
+      attr_accessor tags: ::Hash[::String, ::String]
+      SENSITIVE: []
+    end
+
+    class PermissionInput
+      attr_accessor action: ("read" | "write")
+      attr_accessor principal: ::String
+      SENSITIVE: []
+    end
+
+    class PermissionOutput
+      attr_accessor action: ("read" | "write")
+      attr_accessor principal: Types::PrincipalOutput
+      SENSITIVE: []
+    end
+
+    class PredictAppDefinition
+      attr_accessor title: ::String
+      attr_accessor description: ::String
+      attr_accessor app_definition: Types::AppDefinitionInput
+      SENSITIVE: []
+    end
+
+    class PredictQAppInput
+      attr_accessor instance_id: ::String
+      attr_accessor options: Types::PredictQAppInputOptions
+      SENSITIVE: []
+    end
+
+    class PredictQAppInputOptions
+      attr_accessor conversation: ::Array[Types::ConversationMessage]
+      attr_accessor problem_statement: ::String
+      attr_accessor unknown: untyped
+      SENSITIVE: []
+
+      class Conversation < PredictQAppInputOptions
+      end
+      class ProblemStatement < PredictQAppInputOptions
+      end
+      class Unknown < PredictQAppInputOptions
+      end
+    end
+
+    class PredictQAppOutput
+      attr_accessor app: Types::PredictAppDefinition
+      attr_accessor problem_statement: ::String
+      SENSITIVE: []
+    end
+
+    class PrincipalOutput
+      attr_accessor user_id: ::String
+      attr_accessor user_type: ("owner" | "user")
+      attr_accessor email: ::String
+      SENSITIVE: []
+    end
+
+    class QAppSessionData
+      attr_accessor card_id: ::String
+      attr_accessor value: untyped
+      attr_accessor user: Types::User
+      attr_accessor submission_id: ::String
+      attr_accessor timestamp: ::Time
+      SENSITIVE: []
+    end
+
+    class QPluginCard
+      attr_accessor id: ::String
+      attr_accessor title: ::String
+      attr_accessor dependencies: ::Array[::String]
+      attr_accessor type: ("text-input" | "q-query" | "file-upload" | "q-plugin" | "form-input")
+      attr_accessor prompt: ::String
+      attr_accessor plugin_type: ("SERVICE_NOW" | "SALESFORCE" | "JIRA" | "ZENDESK" | "CUSTOM" | "ASANA" | "ATLASSIAN_CONFLUENCE" | "GOOGLE_CALENDAR" | "JIRA_CLOUD" | "MICROSOFT_EXCHANGE" | "MICROSOFT_TEAMS" | "PAGERDUTY_ADVANCE" | "SALESFORCE_CRM" | "SERVICENOW_NOW_PLATFORM" | "SMARTSHEET" | "ZENDESK_SUITE")
+      attr_accessor plugin_id: ::String
+      attr_accessor action_identifier: ::String
+      SENSITIVE: []
+    end
+
+    class QPluginCardInput
+      attr_accessor title: ::String
+      attr_accessor id: ::String
+      attr_accessor type: ("text-input" | "q-query" | "file-upload" | "q-plugin" | "form-input")
+      attr_accessor prompt: ::String
+      attr_accessor plugin_id: ::String
+      attr_accessor action_identifier: ::String
+      SENSITIVE: []
+    end
+
+    class QQueryCard
+      attr_accessor id: ::String
+      attr_accessor title: ::String
+      attr_accessor dependencies: ::Array[::String]
+      attr_accessor type: ("text-input" | "q-query" | "file-upload" | "q-plugin" | "form-input")
+      attr_accessor prompt: ::String
+      attr_accessor output_source: ("approved-sources" | "llm")
+      attr_accessor attribute_filter: Types::AttributeFilter
+      attr_accessor memory_references: ::Array[::String]
+      SENSITIVE: []
+    end
+
+    class QQueryCardInput
+      attr_accessor title: ::String
+      attr_accessor id: ::String
+      attr_accessor type: ("text-input" | "q-query" | "file-upload" | "q-plugin" | "form-input")
+      attr_accessor prompt: ::String
+      attr_accessor output_source: ("approved-sources" | "llm")
+      attr_accessor attribute_filter: Types::AttributeFilter
+      SENSITIVE: []
+    end
+
+    class ResourceNotFoundException
+      attr_accessor message: ::String
+      attr_accessor resource_id: ::String
+      attr_accessor resource_type: ::String
+      SENSITIVE: []
+    end
+
+    class ServiceQuotaExceededException
+      attr_accessor message: ::String
+      attr_accessor resource_id: ::String
+      attr_accessor resource_type: ::String
+      attr_accessor service_code: ::String
+      attr_accessor quota_code: ::String
+      SENSITIVE: []
+    end
+
+    class SessionSharingConfiguration
+      attr_accessor enabled: bool
+      attr_accessor accept_responses: bool
+      attr_accessor reveal_cards: bool
+      SENSITIVE: []
+    end
+
+    class StartQAppSessionInput
+      attr_accessor instance_id: ::String
+      attr_accessor app_id: ::String
+      attr_accessor app_version: ::Integer
+      attr_accessor initial_values: ::Array[Types::CardValue]
+      attr_accessor session_id: ::String
+      attr_accessor tags: ::Hash[::String, ::String]
+      SENSITIVE: []
+    end
+
+    class StartQAppSessionOutput
+      attr_accessor session_id: ::String
+      attr_accessor session_arn: ::String
+      SENSITIVE: []
+    end
+
+    class StopQAppSessionInput
+      attr_accessor instance_id: ::String
+      attr_accessor session_id: ::String
+      SENSITIVE: []
+    end
+
+    class Submission
+      attr_accessor value: untyped
+      attr_accessor submission_id: ::String
+      attr_accessor timestamp: ::Time
+      SENSITIVE: []
+    end
+
+    class SubmissionMutation
+      attr_accessor submission_id: ::String
+      attr_accessor mutation_type: ("edit" | "delete" | "add")
+      SENSITIVE: []
+    end
+
+    class TagResourceRequest
+      attr_accessor resource_arn: ::String
+      attr_accessor tags: ::Hash[::String, ::String]
+      SENSITIVE: []
+    end
+
+    class TagResourceResponse < Aws::EmptyStructure
+    end
+
+    class TextInputCard
+      attr_accessor id: ::String
+      attr_accessor title: ::String
+      attr_accessor dependencies: ::Array[::String]
+      attr_accessor type: ("text-input" | "q-query" | "file-upload" | "q-plugin" | "form-input")
+      attr_accessor placeholder: ::String
+      attr_accessor default_value: ::String
+      SENSITIVE: []
+    end
+
+    class TextInputCardInput
+      attr_accessor title: ::String
+      attr_accessor id: ::String
+      attr_accessor type: ("text-input" | "q-query" | "file-upload" | "q-plugin" | "form-input")
+      attr_accessor placeholder: ::String
+      attr_accessor default_value: ::String
+      SENSITIVE: []
+    end
+
+    class ThrottlingException
+      attr_accessor message: ::String
+      attr_accessor service_code: ::String
+      attr_accessor quota_code: ::String
+      attr_accessor retry_after_seconds: ::Integer
+      SENSITIVE: []
+    end
+
+    class UnauthorizedException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class UntagResourceRequest
+      attr_accessor resource_arn: ::String
+      attr_accessor tag_keys: ::Array[::String]
+      SENSITIVE: []
+    end
+
+    class UntagResourceResponse < Aws::EmptyStructure
+    end
+
+    class UpdateLibraryItemInput
+      attr_accessor instance_id: ::String
+      attr_accessor library_item_id: ::String
+      attr_accessor status: ("PUBLISHED" | "DISABLED")
+      attr_accessor categories: ::Array[::String]
+      SENSITIVE: []
+    end
+
+    class UpdateLibraryItemMetadataInput
+      attr_accessor instance_id: ::String
+      attr_accessor library_item_id: ::String
+      attr_accessor is_verified: bool
+      SENSITIVE: []
+    end
+
+    class UpdateLibraryItemOutput
+      attr_accessor library_item_id: ::String
+      attr_accessor app_id: ::String
+      attr_accessor app_version: ::Integer
+      attr_accessor categories: ::Array[Types::Category]
+      attr_accessor status: ::String
+      attr_accessor created_at: ::Time
+      attr_accessor created_by: ::String
+      attr_accessor updated_at: ::Time
+      attr_accessor updated_by: ::String
+      attr_accessor rating_count: ::Integer
+      attr_accessor is_rated_by_user: bool
+      attr_accessor user_count: ::Integer
+      attr_accessor is_verified: bool
+      SENSITIVE: []
+    end
+
+    class UpdateQAppInput
+      attr_accessor instance_id: ::String
+      attr_accessor app_id: ::String
+      attr_accessor title: ::String
+      attr_accessor description: ::String
+      attr_accessor app_definition: Types::AppDefinitionInput
+      SENSITIVE: []
+    end
+
+    class UpdateQAppOutput
+      attr_accessor app_id: ::String
+      attr_accessor app_arn: ::String
+      attr_accessor title: ::String
+      attr_accessor description: ::String
+      attr_accessor initial_prompt: ::String
+      attr_accessor app_version: ::Integer
+      attr_accessor status: ("PUBLISHED" | "DRAFT" | "DELETED")
+      attr_accessor created_at: ::Time
+      attr_accessor created_by: ::String
+      attr_accessor updated_at: ::Time
+      attr_accessor updated_by: ::String
+      attr_accessor required_capabilities: ::Array[("FileUpload" | "CreatorMode" | "RetrievalMode" | "PluginMode")]
+      SENSITIVE: []
+    end
+
+    class UpdateQAppPermissionsInput
+      attr_accessor instance_id: ::String
+      attr_accessor app_id: ::String
+      attr_accessor grant_permissions: ::Array[Types::PermissionInput]
+      attr_accessor revoke_permissions: ::Array[Types::PermissionInput]
+      SENSITIVE: []
+    end
+
+    class UpdateQAppPermissionsOutput
+      attr_accessor resource_arn: ::String
+      attr_accessor app_id: ::String
+      attr_accessor permissions: ::Array[Types::PermissionOutput]
+      SENSITIVE: []
+    end
+
+    class UpdateQAppSessionInput
+      attr_accessor instance_id: ::String
+      attr_accessor session_id: ::String
+      attr_accessor values: ::Array[Types::CardValue]
+      SENSITIVE: []
+    end
+
+    class UpdateQAppSessionMetadataInput
+      attr_accessor instance_id: ::String
+      attr_accessor session_id: ::String
+      attr_accessor session_name: ::String
+      attr_accessor sharing_configuration: Types::SessionSharingConfiguration
+      SENSITIVE: []
+    end
+
+    class UpdateQAppSessionMetadataOutput
+      attr_accessor session_id: ::String
+      attr_accessor session_arn: ::String
+      attr_accessor session_name: ::String
+      attr_accessor sharing_configuration: Types::SessionSharingConfiguration
+      SENSITIVE: []
+    end
+
+    class UpdateQAppSessionOutput
+      attr_accessor session_id: ::String
+      attr_accessor session_arn: ::String
+      SENSITIVE: []
+    end
+
+    class User
+      attr_accessor user_id: ::String
+      SENSITIVE: []
+    end
+
+    class UserAppItem
+      attr_accessor app_id: ::String
+      attr_accessor app_arn: ::String
+      attr_accessor title: ::String
+      attr_accessor description: ::String
+      attr_accessor created_at: ::Time
+      attr_accessor can_edit: bool
+      attr_accessor status: ::String
+      attr_accessor is_verified: bool
+      SENSITIVE: []
+    end
+
+    class ValidationException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+  end
+end

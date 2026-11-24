@@ -1,0 +1,19 @@
+current directory: /Users/ita/projects/personal/inceptions.info/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/ita/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/ita/projects/personal/inceptions.info/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250429-93355-9t2yy7 sitelibdir\=./.gem.20250429-93355-9t2yy7 clean
+
+current directory: /Users/ita/projects/personal/inceptions.info/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250429-93355-9t2yy7 sitelibdir\=./.gem.20250429-93355-9t2yy7
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+
+current directory: /Users/ita/projects/personal/inceptions.info/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250429-93355-9t2yy7 sitelibdir\=./.gem.20250429-93355-9t2yy7 install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20250429-93355-9t2yy7/racc
+
+current directory: /Users/ita/projects/personal/inceptions.info/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250429-93355-9t2yy7 sitelibdir\=./.gem.20250429-93355-9t2yy7 clean

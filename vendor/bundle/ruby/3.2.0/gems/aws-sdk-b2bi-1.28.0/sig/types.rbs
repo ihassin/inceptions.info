@@ -1,0 +1,761 @@
+# WARNING ABOUT GENERATED CODE
+#
+# This file is generated. See the contributing guide for more information:
+# https://github.com/aws/aws-sdk-ruby/blob/version-3/CONTRIBUTING.md
+#
+# WARNING ABOUT GENERATED CODE
+
+module Aws::B2bi
+  module Types
+
+    class AccessDeniedException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class CapabilityConfiguration
+      attr_accessor edi: Types::EdiConfiguration
+      attr_accessor unknown: untyped
+      SENSITIVE: []
+
+      class Edi < CapabilityConfiguration
+      end
+      class Unknown < CapabilityConfiguration
+      end
+    end
+
+    class CapabilityOptions
+      attr_accessor outbound_edi: Types::OutboundEdiOptions
+      SENSITIVE: []
+    end
+
+    class CapabilitySummary
+      attr_accessor capability_id: ::String
+      attr_accessor name: ::String
+      attr_accessor type: ("edi")
+      attr_accessor created_at: ::Time
+      attr_accessor modified_at: ::Time
+      SENSITIVE: []
+    end
+
+    class ConflictException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class ConversionSource
+      attr_accessor file_format: ("JSON" | "XML")
+      attr_accessor input_file: Types::InputFileSource
+      SENSITIVE: []
+    end
+
+    class ConversionTarget
+      attr_accessor file_format: ("X12")
+      attr_accessor format_details: Types::ConversionTargetFormatDetails
+      attr_accessor output_sample_file: Types::OutputSampleFileSource
+      SENSITIVE: []
+    end
+
+    class ConversionTargetFormatDetails
+      attr_accessor x12: Types::X12Details
+      attr_accessor unknown: untyped
+      SENSITIVE: []
+
+      class X12 < ConversionTargetFormatDetails
+      end
+      class Unknown < ConversionTargetFormatDetails
+      end
+    end
+
+    class CreateCapabilityRequest
+      attr_accessor name: ::String
+      attr_accessor type: ("edi")
+      attr_accessor configuration: Types::CapabilityConfiguration
+      attr_accessor instructions_documents: ::Array[Types::S3Location]
+      attr_accessor client_token: ::String
+      attr_accessor tags: ::Array[Types::Tag]
+      SENSITIVE: []
+    end
+
+    class CreateCapabilityResponse
+      attr_accessor capability_id: ::String
+      attr_accessor capability_arn: ::String
+      attr_accessor name: ::String
+      attr_accessor type: ("edi")
+      attr_accessor configuration: Types::CapabilityConfiguration
+      attr_accessor instructions_documents: ::Array[Types::S3Location]
+      attr_accessor created_at: ::Time
+      SENSITIVE: []
+    end
+
+    class CreatePartnershipRequest
+      attr_accessor profile_id: ::String
+      attr_accessor name: ::String
+      attr_accessor email: ::String
+      attr_accessor phone: ::String
+      attr_accessor capabilities: ::Array[::String]
+      attr_accessor capability_options: Types::CapabilityOptions
+      attr_accessor client_token: ::String
+      attr_accessor tags: ::Array[Types::Tag]
+      SENSITIVE: [:email, :phone]
+    end
+
+    class CreatePartnershipResponse
+      attr_accessor profile_id: ::String
+      attr_accessor partnership_id: ::String
+      attr_accessor partnership_arn: ::String
+      attr_accessor name: ::String
+      attr_accessor email: ::String
+      attr_accessor phone: ::String
+      attr_accessor capabilities: ::Array[::String]
+      attr_accessor capability_options: Types::CapabilityOptions
+      attr_accessor trading_partner_id: ::String
+      attr_accessor created_at: ::Time
+      SENSITIVE: [:email, :phone]
+    end
+
+    class CreateProfileRequest
+      attr_accessor name: ::String
+      attr_accessor email: ::String
+      attr_accessor phone: ::String
+      attr_accessor business_name: ::String
+      attr_accessor logging: ("ENABLED" | "DISABLED")
+      attr_accessor client_token: ::String
+      attr_accessor tags: ::Array[Types::Tag]
+      SENSITIVE: [:email, :phone]
+    end
+
+    class CreateProfileResponse
+      attr_accessor profile_id: ::String
+      attr_accessor profile_arn: ::String
+      attr_accessor name: ::String
+      attr_accessor business_name: ::String
+      attr_accessor phone: ::String
+      attr_accessor email: ::String
+      attr_accessor logging: ("ENABLED" | "DISABLED")
+      attr_accessor log_group_name: ::String
+      attr_accessor created_at: ::Time
+      SENSITIVE: [:phone, :email]
+    end
+
+    class CreateStarterMappingTemplateRequest
+      attr_accessor output_sample_location: Types::S3Location
+      attr_accessor mapping_type: ("JSONATA" | "XSLT")
+      attr_accessor template_details: Types::TemplateDetails
+      SENSITIVE: []
+    end
+
+    class CreateStarterMappingTemplateResponse
+      attr_accessor mapping_template: ::String
+      SENSITIVE: []
+    end
+
+    class CreateTransformerRequest
+      attr_accessor name: ::String
+      attr_accessor client_token: ::String
+      attr_accessor tags: ::Array[Types::Tag]
+      attr_accessor file_format: ("XML" | "JSON" | "NOT_USED")
+      attr_accessor mapping_template: ::String
+      attr_accessor edi_type: Types::EdiType
+      attr_accessor sample_document: ::String
+      attr_accessor input_conversion: Types::InputConversion
+      attr_accessor mapping: Types::Mapping
+      attr_accessor output_conversion: Types::OutputConversion
+      attr_accessor sample_documents: Types::SampleDocuments
+      SENSITIVE: []
+    end
+
+    class CreateTransformerResponse
+      attr_accessor transformer_id: ::String
+      attr_accessor transformer_arn: ::String
+      attr_accessor name: ::String
+      attr_accessor status: ("active" | "inactive")
+      attr_accessor created_at: ::Time
+      attr_accessor file_format: ("XML" | "JSON" | "NOT_USED")
+      attr_accessor mapping_template: ::String
+      attr_accessor edi_type: Types::EdiType
+      attr_accessor sample_document: ::String
+      attr_accessor input_conversion: Types::InputConversion
+      attr_accessor mapping: Types::Mapping
+      attr_accessor output_conversion: Types::OutputConversion
+      attr_accessor sample_documents: Types::SampleDocuments
+      SENSITIVE: []
+    end
+
+    class DeleteCapabilityRequest
+      attr_accessor capability_id: ::String
+      SENSITIVE: []
+    end
+
+    class DeletePartnershipRequest
+      attr_accessor partnership_id: ::String
+      SENSITIVE: []
+    end
+
+    class DeleteProfileRequest
+      attr_accessor profile_id: ::String
+      SENSITIVE: []
+    end
+
+    class DeleteTransformerRequest
+      attr_accessor transformer_id: ::String
+      SENSITIVE: []
+    end
+
+    class EdiConfiguration
+      attr_accessor capability_direction: ("INBOUND" | "OUTBOUND")
+      attr_accessor type: Types::EdiType
+      attr_accessor input_location: Types::S3Location
+      attr_accessor output_location: Types::S3Location
+      attr_accessor transformer_id: ::String
+      SENSITIVE: []
+    end
+
+    class EdiType
+      attr_accessor x12_details: Types::X12Details
+      attr_accessor unknown: untyped
+      SENSITIVE: []
+
+      class X12Details < EdiType
+      end
+      class Unknown < EdiType
+      end
+    end
+
+    class FormatOptions
+      attr_accessor x12: Types::X12Details
+      attr_accessor unknown: untyped
+      SENSITIVE: []
+
+      class X12 < FormatOptions
+      end
+      class Unknown < FormatOptions
+      end
+    end
+
+    class GenerateMappingRequest
+      attr_accessor input_file_content: ::String
+      attr_accessor output_file_content: ::String
+      attr_accessor mapping_type: ("JSONATA" | "XSLT")
+      SENSITIVE: []
+    end
+
+    class GenerateMappingResponse
+      attr_accessor mapping_template: ::String
+      attr_accessor mapping_accuracy: ::Float
+      SENSITIVE: []
+    end
+
+    class GetCapabilityRequest
+      attr_accessor capability_id: ::String
+      SENSITIVE: []
+    end
+
+    class GetCapabilityResponse
+      attr_accessor capability_id: ::String
+      attr_accessor capability_arn: ::String
+      attr_accessor name: ::String
+      attr_accessor type: ("edi")
+      attr_accessor configuration: Types::CapabilityConfiguration
+      attr_accessor instructions_documents: ::Array[Types::S3Location]
+      attr_accessor created_at: ::Time
+      attr_accessor modified_at: ::Time
+      SENSITIVE: []
+    end
+
+    class GetPartnershipRequest
+      attr_accessor partnership_id: ::String
+      SENSITIVE: []
+    end
+
+    class GetPartnershipResponse
+      attr_accessor profile_id: ::String
+      attr_accessor partnership_id: ::String
+      attr_accessor partnership_arn: ::String
+      attr_accessor name: ::String
+      attr_accessor email: ::String
+      attr_accessor phone: ::String
+      attr_accessor capabilities: ::Array[::String]
+      attr_accessor capability_options: Types::CapabilityOptions
+      attr_accessor trading_partner_id: ::String
+      attr_accessor created_at: ::Time
+      attr_accessor modified_at: ::Time
+      SENSITIVE: [:email, :phone]
+    end
+
+    class GetProfileRequest
+      attr_accessor profile_id: ::String
+      SENSITIVE: []
+    end
+
+    class GetProfileResponse
+      attr_accessor profile_id: ::String
+      attr_accessor profile_arn: ::String
+      attr_accessor name: ::String
+      attr_accessor email: ::String
+      attr_accessor phone: ::String
+      attr_accessor business_name: ::String
+      attr_accessor logging: ("ENABLED" | "DISABLED")
+      attr_accessor log_group_name: ::String
+      attr_accessor created_at: ::Time
+      attr_accessor modified_at: ::Time
+      SENSITIVE: [:email, :phone]
+    end
+
+    class GetTransformerJobRequest
+      attr_accessor transformer_job_id: ::String
+      attr_accessor transformer_id: ::String
+      SENSITIVE: []
+    end
+
+    class GetTransformerJobResponse
+      attr_accessor status: ("running" | "succeeded" | "failed")
+      attr_accessor output_files: ::Array[Types::S3Location]
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class GetTransformerRequest
+      attr_accessor transformer_id: ::String
+      SENSITIVE: []
+    end
+
+    class GetTransformerResponse
+      attr_accessor transformer_id: ::String
+      attr_accessor transformer_arn: ::String
+      attr_accessor name: ::String
+      attr_accessor status: ("active" | "inactive")
+      attr_accessor created_at: ::Time
+      attr_accessor modified_at: ::Time
+      attr_accessor file_format: ("XML" | "JSON" | "NOT_USED")
+      attr_accessor mapping_template: ::String
+      attr_accessor edi_type: Types::EdiType
+      attr_accessor sample_document: ::String
+      attr_accessor input_conversion: Types::InputConversion
+      attr_accessor mapping: Types::Mapping
+      attr_accessor output_conversion: Types::OutputConversion
+      attr_accessor sample_documents: Types::SampleDocuments
+      SENSITIVE: []
+    end
+
+    class InputConversion
+      attr_accessor from_format: ("X12")
+      attr_accessor format_options: Types::FormatOptions
+      SENSITIVE: []
+    end
+
+    class InputFileSource
+      attr_accessor file_content: ::String
+      attr_accessor unknown: untyped
+      SENSITIVE: []
+
+      class FileContent < InputFileSource
+      end
+      class Unknown < InputFileSource
+      end
+    end
+
+    class InternalServerException
+      attr_accessor message: ::String
+      attr_accessor retry_after_seconds: ::Integer
+      SENSITIVE: []
+    end
+
+    class ListCapabilitiesRequest
+      attr_accessor next_token: ::String
+      attr_accessor max_results: ::Integer
+      SENSITIVE: []
+    end
+
+    class ListCapabilitiesResponse
+      attr_accessor capabilities: ::Array[Types::CapabilitySummary]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListPartnershipsRequest
+      attr_accessor profile_id: ::String
+      attr_accessor next_token: ::String
+      attr_accessor max_results: ::Integer
+      SENSITIVE: []
+    end
+
+    class ListPartnershipsResponse
+      attr_accessor partnerships: ::Array[Types::PartnershipSummary]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListProfilesRequest
+      attr_accessor next_token: ::String
+      attr_accessor max_results: ::Integer
+      SENSITIVE: []
+    end
+
+    class ListProfilesResponse
+      attr_accessor profiles: ::Array[Types::ProfileSummary]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class ListTagsForResourceRequest
+      attr_accessor resource_arn: ::String
+      SENSITIVE: []
+    end
+
+    class ListTagsForResourceResponse
+      attr_accessor tags: ::Array[Types::Tag]
+      SENSITIVE: []
+    end
+
+    class ListTransformersRequest
+      attr_accessor next_token: ::String
+      attr_accessor max_results: ::Integer
+      SENSITIVE: []
+    end
+
+    class ListTransformersResponse
+      attr_accessor transformers: ::Array[Types::TransformerSummary]
+      attr_accessor next_token: ::String
+      SENSITIVE: []
+    end
+
+    class Mapping
+      attr_accessor template_language: ("XSLT" | "JSONATA")
+      attr_accessor template: ::String
+      SENSITIVE: []
+    end
+
+    class OutboundEdiOptions
+      attr_accessor x12: Types::X12Envelope
+      attr_accessor unknown: untyped
+      SENSITIVE: []
+
+      class X12 < OutboundEdiOptions
+      end
+      class Unknown < OutboundEdiOptions
+      end
+    end
+
+    class OutputConversion
+      attr_accessor to_format: ("X12")
+      attr_accessor format_options: Types::FormatOptions
+      SENSITIVE: []
+    end
+
+    class OutputSampleFileSource
+      attr_accessor file_location: Types::S3Location
+      attr_accessor unknown: untyped
+      SENSITIVE: []
+
+      class FileLocation < OutputSampleFileSource
+      end
+      class Unknown < OutputSampleFileSource
+      end
+    end
+
+    class PartnershipSummary
+      attr_accessor profile_id: ::String
+      attr_accessor partnership_id: ::String
+      attr_accessor name: ::String
+      attr_accessor capabilities: ::Array[::String]
+      attr_accessor capability_options: Types::CapabilityOptions
+      attr_accessor trading_partner_id: ::String
+      attr_accessor created_at: ::Time
+      attr_accessor modified_at: ::Time
+      SENSITIVE: []
+    end
+
+    class ProfileSummary
+      attr_accessor profile_id: ::String
+      attr_accessor name: ::String
+      attr_accessor business_name: ::String
+      attr_accessor logging: ("ENABLED" | "DISABLED")
+      attr_accessor log_group_name: ::String
+      attr_accessor created_at: ::Time
+      attr_accessor modified_at: ::Time
+      SENSITIVE: []
+    end
+
+    class ResourceNotFoundException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class S3Location
+      attr_accessor bucket_name: ::String
+      attr_accessor key: ::String
+      SENSITIVE: []
+    end
+
+    class SampleDocumentKeys
+      attr_accessor input: ::String
+      attr_accessor output: ::String
+      SENSITIVE: []
+    end
+
+    class SampleDocuments
+      attr_accessor bucket_name: ::String
+      attr_accessor keys: ::Array[Types::SampleDocumentKeys]
+      SENSITIVE: []
+    end
+
+    class ServiceQuotaExceededException
+      attr_accessor message: ::String
+      attr_accessor resource_id: ::String
+      attr_accessor resource_type: ::String
+      attr_accessor service_code: ::String
+      attr_accessor quota_code: ::String
+      SENSITIVE: []
+    end
+
+    class StartTransformerJobRequest
+      attr_accessor input_file: Types::S3Location
+      attr_accessor output_location: Types::S3Location
+      attr_accessor transformer_id: ::String
+      attr_accessor client_token: ::String
+      SENSITIVE: []
+    end
+
+    class StartTransformerJobResponse
+      attr_accessor transformer_job_id: ::String
+      SENSITIVE: []
+    end
+
+    class Tag
+      attr_accessor key: ::String
+      attr_accessor value: ::String
+      SENSITIVE: []
+    end
+
+    class TagResourceRequest
+      attr_accessor resource_arn: ::String
+      attr_accessor tags: ::Array[Types::Tag]
+      SENSITIVE: []
+    end
+
+    class TemplateDetails
+      attr_accessor x12: Types::X12Details
+      attr_accessor unknown: untyped
+      SENSITIVE: []
+
+      class X12 < TemplateDetails
+      end
+      class Unknown < TemplateDetails
+      end
+    end
+
+    class TestConversionRequest
+      attr_accessor source: Types::ConversionSource
+      attr_accessor target: Types::ConversionTarget
+      SENSITIVE: []
+    end
+
+    class TestConversionResponse
+      attr_accessor converted_file_content: ::String
+      attr_accessor validation_messages: ::Array[::String]
+      SENSITIVE: []
+    end
+
+    class TestMappingRequest
+      attr_accessor input_file_content: ::String
+      attr_accessor mapping_template: ::String
+      attr_accessor file_format: ("XML" | "JSON" | "NOT_USED")
+      SENSITIVE: []
+    end
+
+    class TestMappingResponse
+      attr_accessor mapped_file_content: ::String
+      SENSITIVE: []
+    end
+
+    class TestParsingRequest
+      attr_accessor input_file: Types::S3Location
+      attr_accessor file_format: ("XML" | "JSON" | "NOT_USED")
+      attr_accessor edi_type: Types::EdiType
+      SENSITIVE: []
+    end
+
+    class TestParsingResponse
+      attr_accessor parsed_file_content: ::String
+      SENSITIVE: []
+    end
+
+    class ThrottlingException
+      attr_accessor message: ::String
+      attr_accessor retry_after_seconds: ::Integer
+      SENSITIVE: []
+    end
+
+    class TransformerSummary
+      attr_accessor transformer_id: ::String
+      attr_accessor name: ::String
+      attr_accessor status: ("active" | "inactive")
+      attr_accessor created_at: ::Time
+      attr_accessor modified_at: ::Time
+      attr_accessor file_format: ("XML" | "JSON" | "NOT_USED")
+      attr_accessor mapping_template: ::String
+      attr_accessor edi_type: Types::EdiType
+      attr_accessor sample_document: ::String
+      attr_accessor input_conversion: Types::InputConversion
+      attr_accessor mapping: Types::Mapping
+      attr_accessor output_conversion: Types::OutputConversion
+      attr_accessor sample_documents: Types::SampleDocuments
+      SENSITIVE: []
+    end
+
+    class UntagResourceRequest
+      attr_accessor resource_arn: ::String
+      attr_accessor tag_keys: ::Array[::String]
+      SENSITIVE: []
+    end
+
+    class UpdateCapabilityRequest
+      attr_accessor capability_id: ::String
+      attr_accessor name: ::String
+      attr_accessor configuration: Types::CapabilityConfiguration
+      attr_accessor instructions_documents: ::Array[Types::S3Location]
+      SENSITIVE: []
+    end
+
+    class UpdateCapabilityResponse
+      attr_accessor capability_id: ::String
+      attr_accessor capability_arn: ::String
+      attr_accessor name: ::String
+      attr_accessor type: ("edi")
+      attr_accessor configuration: Types::CapabilityConfiguration
+      attr_accessor instructions_documents: ::Array[Types::S3Location]
+      attr_accessor created_at: ::Time
+      attr_accessor modified_at: ::Time
+      SENSITIVE: []
+    end
+
+    class UpdatePartnershipRequest
+      attr_accessor partnership_id: ::String
+      attr_accessor name: ::String
+      attr_accessor capabilities: ::Array[::String]
+      attr_accessor capability_options: Types::CapabilityOptions
+      SENSITIVE: []
+    end
+
+    class UpdatePartnershipResponse
+      attr_accessor profile_id: ::String
+      attr_accessor partnership_id: ::String
+      attr_accessor partnership_arn: ::String
+      attr_accessor name: ::String
+      attr_accessor email: ::String
+      attr_accessor phone: ::String
+      attr_accessor capabilities: ::Array[::String]
+      attr_accessor capability_options: Types::CapabilityOptions
+      attr_accessor trading_partner_id: ::String
+      attr_accessor created_at: ::Time
+      attr_accessor modified_at: ::Time
+      SENSITIVE: [:email, :phone]
+    end
+
+    class UpdateProfileRequest
+      attr_accessor profile_id: ::String
+      attr_accessor name: ::String
+      attr_accessor email: ::String
+      attr_accessor phone: ::String
+      attr_accessor business_name: ::String
+      SENSITIVE: [:email, :phone]
+    end
+
+    class UpdateProfileResponse
+      attr_accessor profile_id: ::String
+      attr_accessor profile_arn: ::String
+      attr_accessor name: ::String
+      attr_accessor email: ::String
+      attr_accessor phone: ::String
+      attr_accessor business_name: ::String
+      attr_accessor logging: ("ENABLED" | "DISABLED")
+      attr_accessor log_group_name: ::String
+      attr_accessor created_at: ::Time
+      attr_accessor modified_at: ::Time
+      SENSITIVE: [:email, :phone]
+    end
+
+    class UpdateTransformerRequest
+      attr_accessor transformer_id: ::String
+      attr_accessor name: ::String
+      attr_accessor status: ("active" | "inactive")
+      attr_accessor file_format: ("XML" | "JSON" | "NOT_USED")
+      attr_accessor mapping_template: ::String
+      attr_accessor edi_type: Types::EdiType
+      attr_accessor sample_document: ::String
+      attr_accessor input_conversion: Types::InputConversion
+      attr_accessor mapping: Types::Mapping
+      attr_accessor output_conversion: Types::OutputConversion
+      attr_accessor sample_documents: Types::SampleDocuments
+      SENSITIVE: []
+    end
+
+    class UpdateTransformerResponse
+      attr_accessor transformer_id: ::String
+      attr_accessor transformer_arn: ::String
+      attr_accessor name: ::String
+      attr_accessor status: ("active" | "inactive")
+      attr_accessor created_at: ::Time
+      attr_accessor modified_at: ::Time
+      attr_accessor file_format: ("XML" | "JSON" | "NOT_USED")
+      attr_accessor mapping_template: ::String
+      attr_accessor edi_type: Types::EdiType
+      attr_accessor sample_document: ::String
+      attr_accessor input_conversion: Types::InputConversion
+      attr_accessor mapping: Types::Mapping
+      attr_accessor output_conversion: Types::OutputConversion
+      attr_accessor sample_documents: Types::SampleDocuments
+      SENSITIVE: []
+    end
+
+    class ValidationException
+      attr_accessor message: ::String
+      SENSITIVE: []
+    end
+
+    class X12Delimiters
+      attr_accessor component_separator: ::String
+      attr_accessor data_element_separator: ::String
+      attr_accessor segment_terminator: ::String
+      SENSITIVE: []
+    end
+
+    class X12Details
+      attr_accessor transaction_set: ("X12_100" | "X12_101" | "X12_102" | "X12_103" | "X12_104" | "X12_105" | "X12_106" | "X12_107" | "X12_108" | "X12_109" | "X12_110" | "X12_111" | "X12_112" | "X12_113" | "X12_120" | "X12_121" | "X12_124" | "X12_125" | "X12_126" | "X12_127" | "X12_128" | "X12_129" | "X12_130" | "X12_131" | "X12_132" | "X12_133" | "X12_135" | "X12_138" | "X12_139" | "X12_140" | "X12_141" | "X12_142" | "X12_143" | "X12_144" | "X12_146" | "X12_147" | "X12_148" | "X12_149" | "X12_150" | "X12_151" | "X12_152" | "X12_153" | "X12_154" | "X12_155" | "X12_157" | "X12_158" | "X12_159" | "X12_160" | "X12_161" | "X12_163" | "X12_170" | "X12_175" | "X12_176" | "X12_179" | "X12_180" | "X12_185" | "X12_186" | "X12_187" | "X12_188" | "X12_189" | "X12_190" | "X12_191" | "X12_194" | "X12_195" | "X12_196" | "X12_197" | "X12_198" | "X12_199" | "X12_200" | "X12_201" | "X12_202" | "X12_203" | "X12_204" | "X12_205" | "X12_206" | "X12_210" | "X12_211" | "X12_212" | "X12_213" | "X12_214" | "X12_215" | "X12_216" | "X12_217" | "X12_218" | "X12_219" | "X12_220" | "X12_222" | "X12_223" | "X12_224" | "X12_225" | "X12_227" | "X12_228" | "X12_240" | "X12_242" | "X12_244" | "X12_245" | "X12_248" | "X12_249" | "X12_250" | "X12_251" | "X12_252" | "X12_255" | "X12_256" | "X12_259" | "X12_260" | "X12_261" | "X12_262" | "X12_263" | "X12_264" | "X12_265" | "X12_266" | "X12_267" | "X12_268" | "X12_269" | "X12_270" | "X12_271" | "X12_272" | "X12_273" | "X12_274" | "X12_275" | "X12_276" | "X12_277" | "X12_278" | "X12_280" | "X12_283" | "X12_284" | "X12_285" | "X12_286" | "X12_288" | "X12_290" | "X12_300" | "X12_301" | "X12_303" | "X12_304" | "X12_309" | "X12_310" | "X12_311" | "X12_312" | "X12_313" | "X12_315" | "X12_317" | "X12_319" | "X12_322" | "X12_323" | "X12_324" | "X12_325" | "X12_326" | "X12_350" | "X12_352" | "X12_353" | "X12_354" | "X12_355" | "X12_356" | "X12_357" | "X12_358" | "X12_361" | "X12_362" | "X12_404" | "X12_410" | "X12_412" | "X12_414" | "X12_417" | "X12_418" | "X12_419" | "X12_420" | "X12_421" | "X12_422" | "X12_423" | "X12_424" | "X12_425" | "X12_426" | "X12_429" | "X12_431" | "X12_432" | "X12_433" | "X12_434" | "X12_435" | "X12_436" | "X12_437" | "X12_440" | "X12_451" | "X12_452" | "X12_453" | "X12_455" | "X12_456" | "X12_460" | "X12_463" | "X12_466" | "X12_468" | "X12_470" | "X12_475" | "X12_485" | "X12_486" | "X12_490" | "X12_492" | "X12_494" | "X12_500" | "X12_501" | "X12_503" | "X12_504" | "X12_511" | "X12_517" | "X12_521" | "X12_527" | "X12_536" | "X12_540" | "X12_561" | "X12_567" | "X12_568" | "X12_601" | "X12_602" | "X12_620" | "X12_625" | "X12_650" | "X12_715" | "X12_753" | "X12_754" | "X12_805" | "X12_806" | "X12_810" | "X12_811" | "X12_812" | "X12_813" | "X12_814" | "X12_815" | "X12_816" | "X12_818" | "X12_819" | "X12_820" | "X12_821" | "X12_822" | "X12_823" | "X12_824" | "X12_826" | "X12_827" | "X12_828" | "X12_829" | "X12_830" | "X12_831" | "X12_832" | "X12_833" | "X12_834" | "X12_835" | "X12_836" | "X12_837" | "X12_838" | "X12_839" | "X12_840" | "X12_841" | "X12_842" | "X12_843" | "X12_844" | "X12_845" | "X12_846" | "X12_847" | "X12_848" | "X12_849" | "X12_850" | "X12_851" | "X12_852" | "X12_853" | "X12_854" | "X12_855" | "X12_856" | "X12_857" | "X12_858" | "X12_859" | "X12_860" | "X12_861" | "X12_862" | "X12_863" | "X12_864" | "X12_865" | "X12_866" | "X12_867" | "X12_868" | "X12_869" | "X12_870" | "X12_871" | "X12_872" | "X12_873" | "X12_874" | "X12_875" | "X12_876" | "X12_877" | "X12_878" | "X12_879" | "X12_880" | "X12_881" | "X12_882" | "X12_883" | "X12_884" | "X12_885" | "X12_886" | "X12_887" | "X12_888" | "X12_889" | "X12_891" | "X12_893" | "X12_894" | "X12_895" | "X12_896" | "X12_920" | "X12_924" | "X12_925" | "X12_926" | "X12_928" | "X12_940" | "X12_943" | "X12_944" | "X12_945" | "X12_947" | "X12_980" | "X12_990" | "X12_993" | "X12_996" | "X12_997" | "X12_998" | "X12_999" | "X12_270_X279" | "X12_271_X279" | "X12_275_X210" | "X12_275_X211" | "X12_276_X212" | "X12_277_X212" | "X12_277_X214" | "X12_277_X364" | "X12_278_X217" | "X12_820_X218" | "X12_820_X306" | "X12_824_X186" | "X12_834_X220" | "X12_834_X307" | "X12_834_X318" | "X12_835_X221" | "X12_837_X222" | "X12_837_X223" | "X12_837_X224" | "X12_837_X291" | "X12_837_X292" | "X12_837_X298" | "X12_999_X231")
+      attr_accessor version: ("VERSION_4010" | "VERSION_4030" | "VERSION_4050" | "VERSION_4060" | "VERSION_5010" | "VERSION_5010_HIPAA")
+      SENSITIVE: []
+    end
+
+    class X12Envelope
+      attr_accessor common: Types::X12OutboundEdiHeaders
+      SENSITIVE: []
+    end
+
+    class X12FunctionalGroupHeaders
+      attr_accessor application_sender_code: ::String
+      attr_accessor application_receiver_code: ::String
+      attr_accessor responsible_agency_code: ::String
+      SENSITIVE: []
+    end
+
+    class X12InterchangeControlHeaders
+      attr_accessor sender_id_qualifier: ::String
+      attr_accessor sender_id: ::String
+      attr_accessor receiver_id_qualifier: ::String
+      attr_accessor receiver_id: ::String
+      attr_accessor repetition_separator: ::String
+      attr_accessor acknowledgment_requested_code: ::String
+      attr_accessor usage_indicator_code: ::String
+      SENSITIVE: []
+    end
+
+    class X12OutboundEdiHeaders
+      attr_accessor interchange_control_headers: Types::X12InterchangeControlHeaders
+      attr_accessor functional_group_headers: Types::X12FunctionalGroupHeaders
+      attr_accessor delimiters: Types::X12Delimiters
+      attr_accessor validate_edi: bool
+      SENSITIVE: []
+    end
+  end
+end

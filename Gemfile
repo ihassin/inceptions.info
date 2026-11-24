@@ -5,6 +5,7 @@ gem "just-the-docs"
 gem 'rake'
 gem 's3_website'
 gem 'aws-sdk', '~> 3'
+gem 'webrick'
 
 gem "jekyll", "~> 4.1.1"
 group :jekyll_plugins do

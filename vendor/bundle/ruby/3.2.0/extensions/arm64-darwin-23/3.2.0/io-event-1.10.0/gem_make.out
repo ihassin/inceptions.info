@@ -1,0 +1,38 @@
+current directory: /Users/ita/projects/personal/inceptions.info/vendor/bundle/ruby/3.2.0/gems/io-event-1.10.0/ext
+/Users/ita/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+checking for rb_ext_ractor_safe()... yes
+checking for &rb_fiber_transfer()... yes
+checking for -luring... no
+checking for sys/epoll.h... no
+checking for sys/event.h... yes
+checking for sys/wait.h... yes
+checking for sys/eventfd.h... no
+checking for rb_io_descriptor()... yes
+checking for &rb_process_status_wait()... no
+checking for rb_fiber_current()... yes
+checking for &rb_fiber_raise()... yes
+checking for epoll_pwait2()... no
+checking for ruby/io/buffer.h... yes
+creating extconf.h
+creating Makefile
+
+current directory: /Users/ita/projects/personal/inceptions.info/vendor/bundle/ruby/3.2.0/gems/io-event-1.10.0/ext
+make DESTDIR\= sitearchdir\=./.gem.20250429-93355-a2mof2 sitelibdir\=./.gem.20250429-93355-a2mof2 clean
+
+current directory: /Users/ita/projects/personal/inceptions.info/vendor/bundle/ruby/3.2.0/gems/io-event-1.10.0/ext
+make DESTDIR\= sitearchdir\=./.gem.20250429-93355-a2mof2 sitelibdir\=./.gem.20250429-93355-a2mof2
+compiling ./io/event/event.c
+compiling ./io/event/time.c
+compiling ./io/event/fiber.c
+compiling ./io/event/selector/selector.c
+compiling ./io/event/selector/kqueue.c
+compiling ./io/event/interrupt.c
+linking shared-object IO_Event.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+
+current directory: /Users/ita/projects/personal/inceptions.info/vendor/bundle/ruby/3.2.0/gems/io-event-1.10.0/ext
+make DESTDIR\= sitearchdir\=./.gem.20250429-93355-a2mof2 sitelibdir\=./.gem.20250429-93355-a2mof2 install
+/usr/bin/install -c -m 0755 IO_Event.bundle ./.gem.20250429-93355-a2mof2
+
+current directory: /Users/ita/projects/personal/inceptions.info/vendor/bundle/ruby/3.2.0/gems/io-event-1.10.0/ext
+make DESTDIR\= sitearchdir\=./.gem.20250429-93355-a2mof2 sitelibdir\=./.gem.20250429-93355-a2mof2 clean

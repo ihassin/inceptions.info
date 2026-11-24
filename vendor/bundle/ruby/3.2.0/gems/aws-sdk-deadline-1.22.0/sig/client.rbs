@@ -1,0 +1,2301 @@
+# WARNING ABOUT GENERATED CODE
+#
+# This file is generated. See the contributing guide for more information:
+# https://github.com/aws/aws-sdk-ruby/blob/version-3/CONTRIBUTING.md
+#
+# WARNING ABOUT GENERATED CODE
+
+module Aws
+  module Deadline
+    class Client < ::Seahorse::Client::Base
+      include ::Aws::ClientStubs
+
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#initialize-instance_method
+      def self.new: (
+                      ?credentials: untyped,
+                      ?region: String,
+                      ?access_key_id: String,
+                      ?account_id: String,
+                      ?active_endpoint_cache: bool,
+                      ?adaptive_retry_wait_to_fill: bool,
+                      ?client_side_monitoring: bool,
+                      ?client_side_monitoring_client_id: String,
+                      ?client_side_monitoring_host: String,
+                      ?client_side_monitoring_port: Integer,
+                      ?client_side_monitoring_publisher: untyped,
+                      ?convert_params: bool,
+                      ?correct_clock_skew: bool,
+                      ?defaults_mode: String,
+                      ?disable_host_prefix_injection: bool,
+                      ?disable_request_compression: bool,
+                      ?endpoint: String,
+                      ?endpoint_cache_max_entries: Integer,
+                      ?endpoint_cache_max_threads: Integer,
+                      ?endpoint_cache_poll_interval: Integer,
+                      ?endpoint_discovery: bool,
+                      ?ignore_configured_endpoint_urls: bool,
+                      ?log_formatter: untyped,
+                      ?log_level: Symbol,
+                      ?logger: untyped,
+                      ?max_attempts: Integer,
+                      ?profile: String,
+                      ?request_checksum_calculation: String,
+                      ?request_min_compression_size_bytes: Integer,
+                      ?response_checksum_validation: String,
+                      ?retry_backoff: Proc,
+                      ?retry_base_delay: Float,
+                      ?retry_jitter: (:none | :equal | :full | ^(Integer) -> Integer),
+                      ?retry_limit: Integer,
+                      ?retry_max_delay: Integer,
+                      ?retry_mode: ("legacy" | "standard" | "adaptive"),
+                      ?sdk_ua_app_id: String,
+                      ?secret_access_key: String,
+                      ?session_token: String,
+                      ?sigv4a_signing_region_set: Array[String],
+                      ?stub_responses: untyped,
+                      ?telemetry_provider: Aws::Telemetry::TelemetryProviderBase,
+                      ?token_provider: untyped,
+                      ?use_dualstack_endpoint: bool,
+                      ?use_fips_endpoint: bool,
+                      ?validate_params: bool,
+                      ?endpoint_provider: untyped,
+                      ?http_proxy: String,
+                      ?http_open_timeout: (Float | Integer),
+                      ?http_read_timeout: (Float | Integer),
+                      ?http_idle_timeout: (Float | Integer),
+                      ?http_continue_timeout: (Float | Integer),
+                      ?ssl_timeout: (Float | Integer | nil),
+                      ?http_wire_trace: bool,
+                      ?ssl_verify_peer: bool,
+                      ?ssl_ca_bundle: String,
+                      ?ssl_ca_directory: String,
+                      ?ssl_ca_store: String,
+                      ?on_chunk_received: Proc,
+                      ?on_chunk_sent: Proc,
+                      ?raise_response_errors: bool
+                    ) -> instance
+                  | (?Hash[Symbol, untyped]) -> instance
+
+
+      interface _AssociateMemberToFarmResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::AssociateMemberToFarmResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#associate_member_to_farm-instance_method
+      def associate_member_to_farm: (
+                                      farm_id: ::String,
+                                      principal_id: ::String,
+                                      principal_type: ("USER" | "GROUP"),
+                                      identity_store_id: ::String,
+                                      membership_level: ("VIEWER" | "CONTRIBUTOR" | "OWNER" | "MANAGER")
+                                    ) -> _AssociateMemberToFarmResponseSuccess
+                                  | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _AssociateMemberToFarmResponseSuccess
+
+      interface _AssociateMemberToFleetResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::AssociateMemberToFleetResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#associate_member_to_fleet-instance_method
+      def associate_member_to_fleet: (
+                                       farm_id: ::String,
+                                       fleet_id: ::String,
+                                       principal_id: ::String,
+                                       principal_type: ("USER" | "GROUP"),
+                                       identity_store_id: ::String,
+                                       membership_level: ("VIEWER" | "CONTRIBUTOR" | "OWNER" | "MANAGER")
+                                     ) -> _AssociateMemberToFleetResponseSuccess
+                                   | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _AssociateMemberToFleetResponseSuccess
+
+      interface _AssociateMemberToJobResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::AssociateMemberToJobResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#associate_member_to_job-instance_method
+      def associate_member_to_job: (
+                                     farm_id: ::String,
+                                     queue_id: ::String,
+                                     job_id: ::String,
+                                     principal_id: ::String,
+                                     principal_type: ("USER" | "GROUP"),
+                                     identity_store_id: ::String,
+                                     membership_level: ("VIEWER" | "CONTRIBUTOR" | "OWNER" | "MANAGER")
+                                   ) -> _AssociateMemberToJobResponseSuccess
+                                 | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _AssociateMemberToJobResponseSuccess
+
+      interface _AssociateMemberToQueueResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::AssociateMemberToQueueResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#associate_member_to_queue-instance_method
+      def associate_member_to_queue: (
+                                       farm_id: ::String,
+                                       queue_id: ::String,
+                                       principal_id: ::String,
+                                       principal_type: ("USER" | "GROUP"),
+                                       identity_store_id: ::String,
+                                       membership_level: ("VIEWER" | "CONTRIBUTOR" | "OWNER" | "MANAGER")
+                                     ) -> _AssociateMemberToQueueResponseSuccess
+                                   | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _AssociateMemberToQueueResponseSuccess
+
+      interface _AssumeFleetRoleForReadResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::AssumeFleetRoleForReadResponse]
+        def credentials: () -> Types::AwsCredentials
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#assume_fleet_role_for_read-instance_method
+      def assume_fleet_role_for_read: (
+                                        farm_id: ::String,
+                                        fleet_id: ::String
+                                      ) -> _AssumeFleetRoleForReadResponseSuccess
+                                    | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _AssumeFleetRoleForReadResponseSuccess
+
+      interface _AssumeFleetRoleForWorkerResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::AssumeFleetRoleForWorkerResponse]
+        def credentials: () -> Types::AwsCredentials
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#assume_fleet_role_for_worker-instance_method
+      def assume_fleet_role_for_worker: (
+                                          farm_id: ::String,
+                                          fleet_id: ::String,
+                                          worker_id: ::String
+                                        ) -> _AssumeFleetRoleForWorkerResponseSuccess
+                                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _AssumeFleetRoleForWorkerResponseSuccess
+
+      interface _AssumeQueueRoleForReadResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::AssumeQueueRoleForReadResponse]
+        def credentials: () -> Types::AwsCredentials
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#assume_queue_role_for_read-instance_method
+      def assume_queue_role_for_read: (
+                                        farm_id: ::String,
+                                        queue_id: ::String
+                                      ) -> _AssumeQueueRoleForReadResponseSuccess
+                                    | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _AssumeQueueRoleForReadResponseSuccess
+
+      interface _AssumeQueueRoleForUserResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::AssumeQueueRoleForUserResponse]
+        def credentials: () -> Types::AwsCredentials
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#assume_queue_role_for_user-instance_method
+      def assume_queue_role_for_user: (
+                                        farm_id: ::String,
+                                        queue_id: ::String
+                                      ) -> _AssumeQueueRoleForUserResponseSuccess
+                                    | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _AssumeQueueRoleForUserResponseSuccess
+
+      interface _AssumeQueueRoleForWorkerResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::AssumeQueueRoleForWorkerResponse]
+        def credentials: () -> Types::AwsCredentials
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#assume_queue_role_for_worker-instance_method
+      def assume_queue_role_for_worker: (
+                                          farm_id: ::String,
+                                          fleet_id: ::String,
+                                          worker_id: ::String,
+                                          queue_id: ::String
+                                        ) -> _AssumeQueueRoleForWorkerResponseSuccess
+                                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _AssumeQueueRoleForWorkerResponseSuccess
+
+      interface _BatchGetJobEntityResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::BatchGetJobEntityResponse]
+        def entities: () -> ::Array[Types::JobEntity]
+        def errors: () -> ::Array[Types::GetJobEntityError]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#batch_get_job_entity-instance_method
+      def batch_get_job_entity: (
+                                  farm_id: ::String,
+                                  fleet_id: ::String,
+                                  worker_id: ::String,
+                                  identifiers: Array[
+                                    {
+                                      job_details: {
+                                        job_id: ::String
+                                      }?,
+                                      job_attachment_details: {
+                                        job_id: ::String
+                                      }?,
+                                      step_details: {
+                                        job_id: ::String,
+                                        step_id: ::String
+                                      }?,
+                                      environment_details: {
+                                        job_id: ::String,
+                                        environment_id: ::String
+                                      }?
+                                    },
+                                  ]
+                                ) -> _BatchGetJobEntityResponseSuccess
+                              | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _BatchGetJobEntityResponseSuccess
+
+      interface _CopyJobTemplateResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CopyJobTemplateResponse]
+        def template_type: () -> ("JSON" | "YAML")
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#copy_job_template-instance_method
+      def copy_job_template: (
+                               farm_id: ::String,
+                               job_id: ::String,
+                               queue_id: ::String,
+                               target_s3_location: {
+                                 bucket_name: ::String,
+                                 key: ::String
+                               }
+                             ) -> _CopyJobTemplateResponseSuccess
+                           | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CopyJobTemplateResponseSuccess
+
+      interface _CreateBudgetResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CreateBudgetResponse]
+        def budget_id: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#create_budget-instance_method
+      def create_budget: (
+                           ?client_token: ::String,
+                           farm_id: ::String,
+                           usage_tracking_resource: {
+                             queue_id: ::String?
+                           },
+                           display_name: ::String,
+                           ?description: ::String,
+                           approximate_dollar_limit: ::Float,
+                           actions: Array[
+                             {
+                               type: ("STOP_SCHEDULING_AND_COMPLETE_TASKS" | "STOP_SCHEDULING_AND_CANCEL_TASKS"),
+                               threshold_percentage: ::Float,
+                               description: ::String?
+                             },
+                           ],
+                           schedule: {
+                             fixed: {
+                               start_time: ::Time,
+                               end_time: ::Time
+                             }?
+                           }
+                         ) -> _CreateBudgetResponseSuccess
+                       | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CreateBudgetResponseSuccess
+
+      interface _CreateFarmResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CreateFarmResponse]
+        def farm_id: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#create_farm-instance_method
+      def create_farm: (
+                         ?client_token: ::String,
+                         display_name: ::String,
+                         ?description: ::String,
+                         ?kms_key_arn: ::String,
+                         ?tags: Hash[::String, ::String]
+                       ) -> _CreateFarmResponseSuccess
+                     | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CreateFarmResponseSuccess
+
+      interface _CreateFleetResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CreateFleetResponse]
+        def fleet_id: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#create_fleet-instance_method
+      def create_fleet: (
+                          ?client_token: ::String,
+                          farm_id: ::String,
+                          display_name: ::String,
+                          ?description: ::String,
+                          role_arn: ::String,
+                          ?min_worker_count: ::Integer,
+                          max_worker_count: ::Integer,
+                          configuration: {
+                            customer_managed: {
+                              mode: ("NO_SCALING" | "EVENT_BASED_AUTO_SCALING"),
+                              worker_capabilities: {
+                                v_cpu_count: {
+                                  min: ::Integer,
+                                  max: ::Integer?
+                                },
+                                memory_mi_b: {
+                                  min: ::Integer,
+                                  max: ::Integer?
+                                },
+                                accelerator_types: Array[("gpu")]?,
+                                accelerator_count: {
+                                  min: ::Integer,
+                                  max: ::Integer?
+                                }?,
+                                accelerator_total_memory_mi_b: {
+                                  min: ::Integer,
+                                  max: ::Integer?
+                                }?,
+                                os_family: ("WINDOWS" | "LINUX" | "MACOS"),
+                                cpu_architecture_type: ("x86_64" | "arm64"),
+                                custom_amounts: Array[
+                                  {
+                                    name: ::String,
+                                    min: ::Float,
+                                    max: ::Float?
+                                  },
+                                ]?,
+                                custom_attributes: Array[
+                                  {
+                                    name: ::String,
+                                    values: Array[::String]
+                                  },
+                                ]?
+                              },
+                              storage_profile_id: ::String?
+                            }?,
+                            service_managed_ec2: {
+                              instance_capabilities: {
+                                v_cpu_count: {
+                                  min: ::Integer,
+                                  max: ::Integer?
+                                },
+                                memory_mi_b: {
+                                  min: ::Integer,
+                                  max: ::Integer?
+                                },
+                                os_family: ("WINDOWS" | "LINUX"),
+                                cpu_architecture_type: ("x86_64" | "arm64"),
+                                root_ebs_volume: {
+                                  size_gi_b: ::Integer?,
+                                  iops: ::Integer?,
+                                  throughput_mi_b: ::Integer?
+                                }?,
+                                accelerator_capabilities: {
+                                  selections: Array[
+                                    {
+                                      name: ("t4" | "a10g" | "l4" | "l40s"),
+                                      runtime: ::String?
+                                    },
+                                  ],
+                                  count: {
+                                    min: ::Integer,
+                                    max: ::Integer?
+                                  }?
+                                }?,
+                                allowed_instance_types: Array[::String]?,
+                                excluded_instance_types: Array[::String]?,
+                                custom_amounts: Array[
+                                  {
+                                    name: ::String,
+                                    min: ::Float,
+                                    max: ::Float?
+                                  },
+                                ]?,
+                                custom_attributes: Array[
+                                  {
+                                    name: ::String,
+                                    values: Array[::String]
+                                  },
+                                ]?
+                              },
+                              instance_market_options: {
+                                type: ("on-demand" | "spot")
+                              }
+                            }?
+                          },
+                          ?tags: Hash[::String, ::String]
+                        ) -> _CreateFleetResponseSuccess
+                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CreateFleetResponseSuccess
+
+      interface _CreateJobResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CreateJobResponse]
+        def job_id: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#create_job-instance_method
+      def create_job: (
+                        farm_id: ::String,
+                        queue_id: ::String,
+                        ?client_token: ::String,
+                        ?template: ::String,
+                        ?template_type: ("JSON" | "YAML"),
+                        priority: ::Integer,
+                        ?parameters: Hash[::String, {
+                            int: ::String?,
+                            float: ::String?,
+                            string: ::String?,
+                            path: ::String?
+                          }],
+                        ?attachments: {
+                          manifests: Array[
+                            {
+                              file_system_location_name: ::String?,
+                              root_path: ::String,
+                              root_path_format: ("windows" | "posix"),
+                              output_relative_directories: Array[::String]?,
+                              input_manifest_path: ::String?,
+                              input_manifest_hash: ::String?
+                            },
+                          ],
+                          file_system: ("COPIED" | "VIRTUAL")?
+                        },
+                        ?storage_profile_id: ::String,
+                        ?target_task_run_status: ("READY" | "SUSPENDED"),
+                        ?max_failed_tasks_count: ::Integer,
+                        ?max_retries_per_task: ::Integer,
+                        ?max_worker_count: ::Integer,
+                        ?source_job_id: ::String
+                      ) -> _CreateJobResponseSuccess
+                    | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CreateJobResponseSuccess
+
+      interface _CreateLicenseEndpointResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CreateLicenseEndpointResponse]
+        def license_endpoint_id: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#create_license_endpoint-instance_method
+      def create_license_endpoint: (
+                                     ?client_token: ::String,
+                                     vpc_id: ::String,
+                                     subnet_ids: Array[::String],
+                                     security_group_ids: Array[::String],
+                                     ?tags: Hash[::String, ::String]
+                                   ) -> _CreateLicenseEndpointResponseSuccess
+                                 | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CreateLicenseEndpointResponseSuccess
+
+      interface _CreateLimitResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CreateLimitResponse]
+        def limit_id: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#create_limit-instance_method
+      def create_limit: (
+                          ?client_token: ::String,
+                          display_name: ::String,
+                          amount_requirement_name: ::String,
+                          max_count: ::Integer,
+                          farm_id: ::String,
+                          ?description: ::String
+                        ) -> _CreateLimitResponseSuccess
+                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CreateLimitResponseSuccess
+
+      interface _CreateMonitorResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CreateMonitorResponse]
+        def monitor_id: () -> ::String
+        def identity_center_application_arn: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#create_monitor-instance_method
+      def create_monitor: (
+                            ?client_token: ::String,
+                            display_name: ::String,
+                            identity_center_instance_arn: ::String,
+                            subdomain: ::String,
+                            role_arn: ::String
+                          ) -> _CreateMonitorResponseSuccess
+                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CreateMonitorResponseSuccess
+
+      interface _CreateQueueResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CreateQueueResponse]
+        def queue_id: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#create_queue-instance_method
+      def create_queue: (
+                          ?client_token: ::String,
+                          farm_id: ::String,
+                          display_name: ::String,
+                          ?description: ::String,
+                          ?default_budget_action: ("NONE" | "STOP_SCHEDULING_AND_COMPLETE_TASKS" | "STOP_SCHEDULING_AND_CANCEL_TASKS"),
+                          ?job_attachment_settings: {
+                            s3_bucket_name: ::String,
+                            root_prefix: ::String
+                          },
+                          ?role_arn: ::String,
+                          ?job_run_as_user: {
+                            posix: {
+                              user: ::String,
+                              group: ::String
+                            }?,
+                            windows: {
+                              user: ::String,
+                              password_arn: ::String
+                            }?,
+                            run_as: ("QUEUE_CONFIGURED_USER" | "WORKER_AGENT_USER")
+                          },
+                          ?required_file_system_location_names: Array[::String],
+                          ?allowed_storage_profile_ids: Array[::String],
+                          ?tags: Hash[::String, ::String]
+                        ) -> _CreateQueueResponseSuccess
+                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CreateQueueResponseSuccess
+
+      interface _CreateQueueEnvironmentResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CreateQueueEnvironmentResponse]
+        def queue_environment_id: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#create_queue_environment-instance_method
+      def create_queue_environment: (
+                                      ?client_token: ::String,
+                                      farm_id: ::String,
+                                      queue_id: ::String,
+                                      priority: ::Integer,
+                                      template_type: ("JSON" | "YAML"),
+                                      template: ::String
+                                    ) -> _CreateQueueEnvironmentResponseSuccess
+                                  | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CreateQueueEnvironmentResponseSuccess
+
+      interface _CreateQueueFleetAssociationResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CreateQueueFleetAssociationResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#create_queue_fleet_association-instance_method
+      def create_queue_fleet_association: (
+                                            farm_id: ::String,
+                                            queue_id: ::String,
+                                            fleet_id: ::String
+                                          ) -> _CreateQueueFleetAssociationResponseSuccess
+                                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CreateQueueFleetAssociationResponseSuccess
+
+      interface _CreateQueueLimitAssociationResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CreateQueueLimitAssociationResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#create_queue_limit_association-instance_method
+      def create_queue_limit_association: (
+                                            farm_id: ::String,
+                                            queue_id: ::String,
+                                            limit_id: ::String
+                                          ) -> _CreateQueueLimitAssociationResponseSuccess
+                                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CreateQueueLimitAssociationResponseSuccess
+
+      interface _CreateStorageProfileResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CreateStorageProfileResponse]
+        def storage_profile_id: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#create_storage_profile-instance_method
+      def create_storage_profile: (
+                                    ?client_token: ::String,
+                                    farm_id: ::String,
+                                    display_name: ::String,
+                                    os_family: ("WINDOWS" | "LINUX" | "MACOS"),
+                                    ?file_system_locations: Array[
+                                      {
+                                        name: ::String,
+                                        path: ::String,
+                                        type: ("SHARED" | "LOCAL")
+                                      },
+                                    ]
+                                  ) -> _CreateStorageProfileResponseSuccess
+                                | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CreateStorageProfileResponseSuccess
+
+      interface _CreateWorkerResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::CreateWorkerResponse]
+        def worker_id: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#create_worker-instance_method
+      def create_worker: (
+                           farm_id: ::String,
+                           fleet_id: ::String,
+                           ?host_properties: {
+                             ip_addresses: {
+                               ip_v4_addresses: Array[::String]?,
+                               ip_v6_addresses: Array[::String]?
+                             }?,
+                             host_name: ::String?
+                           },
+                           ?client_token: ::String
+                         ) -> _CreateWorkerResponseSuccess
+                       | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _CreateWorkerResponseSuccess
+
+      interface _DeleteBudgetResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteBudgetResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#delete_budget-instance_method
+      def delete_budget: (
+                           farm_id: ::String,
+                           budget_id: ::String
+                         ) -> _DeleteBudgetResponseSuccess
+                       | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteBudgetResponseSuccess
+
+      interface _DeleteFarmResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteFarmResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#delete_farm-instance_method
+      def delete_farm: (
+                         farm_id: ::String
+                       ) -> _DeleteFarmResponseSuccess
+                     | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteFarmResponseSuccess
+
+      interface _DeleteFleetResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteFleetResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#delete_fleet-instance_method
+      def delete_fleet: (
+                          ?client_token: ::String,
+                          farm_id: ::String,
+                          fleet_id: ::String
+                        ) -> _DeleteFleetResponseSuccess
+                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteFleetResponseSuccess
+
+      interface _DeleteLicenseEndpointResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteLicenseEndpointResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#delete_license_endpoint-instance_method
+      def delete_license_endpoint: (
+                                     license_endpoint_id: ::String
+                                   ) -> _DeleteLicenseEndpointResponseSuccess
+                                 | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteLicenseEndpointResponseSuccess
+
+      interface _DeleteLimitResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteLimitResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#delete_limit-instance_method
+      def delete_limit: (
+                          farm_id: ::String,
+                          limit_id: ::String
+                        ) -> _DeleteLimitResponseSuccess
+                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteLimitResponseSuccess
+
+      interface _DeleteMeteredProductResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteMeteredProductResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#delete_metered_product-instance_method
+      def delete_metered_product: (
+                                    license_endpoint_id: ::String,
+                                    product_id: ::String
+                                  ) -> _DeleteMeteredProductResponseSuccess
+                                | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteMeteredProductResponseSuccess
+
+      interface _DeleteMonitorResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteMonitorResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#delete_monitor-instance_method
+      def delete_monitor: (
+                            monitor_id: ::String
+                          ) -> _DeleteMonitorResponseSuccess
+                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteMonitorResponseSuccess
+
+      interface _DeleteQueueResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteQueueResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#delete_queue-instance_method
+      def delete_queue: (
+                          farm_id: ::String,
+                          queue_id: ::String
+                        ) -> _DeleteQueueResponseSuccess
+                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteQueueResponseSuccess
+
+      interface _DeleteQueueEnvironmentResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteQueueEnvironmentResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#delete_queue_environment-instance_method
+      def delete_queue_environment: (
+                                      farm_id: ::String,
+                                      queue_id: ::String,
+                                      queue_environment_id: ::String
+                                    ) -> _DeleteQueueEnvironmentResponseSuccess
+                                  | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteQueueEnvironmentResponseSuccess
+
+      interface _DeleteQueueFleetAssociationResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteQueueFleetAssociationResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#delete_queue_fleet_association-instance_method
+      def delete_queue_fleet_association: (
+                                            farm_id: ::String,
+                                            queue_id: ::String,
+                                            fleet_id: ::String
+                                          ) -> _DeleteQueueFleetAssociationResponseSuccess
+                                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteQueueFleetAssociationResponseSuccess
+
+      interface _DeleteQueueLimitAssociationResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteQueueLimitAssociationResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#delete_queue_limit_association-instance_method
+      def delete_queue_limit_association: (
+                                            farm_id: ::String,
+                                            queue_id: ::String,
+                                            limit_id: ::String
+                                          ) -> _DeleteQueueLimitAssociationResponseSuccess
+                                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteQueueLimitAssociationResponseSuccess
+
+      interface _DeleteStorageProfileResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteStorageProfileResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#delete_storage_profile-instance_method
+      def delete_storage_profile: (
+                                    farm_id: ::String,
+                                    storage_profile_id: ::String
+                                  ) -> _DeleteStorageProfileResponseSuccess
+                                | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteStorageProfileResponseSuccess
+
+      interface _DeleteWorkerResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DeleteWorkerResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#delete_worker-instance_method
+      def delete_worker: (
+                           farm_id: ::String,
+                           fleet_id: ::String,
+                           worker_id: ::String
+                         ) -> _DeleteWorkerResponseSuccess
+                       | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DeleteWorkerResponseSuccess
+
+      interface _DisassociateMemberFromFarmResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DisassociateMemberFromFarmResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#disassociate_member_from_farm-instance_method
+      def disassociate_member_from_farm: (
+                                           farm_id: ::String,
+                                           principal_id: ::String
+                                         ) -> _DisassociateMemberFromFarmResponseSuccess
+                                       | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DisassociateMemberFromFarmResponseSuccess
+
+      interface _DisassociateMemberFromFleetResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DisassociateMemberFromFleetResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#disassociate_member_from_fleet-instance_method
+      def disassociate_member_from_fleet: (
+                                            farm_id: ::String,
+                                            fleet_id: ::String,
+                                            principal_id: ::String
+                                          ) -> _DisassociateMemberFromFleetResponseSuccess
+                                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DisassociateMemberFromFleetResponseSuccess
+
+      interface _DisassociateMemberFromJobResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DisassociateMemberFromJobResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#disassociate_member_from_job-instance_method
+      def disassociate_member_from_job: (
+                                          farm_id: ::String,
+                                          queue_id: ::String,
+                                          job_id: ::String,
+                                          principal_id: ::String
+                                        ) -> _DisassociateMemberFromJobResponseSuccess
+                                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DisassociateMemberFromJobResponseSuccess
+
+      interface _DisassociateMemberFromQueueResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::DisassociateMemberFromQueueResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#disassociate_member_from_queue-instance_method
+      def disassociate_member_from_queue: (
+                                            farm_id: ::String,
+                                            queue_id: ::String,
+                                            principal_id: ::String
+                                          ) -> _DisassociateMemberFromQueueResponseSuccess
+                                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _DisassociateMemberFromQueueResponseSuccess
+
+      interface _GetBudgetResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetBudgetResponse]
+        def budget_id: () -> ::String
+        def usage_tracking_resource: () -> Types::UsageTrackingResource
+        def status: () -> ("ACTIVE" | "INACTIVE")
+        def display_name: () -> ::String
+        def description: () -> ::String
+        def approximate_dollar_limit: () -> ::Float
+        def usages: () -> Types::ConsumedUsages
+        def actions: () -> ::Array[Types::ResponseBudgetAction]
+        def schedule: () -> Types::BudgetSchedule
+        def created_by: () -> ::String
+        def created_at: () -> ::Time
+        def updated_by: () -> ::String
+        def updated_at: () -> ::Time
+        def queue_stopped_at: () -> ::Time
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_budget-instance_method
+      def get_budget: (
+                        farm_id: ::String,
+                        budget_id: ::String
+                      ) -> _GetBudgetResponseSuccess
+                    | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetBudgetResponseSuccess
+
+      interface _GetFarmResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetFarmResponse]
+        def farm_id: () -> ::String
+        def display_name: () -> ::String
+        def description: () -> ::String
+        def kms_key_arn: () -> ::String
+        def created_at: () -> ::Time
+        def created_by: () -> ::String
+        def updated_at: () -> ::Time
+        def updated_by: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_farm-instance_method
+      def get_farm: (
+                      farm_id: ::String
+                    ) -> _GetFarmResponseSuccess
+                  | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetFarmResponseSuccess
+
+      interface _GetFleetResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetFleetResponse]
+        def fleet_id: () -> ::String
+        def farm_id: () -> ::String
+        def display_name: () -> ::String
+        def description: () -> ::String
+        def status: () -> ("ACTIVE" | "CREATE_IN_PROGRESS" | "UPDATE_IN_PROGRESS" | "CREATE_FAILED" | "UPDATE_FAILED")
+        def auto_scaling_status: () -> ("GROWING" | "STEADY" | "SHRINKING")
+        def target_worker_count: () -> ::Integer
+        def worker_count: () -> ::Integer
+        def min_worker_count: () -> ::Integer
+        def max_worker_count: () -> ::Integer
+        def configuration: () -> Types::FleetConfiguration
+        def capabilities: () -> Types::FleetCapabilities
+        def role_arn: () -> ::String
+        def created_at: () -> ::Time
+        def created_by: () -> ::String
+        def updated_at: () -> ::Time
+        def updated_by: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_fleet-instance_method
+      def get_fleet: (
+                       farm_id: ::String,
+                       fleet_id: ::String
+                     ) -> _GetFleetResponseSuccess
+                   | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetFleetResponseSuccess
+
+      interface _GetJobResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetJobResponse]
+        def job_id: () -> ::String
+        def name: () -> ::String
+        def lifecycle_status: () -> ("CREATE_IN_PROGRESS" | "CREATE_FAILED" | "CREATE_COMPLETE" | "UPLOAD_IN_PROGRESS" | "UPLOAD_FAILED" | "UPDATE_IN_PROGRESS" | "UPDATE_FAILED" | "UPDATE_SUCCEEDED" | "ARCHIVED")
+        def lifecycle_status_message: () -> ::String
+        def priority: () -> ::Integer
+        def created_at: () -> ::Time
+        def created_by: () -> ::String
+        def updated_at: () -> ::Time
+        def updated_by: () -> ::String
+        def started_at: () -> ::Time
+        def ended_at: () -> ::Time
+        def task_run_status: () -> ("PENDING" | "READY" | "ASSIGNED" | "STARTING" | "SCHEDULED" | "INTERRUPTING" | "RUNNING" | "SUSPENDED" | "CANCELED" | "FAILED" | "SUCCEEDED" | "NOT_COMPATIBLE")
+        def target_task_run_status: () -> ("READY" | "FAILED" | "SUCCEEDED" | "CANCELED" | "SUSPENDED" | "PENDING")
+        def task_run_status_counts: () -> ::Hash[("PENDING" | "READY" | "ASSIGNED" | "STARTING" | "SCHEDULED" | "INTERRUPTING" | "RUNNING" | "SUSPENDED" | "CANCELED" | "FAILED" | "SUCCEEDED" | "NOT_COMPATIBLE"), ::Integer]
+        def storage_profile_id: () -> ::String
+        def max_failed_tasks_count: () -> ::Integer
+        def max_retries_per_task: () -> ::Integer
+        def parameters: () -> ::Hash[::String, Types::JobParameter]
+        def attachments: () -> Types::Attachments
+        def description: () -> ::String
+        def max_worker_count: () -> ::Integer
+        def source_job_id: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_job-instance_method
+      def get_job: (
+                     farm_id: ::String,
+                     queue_id: ::String,
+                     job_id: ::String
+                   ) -> _GetJobResponseSuccess
+                 | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetJobResponseSuccess
+
+      interface _GetLicenseEndpointResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetLicenseEndpointResponse]
+        def license_endpoint_id: () -> ::String
+        def status: () -> ("CREATE_IN_PROGRESS" | "DELETE_IN_PROGRESS" | "READY" | "NOT_READY")
+        def status_message: () -> ::String
+        def vpc_id: () -> ::String
+        def dns_name: () -> ::String
+        def subnet_ids: () -> ::Array[::String]
+        def security_group_ids: () -> ::Array[::String]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_license_endpoint-instance_method
+      def get_license_endpoint: (
+                                  license_endpoint_id: ::String
+                                ) -> _GetLicenseEndpointResponseSuccess
+                              | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetLicenseEndpointResponseSuccess
+
+      interface _GetLimitResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetLimitResponse]
+        def display_name: () -> ::String
+        def amount_requirement_name: () -> ::String
+        def max_count: () -> ::Integer
+        def created_at: () -> ::Time
+        def created_by: () -> ::String
+        def updated_at: () -> ::Time
+        def updated_by: () -> ::String
+        def farm_id: () -> ::String
+        def limit_id: () -> ::String
+        def current_count: () -> ::Integer
+        def description: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_limit-instance_method
+      def get_limit: (
+                       farm_id: ::String,
+                       limit_id: ::String
+                     ) -> _GetLimitResponseSuccess
+                   | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetLimitResponseSuccess
+
+      interface _GetMonitorResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetMonitorResponse]
+        def monitor_id: () -> ::String
+        def display_name: () -> ::String
+        def subdomain: () -> ::String
+        def url: () -> ::String
+        def role_arn: () -> ::String
+        def identity_center_instance_arn: () -> ::String
+        def identity_center_application_arn: () -> ::String
+        def created_at: () -> ::Time
+        def created_by: () -> ::String
+        def updated_at: () -> ::Time
+        def updated_by: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_monitor-instance_method
+      def get_monitor: (
+                         monitor_id: ::String
+                       ) -> _GetMonitorResponseSuccess
+                     | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetMonitorResponseSuccess
+
+      interface _GetQueueResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetQueueResponse]
+        def queue_id: () -> ::String
+        def display_name: () -> ::String
+        def description: () -> ::String
+        def farm_id: () -> ::String
+        def status: () -> ("IDLE" | "SCHEDULING" | "SCHEDULING_BLOCKED")
+        def default_budget_action: () -> ("NONE" | "STOP_SCHEDULING_AND_COMPLETE_TASKS" | "STOP_SCHEDULING_AND_CANCEL_TASKS")
+        def blocked_reason: () -> ("NO_BUDGET_CONFIGURED" | "BUDGET_THRESHOLD_REACHED")
+        def job_attachment_settings: () -> Types::JobAttachmentSettings
+        def role_arn: () -> ::String
+        def required_file_system_location_names: () -> ::Array[::String]
+        def allowed_storage_profile_ids: () -> ::Array[::String]
+        def job_run_as_user: () -> Types::JobRunAsUser
+        def created_at: () -> ::Time
+        def created_by: () -> ::String
+        def updated_at: () -> ::Time
+        def updated_by: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_queue-instance_method
+      def get_queue: (
+                       farm_id: ::String,
+                       queue_id: ::String
+                     ) -> _GetQueueResponseSuccess
+                   | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetQueueResponseSuccess
+
+      interface _GetQueueEnvironmentResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetQueueEnvironmentResponse]
+        def queue_environment_id: () -> ::String
+        def name: () -> ::String
+        def priority: () -> ::Integer
+        def template_type: () -> ("JSON" | "YAML")
+        def template: () -> ::String
+        def created_at: () -> ::Time
+        def created_by: () -> ::String
+        def updated_at: () -> ::Time
+        def updated_by: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_queue_environment-instance_method
+      def get_queue_environment: (
+                                   farm_id: ::String,
+                                   queue_id: ::String,
+                                   queue_environment_id: ::String
+                                 ) -> _GetQueueEnvironmentResponseSuccess
+                               | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetQueueEnvironmentResponseSuccess
+
+      interface _GetQueueFleetAssociationResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetQueueFleetAssociationResponse]
+        def queue_id: () -> ::String
+        def fleet_id: () -> ::String
+        def status: () -> ("ACTIVE" | "STOP_SCHEDULING_AND_COMPLETE_TASKS" | "STOP_SCHEDULING_AND_CANCEL_TASKS" | "STOPPED")
+        def created_at: () -> ::Time
+        def created_by: () -> ::String
+        def updated_at: () -> ::Time
+        def updated_by: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_queue_fleet_association-instance_method
+      def get_queue_fleet_association: (
+                                         farm_id: ::String,
+                                         queue_id: ::String,
+                                         fleet_id: ::String
+                                       ) -> _GetQueueFleetAssociationResponseSuccess
+                                     | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetQueueFleetAssociationResponseSuccess
+
+      interface _GetQueueLimitAssociationResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetQueueLimitAssociationResponse]
+        def created_at: () -> ::Time
+        def created_by: () -> ::String
+        def updated_at: () -> ::Time
+        def updated_by: () -> ::String
+        def queue_id: () -> ::String
+        def limit_id: () -> ::String
+        def status: () -> ("ACTIVE" | "STOP_LIMIT_USAGE_AND_COMPLETE_TASKS" | "STOP_LIMIT_USAGE_AND_CANCEL_TASKS" | "STOPPED")
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_queue_limit_association-instance_method
+      def get_queue_limit_association: (
+                                         farm_id: ::String,
+                                         queue_id: ::String,
+                                         limit_id: ::String
+                                       ) -> _GetQueueLimitAssociationResponseSuccess
+                                     | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetQueueLimitAssociationResponseSuccess
+
+      interface _GetSessionResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetSessionResponse]
+        def session_id: () -> ::String
+        def fleet_id: () -> ::String
+        def worker_id: () -> ::String
+        def started_at: () -> ::Time
+        def log: () -> Types::LogConfiguration
+        def lifecycle_status: () -> ("STARTED" | "UPDATE_IN_PROGRESS" | "UPDATE_SUCCEEDED" | "UPDATE_FAILED" | "ENDED")
+        def ended_at: () -> ::Time
+        def updated_at: () -> ::Time
+        def updated_by: () -> ::String
+        def target_lifecycle_status: () -> ("ENDED")
+        def host_properties: () -> Types::HostPropertiesResponse
+        def worker_log: () -> Types::LogConfiguration
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_session-instance_method
+      def get_session: (
+                         farm_id: ::String,
+                         queue_id: ::String,
+                         job_id: ::String,
+                         session_id: ::String
+                       ) -> _GetSessionResponseSuccess
+                     | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetSessionResponseSuccess
+
+      interface _GetSessionActionResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetSessionActionResponse]
+        def session_action_id: () -> ::String
+        def status: () -> ("ASSIGNED" | "RUNNING" | "CANCELING" | "SUCCEEDED" | "FAILED" | "INTERRUPTED" | "CANCELED" | "NEVER_ATTEMPTED" | "SCHEDULED" | "RECLAIMING" | "RECLAIMED")
+        def started_at: () -> ::Time
+        def ended_at: () -> ::Time
+        def worker_updated_at: () -> ::Time
+        def progress_percent: () -> ::Float
+        def session_id: () -> ::String
+        def process_exit_code: () -> ::Integer
+        def progress_message: () -> ::String
+        def definition: () -> Types::SessionActionDefinition
+        def acquired_limits: () -> ::Array[Types::AcquiredLimit]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_session_action-instance_method
+      def get_session_action: (
+                                farm_id: ::String,
+                                queue_id: ::String,
+                                job_id: ::String,
+                                session_action_id: ::String
+                              ) -> _GetSessionActionResponseSuccess
+                            | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetSessionActionResponseSuccess
+
+      interface _GetSessionsStatisticsAggregationResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetSessionsStatisticsAggregationResponse]
+        def statistics: () -> ::Array[Types::Statistics]
+        def next_token: () -> ::String
+        def status: () -> ("IN_PROGRESS" | "TIMEOUT" | "FAILED" | "COMPLETED")
+        def status_message: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_sessions_statistics_aggregation-instance_method
+      def get_sessions_statistics_aggregation: (
+                                                 farm_id: ::String,
+                                                 aggregation_id: ::String,
+                                                 ?max_results: ::Integer,
+                                                 ?next_token: ::String
+                                               ) -> _GetSessionsStatisticsAggregationResponseSuccess
+                                             | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetSessionsStatisticsAggregationResponseSuccess
+
+      interface _GetStepResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetStepResponse]
+        def step_id: () -> ::String
+        def name: () -> ::String
+        def lifecycle_status: () -> ("CREATE_COMPLETE" | "UPDATE_IN_PROGRESS" | "UPDATE_FAILED" | "UPDATE_SUCCEEDED")
+        def lifecycle_status_message: () -> ::String
+        def task_run_status: () -> ("PENDING" | "READY" | "ASSIGNED" | "STARTING" | "SCHEDULED" | "INTERRUPTING" | "RUNNING" | "SUSPENDED" | "CANCELED" | "FAILED" | "SUCCEEDED" | "NOT_COMPATIBLE")
+        def task_run_status_counts: () -> ::Hash[("PENDING" | "READY" | "ASSIGNED" | "STARTING" | "SCHEDULED" | "INTERRUPTING" | "RUNNING" | "SUSPENDED" | "CANCELED" | "FAILED" | "SUCCEEDED" | "NOT_COMPATIBLE"), ::Integer]
+        def target_task_run_status: () -> ("READY" | "FAILED" | "SUCCEEDED" | "CANCELED" | "SUSPENDED" | "PENDING")
+        def created_at: () -> ::Time
+        def created_by: () -> ::String
+        def updated_at: () -> ::Time
+        def updated_by: () -> ::String
+        def started_at: () -> ::Time
+        def ended_at: () -> ::Time
+        def dependency_counts: () -> Types::DependencyCounts
+        def required_capabilities: () -> Types::StepRequiredCapabilities
+        def parameter_space: () -> Types::ParameterSpace
+        def description: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_step-instance_method
+      def get_step: (
+                      farm_id: ::String,
+                      queue_id: ::String,
+                      job_id: ::String,
+                      step_id: ::String
+                    ) -> _GetStepResponseSuccess
+                  | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetStepResponseSuccess
+
+      interface _GetStorageProfileResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetStorageProfileResponse]
+        def storage_profile_id: () -> ::String
+        def display_name: () -> ::String
+        def os_family: () -> ("WINDOWS" | "LINUX" | "MACOS")
+        def created_at: () -> ::Time
+        def created_by: () -> ::String
+        def updated_at: () -> ::Time
+        def updated_by: () -> ::String
+        def file_system_locations: () -> ::Array[Types::FileSystemLocation]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_storage_profile-instance_method
+      def get_storage_profile: (
+                                 farm_id: ::String,
+                                 storage_profile_id: ::String
+                               ) -> _GetStorageProfileResponseSuccess
+                             | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetStorageProfileResponseSuccess
+
+      interface _GetStorageProfileForQueueResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetStorageProfileForQueueResponse]
+        def storage_profile_id: () -> ::String
+        def display_name: () -> ::String
+        def os_family: () -> ("WINDOWS" | "LINUX" | "MACOS")
+        def file_system_locations: () -> ::Array[Types::FileSystemLocation]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_storage_profile_for_queue-instance_method
+      def get_storage_profile_for_queue: (
+                                           farm_id: ::String,
+                                           queue_id: ::String,
+                                           storage_profile_id: ::String
+                                         ) -> _GetStorageProfileForQueueResponseSuccess
+                                       | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetStorageProfileForQueueResponseSuccess
+
+      interface _GetTaskResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetTaskResponse]
+        def task_id: () -> ::String
+        def created_at: () -> ::Time
+        def created_by: () -> ::String
+        def run_status: () -> ("PENDING" | "READY" | "ASSIGNED" | "STARTING" | "SCHEDULED" | "INTERRUPTING" | "RUNNING" | "SUSPENDED" | "CANCELED" | "FAILED" | "SUCCEEDED" | "NOT_COMPATIBLE")
+        def target_run_status: () -> ("READY" | "FAILED" | "SUCCEEDED" | "CANCELED" | "SUSPENDED" | "PENDING")
+        def failure_retry_count: () -> ::Integer
+        def parameters: () -> ::Hash[::String, Types::TaskParameterValue]
+        def started_at: () -> ::Time
+        def ended_at: () -> ::Time
+        def updated_at: () -> ::Time
+        def updated_by: () -> ::String
+        def latest_session_action_id: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_task-instance_method
+      def get_task: (
+                      farm_id: ::String,
+                      queue_id: ::String,
+                      job_id: ::String,
+                      step_id: ::String,
+                      task_id: ::String
+                    ) -> _GetTaskResponseSuccess
+                  | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetTaskResponseSuccess
+
+      interface _GetWorkerResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::GetWorkerResponse]
+        def farm_id: () -> ::String
+        def fleet_id: () -> ::String
+        def worker_id: () -> ::String
+        def host_properties: () -> Types::HostPropertiesResponse
+        def status: () -> ("CREATED" | "STARTED" | "STOPPING" | "STOPPED" | "NOT_RESPONDING" | "NOT_COMPATIBLE" | "RUNNING" | "IDLE")
+        def log: () -> Types::LogConfiguration
+        def created_at: () -> ::Time
+        def created_by: () -> ::String
+        def updated_at: () -> ::Time
+        def updated_by: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#get_worker-instance_method
+      def get_worker: (
+                        farm_id: ::String,
+                        fleet_id: ::String,
+                        worker_id: ::String
+                      ) -> _GetWorkerResponseSuccess
+                    | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _GetWorkerResponseSuccess
+
+      interface _ListAvailableMeteredProductsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListAvailableMeteredProductsResponse]
+        def metered_products: () -> ::Array[Types::MeteredProductSummary]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_available_metered_products-instance_method
+      def list_available_metered_products: (
+                                             ?next_token: ::String,
+                                             ?max_results: ::Integer
+                                           ) -> _ListAvailableMeteredProductsResponseSuccess
+                                         | (?Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListAvailableMeteredProductsResponseSuccess
+
+      interface _ListBudgetsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListBudgetsResponse]
+        def next_token: () -> ::String
+        def budgets: () -> ::Array[Types::BudgetSummary]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_budgets-instance_method
+      def list_budgets: (
+                          ?next_token: ::String,
+                          farm_id: ::String,
+                          ?max_results: ::Integer,
+                          ?status: ("ACTIVE" | "INACTIVE")
+                        ) -> _ListBudgetsResponseSuccess
+                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListBudgetsResponseSuccess
+
+      interface _ListFarmMembersResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListFarmMembersResponse]
+        def members: () -> ::Array[Types::FarmMember]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_farm_members-instance_method
+      def list_farm_members: (
+                               farm_id: ::String,
+                               ?next_token: ::String,
+                               ?max_results: ::Integer
+                             ) -> _ListFarmMembersResponseSuccess
+                           | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListFarmMembersResponseSuccess
+
+      interface _ListFarmsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListFarmsResponse]
+        def next_token: () -> ::String
+        def farms: () -> ::Array[Types::FarmSummary]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_farms-instance_method
+      def list_farms: (
+                        ?next_token: ::String,
+                        ?principal_id: ::String,
+                        ?max_results: ::Integer
+                      ) -> _ListFarmsResponseSuccess
+                    | (?Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListFarmsResponseSuccess
+
+      interface _ListFleetMembersResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListFleetMembersResponse]
+        def members: () -> ::Array[Types::FleetMember]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_fleet_members-instance_method
+      def list_fleet_members: (
+                                farm_id: ::String,
+                                fleet_id: ::String,
+                                ?next_token: ::String,
+                                ?max_results: ::Integer
+                              ) -> _ListFleetMembersResponseSuccess
+                            | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListFleetMembersResponseSuccess
+
+      interface _ListFleetsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListFleetsResponse]
+        def fleets: () -> ::Array[Types::FleetSummary]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_fleets-instance_method
+      def list_fleets: (
+                         farm_id: ::String,
+                         ?principal_id: ::String,
+                         ?display_name: ::String,
+                         ?status: ("ACTIVE" | "CREATE_IN_PROGRESS" | "UPDATE_IN_PROGRESS" | "CREATE_FAILED" | "UPDATE_FAILED"),
+                         ?next_token: ::String,
+                         ?max_results: ::Integer
+                       ) -> _ListFleetsResponseSuccess
+                     | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListFleetsResponseSuccess
+
+      interface _ListJobMembersResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListJobMembersResponse]
+        def members: () -> ::Array[Types::JobMember]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_job_members-instance_method
+      def list_job_members: (
+                              farm_id: ::String,
+                              queue_id: ::String,
+                              job_id: ::String,
+                              ?next_token: ::String,
+                              ?max_results: ::Integer
+                            ) -> _ListJobMembersResponseSuccess
+                          | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListJobMembersResponseSuccess
+
+      interface _ListJobParameterDefinitionsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListJobParameterDefinitionsResponse]
+        def job_parameter_definitions: () -> ::Array[untyped]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_job_parameter_definitions-instance_method
+      def list_job_parameter_definitions: (
+                                            farm_id: ::String,
+                                            job_id: ::String,
+                                            queue_id: ::String,
+                                            ?next_token: ::String,
+                                            ?max_results: ::Integer
+                                          ) -> _ListJobParameterDefinitionsResponseSuccess
+                                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListJobParameterDefinitionsResponseSuccess
+
+      interface _ListJobsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListJobsResponse]
+        def jobs: () -> ::Array[Types::JobSummary]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_jobs-instance_method
+      def list_jobs: (
+                       farm_id: ::String,
+                       ?principal_id: ::String,
+                       queue_id: ::String,
+                       ?next_token: ::String,
+                       ?max_results: ::Integer
+                     ) -> _ListJobsResponseSuccess
+                   | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListJobsResponseSuccess
+
+      interface _ListLicenseEndpointsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListLicenseEndpointsResponse]
+        def license_endpoints: () -> ::Array[Types::LicenseEndpointSummary]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_license_endpoints-instance_method
+      def list_license_endpoints: (
+                                    ?next_token: ::String,
+                                    ?max_results: ::Integer
+                                  ) -> _ListLicenseEndpointsResponseSuccess
+                                | (?Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListLicenseEndpointsResponseSuccess
+
+      interface _ListLimitsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListLimitsResponse]
+        def limits: () -> ::Array[Types::LimitSummary]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_limits-instance_method
+      def list_limits: (
+                         farm_id: ::String,
+                         ?next_token: ::String,
+                         ?max_results: ::Integer
+                       ) -> _ListLimitsResponseSuccess
+                     | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListLimitsResponseSuccess
+
+      interface _ListMeteredProductsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListMeteredProductsResponse]
+        def metered_products: () -> ::Array[Types::MeteredProductSummary]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_metered_products-instance_method
+      def list_metered_products: (
+                                   license_endpoint_id: ::String,
+                                   ?next_token: ::String,
+                                   ?max_results: ::Integer
+                                 ) -> _ListMeteredProductsResponseSuccess
+                               | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListMeteredProductsResponseSuccess
+
+      interface _ListMonitorsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListMonitorsResponse]
+        def next_token: () -> ::String
+        def monitors: () -> ::Array[Types::MonitorSummary]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_monitors-instance_method
+      def list_monitors: (
+                           ?next_token: ::String,
+                           ?max_results: ::Integer
+                         ) -> _ListMonitorsResponseSuccess
+                       | (?Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListMonitorsResponseSuccess
+
+      interface _ListQueueEnvironmentsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListQueueEnvironmentsResponse]
+        def environments: () -> ::Array[Types::QueueEnvironmentSummary]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_queue_environments-instance_method
+      def list_queue_environments: (
+                                     farm_id: ::String,
+                                     queue_id: ::String,
+                                     ?next_token: ::String,
+                                     ?max_results: ::Integer
+                                   ) -> _ListQueueEnvironmentsResponseSuccess
+                                 | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListQueueEnvironmentsResponseSuccess
+
+      interface _ListQueueFleetAssociationsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListQueueFleetAssociationsResponse]
+        def queue_fleet_associations: () -> ::Array[Types::QueueFleetAssociationSummary]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_queue_fleet_associations-instance_method
+      def list_queue_fleet_associations: (
+                                           farm_id: ::String,
+                                           ?queue_id: ::String,
+                                           ?fleet_id: ::String,
+                                           ?next_token: ::String,
+                                           ?max_results: ::Integer
+                                         ) -> _ListQueueFleetAssociationsResponseSuccess
+                                       | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListQueueFleetAssociationsResponseSuccess
+
+      interface _ListQueueLimitAssociationsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListQueueLimitAssociationsResponse]
+        def queue_limit_associations: () -> ::Array[Types::QueueLimitAssociationSummary]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_queue_limit_associations-instance_method
+      def list_queue_limit_associations: (
+                                           farm_id: ::String,
+                                           ?queue_id: ::String,
+                                           ?limit_id: ::String,
+                                           ?next_token: ::String,
+                                           ?max_results: ::Integer
+                                         ) -> _ListQueueLimitAssociationsResponseSuccess
+                                       | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListQueueLimitAssociationsResponseSuccess
+
+      interface _ListQueueMembersResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListQueueMembersResponse]
+        def members: () -> ::Array[Types::QueueMember]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_queue_members-instance_method
+      def list_queue_members: (
+                                farm_id: ::String,
+                                queue_id: ::String,
+                                ?next_token: ::String,
+                                ?max_results: ::Integer
+                              ) -> _ListQueueMembersResponseSuccess
+                            | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListQueueMembersResponseSuccess
+
+      interface _ListQueuesResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListQueuesResponse]
+        def queues: () -> ::Array[Types::QueueSummary]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_queues-instance_method
+      def list_queues: (
+                         farm_id: ::String,
+                         ?principal_id: ::String,
+                         ?status: ("IDLE" | "SCHEDULING" | "SCHEDULING_BLOCKED"),
+                         ?next_token: ::String,
+                         ?max_results: ::Integer
+                       ) -> _ListQueuesResponseSuccess
+                     | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListQueuesResponseSuccess
+
+      interface _ListSessionActionsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListSessionActionsResponse]
+        def session_actions: () -> ::Array[Types::SessionActionSummary]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_session_actions-instance_method
+      def list_session_actions: (
+                                  farm_id: ::String,
+                                  queue_id: ::String,
+                                  job_id: ::String,
+                                  ?session_id: ::String,
+                                  ?task_id: ::String,
+                                  ?next_token: ::String,
+                                  ?max_results: ::Integer
+                                ) -> _ListSessionActionsResponseSuccess
+                              | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListSessionActionsResponseSuccess
+
+      interface _ListSessionsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListSessionsResponse]
+        def sessions: () -> ::Array[Types::SessionSummary]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_sessions-instance_method
+      def list_sessions: (
+                           farm_id: ::String,
+                           queue_id: ::String,
+                           job_id: ::String,
+                           ?next_token: ::String,
+                           ?max_results: ::Integer
+                         ) -> _ListSessionsResponseSuccess
+                       | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListSessionsResponseSuccess
+
+      interface _ListSessionsForWorkerResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListSessionsForWorkerResponse]
+        def sessions: () -> ::Array[Types::WorkerSessionSummary]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_sessions_for_worker-instance_method
+      def list_sessions_for_worker: (
+                                      farm_id: ::String,
+                                      fleet_id: ::String,
+                                      worker_id: ::String,
+                                      ?next_token: ::String,
+                                      ?max_results: ::Integer
+                                    ) -> _ListSessionsForWorkerResponseSuccess
+                                  | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListSessionsForWorkerResponseSuccess
+
+      interface _ListStepConsumersResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListStepConsumersResponse]
+        def consumers: () -> ::Array[Types::StepConsumer]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_step_consumers-instance_method
+      def list_step_consumers: (
+                                 farm_id: ::String,
+                                 queue_id: ::String,
+                                 job_id: ::String,
+                                 step_id: ::String,
+                                 ?next_token: ::String,
+                                 ?max_results: ::Integer
+                               ) -> _ListStepConsumersResponseSuccess
+                             | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListStepConsumersResponseSuccess
+
+      interface _ListStepDependenciesResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListStepDependenciesResponse]
+        def dependencies: () -> ::Array[Types::StepDependency]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_step_dependencies-instance_method
+      def list_step_dependencies: (
+                                    farm_id: ::String,
+                                    queue_id: ::String,
+                                    job_id: ::String,
+                                    step_id: ::String,
+                                    ?next_token: ::String,
+                                    ?max_results: ::Integer
+                                  ) -> _ListStepDependenciesResponseSuccess
+                                | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListStepDependenciesResponseSuccess
+
+      interface _ListStepsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListStepsResponse]
+        def steps: () -> ::Array[Types::StepSummary]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_steps-instance_method
+      def list_steps: (
+                        farm_id: ::String,
+                        queue_id: ::String,
+                        job_id: ::String,
+                        ?next_token: ::String,
+                        ?max_results: ::Integer
+                      ) -> _ListStepsResponseSuccess
+                    | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListStepsResponseSuccess
+
+      interface _ListStorageProfilesResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListStorageProfilesResponse]
+        def storage_profiles: () -> ::Array[Types::StorageProfileSummary]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_storage_profiles-instance_method
+      def list_storage_profiles: (
+                                   farm_id: ::String,
+                                   ?next_token: ::String,
+                                   ?max_results: ::Integer
+                                 ) -> _ListStorageProfilesResponseSuccess
+                               | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListStorageProfilesResponseSuccess
+
+      interface _ListStorageProfilesForQueueResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListStorageProfilesForQueueResponse]
+        def storage_profiles: () -> ::Array[Types::StorageProfileSummary]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_storage_profiles_for_queue-instance_method
+      def list_storage_profiles_for_queue: (
+                                             farm_id: ::String,
+                                             queue_id: ::String,
+                                             ?next_token: ::String,
+                                             ?max_results: ::Integer
+                                           ) -> _ListStorageProfilesForQueueResponseSuccess
+                                         | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListStorageProfilesForQueueResponseSuccess
+
+      interface _ListTagsForResourceResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListTagsForResourceResponse]
+        def tags: () -> ::Hash[::String, ::String]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_tags_for_resource-instance_method
+      def list_tags_for_resource: (
+                                    resource_arn: ::String
+                                  ) -> _ListTagsForResourceResponseSuccess
+                                | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListTagsForResourceResponseSuccess
+
+      interface _ListTasksResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListTasksResponse]
+        def tasks: () -> ::Array[Types::TaskSummary]
+        def next_token: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_tasks-instance_method
+      def list_tasks: (
+                        farm_id: ::String,
+                        queue_id: ::String,
+                        job_id: ::String,
+                        step_id: ::String,
+                        ?next_token: ::String,
+                        ?max_results: ::Integer
+                      ) -> _ListTasksResponseSuccess
+                    | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListTasksResponseSuccess
+
+      interface _ListWorkersResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::ListWorkersResponse]
+        def next_token: () -> ::String
+        def workers: () -> ::Array[Types::WorkerSummary]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#list_workers-instance_method
+      def list_workers: (
+                          farm_id: ::String,
+                          fleet_id: ::String,
+                          ?next_token: ::String,
+                          ?max_results: ::Integer
+                        ) -> _ListWorkersResponseSuccess
+                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _ListWorkersResponseSuccess
+
+      interface _PutMeteredProductResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::PutMeteredProductResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#put_metered_product-instance_method
+      def put_metered_product: (
+                                 license_endpoint_id: ::String,
+                                 product_id: ::String
+                               ) -> _PutMeteredProductResponseSuccess
+                             | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _PutMeteredProductResponseSuccess
+
+      interface _SearchJobsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::SearchJobsResponse]
+        def jobs: () -> ::Array[Types::JobSearchSummary]
+        def next_item_offset: () -> ::Integer
+        def total_results: () -> ::Integer
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#search_jobs-instance_method
+      def search_jobs: (
+                         farm_id: ::String,
+                         queue_ids: Array[::String],
+                         ?filter_expressions: {
+                           filters: Array[
+                             {
+                               date_time_filter: {
+                                 name: ::String,
+                                 operator: ("EQUAL" | "NOT_EQUAL" | "GREATER_THAN_EQUAL_TO" | "GREATER_THAN" | "LESS_THAN_EQUAL_TO" | "LESS_THAN"),
+                                 date_time: ::Time
+                               }?,
+                               parameter_filter: {
+                                 name: ::String,
+                                 operator: ("EQUAL" | "NOT_EQUAL" | "GREATER_THAN_EQUAL_TO" | "GREATER_THAN" | "LESS_THAN_EQUAL_TO" | "LESS_THAN"),
+                                 value: ::String
+                               }?,
+                               search_term_filter: {
+                                 search_term: ::String,
+                                 match_type: ("FUZZY_MATCH" | "CONTAINS")?
+                               }?,
+                               string_filter: {
+                                 name: ::String,
+                                 operator: ("EQUAL" | "NOT_EQUAL" | "GREATER_THAN_EQUAL_TO" | "GREATER_THAN" | "LESS_THAN_EQUAL_TO" | "LESS_THAN"),
+                                 value: ::String
+                               }?,
+                               group_filter: untyped?
+                             },
+                           ],
+                           operator: ("AND" | "OR")
+                         },
+                         ?sort_expressions: Array[
+                           {
+                             user_jobs_first: {
+                               user_identity_id: ::String
+                             }?,
+                             field_sort: {
+                               sort_order: ("ASCENDING" | "DESCENDING"),
+                               name: ::String
+                             }?,
+                             parameter_sort: {
+                               sort_order: ("ASCENDING" | "DESCENDING"),
+                               name: ::String
+                             }?
+                           },
+                         ],
+                         item_offset: ::Integer,
+                         ?page_size: ::Integer
+                       ) -> _SearchJobsResponseSuccess
+                     | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _SearchJobsResponseSuccess
+
+      interface _SearchStepsResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::SearchStepsResponse]
+        def steps: () -> ::Array[Types::StepSearchSummary]
+        def next_item_offset: () -> ::Integer
+        def total_results: () -> ::Integer
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#search_steps-instance_method
+      def search_steps: (
+                          farm_id: ::String,
+                          queue_ids: Array[::String],
+                          ?job_id: ::String,
+                          ?filter_expressions: {
+                            filters: Array[
+                              {
+                                date_time_filter: {
+                                  name: ::String,
+                                  operator: ("EQUAL" | "NOT_EQUAL" | "GREATER_THAN_EQUAL_TO" | "GREATER_THAN" | "LESS_THAN_EQUAL_TO" | "LESS_THAN"),
+                                  date_time: ::Time
+                                }?,
+                                parameter_filter: {
+                                  name: ::String,
+                                  operator: ("EQUAL" | "NOT_EQUAL" | "GREATER_THAN_EQUAL_TO" | "GREATER_THAN" | "LESS_THAN_EQUAL_TO" | "LESS_THAN"),
+                                  value: ::String
+                                }?,
+                                search_term_filter: {
+                                  search_term: ::String,
+                                  match_type: ("FUZZY_MATCH" | "CONTAINS")?
+                                }?,
+                                string_filter: {
+                                  name: ::String,
+                                  operator: ("EQUAL" | "NOT_EQUAL" | "GREATER_THAN_EQUAL_TO" | "GREATER_THAN" | "LESS_THAN_EQUAL_TO" | "LESS_THAN"),
+                                  value: ::String
+                                }?,
+                                group_filter: untyped?
+                              },
+                            ],
+                            operator: ("AND" | "OR")
+                          },
+                          ?sort_expressions: Array[
+                            {
+                              user_jobs_first: {
+                                user_identity_id: ::String
+                              }?,
+                              field_sort: {
+                                sort_order: ("ASCENDING" | "DESCENDING"),
+                                name: ::String
+                              }?,
+                              parameter_sort: {
+                                sort_order: ("ASCENDING" | "DESCENDING"),
+                                name: ::String
+                              }?
+                            },
+                          ],
+                          item_offset: ::Integer,
+                          ?page_size: ::Integer
+                        ) -> _SearchStepsResponseSuccess
+                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _SearchStepsResponseSuccess
+
+      interface _SearchTasksResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::SearchTasksResponse]
+        def tasks: () -> ::Array[Types::TaskSearchSummary]
+        def next_item_offset: () -> ::Integer
+        def total_results: () -> ::Integer
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#search_tasks-instance_method
+      def search_tasks: (
+                          farm_id: ::String,
+                          queue_ids: Array[::String],
+                          ?job_id: ::String,
+                          ?filter_expressions: {
+                            filters: Array[
+                              {
+                                date_time_filter: {
+                                  name: ::String,
+                                  operator: ("EQUAL" | "NOT_EQUAL" | "GREATER_THAN_EQUAL_TO" | "GREATER_THAN" | "LESS_THAN_EQUAL_TO" | "LESS_THAN"),
+                                  date_time: ::Time
+                                }?,
+                                parameter_filter: {
+                                  name: ::String,
+                                  operator: ("EQUAL" | "NOT_EQUAL" | "GREATER_THAN_EQUAL_TO" | "GREATER_THAN" | "LESS_THAN_EQUAL_TO" | "LESS_THAN"),
+                                  value: ::String
+                                }?,
+                                search_term_filter: {
+                                  search_term: ::String,
+                                  match_type: ("FUZZY_MATCH" | "CONTAINS")?
+                                }?,
+                                string_filter: {
+                                  name: ::String,
+                                  operator: ("EQUAL" | "NOT_EQUAL" | "GREATER_THAN_EQUAL_TO" | "GREATER_THAN" | "LESS_THAN_EQUAL_TO" | "LESS_THAN"),
+                                  value: ::String
+                                }?,
+                                group_filter: untyped?
+                              },
+                            ],
+                            operator: ("AND" | "OR")
+                          },
+                          ?sort_expressions: Array[
+                            {
+                              user_jobs_first: {
+                                user_identity_id: ::String
+                              }?,
+                              field_sort: {
+                                sort_order: ("ASCENDING" | "DESCENDING"),
+                                name: ::String
+                              }?,
+                              parameter_sort: {
+                                sort_order: ("ASCENDING" | "DESCENDING"),
+                                name: ::String
+                              }?
+                            },
+                          ],
+                          item_offset: ::Integer,
+                          ?page_size: ::Integer
+                        ) -> _SearchTasksResponseSuccess
+                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _SearchTasksResponseSuccess
+
+      interface _SearchWorkersResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::SearchWorkersResponse]
+        def workers: () -> ::Array[Types::WorkerSearchSummary]
+        def next_item_offset: () -> ::Integer
+        def total_results: () -> ::Integer
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#search_workers-instance_method
+      def search_workers: (
+                            farm_id: ::String,
+                            fleet_ids: Array[::String],
+                            ?filter_expressions: {
+                              filters: Array[
+                                {
+                                  date_time_filter: {
+                                    name: ::String,
+                                    operator: ("EQUAL" | "NOT_EQUAL" | "GREATER_THAN_EQUAL_TO" | "GREATER_THAN" | "LESS_THAN_EQUAL_TO" | "LESS_THAN"),
+                                    date_time: ::Time
+                                  }?,
+                                  parameter_filter: {
+                                    name: ::String,
+                                    operator: ("EQUAL" | "NOT_EQUAL" | "GREATER_THAN_EQUAL_TO" | "GREATER_THAN" | "LESS_THAN_EQUAL_TO" | "LESS_THAN"),
+                                    value: ::String
+                                  }?,
+                                  search_term_filter: {
+                                    search_term: ::String,
+                                    match_type: ("FUZZY_MATCH" | "CONTAINS")?
+                                  }?,
+                                  string_filter: {
+                                    name: ::String,
+                                    operator: ("EQUAL" | "NOT_EQUAL" | "GREATER_THAN_EQUAL_TO" | "GREATER_THAN" | "LESS_THAN_EQUAL_TO" | "LESS_THAN"),
+                                    value: ::String
+                                  }?,
+                                  group_filter: untyped?
+                                },
+                              ],
+                              operator: ("AND" | "OR")
+                            },
+                            ?sort_expressions: Array[
+                              {
+                                user_jobs_first: {
+                                  user_identity_id: ::String
+                                }?,
+                                field_sort: {
+                                  sort_order: ("ASCENDING" | "DESCENDING"),
+                                  name: ::String
+                                }?,
+                                parameter_sort: {
+                                  sort_order: ("ASCENDING" | "DESCENDING"),
+                                  name: ::String
+                                }?
+                              },
+                            ],
+                            item_offset: ::Integer,
+                            ?page_size: ::Integer
+                          ) -> _SearchWorkersResponseSuccess
+                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _SearchWorkersResponseSuccess
+
+      interface _StartSessionsStatisticsAggregationResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::StartSessionsStatisticsAggregationResponse]
+        def aggregation_id: () -> ::String
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#start_sessions_statistics_aggregation-instance_method
+      def start_sessions_statistics_aggregation: (
+                                                   farm_id: ::String,
+                                                   resource_ids: {
+                                                     queue_ids: Array[::String]?,
+                                                     fleet_ids: Array[::String]?
+                                                   },
+                                                   start_time: ::Time,
+                                                   end_time: ::Time,
+                                                   ?timezone: ::String,
+                                                   ?period: ("HOURLY" | "DAILY" | "WEEKLY" | "MONTHLY"),
+                                                   group_by: Array[("QUEUE_ID" | "FLEET_ID" | "JOB_ID" | "USER_ID" | "USAGE_TYPE" | "INSTANCE_TYPE" | "LICENSE_PRODUCT")],
+                                                   statistics: Array[("SUM" | "MIN" | "MAX" | "AVG")]
+                                                 ) -> _StartSessionsStatisticsAggregationResponseSuccess
+                                               | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _StartSessionsStatisticsAggregationResponseSuccess
+
+      interface _TagResourceResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::TagResourceResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#tag_resource-instance_method
+      def tag_resource: (
+                          resource_arn: ::String,
+                          ?tags: Hash[::String, ::String]
+                        ) -> _TagResourceResponseSuccess
+                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _TagResourceResponseSuccess
+
+      interface _UntagResourceResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UntagResourceResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#untag_resource-instance_method
+      def untag_resource: (
+                            resource_arn: ::String,
+                            tag_keys: Array[::String]
+                          ) -> _UntagResourceResponseSuccess
+                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UntagResourceResponseSuccess
+
+      interface _UpdateBudgetResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateBudgetResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#update_budget-instance_method
+      def update_budget: (
+                           ?client_token: ::String,
+                           farm_id: ::String,
+                           budget_id: ::String,
+                           ?display_name: ::String,
+                           ?description: ::String,
+                           ?status: ("ACTIVE" | "INACTIVE"),
+                           ?approximate_dollar_limit: ::Float,
+                           ?actions_to_add: Array[
+                             {
+                               type: ("STOP_SCHEDULING_AND_COMPLETE_TASKS" | "STOP_SCHEDULING_AND_CANCEL_TASKS"),
+                               threshold_percentage: ::Float,
+                               description: ::String?
+                             },
+                           ],
+                           ?actions_to_remove: Array[
+                             {
+                               type: ("STOP_SCHEDULING_AND_COMPLETE_TASKS" | "STOP_SCHEDULING_AND_CANCEL_TASKS"),
+                               threshold_percentage: ::Float
+                             },
+                           ],
+                           ?schedule: {
+                             fixed: {
+                               start_time: ::Time,
+                               end_time: ::Time
+                             }?
+                           }
+                         ) -> _UpdateBudgetResponseSuccess
+                       | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateBudgetResponseSuccess
+
+      interface _UpdateFarmResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateFarmResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#update_farm-instance_method
+      def update_farm: (
+                         farm_id: ::String,
+                         ?display_name: ::String,
+                         ?description: ::String
+                       ) -> _UpdateFarmResponseSuccess
+                     | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateFarmResponseSuccess
+
+      interface _UpdateFleetResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateFleetResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#update_fleet-instance_method
+      def update_fleet: (
+                          ?client_token: ::String,
+                          farm_id: ::String,
+                          fleet_id: ::String,
+                          ?display_name: ::String,
+                          ?description: ::String,
+                          ?role_arn: ::String,
+                          ?min_worker_count: ::Integer,
+                          ?max_worker_count: ::Integer,
+                          ?configuration: {
+                            customer_managed: {
+                              mode: ("NO_SCALING" | "EVENT_BASED_AUTO_SCALING"),
+                              worker_capabilities: {
+                                v_cpu_count: {
+                                  min: ::Integer,
+                                  max: ::Integer?
+                                },
+                                memory_mi_b: {
+                                  min: ::Integer,
+                                  max: ::Integer?
+                                },
+                                accelerator_types: Array[("gpu")]?,
+                                accelerator_count: {
+                                  min: ::Integer,
+                                  max: ::Integer?
+                                }?,
+                                accelerator_total_memory_mi_b: {
+                                  min: ::Integer,
+                                  max: ::Integer?
+                                }?,
+                                os_family: ("WINDOWS" | "LINUX" | "MACOS"),
+                                cpu_architecture_type: ("x86_64" | "arm64"),
+                                custom_amounts: Array[
+                                  {
+                                    name: ::String,
+                                    min: ::Float,
+                                    max: ::Float?
+                                  },
+                                ]?,
+                                custom_attributes: Array[
+                                  {
+                                    name: ::String,
+                                    values: Array[::String]
+                                  },
+                                ]?
+                              },
+                              storage_profile_id: ::String?
+                            }?,
+                            service_managed_ec2: {
+                              instance_capabilities: {
+                                v_cpu_count: {
+                                  min: ::Integer,
+                                  max: ::Integer?
+                                },
+                                memory_mi_b: {
+                                  min: ::Integer,
+                                  max: ::Integer?
+                                },
+                                os_family: ("WINDOWS" | "LINUX"),
+                                cpu_architecture_type: ("x86_64" | "arm64"),
+                                root_ebs_volume: {
+                                  size_gi_b: ::Integer?,
+                                  iops: ::Integer?,
+                                  throughput_mi_b: ::Integer?
+                                }?,
+                                accelerator_capabilities: {
+                                  selections: Array[
+                                    {
+                                      name: ("t4" | "a10g" | "l4" | "l40s"),
+                                      runtime: ::String?
+                                    },
+                                  ],
+                                  count: {
+                                    min: ::Integer,
+                                    max: ::Integer?
+                                  }?
+                                }?,
+                                allowed_instance_types: Array[::String]?,
+                                excluded_instance_types: Array[::String]?,
+                                custom_amounts: Array[
+                                  {
+                                    name: ::String,
+                                    min: ::Float,
+                                    max: ::Float?
+                                  },
+                                ]?,
+                                custom_attributes: Array[
+                                  {
+                                    name: ::String,
+                                    values: Array[::String]
+                                  },
+                                ]?
+                              },
+                              instance_market_options: {
+                                type: ("on-demand" | "spot")
+                              }
+                            }?
+                          }
+                        ) -> _UpdateFleetResponseSuccess
+                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateFleetResponseSuccess
+
+      interface _UpdateJobResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateJobResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#update_job-instance_method
+      def update_job: (
+                        ?client_token: ::String,
+                        ?target_task_run_status: ("READY" | "FAILED" | "SUCCEEDED" | "CANCELED" | "SUSPENDED" | "PENDING"),
+                        ?priority: ::Integer,
+                        ?max_failed_tasks_count: ::Integer,
+                        ?max_retries_per_task: ::Integer,
+                        ?lifecycle_status: ("ARCHIVED"),
+                        ?max_worker_count: ::Integer,
+                        farm_id: ::String,
+                        queue_id: ::String,
+                        job_id: ::String
+                      ) -> _UpdateJobResponseSuccess
+                    | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateJobResponseSuccess
+
+      interface _UpdateLimitResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateLimitResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#update_limit-instance_method
+      def update_limit: (
+                          farm_id: ::String,
+                          limit_id: ::String,
+                          ?display_name: ::String,
+                          ?description: ::String,
+                          ?max_count: ::Integer
+                        ) -> _UpdateLimitResponseSuccess
+                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateLimitResponseSuccess
+
+      interface _UpdateMonitorResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateMonitorResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#update_monitor-instance_method
+      def update_monitor: (
+                            monitor_id: ::String,
+                            ?subdomain: ::String,
+                            ?display_name: ::String,
+                            ?role_arn: ::String
+                          ) -> _UpdateMonitorResponseSuccess
+                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateMonitorResponseSuccess
+
+      interface _UpdateQueueResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateQueueResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#update_queue-instance_method
+      def update_queue: (
+                          ?client_token: ::String,
+                          farm_id: ::String,
+                          queue_id: ::String,
+                          ?display_name: ::String,
+                          ?description: ::String,
+                          ?default_budget_action: ("NONE" | "STOP_SCHEDULING_AND_COMPLETE_TASKS" | "STOP_SCHEDULING_AND_CANCEL_TASKS"),
+                          ?job_attachment_settings: {
+                            s3_bucket_name: ::String,
+                            root_prefix: ::String
+                          },
+                          ?role_arn: ::String,
+                          ?job_run_as_user: {
+                            posix: {
+                              user: ::String,
+                              group: ::String
+                            }?,
+                            windows: {
+                              user: ::String,
+                              password_arn: ::String
+                            }?,
+                            run_as: ("QUEUE_CONFIGURED_USER" | "WORKER_AGENT_USER")
+                          },
+                          ?required_file_system_location_names_to_add: Array[::String],
+                          ?required_file_system_location_names_to_remove: Array[::String],
+                          ?allowed_storage_profile_ids_to_add: Array[::String],
+                          ?allowed_storage_profile_ids_to_remove: Array[::String]
+                        ) -> _UpdateQueueResponseSuccess
+                      | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateQueueResponseSuccess
+
+      interface _UpdateQueueEnvironmentResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateQueueEnvironmentResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#update_queue_environment-instance_method
+      def update_queue_environment: (
+                                      ?client_token: ::String,
+                                      farm_id: ::String,
+                                      queue_id: ::String,
+                                      queue_environment_id: ::String,
+                                      ?priority: ::Integer,
+                                      ?template_type: ("JSON" | "YAML"),
+                                      ?template: ::String
+                                    ) -> _UpdateQueueEnvironmentResponseSuccess
+                                  | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateQueueEnvironmentResponseSuccess
+
+      interface _UpdateQueueFleetAssociationResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateQueueFleetAssociationResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#update_queue_fleet_association-instance_method
+      def update_queue_fleet_association: (
+                                            farm_id: ::String,
+                                            queue_id: ::String,
+                                            fleet_id: ::String,
+                                            status: ("ACTIVE" | "STOP_SCHEDULING_AND_COMPLETE_TASKS" | "STOP_SCHEDULING_AND_CANCEL_TASKS")
+                                          ) -> _UpdateQueueFleetAssociationResponseSuccess
+                                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateQueueFleetAssociationResponseSuccess
+
+      interface _UpdateQueueLimitAssociationResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateQueueLimitAssociationResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#update_queue_limit_association-instance_method
+      def update_queue_limit_association: (
+                                            farm_id: ::String,
+                                            queue_id: ::String,
+                                            limit_id: ::String,
+                                            status: ("ACTIVE" | "STOP_LIMIT_USAGE_AND_COMPLETE_TASKS" | "STOP_LIMIT_USAGE_AND_CANCEL_TASKS")
+                                          ) -> _UpdateQueueLimitAssociationResponseSuccess
+                                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateQueueLimitAssociationResponseSuccess
+
+      interface _UpdateSessionResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateSessionResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#update_session-instance_method
+      def update_session: (
+                            ?client_token: ::String,
+                            target_lifecycle_status: ("ENDED"),
+                            farm_id: ::String,
+                            queue_id: ::String,
+                            job_id: ::String,
+                            session_id: ::String
+                          ) -> _UpdateSessionResponseSuccess
+                        | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateSessionResponseSuccess
+
+      interface _UpdateStepResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateStepResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#update_step-instance_method
+      def update_step: (
+                         target_task_run_status: ("READY" | "FAILED" | "SUCCEEDED" | "CANCELED" | "SUSPENDED" | "PENDING"),
+                         ?client_token: ::String,
+                         farm_id: ::String,
+                         queue_id: ::String,
+                         job_id: ::String,
+                         step_id: ::String
+                       ) -> _UpdateStepResponseSuccess
+                     | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateStepResponseSuccess
+
+      interface _UpdateStorageProfileResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateStorageProfileResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#update_storage_profile-instance_method
+      def update_storage_profile: (
+                                    ?client_token: ::String,
+                                    farm_id: ::String,
+                                    storage_profile_id: ::String,
+                                    ?display_name: ::String,
+                                    ?os_family: ("WINDOWS" | "LINUX" | "MACOS"),
+                                    ?file_system_locations_to_add: Array[
+                                      {
+                                        name: ::String,
+                                        path: ::String,
+                                        type: ("SHARED" | "LOCAL")
+                                      },
+                                    ],
+                                    ?file_system_locations_to_remove: Array[
+                                      {
+                                        name: ::String,
+                                        path: ::String,
+                                        type: ("SHARED" | "LOCAL")
+                                      },
+                                    ]
+                                  ) -> _UpdateStorageProfileResponseSuccess
+                                | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateStorageProfileResponseSuccess
+
+      interface _UpdateTaskResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateTaskResponse]
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#update_task-instance_method
+      def update_task: (
+                         ?client_token: ::String,
+                         target_run_status: ("READY" | "FAILED" | "SUCCEEDED" | "CANCELED" | "SUSPENDED" | "PENDING"),
+                         farm_id: ::String,
+                         queue_id: ::String,
+                         job_id: ::String,
+                         step_id: ::String,
+                         task_id: ::String
+                       ) -> _UpdateTaskResponseSuccess
+                     | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateTaskResponseSuccess
+
+      interface _UpdateWorkerResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateWorkerResponse]
+        def log: () -> Types::LogConfiguration
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#update_worker-instance_method
+      def update_worker: (
+                           farm_id: ::String,
+                           fleet_id: ::String,
+                           worker_id: ::String,
+                           ?status: ("STARTED" | "STOPPING" | "STOPPED"),
+                           ?capabilities: {
+                             amounts: Array[
+                               {
+                                 name: ::String,
+                                 value: ::Float
+                               },
+                             ],
+                             attributes: Array[
+                               {
+                                 name: ::String,
+                                 values: Array[::String]
+                               },
+                             ]
+                           },
+                           ?host_properties: {
+                             ip_addresses: {
+                               ip_v4_addresses: Array[::String]?,
+                               ip_v6_addresses: Array[::String]?
+                             }?,
+                             host_name: ::String?
+                           }
+                         ) -> _UpdateWorkerResponseSuccess
+                       | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateWorkerResponseSuccess
+
+      interface _UpdateWorkerScheduleResponseSuccess
+        include ::Seahorse::Client::_ResponseSuccess[Types::UpdateWorkerScheduleResponse]
+        def assigned_sessions: () -> ::Hash[::String, Types::AssignedSession]
+        def cancel_session_actions: () -> ::Hash[::String, ::Array[::String]]
+        def desired_worker_status: () -> ("STOPPED")
+        def update_interval_seconds: () -> ::Integer
+      end
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#update_worker_schedule-instance_method
+      def update_worker_schedule: (
+                                    farm_id: ::String,
+                                    fleet_id: ::String,
+                                    worker_id: ::String,
+                                    ?updated_session_actions: Hash[::String, {
+                                        completed_status: ("SUCCEEDED" | "FAILED" | "INTERRUPTED" | "CANCELED" | "NEVER_ATTEMPTED")?,
+                                        process_exit_code: ::Integer?,
+                                        progress_message: ::String?,
+                                        started_at: ::Time?,
+                                        ended_at: ::Time?,
+                                        updated_at: ::Time?,
+                                        progress_percent: ::Float?
+                                      }]
+                                  ) -> _UpdateWorkerScheduleResponseSuccess
+                                | (Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> _UpdateWorkerScheduleResponseSuccess
+
+      # https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Deadline/Client.html#wait_until-instance_method
+      def wait_until: (:fleet_active waiter_name, 
+                    farm_id: ::String,
+                    fleet_id: ::String
+                  ) -> Client::_GetFleetResponseSuccess
+                    | (:fleet_active waiter_name, Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> Client::_GetFleetResponseSuccess
+                    | (:job_create_complete waiter_name, 
+                    farm_id: ::String,
+                    queue_id: ::String,
+                    job_id: ::String
+                  ) -> Client::_GetJobResponseSuccess
+                    | (:job_create_complete waiter_name, Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> Client::_GetJobResponseSuccess
+                    | (:license_endpoint_deleted waiter_name, 
+                    license_endpoint_id: ::String
+                  ) -> Client::_GetLicenseEndpointResponseSuccess
+                    | (:license_endpoint_deleted waiter_name, Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> Client::_GetLicenseEndpointResponseSuccess
+                    | (:license_endpoint_valid waiter_name, 
+                    license_endpoint_id: ::String
+                  ) -> Client::_GetLicenseEndpointResponseSuccess
+                    | (:license_endpoint_valid waiter_name, Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> Client::_GetLicenseEndpointResponseSuccess
+                    | (:queue_fleet_association_stopped waiter_name, 
+                    farm_id: ::String,
+                    queue_id: ::String,
+                    fleet_id: ::String
+                  ) -> Client::_GetQueueFleetAssociationResponseSuccess
+                    | (:queue_fleet_association_stopped waiter_name, Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> Client::_GetQueueFleetAssociationResponseSuccess
+                    | (:queue_limit_association_stopped waiter_name, 
+                    farm_id: ::String,
+                    queue_id: ::String,
+                    limit_id: ::String
+                  ) -> Client::_GetQueueLimitAssociationResponseSuccess
+                    | (:queue_limit_association_stopped waiter_name, Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> Client::_GetQueueLimitAssociationResponseSuccess
+                    | (:queue_scheduling waiter_name, 
+                    farm_id: ::String,
+                    queue_id: ::String
+                  ) -> Client::_GetQueueResponseSuccess
+                    | (:queue_scheduling waiter_name, Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> Client::_GetQueueResponseSuccess
+                    | (:queue_scheduling_blocked waiter_name, 
+                    farm_id: ::String,
+                    queue_id: ::String
+                  ) -> Client::_GetQueueResponseSuccess
+                    | (:queue_scheduling_blocked waiter_name, Hash[Symbol, untyped] params, ?Hash[Symbol, untyped] options) -> Client::_GetQueueResponseSuccess
+    end
+  end
+end
+
